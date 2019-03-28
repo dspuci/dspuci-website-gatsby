@@ -1,7 +1,7 @@
 import React from "react"
 import { NavbarSolid, NavbarTransparentWhite } from "../Navbar"
-import styles from "./Layout.module.css"
 import Home from "../Home"
+import { Container, MainContainer } from "../Container"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -34,16 +34,17 @@ class Layout extends React.Component {
   }
 
   render() {
+    let container
+    if (this.props.home) {
+      container = <Container>{this.props.children}</Container>
+    } else {
+      container = <MainContainer>{this.props.children}</MainContainer>
+    }
     return (
-      <div className={styles.layout}>
+      <div>
         {this.state.navbar}
         {this.props.home ? <Home /> : null}
-        <div
-          className={styles.container}
-          style={this.props.home ? null : { paddingTop: 110 }}
-        >
-          {this.props.children}
-        </div>
+        {container}
       </div>
     )
   }
