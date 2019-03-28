@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./navbar.module.css"
 import { Link } from "gatsby"
-import { lightColor, darkColor } from "../styles/defaultStyles"
+import { lightColor, darkColor } from "../styles/defaultColors"
 
 const ListLink = props => (
   <li>
