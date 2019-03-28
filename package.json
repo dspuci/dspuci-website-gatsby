@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "gatsby-plugin-typography": "^2.2.10",
+    "react-transition-group": "^2.7.1",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19"
   }
