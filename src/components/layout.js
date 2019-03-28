@@ -1,8 +1,10 @@
-import React from "react"
-import styles from "./layout.module.css"
+import React from "react";
+import Navbar from "./navbar";
+import styles from "./layout.module.css";
 
-export default ({children}) => (
-    <div className={styles.layout}>
-        {children}
-    </div>
-)
+export default props => (
+  <div className={(props.home ? styles.layoutHome : styles.layout)}>
+    <Navbar home={props.home} />
+    <div className={styles.container}>{props.children}</div>
+  </div>
+);
