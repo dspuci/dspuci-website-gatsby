@@ -4,9 +4,12 @@ import Home from "../Home"
 import { Container, MainContainer } from "../Container"
 import { lightColor, darkColor } from "../../styles/defaultColors"
 import { Flex, Box, Image } from "rebass"
+
 import uciLogo from "../../images/uci-logo.png"
 import phoneIcon from "../../images/phone.png"
 import emailIcon from "../../images/email.png"
+import facebookIcon from "../../images/facebook.png"
+import instagramIcon from "../../images/instagram.png"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -78,6 +81,32 @@ const Footer = props => (
           <Image src={uciLogo} height={15} />
           <div>Irvine, CA</div>
         </Box>
+      </Flex>
+      <Flex
+        color={lightColor}
+        fontSize={16}
+        flexWrap="wrap"
+        justifyContent="center"
+        style={{ textAlign: "center" }}
+      >
+        <Box mb={30} width={[1, 1 / 12]}>
+          <a href="https://www.facebook.com/DSPUCI/">
+            <Image src={facebookIcon} height={24} />
+          </a>
+        </Box>
+        <Box mb={30} width={[1, 1 / 12]}>
+          <a href="https://www.instagram.com/dspuci/">
+            <Image src={instagramIcon} height={24} />
+          </a>
+        </Box>
+      </Flex>
+      <Flex
+        color={lightColor}
+        fontSize={16}
+        flexWrap="wrap"
+        justifyContent="center"
+        style={{ textAlign: "center" }}
+      >
         <Box width={1}>©2019 Delta Sigma Pi - Pi Sigma Chapter</Box>
       </Flex>
     </Container>
