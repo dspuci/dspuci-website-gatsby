@@ -1,7 +1,7 @@
 import React from "react"
-import { NavbarSolid, NavbarTransparentWhite } from "./navbar"
-import styles from "./layout.module.css"
-import Home from "./home"
+import { NavbarSolid, NavbarTransparentWhite } from "../Navbar"
+import styles from "./Layout.module.css"
+import Home from "../Home"
 
 class Layout extends React.Component {
   constructor(props) {
