@@ -107,7 +107,9 @@ const Footer = props => (
         justifyContent="center"
         style={{ textAlign: "center" }}
       >
-        <Box width={1}>©2019 Delta Sigma Pi - Pi Sigma Chapter</Box>
+        <Box width={1}>
+          ©{new Date().getFullYear()} Delta Sigma Pi - Pi Sigma Chapter
+        </Box>
       </Flex>
     </Container>
   </footer>
