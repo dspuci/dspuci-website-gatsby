@@ -1,6 +1,7 @@
 import React from "react"
 import { NavbarSolid, NavbarTransparentWhite } from "./navbar"
 import styles from "./layout.module.css"
+import Home from "./home"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -34,9 +35,15 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className={this.props.home ? styles.layoutHome : styles.layout}>
+      <div className={styles.layout}>
         {this.state.navbar}
-        <div className={styles.container}>{this.props.children}</div>
+        {this.props.home ? <Home /> : null}
+        <div
+          className={styles.container}
+          style={this.props.home ? null : { paddingTop: 110 }}
+        >
+          {this.props.children}
+        </div>
       </div>
     )
   }
