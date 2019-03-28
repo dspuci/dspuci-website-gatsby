@@ -68,7 +68,7 @@ const Footer = props => (
       >
         <Box mb={30} width={[1, 1 / 5]}>
           <Image src={phoneIcon} height={15} />
-          <div>(310) 447-4011</div>
+          <div>808-359-1585</div>
         </Box>
         <Box mb={30} width={[1, 1 / 5]}>
           <Image src={emailIcon} height={15} />
