@@ -1,0 +1,23 @@
+{
+  "name": "dspuci-website-gatsby",
+  "version": "1.0.0",
+  "description": "Website for the Pi Sigma Chapter of the International Fraternity of Delta Sigma Pi located at UC Irvine",
+  "main": "index.js",
+  "author": "Farbod Rafezy <rafezyfarbod@gmail.com>",
+  "license": "MIT",
+  "repository": "",
+  "devDependencies": {
+    "gatsby": "^2.0.8",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "gatsby-plugin-typography": "^2.2.10",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19"
+  }
+}
