@@ -4,7 +4,7 @@ import styles from "./layout.module.css";
 
 export default props => (
   <div className={(props.home ? styles.layoutHome : styles.layout)}>
-    <Navbar home={props.home} />
+    <Navbar type={(props.home ? 'transparent' : 'solid')} />
     <div className={styles.container}>{props.children}</div>
   </div>
 );

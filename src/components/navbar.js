@@ -11,7 +11,7 @@ const ListLink = props => (
 );
 
 export default props => (
-  <div className={(props.home ? styles.navbarHome : styles.navbar)}>
+  <div className={(props.type === 'solid' ? styles.navbarSolid : styles.navbarTransparent)}>
     <ul>
         <ListLink to="/">Home</ListLink>
         <ListLink to="/about">About</ListLink>
