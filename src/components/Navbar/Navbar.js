@@ -11,7 +11,29 @@ const ListLink = props => (
   </li>
 )
 
-class Navbar extends React.Component {
+class MinimalBar extends React.Component {
+  render() {
+    if (!this.props.show) {
+      return null
+    }
+    return (
+      <div
+        className={this.props.className}
+        style={{ backgroundColor: this.props.backgroundColor }}
+      >
+        <button
+          style={{ color: this.props.textColor }}
+          className={styles.menuButton}
+          onClick={this.props.onClick}
+        >
+          <span style={{ color: this.props.textColor }}>Menu</span>
+        </button>
+      </div>
+    )
+  }
+}
+
+class FullBar extends React.Component {
   constructor(props) {
     super(props)
     this.textColor = this.props.textColor
@@ -20,7 +42,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div
-        className={this.props.className + " " + styles.navbar}
+        className={this.props.className}
         style={{ backgroundColor: this.backgroundColor }}
       >
         <ul>
@@ -43,6 +65,113 @@ class Navbar extends React.Component {
             Gallery
           </ListLink>
         </ul>
+      </div>
+    )
+  }
+}
+
+class NavMobileMenu extends React.Component {
+  constructor(props) {
+    super(props)
+    this.textColor = this.props.textColor
+    this.backgroundColor = this.props.backgroundColor
+      ? this.props.backgroundColor
+      : darkColor
+  }
+  render() {
+    if (!this.props.show) {
+      return null
+    }
+    return (
+      <div
+        className={this.props.className}
+        style={{ backgroundColor: this.backgroundColor }}
+      >
+        <button className={styles.closeButton} onClick={this.props.onClick}>
+          <span style={{ color: this.props.textColor }}>Close</span>
+        </button>
+        <ul>
+          <ListLink to="/" style={{ color: this.textColor }}>
+            Home
+          </ListLink>
+          <ListLink to="/about" style={{ color: this.textColor }}>
+            About
+          </ListLink>
+          <ListLink to="/brothers" style={{ color: this.textColor }}>
+            Brothers
+          </ListLink>
+          <ListLink to="/careers" style={{ color: this.textColor }}>
+            Careers
+          </ListLink>
+          <ListLink to="/recruitment" style={{ color: this.textColor }}>
+            Recruitment
+          </ListLink>
+          <ListLink to="/gallery" style={{ color: this.textColor }}>
+            Gallery
+          </ListLink>
+        </ul>
+      </div>
+    )
+  }
+}
+
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      toggled: false,
+    }
+
+    this.handleMenuClick = this.handleMenuClick.bind(this)
+    this.handleCloseButtonClick = this.handleCloseButtonClick.bind(this)
+  }
+
+  handleMenuClick() {
+    this.setState({
+      toggled: true,
+    })
+  }
+
+  handleCloseButtonClick() {
+    this.setState({
+      toggled: false,
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <FullBar
+          className={
+            styles.navbar +
+            " " +
+            styles.navbarDesktop +
+            " " +
+            this.props.className
+          }
+          backgroundColor={this.props.backgroundColor}
+          textColor={this.props.textColor}
+        />
+        <MinimalBar
+          className={
+            styles.navbar +
+            " " +
+            styles.navbarMobile +
+            " " +
+            this.props.className
+          }
+          backgroundColor={this.props.backgroundColor}
+          textColor={this.props.textColor}
+          show={!this.state.toggled}
+          onClick={this.handleMenuClick}
+        />
+        <NavMobileMenu
+          className={styles.navbarMobileMenu + " " + this.props.className}
+          backgroundColor={this.props.backgroundColor}
+          textColor={this.props.textColor}
+          show={this.state.toggled}
+          onClick={this.handleCloseButtonClick}
+        />
       </div>
     )
   }
