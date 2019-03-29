@@ -8,7 +8,7 @@ const typography = new Typography({
   googleFonts: [
     {
       name: "Heebo",
-      styles: ["500", "700"],
+      styles: ["400", "500", "700"],
     },
     {
       name: "Lato",

@@ -129,7 +129,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-    console.log(this.props.backgroundColor)
     return (
       <div>
         <FullBar

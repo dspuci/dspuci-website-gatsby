@@ -1,0 +1,28 @@
+.aboutCover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../images/about-us-cover.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 70vh;
+  color: black;
+  display: table;
+  width: 100%;
+}
+
+.coverTitleContainer {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.coverTitle {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}

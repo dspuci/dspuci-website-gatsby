@@ -1,8 +1,10 @@
 import React from "react"
-import { StandardLayout } from "../components/Layout"
+import { CoverLayout } from "../components/Layout"
+import { darkColor } from "../styles/defaultColors"
+import AboutCover from "../components/AboutCover"
 
 export default () => (
-  <StandardLayout>
+  <CoverLayout navbarTextColor={darkColor} coverElement={<AboutCover />}>
     <h1>Delta Sigma Pi History</h1>
     <p>
       Delta Sigma Pi is a co-ed professional fraternity organized to foster the
@@ -55,5 +57,5 @@ export default () => (
       continues to prove itself with the our chapter being the three time winner
       of the National Outstanding Alumni Relations award (2013, 2015 & 2017).
     </p>
-  </StandardLayout>
+  </CoverLayout>
 )
