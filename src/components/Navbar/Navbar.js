@@ -127,24 +127,20 @@ class Navbar extends React.Component {
     return (
       <div>
         <FullBar
-          className={
-            styles.navbar +
-            " " +
-            styles.navbarDesktop +
-            " " +
-            this.props.className
-          }
+          className={[
+            styles.navbar,
+            styles.navbarDesktop,
+            this.props.className,
+          ].join(" ")}
           backgroundColor={this.props.backgroundColor}
           textColor={this.props.textColor}
         />
         <MinimalBar
-          className={
-            styles.navbar +
-            " " +
-            styles.navbarMobile +
-            " " +
-            this.props.className
-          }
+          className={[
+            styles.navbar,
+            styles.navbarMobile,
+            this.props.className,
+          ].join(" ")}
           backgroundColor={this.props.backgroundColor}
           textColor={this.props.textColor}
           show={!this.state.toggled}
