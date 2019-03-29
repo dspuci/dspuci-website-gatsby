@@ -69,15 +69,15 @@ const Footer = props => (
         justifyContent="center"
         style={{ textAlign: "center" }}
       >
-        <Box mb={30} width={[1, 1 / 5]}>
+        <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
           <Image src={phoneIcon} height={15} />
           <div>808-359-1585</div>
         </Box>
-        <Box mb={30} width={[1, 1 / 5]}>
+        <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
           <Image src={emailIcon} height={15} />
           <div>svp@dspuci.com</div>
         </Box>
-        <Box mb={30} width={[1, 1 / 5]}>
+        <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
           <Image src={uciLogo} height={15} />
           <div>Irvine, CA</div>
         </Box>
@@ -89,12 +89,12 @@ const Footer = props => (
         justifyContent="center"
         style={{ textAlign: "center" }}
       >
-        <Box mb={30} width={[1, 1 / 12]}>
+        <Box mb={30} width={[1 / 6, 1 / 12]}>
           <a href="https://www.facebook.com/DSPUCI/">
             <Image src={facebookIcon} height={24} />
           </a>
         </Box>
-        <Box mb={30} width={[1, 1 / 12]}>
+        <Box mb={30} width={[1 / 6, 1 / 12]}>
           <a href="https://www.instagram.com/dspuci/">
             <Image src={instagramIcon} height={24} />
           </a>

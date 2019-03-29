@@ -1,2 +1,2 @@
 export const lightColor = "#fcfcfc"
-export const darkColor = "#505050"
+export const darkColor = "#303030"
