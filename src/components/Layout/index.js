@@ -1,3 +1,3 @@
-import Layout from "./Layout"
+import { CoverLayout, StandardLayout } from "./Layout"
 
-export default Layout
+export { CoverLayout, StandardLayout }

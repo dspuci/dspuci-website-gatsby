@@ -1,7 +1,3 @@
-import {
-  NavbarSolid,
-  NavbarTransparentWhite,
-  NavbarTransparentBlack,
-} from "./Navbar"
+import { NavbarSolid, NavbarTransparent, NavbarOpaque } from "./Navbar"
 
-export { NavbarSolid, NavbarTransparentWhite, NavbarTransparentBlack }
+export { NavbarSolid, NavbarTransparent, NavbarOpaque }

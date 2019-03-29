@@ -1,4 +1,4 @@
-.home {
+.homeCover {
   background: url("../../images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,21 +10,21 @@
   width: 100%;
 }
 
-.title {
+.homeTitle {
   margin: 0 auto;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
 }
 
-.title h1 {
+.homeTitle h1 {
   font-size: 140px;
   font-family: "Georgia";
   font-weight: 100;
   margin-bottom: 5px;
 }
 
-.title hr {
+.homeTitle hr {
   border: none;
   height: 2px;
   color: white;
@@ -34,7 +34,7 @@
   width: 160px;
 }
 
-.title h2 {
+.homeTitle h2 {
   font-size: 26px;
   font-family: "Georgia";
   font-weight: 100;

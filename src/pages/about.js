@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/Layout"
+import { StandardLayout } from "../components/Layout"
 
 export default () => (
-  <Layout>
+  <StandardLayout>
     <h1>Delta Sigma Pi History</h1>
     <p>
       Delta Sigma Pi is a co-ed professional fraternity organized to foster the
@@ -55,5 +55,5 @@ export default () => (
       continues to prove itself with the our chapter being the three time winner
       of the National Outstanding Alumni Relations award (2013, 2015 & 2017).
     </p>
-  </Layout>
+  </StandardLayout>
 )

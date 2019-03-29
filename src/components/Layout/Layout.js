@@ -1,11 +1,6 @@
 import React from "react"
-import {
-  NavbarSolid,
-  NavbarTransparentWhite,
-  NavbarTransparentBlack,
-} from "../Navbar"
-import Home from "../Home"
-import { Container, MainContainer } from "../Container"
+import { NavbarSolid, NavbarTransparent, NavbarOpaque } from "../Navbar"
+import Container from "../Container"
 import { lightColor, darkColor } from "../../styles/defaultColors"
 import { Flex, Box, Image } from "rebass"
 
@@ -18,12 +13,17 @@ import instagramIcon from "../../images/instagram.png"
 class Layout extends React.Component {
   constructor(props) {
     super(props)
+
+    let navbar
+    if (props.navbarTransparent) {
+      navbar = <NavbarTransparent textColor={props.navbarTextColor} />
+    } else {
+      navbar = <NavbarSolid />
+    }
+
     this.state = {
-      navbar: this.props.home ? (
-        <NavbarTransparentWhite />
-      ) : (
-        <NavbarTransparentBlack />
-      ),
+      initialNavbar: navbar,
+      navbar: navbar,
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -38,35 +38,45 @@ class Layout extends React.Component {
   }
 
   handleScroll() {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 40 && this.props.navbarTransparent) {
       this.setState({
-        navbar: <NavbarSolid />,
+        navbar: <NavbarOpaque />,
       })
     } else {
       this.setState({
-        navbar: this.props.home ? (
-          <NavbarTransparentWhite />
-        ) : (
-          <NavbarTransparentBlack />
-        ),
+        navbar: this.state.initialNavbar,
       })
     }
   }
 
   render() {
-    let container
-    if (this.props.home) {
-      container = <Container>{this.props.children}</Container>
-    } else {
-      container = <MainContainer>{this.props.children}</MainContainer>
-    }
     return (
       <div>
         {this.state.navbar}
-        {this.props.home ? <Home /> : null}
-        {container}
+        {this.props.children}
         <Footer />
       </div>
+    )
+  }
+}
+
+class CoverLayout extends React.Component {
+  render() {
+    return (
+      <Layout navbarTransparent navbarTextColor={this.props.navbarTextColor}>
+        {this.props.coverElement}
+        <Container>{this.props.children}</Container>
+      </Layout>
+    )
+  }
+}
+
+class StandardLayout extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <Container>{this.props.children}</Container>
+      </Layout>
     )
   }
 }
@@ -127,4 +137,4 @@ const Footer = props => (
   </footer>
 )
 
-export default Layout
+export { CoverLayout, StandardLayout }

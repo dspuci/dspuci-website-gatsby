@@ -34,6 +34,8 @@ const Links = props => (
   </ul>
 )
 
+const NavTopMargin = () => <div style={{ height: 80 }} />
+
 class MinimalBar extends React.Component {
   render() {
     if (!this.props.show) {
@@ -127,6 +129,7 @@ class Navbar extends React.Component {
   }
 
   render() {
+    console.log(this.props.backgroundColor)
     return (
       <div>
         <FullBar
@@ -164,6 +167,38 @@ class Navbar extends React.Component {
 class NavbarSolid extends React.Component {
   render() {
     return (
+      <div>
+        <Navbar
+          className={styles.navbarSolid}
+          backgroundColor={
+            this.props.backgroundColor ? this.props.backgroundColor : lightColor
+          }
+          textColor={this.props.textColor ? this.props.textColor : darkColor}
+        >
+          {this.props.children}
+        </Navbar>
+        <NavTopMargin />
+      </div>
+    )
+  }
+}
+
+class NavbarTransparent extends React.Component {
+  render() {
+    return (
+      <Navbar
+        className={styles.navbarTransparent}
+        textColor={this.props.textColor ? this.props.textColor : lightColor}
+      >
+        {this.props.children}
+      </Navbar>
+    )
+  }
+}
+
+class NavbarOpaque extends React.Component {
+  render() {
+    return (
       <Navbar
         className={styles.navbarSolid}
         backgroundColor={
@@ -177,30 +212,4 @@ class NavbarSolid extends React.Component {
   }
 }
 
-class NavbarTransparentWhite extends React.Component {
-  render() {
-    return (
-      <Navbar
-        className={styles.navbarTransparent}
-        textColor={this.props.textColor ? this.props.textColor : lightColor}
-      >
-        {this.props.children}
-      </Navbar>
-    )
-  }
-}
-
-class NavbarTransparentBlack extends React.Component {
-  render() {
-    return (
-      <Navbar
-        className={styles.navbarTransparent}
-        textColor={this.props.textColor ? this.props.textColor : darkColor}
-      >
-        {this.props.children}
-      </Navbar>
-    )
-  }
-}
-
-export { NavbarSolid, NavbarTransparentWhite, NavbarTransparentBlack }
+export { NavbarSolid, NavbarTransparent, NavbarOpaque }

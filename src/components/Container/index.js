@@ -1,3 +1,3 @@
-import { Container, MainContainer } from "./Container"
+import Container from "./Container"
 
-export { Container, MainContainer }
+export default Container
