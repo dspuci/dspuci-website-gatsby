@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./Navbar.module.css"
 import { Link } from "gatsby"
-import { lightColor, darkColor } from "../../styles/defaultColors"
+import { lightColor, darkColor, darkOverlay } from "../../styles/defaultColors"
 
 const ListLink = props => (
   <li>
@@ -80,7 +80,7 @@ class NavMobileMenu extends React.Component {
     this.textColor = this.props.textColor
     this.backgroundColor = this.props.backgroundColor
       ? this.props.backgroundColor
-      : darkColor
+      : darkOverlay
   }
   render() {
     if (!this.props.show) {
