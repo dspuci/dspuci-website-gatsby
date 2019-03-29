@@ -11,6 +11,29 @@ const ListLink = props => (
   </li>
 )
 
+const Links = props => (
+  <ul>
+    <ListLink to="/" style={{ color: props.textColor }}>
+      Home
+    </ListLink>
+    <ListLink to="/about" style={{ color: props.textColor }}>
+      About
+    </ListLink>
+    <ListLink to="/brothers" style={{ color: props.textColor }}>
+      Brothers
+    </ListLink>
+    <ListLink to="/careers" style={{ color: props.textColor }}>
+      Careers
+    </ListLink>
+    <ListLink to="/recruitment" style={{ color: props.textColor }}>
+      Recruitment
+    </ListLink>
+    <ListLink to="/gallery" style={{ color: props.textColor }}>
+      Gallery
+    </ListLink>
+  </ul>
+)
+
 class MinimalBar extends React.Component {
   render() {
     if (!this.props.show) {
@@ -45,26 +68,7 @@ class FullBar extends React.Component {
         className={this.props.className}
         style={{ backgroundColor: this.backgroundColor }}
       >
-        <ul>
-          <ListLink to="/" style={{ color: this.textColor }}>
-            Home
-          </ListLink>
-          <ListLink to="/about" style={{ color: this.textColor }}>
-            About
-          </ListLink>
-          <ListLink to="/brothers" style={{ color: this.textColor }}>
-            Brothers
-          </ListLink>
-          <ListLink to="/careers" style={{ color: this.textColor }}>
-            Careers
-          </ListLink>
-          <ListLink to="/recruitment" style={{ color: this.textColor }}>
-            Recruitment
-          </ListLink>
-          <ListLink to="/gallery" style={{ color: this.textColor }}>
-            Gallery
-          </ListLink>
-        </ul>
+        <Links textColor={this.textColor} />
       </div>
     )
   }
@@ -90,26 +94,7 @@ class NavMobileMenu extends React.Component {
         <button className={styles.closeButton} onClick={this.props.onClick}>
           <span style={{ color: this.props.textColor }}>Close</span>
         </button>
-        <ul>
-          <ListLink to="/" style={{ color: this.textColor }}>
-            Home
-          </ListLink>
-          <ListLink to="/about" style={{ color: this.textColor }}>
-            About
-          </ListLink>
-          <ListLink to="/brothers" style={{ color: this.textColor }}>
-            Brothers
-          </ListLink>
-          <ListLink to="/careers" style={{ color: this.textColor }}>
-            Careers
-          </ListLink>
-          <ListLink to="/recruitment" style={{ color: this.textColor }}>
-            Recruitment
-          </ListLink>
-          <ListLink to="/gallery" style={{ color: this.textColor }}>
-            Gallery
-          </ListLink>
-        </ul>
+        <Links textColor={this.textColor} />
       </div>
     )
   }
