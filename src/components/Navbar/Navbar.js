@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./Navbar.module.css"
 import { Link } from "gatsby"
-import { lightColor, darkColor, darkOverlay } from "../../styles/defaultColors"
+import { lightColor, darkColor } from "../../styles/defaultColors"
 
 const ListLink = props => (
   <li>
@@ -77,10 +77,13 @@ class FullBar extends React.Component {
 class NavMobileMenu extends React.Component {
   constructor(props) {
     super(props)
+    if (!this.props.backgroundColor) {
+      this.textColor = darkColor
+      this.backgroundColor = lightColor
+      return
+    }
     this.textColor = this.props.textColor
     this.backgroundColor = this.props.backgroundColor
-      ? this.props.backgroundColor
-      : darkOverlay
   }
   render() {
     if (!this.props.show) {
@@ -92,7 +95,7 @@ class NavMobileMenu extends React.Component {
         style={{ backgroundColor: this.backgroundColor }}
       >
         <button className={styles.closeButton} onClick={this.props.onClick}>
-          <span style={{ color: this.props.textColor }}>Close</span>
+          <span style={{ color: this.textColor }}>Close</span>
         </button>
         <Links textColor={this.textColor} />
       </div>

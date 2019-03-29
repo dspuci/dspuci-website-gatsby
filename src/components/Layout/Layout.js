@@ -1,5 +1,9 @@
 import React from "react"
-import { NavbarSolid, NavbarTransparentWhite } from "../Navbar"
+import {
+  NavbarSolid,
+  NavbarTransparentWhite,
+  NavbarTransparentBlack,
+} from "../Navbar"
 import Home from "../Home"
 import { Container, MainContainer } from "../Container"
 import { lightColor, darkColor } from "../../styles/defaultColors"
@@ -15,7 +19,11 @@ class Layout extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      navbar: this.props.home ? <NavbarTransparentWhite /> : <NavbarSolid />,
+      navbar: this.props.home ? (
+        <NavbarTransparentWhite />
+      ) : (
+        <NavbarTransparentBlack />
+      ),
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -30,13 +38,17 @@ class Layout extends React.Component {
   }
 
   handleScroll() {
-    if (window.scrollY > 60) {
+    if (window.scrollY > 40) {
       this.setState({
         navbar: <NavbarSolid />,
       })
     } else {
       this.setState({
-        navbar: this.props.home ? <NavbarTransparentWhite /> : <NavbarSolid />,
+        navbar: this.props.home ? (
+          <NavbarTransparentWhite />
+        ) : (
+          <NavbarTransparentBlack />
+        ),
       })
     }
   }
