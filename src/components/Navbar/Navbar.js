@@ -26,9 +26,6 @@ const NavTopMargin = () => <div style={{ height: 80 }} />
 
 class MinimalBar extends React.Component {
   render() {
-    if (!this.props.show) {
-      return null
-    }
     return (
       <div className={this.props.className}>
         <button className={styles.menuButton} onClick={this.props.onClick}>
@@ -128,7 +125,6 @@ class Navbar extends React.Component {
             this.navbarType,
             this.props.className,
           ].join(" ")}
-          show={!this.state.toggled}
           onClick={this.handleMenuClick}
         />
         <NavMobileMenu
