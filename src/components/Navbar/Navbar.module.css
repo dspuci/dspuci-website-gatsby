@@ -148,8 +148,16 @@
   transition: border-bottom 100ms linear;
 }
 
+.brandButton {
+  float: left;
+}
+
 .menuButton {
   float: right;
+}
+
+.brandButton,
+.menuButton {
   height: 100%;
   background: none;
   outline: none;
