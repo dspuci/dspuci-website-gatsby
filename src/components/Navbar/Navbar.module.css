@@ -80,6 +80,7 @@
 }
 
 .navbarSolid li {
+  border-top: 2px solid rgba(0, 0, 0, 0);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: border-bottom 100ms linear;
 }
@@ -118,8 +119,9 @@
 
 .navbarTransparentWhite li,
 .navbarTransparentBlack li {
-  transition: border-bottom 100ms linear;
+  border-top: 2px solid rgba(0, 0, 0, 0);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: border-bottom 100ms linear;
 }
 
 .navbarTransparentWhite li:hover,
