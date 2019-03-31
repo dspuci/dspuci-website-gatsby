@@ -5,7 +5,7 @@ import { Fade } from "react-reveal"
 
 export default () => (
   <CoverLayout navbarTextColor="black" coverElement={<AboutCover />}>
-    <Fade bottom>
+    <Fade bottom distance="40px">
       <h1>Delta Sigma Pi History</h1>
       <p>
         Delta Sigma Pi is a co-ed professional fraternity organized to foster
