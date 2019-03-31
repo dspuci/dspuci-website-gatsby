@@ -36,6 +36,15 @@
   width: 100%;
   height: 100%;
   display: table;
+  background-color: #fcfcfc;
+  opacity: 1;
+  transition: opacity 100ms linear;
+}
+
+.navbarMobileMenu.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 100ms linear, visibility 100ms linear;
 }
 
 .navbarMobileMenu ul {
@@ -50,6 +59,12 @@
 .navbarMobileMenu li {
   margin: 20px;
   display: block;
+}
+
+.navbarMobileMenu a {
+  text-transform: uppercase;
+  color: #303030;
+  text-decoration: none;
 }
 
 @media (min-width: 800px) {
@@ -80,6 +95,7 @@
 }
 
 .navbarSolid li {
+  border-top: 2px solid rgba(0, 0, 0, 0);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: border-bottom 100ms linear;
 }
@@ -100,7 +116,8 @@
   text-decoration: none;
 }
 
-.navbarTransparentWhite a {
+.navbarTransparentWhite a,
+.navbarTransparentWhite button {
   color: #fcfcfc;
 }
 
@@ -108,7 +125,8 @@
   border-bottom: 2px solid #fcfcfc;
 }
 
-.navbarTransparentBlack a {
+.navbarTransparentBlack a,
+.navbarTransparentBlack button {
   color: #303030;
 }
 
@@ -118,8 +136,9 @@
 
 .navbarTransparentWhite li,
 .navbarTransparentBlack li {
-  transition: border-bottom 100ms linear;
+  border-top: 2px solid rgba(0, 0, 0, 0);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: border-bottom 100ms linear;
 }
 
 .navbarTransparentWhite li:hover,
@@ -147,4 +166,5 @@
   border: none;
   cursor: pointer;
   padding: 20px;
+  color: #303030;
 }

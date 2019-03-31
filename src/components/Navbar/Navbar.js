@@ -52,27 +52,20 @@ class FullBar extends React.Component {
 class NavMobileMenu extends React.Component {
   constructor(props) {
     super(props)
-    if (!this.props.backgroundColor) {
-      this.textColor = darkColor
-      this.backgroundColor = lightColor
-      return
-    }
-    this.textColor = this.props.textColor
-    this.backgroundColor = this.props.backgroundColor
+    this.className = this.props.className
   }
   render() {
     if (!this.props.show) {
-      return null
+      this.className = styles.hidden + " " + this.props.className
+    } else {
+      this.className = this.props.className
     }
     return (
-      <div
-        className={this.props.className}
-        style={{ backgroundColor: this.backgroundColor }}
-      >
+      <div className={this.className}>
         <button className={styles.closeButton} onClick={this.props.onClick}>
-          <span style={{ color: this.textColor }}>Close</span>
+          <span>Close</span>
         </button>
-        <Links textColor={this.textColor} />
+        <Links />
       </div>
     )
   }
@@ -115,7 +108,6 @@ class Navbar extends React.Component {
     } else if (this.props.type === "transparent-black") {
       this.navbarType = styles.navbarTransparentBlack
     }
-    console.log(this.navbarType)
   }
 
   render() {
