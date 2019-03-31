@@ -1,5 +1,5 @@
 import React from "react"
-import { NavbarSolid, NavbarTransparent, NavbarOpaque } from "../Navbar"
+import Navbar from "../Navbar"
 import Container from "../Container"
 import { lightColor, darkColor } from "../../styles/defaultColors"
 import { Flex, Box, Image } from "rebass"
@@ -15,16 +15,22 @@ class Layout extends React.Component {
   constructor(props) {
     super(props)
 
-    let navbar
+    let navbarType
     if (props.navbarTransparent) {
-      navbar = <NavbarTransparent textColor={props.navbarTextColor} />
+      if (props.navbarTextColor === "white") {
+        navbarType = "transparent-white"
+      } else if (props.navbarTextColor === "black") {
+        navbarType = "transparent-black"
+      } else {
+        navbarType = "transparent-white"
+      }
     } else {
-      navbar = <NavbarSolid />
+      navbarType = "solid"
     }
 
     this.state = {
-      initialNavbar: navbar,
-      navbar: navbar,
+      initialNavbarType: navbarType,
+      navbarType: navbarType,
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -41,11 +47,11 @@ class Layout extends React.Component {
   handleScroll() {
     if (window.scrollY > 40 && this.props.navbarTransparent) {
       this.setState({
-        navbar: <NavbarOpaque />,
+        navbarType: "opaque",
       })
     } else {
       this.setState({
-        navbar: this.state.initialNavbar,
+        navbarType: this.state.initialNavbarType,
       })
     }
   }
@@ -53,7 +59,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div className={styles.layout}>
-        {this.state.navbar}
+        <Navbar type={this.state.navbarType} />
         {this.props.children}
         <Footer />
       </div>
