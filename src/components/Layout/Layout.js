@@ -3,6 +3,7 @@ import { NavbarSolid, NavbarTransparent, NavbarOpaque } from "../Navbar"
 import Container from "../Container"
 import { lightColor, darkColor } from "../../styles/defaultColors"
 import { Flex, Box, Image } from "rebass"
+import styles from "./Layout.module.css"
 
 import uciLogo from "../../images/uci-logo.png"
 import phoneIcon from "../../images/phone.png"
@@ -51,7 +52,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.layout}>
         {this.state.navbar}
         {this.props.children}
         <Footer />

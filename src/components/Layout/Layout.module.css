@@ -1,0 +1,28 @@
+.layout {
+  color: #505050;
+}
+
+.layout h2,
+.layout h2 + p {
+  padding-left: 10px;
+}
+
+.layout h3,
+.layout h3 + p {
+  padding-left: 20px;
+}
+
+.layout h4,
+.layout h4 + p {
+  padding-left: 30px;
+}
+
+.layout h5,
+.layout h5 + p {
+  padding-left: 40px;
+}
+
+.layout h6,
+.layout h6 + p {
+  padding-left: 50px;
+}
