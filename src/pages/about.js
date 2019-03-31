@@ -1,10 +1,9 @@
 import React from "react"
 import { CoverLayout } from "../components/Layout"
-import { darkColor } from "../styles/defaultColors"
 import AboutCover from "../components/AboutCover"
 
 export default () => (
-  <CoverLayout navbarTextColor={darkColor} coverElement={<AboutCover />}>
+  <CoverLayout navbarTextColor="black" coverElement={<AboutCover />}>
     <h1>Delta Sigma Pi History</h1>
     <p>
       Delta Sigma Pi is a co-ed professional fraternity organized to foster the

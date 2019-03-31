@@ -1,3 +1,3 @@
-import { NavbarSolid, NavbarTransparent, NavbarOpaque } from "./Navbar"
+import Navbar from "./Navbar"
 
-export { NavbarSolid, NavbarTransparent, NavbarOpaque }
+export default Navbar
