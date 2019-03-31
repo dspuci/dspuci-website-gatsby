@@ -1,7 +1,8 @@
 import React from "react"
 import styles from "./Navbar.module.css"
-import { Link } from "gatsby"
-import { lightColor, darkColor } from "../../styles/defaultColors"
+import { Link, navigate } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 const ListLink = props => (
   <li>
@@ -25,11 +26,21 @@ const Links = () => (
 const NavTopMargin = () => <div style={{ height: 80 }} />
 
 class MinimalBar extends React.Component {
+  handleBrandButtonClick() {
+    navigate("/")
+  }
+
   render() {
     return (
       <div className={this.props.className}>
+        <button
+          className={styles.brandButton}
+          onClick={this.handleBrandButtonClick}
+        >
+          ΔΣΠ
+        </button>
         <button className={styles.menuButton} onClick={this.props.onClick}>
-          <span>Menu</span>
+          <FontAwesomeIcon icon={faBars} />
         </button>
       </div>
     )
@@ -60,7 +71,7 @@ class NavMobileMenu extends React.Component {
     return (
       <div className={this.className}>
         <button className={styles.closeButton} onClick={this.props.onClick}>
-          <span>Close</span>
+          <FontAwesomeIcon icon={faTimes} />
         </button>
         <Links />
       </div>
