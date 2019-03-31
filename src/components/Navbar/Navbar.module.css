@@ -69,14 +69,24 @@
 .navbarSolid {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   background-color: #fcfcfc;
-  color: #505050;
+  color: #303030;
   transition: background-color 100ms linear;
 }
 
 .navbarSolid a {
   text-transform: uppercase;
-  color: #505050;
+  color: #303030;
   text-decoration: none;
+}
+
+.navbarSolid li {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: border-bottom 100ms linear;
+}
+
+.navbarSolid li:hover {
+  border-bottom: 2px solid #303030;
+  transition: border-bottom 100ms linear;
 }
 
 .navbarTransparentWhite,
@@ -94,8 +104,27 @@
   color: #fcfcfc;
 }
 
+.navbarTransparentWhite li:hover {
+  border-bottom: 2px solid #fcfcfc;
+}
+
 .navbarTransparentBlack a {
-  color: #505050;
+  color: #303030;
+}
+
+.navbarTransparentBlack li:hover {
+  border-bottom: 2px solid #303030;
+}
+
+.navbarTransparentWhite li,
+.navbarTransparentBlack li {
+  transition: border-bottom 100ms linear;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.navbarTransparentWhite li:hover,
+.navbarTransparentBlack li:hover {
+  transition: border-bottom 100ms linear;
 }
 
 .menuButton {
