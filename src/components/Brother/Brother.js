@@ -21,7 +21,7 @@ class Brother extends React.Component {
         this.props.brotherInfo.First_Name.trim() +
         "_" +
         this.props.brotherInfo.Last_Name.trim(),
-      class: this.props.brotherInfo.Class.trim(),
+      subtitle: this.props.brotherInfo.Class.trim() + " class",
       linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
     }
     return (
@@ -43,7 +43,7 @@ class Brother extends React.Component {
             {brotherInfo.firstName} {brotherInfo.lastName}
           </Text>
           <Text className={styles.class} fontSize={[14, 13, 12, 11]}>
-            {brotherInfo.class} class
+            {brotherInfo.subtitle}
           </Text>
           <a
             href={brotherInfo.linkedInUrl}
@@ -61,4 +61,48 @@ class Brother extends React.Component {
   }
 }
 
-export default Brother
+class LeaderBrother extends React.Component {
+  addDefaultSrc(ev) {
+    ev.target.src = coatofarms
+  }
+
+  render() {
+    console.log("*************************")
+    console.log(this.props.name)
+    let brotherInfo = {
+      firstName: this.props.name.trim().split(" ")[0],
+      lastName: this.props.name.trim().split(" ")[1],
+      codeName:
+        this.props.name.trim().split(" ")[0] +
+        "_" +
+        this.props.name.trim().split(" ")[1],
+      subtitle: this.props.title.trim(),
+    }
+    return (
+      <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
+        <Fade>
+          <Link to="/brothers">
+            <Image
+              onError={this.addDefaultSrc}
+              className={styles.image}
+              width={175}
+              height={262.5}
+              src={withPrefix(
+                `/images/brothers/winter19/${brotherInfo.codeName}.jpg`
+              )}
+              borderRadius={8}
+            />
+          </Link>
+          <Text className={styles.name} fontSize={[18, 16, 16, 14]}>
+            {brotherInfo.firstName} {brotherInfo.lastName}
+          </Text>
+          <Text className={styles.class} fontSize={[14, 13, 12, 11]}>
+            {brotherInfo.subtitle}
+          </Text>
+        </Fade>
+      </Box>
+    )
+  }
+}
+
+export { Brother, LeaderBrother }

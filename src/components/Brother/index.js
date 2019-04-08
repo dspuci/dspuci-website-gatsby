@@ -1,3 +1,3 @@
-import Brother from "./Brother"
+import { Brother, LeaderBrother } from "./Brother"
 
-export default Brother
+export { Brother, LeaderBrother }
