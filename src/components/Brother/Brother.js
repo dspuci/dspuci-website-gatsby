@@ -4,30 +4,55 @@ import styles from "./Brother.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "gatsby"
+import { withPrefix } from "gatsby"
+import coatofarms from "../../images/coatofarms.jpg"
 
-export default props => (
-  <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
-    <Link to="/brothers">
-      <Image
-        className={styles.image}
-        width={175}
-        height={262.5}
-        src="http://www.dspuci.com/images/brothers/brothers_winter2019/farbod_rafezy.jpg"
-        borderRadius={8}
-      />
-    </Link>
-    <Text className={styles.name} fontSize={[18, 16, 16, 14]}>
-      {props.brotherInfo.name}
-    </Text>
-    <Text className={styles.class} fontSize={[14, 13, 12, 11]}>
-      {props.brotherInfo.class} class
-    </Text>
-    <a
-      href={props.brotherInfo.linkedInUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FontAwesomeIcon className={styles.linkedinIcon} icon={faLinkedin} />
-    </a>
-  </Box>
-)
+class Brother extends React.Component {
+  addDefaultSrc(ev) {
+    ev.target.src = coatofarms
+  }
+
+  render() {
+    let brotherInfo = {
+      firstName: this.props.brotherInfo.First_Name.trim(),
+      lastName: this.props.brotherInfo.Last_Name.trim(),
+      codeName:
+        this.props.brotherInfo.First_Name.trim() +
+        "_" +
+        this.props.brotherInfo.Last_Name.trim(),
+      class: this.props.brotherInfo.Class.trim(),
+      linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
+    }
+    return (
+      <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
+        <Link to="/brothers">
+          <Image
+            onError={this.addDefaultSrc}
+            className={styles.image}
+            width={175}
+            height={262.5}
+            src={withPrefix(
+              `/images/brothers/winter19/${brotherInfo.codeName}.jpg`
+            )}
+            borderRadius={8}
+          />
+        </Link>
+        <Text className={styles.name} fontSize={[18, 16, 16, 14]}>
+          {brotherInfo.firstName} {brotherInfo.lastName}
+        </Text>
+        <Text className={styles.class} fontSize={[14, 13, 12, 11]}>
+          {brotherInfo.class} class
+        </Text>
+        <a
+          href={brotherInfo.linkedInUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className={styles.linkedinIcon} icon={faLinkedin} />
+        </a>
+      </Box>
+    )
+  }
+}
+
+export default Brother
