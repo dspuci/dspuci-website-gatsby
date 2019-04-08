@@ -3,11 +3,14 @@ import { StandardLayout } from "../components/Layout"
 import { Flex } from "rebass"
 import Brother from "../components/Brother"
 import { graphql } from "gatsby"
+import { Fade } from "react-reveal"
 
 export default ({ data }) => {
   return (
     <StandardLayout>
-      <h1>Active Brothers</h1>
+      <Fade>
+        <h1>Active Brothers</h1>
+      </Fade>
       <Flex flexWrap="wrap">
         {data.allBiosSpring19XlsxFormResponses1.nodes.map(brotherInfo => (
           <Brother brotherInfo={brotherInfo} />
