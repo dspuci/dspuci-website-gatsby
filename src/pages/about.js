@@ -29,7 +29,7 @@ export default () => (
         technology start ups, to venture capitalists, to tax accountants to
         marketing managers. Our brothers do not only spread over America; there
         are Deltasigs all over the world and no matter where one may go, he or
-        she will always find a brother there with him or her.{" "}
+        she will always find a brother there with him or her.
       </p>
       <h1>Pi Sigma History</h1>
       <p>
