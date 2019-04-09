@@ -32,7 +32,7 @@ export default ({ data }) => {
             )}
             borderRadius={8}
           />
-          <Text pt={2} fontWeight="bold" fontSize={[38, 24]}>
+          <Text pt={2} fontWeight="bold" fontSize={[34, 24]}>
             {brotherInfo.firstName} {brotherInfo.lastName}
           </Text>
         </Box>
