@@ -17,6 +17,12 @@
   vertical-align: middle;
 }
 
+@media (max-width: 800px) {
+  .homeTitle {
+    padding-bottom: 100px;
+  }
+}
+
 .homeTitle h1 {
   font-size: 140px;
   font-family: "Georgia";
