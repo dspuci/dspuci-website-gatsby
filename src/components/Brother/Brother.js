@@ -17,17 +17,18 @@ class Brother extends React.Component {
     let brotherInfo = {
       firstName: this.props.brotherInfo.First_Name.trim(),
       lastName: this.props.brotherInfo.Last_Name.trim(),
-      codeName:
+      codeName: (
         this.props.brotherInfo.First_Name.trim() +
         "_" +
-        this.props.brotherInfo.Last_Name.trim(),
+        this.props.brotherInfo.Last_Name.trim()
+      ).toLowerCase(),
       subtitle: this.props.brotherInfo.Class.trim() + " class",
       linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
     }
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to="/brothers">
+          <Link to={`brothers/${brotherInfo.codeName}`}>
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}
@@ -67,21 +68,20 @@ class LeaderBrother extends React.Component {
   }
 
   render() {
-    console.log("*************************")
-    console.log(this.props.name)
     let brotherInfo = {
       firstName: this.props.name.trim().split(" ")[0],
       lastName: this.props.name.trim().split(" ")[1],
-      codeName:
+      codeName: (
         this.props.name.trim().split(" ")[0] +
         "_" +
-        this.props.name.trim().split(" ")[1],
+        this.props.name.trim().split(" ")[1]
+      ).toLowerCase(),
       subtitle: this.props.title.trim(),
     }
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to="/brothers">
+          <Link to={`brothers/${brotherInfo.codeName}`}>
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}
