@@ -8,37 +8,18 @@ import { Fade } from "react-reveal"
 class FamilyTree extends React.Component {
   render() {
     return (
-      <Box p={3} width={[1, 1 / 2, 1 / 3]} className={styles.brother}>
-        <Fade>
-          <Link to={`brothers/${brotherInfo.codeName}`}>
+      <Box p={3} width={[1, 1 / 2, 1 / 3]} className={styles.familyTree}>
+        <Link to={`/images/families/winter19/${this.props.familyName}.jpg`}>
+          <Fade>
             <Image
-              onError={this.addDefaultSrc}
               className={styles.image}
-              width={175}
-              height={262.5}
               src={withPrefix(
-                `/images/brothers/winter19/${brotherInfo.codeName}.jpg`
+                `/images/families/winter19/${this.props.familyName}.jpg`
               )}
               borderRadius={8}
             />
-          </Link>
-          <Text className={styles.name} fontSize={[18, 16, 16, 14]}>
-            {brotherInfo.firstName} {brotherInfo.lastName}
-          </Text>
-          <Text className={styles.class} fontSize={[14, 13, 12, 11]}>
-            {brotherInfo.subtitle}
-          </Text>
-          <a
-            href={brotherInfo.linkedInUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              className={styles.linkedinIcon}
-              icon={faLinkedin}
-            />
-          </a>
-        </Fade>
+          </Fade>
+        </Link>
       </Box>
     )
   }

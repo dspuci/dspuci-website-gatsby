@@ -4,6 +4,7 @@ import { Flex } from "rebass"
 import { Brother, LeaderBrother } from "../components/Brother"
 import { graphql } from "gatsby"
 import { Fade } from "react-reveal"
+import FamilyTree from "../components/FamilyTree/FamilyTree"
 
 export default ({ data }) => {
   return (
@@ -27,12 +28,21 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
-        <h1>Active Brothers</h1>
+        <h1>Our Brothers</h1>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allBiosSpring19XlsxFormResponses1.nodes.map(brotherInfo => (
           <Brother brotherInfo={brotherInfo} />
         ))}
+      </Flex>
+      <Fade>
+        <h1>Family Trees</h1>
+      </Fade>
+      <Flex flexWrap="wrap">
+        <FamilyTree familyName="huang-merchant" />
+        <FamilyTree familyName="huang-merchant" />
+        <FamilyTree familyName="huang-merchant" />
+        <FamilyTree familyName="huang-merchant" />
       </Flex>
     </StandardLayout>
   )
