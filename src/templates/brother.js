@@ -19,7 +19,11 @@ export default ({ data }) => {
     family: data.biosSpring19XlsxFormResponses1.Family.trim(),
     linkedInUrl: data.biosSpring19XlsxFormResponses1.LinkedIn_URL.trim(),
   }
-  brotherInfo.codeName = brotherInfo.firstName + "_" + brotherInfo.lastName
+  brotherInfo.codeName = (
+    brotherInfo.firstName +
+    "_" +
+    brotherInfo.lastName
+  ).toLowerCase()
 
   return (
     <StandardLayout>

@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/public`,
+  pathPrefix: `/dspuci-website-gatsby`,
   siteMetadata: {
     title: `Delta Sigma Pi | Pi Sigma`,
     siteUrl: `https://www.dspuci.com`,
