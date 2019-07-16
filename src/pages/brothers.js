@@ -39,10 +39,9 @@ export default ({ data }) => {
         <h1>Family Trees</h1>
       </Fade>
       <Flex flexWrap="wrap">
-        <FamilyTree familyName="huang-merchant" />
-        <FamilyTree familyName="huang-merchant" />
-        <FamilyTree familyName="huang-merchant" />
-        <FamilyTree familyName="huang-merchant" />
+        {data.allFile.nodes.map(family => (
+          <FamilyTree familyName={family.name} />
+        ))}
       </Flex>
     </StandardLayout>
   )
@@ -68,6 +67,15 @@ export const query = graphql`
         Last_Name
         Class
         LinkedIn_URL
+      }
+    }
+
+    allFile(
+      filter: { sourceInstanceName: { eq: "families" } }
+      sort: { fields: name }
+    ) {
+      nodes {
+        name
       }
     }
   }
