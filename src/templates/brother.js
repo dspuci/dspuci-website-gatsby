@@ -44,7 +44,7 @@ export default ({ data }) => {
           <ul>
             <li>Year: {brotherInfo.year}</li>
             <li>Major: {brotherInfo.majors_and_minors}</li>
-            <li>Pledge Class: {brotherInfo.class} Pledge Class</li>
+            <li>Pledge Class: {brotherInfo.class}</li>
             <li>Family: {brotherInfo.family}</li>
             <li>Hometown: {brotherInfo.hometown}</li>
             <li>Industry of Interest: {brotherInfo.industry}</li>
