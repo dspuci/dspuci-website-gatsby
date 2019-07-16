@@ -9,7 +9,7 @@ class FamilyTree extends React.Component {
   render() {
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3]}>
-        <Link to={`/images/families/winter19/${this.props.familyName}.jpg`}>
+        <a href={`/images/families/winter19/${this.props.familyName}.jpg`}>
           <Fade>
             <Image
               className={styles.image}
@@ -19,7 +19,7 @@ class FamilyTree extends React.Component {
               borderRadius={8}
             />
           </Fade>
-        </Link>
+        </a>
       </Box>
     )
   }
