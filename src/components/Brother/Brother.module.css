@@ -1,0 +1,25 @@
+.brother {
+  text-align: center;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.class {
+  text-transform: lowercase;
+  font-style: italic;
+  color: #707070;
+}
+
+.linkedinIcon {
+  color: #c0c0c0;
+}
+
+.linkedinIcon:hover {
+  color: #a0a0a0;
+}

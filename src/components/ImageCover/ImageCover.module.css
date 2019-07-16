@@ -1,0 +1,32 @@
+.imageCover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 70vh;
+  color: black;
+  display: table;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .imageCover {
+    background-attachment: scroll;
+  }
+}
+
+.coverTitleContainer {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.coverTitle {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
