@@ -81,7 +81,7 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
-          albumName: node.name,
+          // albumName: node.name,
           slug: node.fields.slug,
         },
       })
