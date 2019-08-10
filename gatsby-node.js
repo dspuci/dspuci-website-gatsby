@@ -17,7 +17,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     node.sourceInstanceName === "gallery" &&
     node.internal.type === "Directory"
   ) {
-    const slug = node.name.split(" ").join("-")
+    const slug = node.name
     createNodeField({
       node,
       name: `slug`,
@@ -27,7 +27,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     node.sourceInstanceName === "gallery" &&
     node.internal.type === "File"
   ) {
-    const slug = node.relativePath.split(" ").join("-")
+    const slug = node.relativePath
     createNodeField({
       node,
       name: `slug`,
