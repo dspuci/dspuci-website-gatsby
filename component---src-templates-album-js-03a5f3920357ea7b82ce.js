@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{191:function(e,n,a){"use strict";a.r(n),a.d(n,"query",function(){return o});var t=a(0),r=a.n(t),c=a(198),u=a(202),i=a(199);n.default=function(e){var n=e.data;return r.a.createElement(u.b,null,n.images.nodes.map(function(e){return r.a.createElement(c.Image,{src:Object(i.c)("/images/gallery/"+e.relativePath)})}))};var o="262865083"}}]);
+//# sourceMappingURL=component---src-templates-album-js-03a5f3920357ea7b82ce.js.map
