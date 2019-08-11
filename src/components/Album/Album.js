@@ -1,23 +1,35 @@
 import React from "react"
-import { Box, Text, Image } from "rebass"
 import styles from "./Album.module.css"
 import { withPrefix } from "gatsby"
-import { Fade } from "react-reveal"
 
 class Album extends React.Component {
+  goToAlbum() {}
+
   render() {
+    console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&")
+    console.log(withPrefix(`/images/gallery/${this.props.previewImagePath}`))
+    console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&")
+
     return (
-      <Box p={3} width={[1, 1 / 2, 1 / 3]}>
-        <a href={withPrefix(`/gallery/albums/${this.props.albumName}`)}>
-          <Fade>
-            <Image
-              className={styles.image}
-              src={withPrefix(`/images/gallery/${this.props.previewImagePath}`)}
-            />
-            <Text>{this.props.albumName}</Text>
-          </Fade>
-        </a>
-      </Box>
+      <div
+        onClick={() =>
+          window.open(
+            withPrefix(`/gallery/albums/${this.props.albumName}`),
+            "_self"
+          )
+        }
+        className={styles.albumCover}
+        style={{
+          backgroundImage:
+            "url(" +
+            withPrefix(`/images/gallery/${this.props.previewImagePath}`)
+              .split(" ")
+              .join("%20") +
+            ")",
+        }}
+      >
+        <div className={styles.albumName}>{this.props.albumName}</div>
+      </div>
     )
   }
 }

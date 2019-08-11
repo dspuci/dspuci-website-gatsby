@@ -3,18 +3,19 @@ import React from "react"
 import { Flex } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import Album from "../components/Album/Album"
+import styles from "./gallery.module.css"
 
 export default ({ data }) => (
   <StandardLayout>
     <h1>Gallery</h1>
-    <Flex flexWrap="wrap">
+    <div className={styles.grid}>
       {data.albumPreviews.group.map(albumPreview => (
         <Album
           albumName={albumPreview.nodes[0].albumName}
           previewImagePath={albumPreview.nodes[0].previewImagePath}
         />
       ))}
-    </Flex>
+    </div>
   </StandardLayout>
 )
 

@@ -28,7 +28,7 @@
     "react-reveal": "^1.2.2",
     "react-transition-group": "^2.9.0",
     "react-typography": "^0.16.19",
-    "rebass": "^3.2.2",
+    "rebass": "^4.0.2",
     "styled-components": "^4.3.2",
     "typography": "^0.16.19"
   }
