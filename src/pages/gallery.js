@@ -1,6 +1,5 @@
 import { graphql } from "gatsby"
 import React from "react"
-import { Flex } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import Album from "../components/Album/Album"
 import styles from "./gallery.module.css"
