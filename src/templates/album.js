@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { Image } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import { withPrefix } from "gatsby"
@@ -7,9 +7,21 @@ import { withPrefix } from "gatsby"
 export default ({ data }) => {
   return (
     <StandardLayout>
-      {data.images.nodes.map(node => (
-        <Image src={withPrefix(`/images/gallery/${node.relativePath}`)} />
-      ))}
+      <div style={{ textAlign: "center" }}>
+        {data.images.nodes.map(node => (
+          <a href={withPrefix(`/images/gallery/${node.relativePath}`)}>
+            <Image
+              style={{
+                height: "200px",
+                width: "auto",
+                marginLeft: "4px",
+                marginRight: "4px",
+              }}
+              src={withPrefix(`/images/gallery/${node.relativePath}`)}
+            />
+          </a>
+        ))}
+      </div>
     </StandardLayout>
   )
 }

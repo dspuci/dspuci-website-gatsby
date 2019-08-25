@@ -3,13 +3,7 @@ import styles from "./Album.module.css"
 import { withPrefix } from "gatsby"
 
 class Album extends React.Component {
-  goToAlbum() {}
-
   render() {
-    console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&")
-    console.log(withPrefix(`/images/gallery/${this.props.previewImagePath}`))
-    console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&")
-
     return (
       <div
         onClick={() =>
