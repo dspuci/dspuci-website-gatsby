@@ -13,6 +13,26 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
+  } else if (
+    node.sourceInstanceName === "gallery" &&
+    node.internal.type === "Directory"
+  ) {
+    const slug = node.name
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  } else if (
+    node.sourceInstanceName === "gallery" &&
+    node.internal.type === "File"
+  ) {
+    const slug = node.relativePath
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
   }
 }
 
@@ -20,7 +40,20 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allBiosSpring19XlsxFormResponses1 {
+      spring19Bios: allBiosSpring19XlsxFormResponses1 {
+        nodes {
+          fields {
+            slug
+          }
+        }
+      }
+
+      albums: allDirectory(
+        filter: {
+          sourceInstanceName: { eq: "gallery" }
+          name: { ne: "gallery" }
+        }
+      ) {
         nodes {
           fields {
             slug
@@ -29,13 +62,26 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    result.data.allBiosSpring19XlsxFormResponses1.nodes.forEach(node => {
+    result.data.spring19Bios.nodes.forEach(node => {
       createPage({
         path: "brothers/" + node.fields.slug,
         component: path.resolve(`./src/templates/brother.js`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
+          slug: node.fields.slug,
+        },
+      })
+    })
+
+    result.data.albums.nodes.forEach(node => {
+      createPage({
+        path: "gallery/albums/" + node.fields.slug,
+        component: path.resolve(`./src/templates/album.js`),
+        context: {
+          // Data passed to context is available
+          // in page queries as GraphQL variables.
+          // albumName: node.name,
           slug: node.fields.slug,
         },
       })

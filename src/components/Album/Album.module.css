@@ -1,0 +1,30 @@
+.albumCover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.albumName {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-size: 26px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  line-height: 30px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  ); /* Standard syntax (must be last) */
+  color: white;
+}

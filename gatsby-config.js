@@ -26,6 +26,13 @@ module.exports = {
         path: `${__dirname}/static/images/families/winter19/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/static/images/gallery/`,
+      },
+    },
     `gatsby-transformer-excel`,
   ],
 }

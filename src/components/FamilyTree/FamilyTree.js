@@ -1,7 +1,6 @@
 import React from "react"
-import { Box, Image, Text } from "rebass"
+import { Box, Image } from "rebass"
 import styles from "./FamilyTree.module.css"
-import { Link } from "gatsby"
 import { withPrefix } from "gatsby"
 import { Fade } from "react-reveal"
 
