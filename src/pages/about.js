@@ -1,13 +1,197 @@
 import React from "react"
+import { Flex, Box } from "rebass"
 import { CoverLayout } from "../components/Layout"
 import AboutCover from "../components/AboutCover"
+import ImageTextRow from "../components/ImageTextRow"
 import { Fade } from "react-reveal"
+import { Doughnut } from "react-chartjs-2"
+import HoverShadowBox from "../components/HoverShadowBox"
+
+import brotherhoodImage from "../images/brotherhood.jpg"
+import professionalismImage from "../images/professionalism.jpg"
+import communityImage from "../images/community.jpg"
+
+const genderData = {
+  labels: ["Male", "Female"],
+  datasets: [
+    {
+      data: [29, 22],
+      backgroundColor: ["#349beb", "#cf60d1"],
+    },
+  ],
+}
+
+const yearData = {
+  labels: ["2nd", "3rd", "4th"],
+  datasets: [
+    {
+      data: [12, 18, 22],
+      backgroundColor: ["#8223c2", "#c2a223", "#63c223"],
+    },
+  ],
+}
+
+const majorData = {
+  legend: {
+    display: false,
+  },
+  labels: ["Business Admin", "Business Econ", "Computer Science", "BIM"],
+  datasets: [
+    {
+      data: [25, 13, 8, 2],
+      backgroundColor: ["#d6406d", "#6dd640", "#409ad6", "#d67440"],
+    },
+  ],
+}
 
 export default () => (
   <CoverLayout navbarTextColor="black" coverElement={<AboutCover />}>
     <Fade bottom distance="40px">
-      <h1>Delta Sigma Pi History</h1>
-      <p>
+      <Flex
+        sx={{
+          marginTop: [20, 30, 40],
+          marginBottom: 90,
+        }}
+        flexWrap="wrap"
+      >
+        <Box width={[1, 1, 1 / 3]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>51</div>
+          <div style={{ font: "22px Heebo" }}>Active Brothers</div>
+        </Box>
+        <Box width={[1, 1, 1 / 3]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>280+</div>
+          <div style={{ font: "22px Heebo" }}>Alumni Network</div>
+        </Box>
+        <Box width={[1, 1, 1 / 3]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>100%</div>
+          <div style={{ font: "22px Heebo" }}>Full Time Rate</div>
+        </Box>
+      </Flex>
+
+      <Box
+        sx={{
+          textAlign: "center",
+          backgroundColor: "purple",
+          color: "white",
+          marginBottom: [50, 60, 70],
+          fontSize: 36,
+          padding: 30,
+        }}
+      >
+        <Box width={[1]}>UC IRVINE'S</Box>
+        <Box width={[1]} style={{ fontFamily: "Heebo", fontWeight: "bold" }}>
+          LARGEST AND OLDEST
+        </Box>
+        <Box width={[1]}>BUSINESS FRATERNITY</Box>
+      </Box>
+
+      <Flex
+        sx={{
+          marginBottom: [60, 80, 90],
+        }}
+        flexWrap="wrap"
+      >
+        <Box
+          width={[1, 1, 1 / 3]}
+          sx={{ textAlign: "center", padding: [20, 0, 0] }}
+        >
+          <Doughnut
+            height={null}
+            width={null}
+            legend={{ display: false }}
+            options={{
+              title: {
+                display: true,
+                text: "Gender",
+                fontSize: 22,
+              },
+              aspectRatio: 1.5,
+            }}
+            data={genderData}
+          />
+        </Box>
+        <Box
+          width={[1, 1, 1 / 3]}
+          sx={{ textAlign: "center", padding: [20, 0, 0] }}
+        >
+          <Doughnut
+            height={null}
+            width={null}
+            legend={{ display: false }}
+            options={{
+              title: {
+                display: true,
+                text: "Year",
+                fontSize: 22,
+              },
+              aspectRatio: 1.5,
+            }}
+            data={yearData}
+          />
+        </Box>
+        <Box
+          width={[1, 1, 1 / 3]}
+          sx={{ textAlign: "center", padding: [20, 0, 0] }}
+        >
+          <Doughnut
+            height={null}
+            width={null}
+            legend={{ display: false }}
+            options={{
+              title: {
+                display: true,
+                text: "Major",
+                fontSize: 22,
+              },
+              aspectRatio: 1.5,
+            }}
+            data={majorData}
+          />
+        </Box>
+      </Flex>
+
+      <ImageTextRow
+        title="Brotherhood"
+        imagePosition="right"
+        imageSrc={brotherhoodImage}
+      >
+        Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes ut
+        vix. Cu tamquam vulputate reprimique sea, vis volumus albucius appetere
+        at. Audire facilisis no sit, in diceret conclusionemque eum. In scripta
+        ceteros mei, tota libris accusamus ea duo.
+      </ImageTextRow>
+      <ImageTextRow
+        title="Professionalism"
+        imagePosition="left"
+        imageSrc={professionalismImage}
+      >
+        Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes ut
+        vix. Cu tamquam vulputate reprimique sea, vis volumus albucius appetere
+        at. Audire facilisis no sit, in diceret conclusionemque eum. In scripta
+        ceteros mei, tota libris accusamus ea duo.
+      </ImageTextRow>
+      <ImageTextRow
+        title="Community"
+        imagePosition="right"
+        imageSrc={communityImage}
+      >
+        Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes ut
+        vix. Cu tamquam vulputate reprimique sea, vis volumus albucius appetere
+        at. Audire facilisis no sit, in diceret conclusionemque eum. In scripta
+        ceteros mei, tota libris accusamus ea duo.
+      </ImageTextRow>
+
+      <Flex flexWrap="wrap" marginBottom={80}>
+        <HoverShadowBox title="Marketing" />
+        <HoverShadowBox title="Design" />
+        <HoverShadowBox title="Accounting" />
+        <HoverShadowBox title="Tech" />
+        <HoverShadowBox title="Consulting" />
+        <HoverShadowBox title="Finance" />
+      </Flex>
+
+      <h1 style={{ marginTop: 50, fontWeight: 500 }}>Delta Sigma Pi History</h1>
+      <p style={{ color: "#999", lineHeight: 2.2 }}>
         Delta Sigma Pi is a co-ed professional fraternity organized to foster
         the study of business in universities; to encourage scholarship, social
         activity and the association of students for their mutual advancement by
@@ -31,8 +215,8 @@ export default () => (
         are Deltasigs all over the world and no matter where one may go, he or
         she will always find a brother there with him or her.
       </p>
-      <h1>Pi Sigma History</h1>
-      <p>
+      <h1 style={{ marginTop: 90, fontWeight: 500 }}>Pi Sigma History</h1>
+      <p style={{ color: "#999", lineHeight: 2.2 }}>
         The Pi Sigma Chapter of the International Fraternity of Delta Sigma Pi
         is located at the University of California, Irvine, and was founded on
         May 31, 2008. The Pi Sigma Chapter began because Adam Su and Myles

@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import { StandardLayout } from "../components/Layout"
-import Album from "../components/Album/Album"
+import Album from "../components/Album"
 import styles from "./gallery.module.css"
 
 export default ({ data }) => (
