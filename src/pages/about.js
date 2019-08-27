@@ -11,6 +11,15 @@ import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
 import communityImage from "../images/community.jpg"
 
+import {
+  faBullhorn,
+  faPencilRuler,
+  faCalculator,
+  faMicrochip,
+  faLightbulb,
+  faPiggyBank,
+} from "@fortawesome/free-solid-svg-icons"
+
 const genderData = {
   labels: ["Male", "Female"],
   datasets: [
@@ -181,13 +190,15 @@ export default () => (
         ceteros mei, tota libris accusamus ea duo.
       </ImageTextRow>
 
+      {/* <h1 style={{ textAlign: "center" }}>Areas of Focus</h1> */}
+      <h1 style={{ marginTop: 50, fontWeight: 500 }}>Areas of Focus</h1>
       <Flex flexWrap="wrap" marginBottom={80}>
-        <HoverShadowBox title="Marketing" />
-        <HoverShadowBox title="Design" />
-        <HoverShadowBox title="Accounting" />
-        <HoverShadowBox title="Tech" />
-        <HoverShadowBox title="Consulting" />
-        <HoverShadowBox title="Finance" />
+        <HoverShadowBox title="Marketing" icon={faBullhorn} />
+        <HoverShadowBox title="Design" icon={faPencilRuler} />
+        <HoverShadowBox title="Accounting" icon={faCalculator} />
+        <HoverShadowBox title="Tech" icon={faMicrochip} />
+        <HoverShadowBox title="Consulting" icon={faLightbulb} />
+        <HoverShadowBox title="Finance" icon={faPiggyBank} />
       </Flex>
 
       <h1 style={{ marginTop: 50, fontWeight: 500 }}>Delta Sigma Pi History</h1>
