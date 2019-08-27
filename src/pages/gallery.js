@@ -1,12 +1,15 @@
-import { graphql } from "gatsby"
 import React from "react"
+import { graphql } from "gatsby"
+
 import { StandardLayout } from "../components/Layout"
 import Album from "../components/Album"
+import CenterHeader from "../components/CenterHeader"
+
 import styles from "./gallery.module.css"
 
 export default ({ data }) => (
   <StandardLayout>
-    <h1>Gallery</h1>
+    <CenterHeader>Gallery</CenterHeader>
     <div className={styles.grid}>
       {data.albumPreviews.group.map(albumPreview => (
         <Album

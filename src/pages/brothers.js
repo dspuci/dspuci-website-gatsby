@@ -1,9 +1,10 @@
 import React from "react"
-import { StandardLayout } from "../components/Layout"
 import { Flex } from "rebass"
-import { Brother, LeaderBrother } from "../components/Brother"
 import { graphql } from "gatsby"
 import { Fade } from "react-reveal"
+
+import { StandardLayout } from "../components/Layout"
+import { Brother, LeaderBrother } from "../components/Brother"
 import FamilyTree from "../components/FamilyTree/FamilyTree"
 import CenterHeader from "../components/CenterHeader"
 

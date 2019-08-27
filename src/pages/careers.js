@@ -1,4 +1,5 @@
 import React from "react"
+
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 

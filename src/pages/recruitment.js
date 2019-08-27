@@ -1,9 +1,10 @@
 import React from "react"
+import { Text, Image } from "rebass"
+import { Fade } from "react-reveal"
+
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 import ImageTextRow from "../components/ImageTextRow"
-import { Text, Image } from "rebass"
-import { Fade } from "react-reveal"
 import CenterHeader from "../components/CenterHeader"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
@@ -27,8 +28,7 @@ export default () => (
         sx={{
           width: "100%",
           maxWidth: 500,
-          margin: "50px auto",
-          marginBottom: 90,
+          margin: "90px auto",
           textAlign: "center",
         }}
       >
