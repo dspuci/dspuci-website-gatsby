@@ -1,10 +1,9 @@
 .hover_shadow_box {
-  padding: 50px;
   transition: 0.5s;
 }
 
 .hover_shadow_box h2 {
-  padding-top: 20px;
+  margin-top: 20px;
   font-weight: 500;
   transition: 0.5s;
 }

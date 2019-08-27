@@ -11,6 +11,7 @@ class HoverShadowBox extends React.Component {
           className={styles.hover_shadow_box}
           sx={{
             margin: [0, 10],
+            padding: [20, 30, 40, 50],
           }}
         >
           <FontAwesomeIcon icon={this.props.icon} className={styles.icon} />

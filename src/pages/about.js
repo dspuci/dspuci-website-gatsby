@@ -21,38 +21,7 @@ import {
   faPiggyBank,
 } from "@fortawesome/free-solid-svg-icons"
 
-const genderData = {
-  labels: ["Male", "Female"],
-  datasets: [
-    {
-      data: [29, 22],
-      backgroundColor: ["#349beb", "#cf60d1"],
-    },
-  ],
-}
-
-const yearData = {
-  labels: ["2nd", "3rd", "4th"],
-  datasets: [
-    {
-      data: [12, 18, 22],
-      backgroundColor: ["#8223c2", "#c2a223", "#63c223"],
-    },
-  ],
-}
-
-const majorData = {
-  legend: {
-    display: false,
-  },
-  labels: ["Business Admin", "Business Econ", "Computer Science", "BIM"],
-  datasets: [
-    {
-      data: [25, 13, 8, 2],
-      backgroundColor: ["#d6406d", "#6dd640", "#409ad6", "#d67440"],
-    },
-  ],
-}
+import { genderData, yearData, majorData } from "../data/chapter_stats/fall19"
 
 export default () => (
   <CoverLayout navbarTextColor="black" coverElement={<AboutCover />}>
@@ -98,62 +67,60 @@ export default () => (
       <Flex
         sx={{
           marginBottom: [60, 80, 90],
+          justifyContent: "center",
         }}
         flexWrap="wrap"
       >
         <Box
-          width={[1, 1, 1 / 3]}
+          width={[1, 1 / 2, 1 / 3]}
           sx={{ textAlign: "center", padding: [20, 0, 0] }}
         >
           <Doughnut
-            height={null}
-            width={null}
-            legend={{ display: false }}
+            height={200}
+            width={220}
+            legend={{ position: "bottom" }}
             options={{
               title: {
                 display: true,
                 text: "Gender",
                 fontSize: 22,
               },
-              aspectRatio: 1.5,
             }}
             data={genderData}
           />
         </Box>
         <Box
-          width={[1, 1, 1 / 3]}
+          width={[1, 1 / 2, 1 / 3]}
           sx={{ textAlign: "center", padding: [20, 0, 0] }}
         >
           <Doughnut
-            height={null}
-            width={null}
-            legend={{ display: false }}
+            height={200}
+            width={220}
+            legend={{ position: "bottom" }}
             options={{
               title: {
                 display: true,
                 text: "Year",
                 fontSize: 22,
               },
-              aspectRatio: 1.5,
             }}
             data={yearData}
           />
         </Box>
         <Box
-          width={[1, 1, 1 / 3]}
+          width={[1, 1 / 2, 1 / 3]}
           sx={{ textAlign: "center", padding: [20, 0, 0] }}
         >
           <Doughnut
-            height={null}
-            width={null}
-            legend={{ display: false }}
+            height={220}
+            width={220}
+            legend={{ position: "bottom" }}
             options={{
               title: {
                 display: true,
                 text: "Major",
                 fontSize: 22,
               },
-              aspectRatio: 1.5,
             }}
             data={majorData}
           />
