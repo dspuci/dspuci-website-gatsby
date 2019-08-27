@@ -3,7 +3,7 @@ const genderData = {
   datasets: [
     {
       data: [29, 22],
-      backgroundColor: ["#349beb", "#cf60d1"],
+      backgroundColor: ["rgb(158, 207, 230)", "rgb(151, 129, 213)"],
     },
   ],
 }
@@ -13,7 +13,11 @@ const yearData = {
   datasets: [
     {
       data: [12, 18, 22],
-      backgroundColor: ["#8223c2", "#c2a223", "#63c223"],
+      backgroundColor: [
+        "rgb(112, 226, 113)",
+        "rgb(51, 124, 218)",
+        "rgb(79, 39, 153)",
+      ],
     },
   ],
 }
@@ -26,7 +30,12 @@ const majorData = {
   datasets: [
     {
       data: [25, 13, 8, 2],
-      backgroundColor: ["#d6406d", "#6dd640", "#409ad6", "#d67440"],
+      backgroundColor: [
+        "rgb(36, 49, 72)",
+        "rgb(218, 64, 69)",
+        "rgb(227, 103, 49)",
+        "rgb(251, 205, 73)",
+      ],
     },
   ],
 }

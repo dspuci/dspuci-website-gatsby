@@ -7,6 +7,7 @@ import { Fade } from "react-reveal"
 import { Doughnut } from "react-chartjs-2"
 import HoverShadowBox from "../components/HoverShadowBox"
 import CenterHeader from "../components/CenterHeader"
+import ResponsiveDoughnut from "../components/ResponsiveDoughnut"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
@@ -75,60 +76,9 @@ export default () => (
         }}
         flexWrap="wrap"
       >
-        <Box
-          width={[1, 1 / 2, 1 / 3]}
-          sx={{ textAlign: "center", padding: [20, 0, 0] }}
-        >
-          <Doughnut
-            height={200}
-            width={220}
-            legend={{ position: "bottom" }}
-            options={{
-              title: {
-                display: true,
-                text: "Gender",
-                fontSize: 22,
-              },
-            }}
-            data={genderData}
-          />
-        </Box>
-        <Box
-          width={[1, 1 / 2, 1 / 3]}
-          sx={{ textAlign: "center", padding: [20, 0, 0] }}
-        >
-          <Doughnut
-            height={200}
-            width={220}
-            legend={{ position: "bottom" }}
-            options={{
-              title: {
-                display: true,
-                text: "Year",
-                fontSize: 22,
-              },
-            }}
-            data={yearData}
-          />
-        </Box>
-        <Box
-          width={[1, 1 / 2, 1 / 3]}
-          sx={{ textAlign: "center", padding: [20, 0, 0] }}
-        >
-          <Doughnut
-            height={215}
-            width={220}
-            legend={{ position: "bottom" }}
-            options={{
-              title: {
-                display: true,
-                text: "Major",
-                fontSize: 22,
-              },
-            }}
-            data={majorData}
-          />
-        </Box>
+        <ResponsiveDoughnut data={genderData} legendLines={1} text="Gender" />
+        <ResponsiveDoughnut data={yearData} legendLines={1} text="Year" />
+        <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
       </Flex>
 
       <CenterHeader>Our Values</CenterHeader>
