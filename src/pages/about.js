@@ -6,6 +6,7 @@ import ImageTextRow from "../components/ImageTextRow"
 import { Fade } from "react-reveal"
 import { Doughnut } from "react-chartjs-2"
 import HoverShadowBox from "../components/HoverShadowBox"
+import CenterHeader from "../components/CenterHeader"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
@@ -190,8 +191,7 @@ export default () => (
         ceteros mei, tota libris accusamus ea duo.
       </ImageTextRow>
 
-      {/* <h1 style={{ textAlign: "center" }}>Areas of Focus</h1> */}
-      <h1 style={{ marginTop: 50, fontWeight: 500 }}>Areas of Focus</h1>
+      <CenterHeader>Areas of Focus</CenterHeader>
       <Flex flexWrap="wrap" marginBottom={80}>
         <HoverShadowBox title="Marketing" icon={faBullhorn} />
         <HoverShadowBox title="Design" icon={faPencilRuler} />
@@ -201,7 +201,7 @@ export default () => (
         <HoverShadowBox title="Finance" icon={faPiggyBank} />
       </Flex>
 
-      <h1 style={{ marginTop: 50, fontWeight: 500 }}>Delta Sigma Pi History</h1>
+      <CenterHeader>Delta Sigma Pi History</CenterHeader>
       <p style={{ color: "#999", lineHeight: 2.2 }}>
         Delta Sigma Pi is a co-ed professional fraternity organized to foster
         the study of business in universities; to encourage scholarship, social
@@ -226,7 +226,8 @@ export default () => (
         are Deltasigs all over the world and no matter where one may go, he or
         she will always find a brother there with him or her.
       </p>
-      <h1 style={{ marginTop: 90, fontWeight: 500 }}>Pi Sigma History</h1>
+
+      <CenterHeader>Pi Sigma History</CenterHeader>
       <p style={{ color: "#999", lineHeight: 2.2 }}>
         The Pi Sigma Chapter of the International Fraternity of Delta Sigma Pi
         is located at the University of California, Irvine, and was founded on
