@@ -4,10 +4,10 @@ import { CoverLayout } from "../components/Layout"
 import AboutCover from "../components/AboutCover"
 import ImageTextRow from "../components/ImageTextRow"
 import { Fade } from "react-reveal"
-import { Doughnut } from "react-chartjs-2"
 import HoverShadowBox from "../components/HoverShadowBox"
 import CenterHeader from "../components/CenterHeader"
 import ResponsiveDoughnut from "../components/ResponsiveDoughnut"
+import Section from "../components/Section"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
@@ -27,14 +27,7 @@ import { genderData, yearData, majorData } from "../data/chapter_stats/fall19"
 export default () => (
   <CoverLayout navbarTextColor="black" coverElement={<AboutCover />}>
     <Fade bottom distance="40px">
-      <Flex
-        sx={{
-          marginTop: 50,
-          marginBottom: 50,
-          justifyContent: "center",
-        }}
-        flexWrap="wrap"
-      >
+      <Section>
         <Box width={[1, 1 / 2, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>51</div>
           <div style={{ font: "22px Heebo" }}>Active Brothers</div>
@@ -47,16 +40,13 @@ export default () => (
           <div style={{ font: "bold 80px Heebo" }}>100%</div>
           <div style={{ font: "22px Heebo" }}>Full Time Rate</div>
         </Box>
-      </Flex>
+      </Section>
 
-      <Flex
-        flexWrap="wrap"
+      <Section
         sx={{
           textAlign: "center",
           backgroundColor: "purple",
           color: "white",
-          marginTop: 50,
-          marginBottom: 50,
           fontSize: 36,
           padding: 30,
         }}
@@ -66,20 +56,13 @@ export default () => (
           LARGEST AND OLDEST
         </Box>
         <Box width={1}>BUSINESS FRATERNITY</Box>
-      </Flex>
+      </Section>
 
-      <Flex
-        sx={{
-          marginTop: 50,
-          marginBottom: 50,
-          justifyContent: "center",
-        }}
-        flexWrap="wrap"
-      >
+      <Section>
         <ResponsiveDoughnut data={genderData} legendLines={1} text="Gender" />
         <ResponsiveDoughnut data={yearData} legendLines={1} text="Year" />
         <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
-      </Flex>
+      </Section>
 
       <CenterHeader>Our Values</CenterHeader>
       <ImageTextRow
@@ -114,7 +97,7 @@ export default () => (
       </ImageTextRow>
 
       <CenterHeader>Areas of Focus</CenterHeader>
-      <Flex flexWrap="wrap" marginTop={50} marginBottom={50}>
+      <Flex flexWrap="wrap">
         <HoverShadowBox title="Marketing" icon={faBullhorn} />
         <HoverShadowBox title="Design" icon={faPencilRuler} />
         <HoverShadowBox title="Accounting" icon={faCalculator} />
