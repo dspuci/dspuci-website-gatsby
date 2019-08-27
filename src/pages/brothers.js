@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <StandardLayout>
       <Fade>
-        <CenterHeader marginTop={20}>Executive Committee</CenterHeader>
+        <CenterHeader>Executive Committee</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allLeadershipSpring19XlsxSheet1.nodes.map(brotherInfo => (
@@ -20,7 +20,7 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
-        <CenterHeader marginTop={20}>Directors</CenterHeader>
+        <CenterHeader>Directors</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allDirectorsSpring19XlsxSheet1.nodes.map(brotherInfo => (
@@ -29,7 +29,7 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
-        <CenterHeader marginTop={20}>Our Brothers</CenterHeader>
+        <CenterHeader>Our Brothers</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allBiosSpring19XlsxFormResponses1.nodes.map(brotherInfo => (
@@ -37,7 +37,7 @@ export default ({ data }) => {
         ))}
       </Flex>
       <Fade>
-        <h1>Family Trees</h1>
+        <CenterHeader>Family Trees</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allFile.nodes.map(family => (

@@ -28,45 +28,49 @@ export default () => (
     <Fade bottom distance="40px">
       <Flex
         sx={{
-          marginTop: [20, 30, 40],
-          marginBottom: 90,
+          marginTop: 50,
+          marginBottom: 50,
+          justifyContent: "center",
         }}
         flexWrap="wrap"
       >
-        <Box width={[1, 1, 1 / 3]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 2, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>51</div>
           <div style={{ font: "22px Heebo" }}>Active Brothers</div>
         </Box>
-        <Box width={[1, 1, 1 / 3]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 2, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>280+</div>
           <div style={{ font: "22px Heebo" }}>Alumni Network</div>
         </Box>
-        <Box width={[1, 1, 1 / 3]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 2, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>100%</div>
           <div style={{ font: "22px Heebo" }}>Full Time Rate</div>
         </Box>
       </Flex>
 
-      <Box
+      <Flex
+        flexWrap="wrap"
         sx={{
           textAlign: "center",
           backgroundColor: "purple",
           color: "white",
-          marginBottom: [50, 60, 70],
+          marginTop: 50,
+          marginBottom: 50,
           fontSize: 36,
           padding: 30,
         }}
       >
-        <Box width={[1]}>UC IRVINE'S</Box>
-        <Box width={[1]} style={{ fontFamily: "Heebo", fontWeight: "bold" }}>
+        <Box width={1}>UC IRVINE'S</Box>
+        <Box width={1} style={{ fontFamily: "Heebo", fontWeight: "bold" }}>
           LARGEST AND OLDEST
         </Box>
-        <Box width={[1]}>BUSINESS FRATERNITY</Box>
-      </Box>
+        <Box width={1}>BUSINESS FRATERNITY</Box>
+      </Flex>
 
       <Flex
         sx={{
-          marginBottom: [60, 80, 90],
+          marginTop: 50,
+          marginBottom: 50,
           justifyContent: "center",
         }}
         flexWrap="wrap"
@@ -112,7 +116,7 @@ export default () => (
           sx={{ textAlign: "center", padding: [20, 0, 0] }}
         >
           <Doughnut
-            height={220}
+            height={215}
             width={220}
             legend={{ position: "bottom" }}
             options={{
@@ -127,7 +131,7 @@ export default () => (
         </Box>
       </Flex>
 
-      <CenterHeader marginBottom={70}>Our Values</CenterHeader>
+      <CenterHeader>Our Values</CenterHeader>
       <ImageTextRow
         title="Brotherhood"
         imagePosition="right"
@@ -160,7 +164,7 @@ export default () => (
       </ImageTextRow>
 
       <CenterHeader>Areas of Focus</CenterHeader>
-      <Flex flexWrap="wrap" marginBottom={80}>
+      <Flex flexWrap="wrap" marginTop={50} marginBottom={50}>
         <HoverShadowBox title="Marketing" icon={faBullhorn} />
         <HoverShadowBox title="Design" icon={faPencilRuler} />
         <HoverShadowBox title="Accounting" icon={faCalculator} />

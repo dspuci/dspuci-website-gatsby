@@ -96,7 +96,7 @@ const Footer = props => (
         fontSize={16}
         flexWrap="wrap"
         justifyContent="center"
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "center", paddingTop: 40 }}
       >
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
           <Image src={phoneIcon} width={20} />
