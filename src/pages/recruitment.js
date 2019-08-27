@@ -6,11 +6,24 @@ import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 import ImageTextRow from "../components/ImageTextRow"
 import CenterHeader from "../components/CenterHeader"
+import HoverShadowBox from "../components/HoverShadowBox"
+import DescriptionText from "../components/DescriptionText"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
 import communityImage from "../images/community.jpg"
 import recruitmentSchedule from "../images/recruitment_schedule_fall19.png"
+
+const FAQHeader = props => (
+  <Text
+    fontSize={30}
+    fontWeight="bold"
+    fontFamily="Heebo"
+    sx={{ marginBottom: 10 }}
+  >
+    {props.children}
+  </Text>
+)
 
 export default () => (
   <CoverLayout
@@ -80,6 +93,116 @@ export default () => (
         leaders, within the fraternity and beyond. At UCI, our brothers hold
         positions in over 25 campus organizations.
       </ImageTextRow>
+
+      <CenterHeader>FAQ's</CenterHeader>
+      <HoverShadowBox>
+        <FAQHeader>Why should I join a business fraternity?</FAQHeader>
+        <DescriptionText>
+          You should join a business fraternity in order to make your college
+          career professionally worthwhile. While it is possible to obtain
+          various internships and professional knowledge without the aid of a
+          professional business fraternity, becoming a brother provides college
+          students with a vast alumni network in various industries,
+          professional events, recruitment events for companies such as
+          Deloitte, and community service events to further enrich to college
+          experience. Brotherhood is something that cannot be mimicked, and is
+          one of the most important aspects of the fraternity. Once you join
+          Delta Sigma Pi, you are a brother for life.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>
+          What sets Delta Sigma Pi apart from other business fraternities?
+        </FAQHeader>
+        <DescriptionText>
+          Delta Sigma Pi is selective only to business related major, not like
+          campus-wide business clubs or social fraternities/sororities. Delta
+          Sigma Pi is also a member of the Professional Fraternity Association
+          which allows for networking and leadership development among 40 other
+          professional fraternities. With Delta Sigma Pi, you will be able to
+          enjoy the largest national convention of any similar fraternity (Grand
+          Chapter Congress) as well as being a brother for your entire life.
+          Lastly, no matter where you go, Delta Sigma Pi will be there because
+          Delta Sigma Pi is in more than 47 countries around the world.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>What majors do you accept?</FAQHeader>
+        <DescriptionText>
+          Here is a list of the majors we accept: Business Administration,
+          Business Economics, Business Information Management, Economics,
+          Informatics, Information and Computer Science, and Quantitative
+          Economics . We take students of other majors into our pledging process
+          on a case by case basis, so do not let your major be a deterrent from
+          coming out to our recruitment week.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>What is pledging?</FAQHeader>
+        <DescriptionText>
+          Pledging is an intensive six week process designed to help prospective
+          brothers become more personally and professionally developed. The
+          purpose of pledge education is to formally present Fraternity history
+          and information to our potential members. In addition, pledges will
+          learn the business operational requirements of the Fraternity through
+          the planning and participation in various projects described in this
+          program. The pledges will become familiar with the opportunities and
+          obligations available and expected through membership, including:
+          knowledge of basic local and national Fraternity history and
+          operations; meeting procedures, etiquette and organizational skills;
+          special event and fundraising planning skills; and the Fraternity’s
+          emphasis on personal and professional development of the individual.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>
+          I've applied before, but didn't receive an invitation to pledge.
+          Should i reapply?
+        </FAQHeader>
+        <DescriptionText>
+          Yes! If you have improved yourself personally and professional since
+          the last recruitment process, you have an advantage over those
+          students going through the recruitment process for the first time.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>
+          What criteria is used when deciding whom is given an invitation to
+          pledge?
+        </FAQHeader>
+        <DescriptionText>
+          Professional development, willingness to learn, past successes,
+          dedication and social compatibility.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>How do I stand out during recruitment?</FAQHeader>
+        <DescriptionText>
+          Be sure to always smile and make conversation with all of the brothers
+          that you can. Recruitment is not only a time for us to get to know
+          you, but also for you to get to know us. If you want to stand out, be
+          yourself and let your inner talents shine throughout the week as you
+          get to know the brothers.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>How many pledges are accepted each quarter?</FAQHeader>
+        <DescriptionText>
+          There is no specific amount of pledges that Delta Sigma Pi gives
+          invitations to pledge each quarter. The number varies depending on the
+          compatibility of the prospective members and the brothers.
+        </DescriptionText>
+      </HoverShadowBox>
+      <HoverShadowBox>
+        <FAQHeader>
+          Can I pledge for Delta Sigma Pi if I am a member of another fraternity
+          or a sorority?
+        </FAQHeader>
+        <DescriptionText>
+          Yes. However, you can not pledge for Delta Sigma Pi if you are a part
+          of another professional fraternity.
+        </DescriptionText>
+      </HoverShadowBox>
     </Fade>
   </CoverLayout>
 )

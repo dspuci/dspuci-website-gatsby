@@ -5,7 +5,7 @@ import { Fade } from "react-reveal"
 import { CoverLayout } from "../components/Layout"
 import AboutCover from "../components/AboutCover"
 import ImageTextRow from "../components/ImageTextRow"
-import HoverShadowBox from "../components/HoverShadowBox"
+import CareerBox from "../components/CareerBox"
 import CenterHeader from "../components/CenterHeader"
 import ResponsiveDoughnut from "../components/ResponsiveDoughnut"
 import Section from "../components/Section"
@@ -99,36 +99,36 @@ export default () => (
 
       <CenterHeader>Areas of Focus</CenterHeader>
       <Flex flexWrap="wrap">
-        <HoverShadowBox title="Marketing" icon={faBullhorn}>
+        <CareerBox title="Marketing" icon={faBullhorn}>
           Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
           ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
           appetere at. Audire facilisis no sit, in diceret.
-        </HoverShadowBox>
-        <HoverShadowBox title="Design" icon={faPencilRuler}>
+        </CareerBox>
+        <CareerBox title="Design" icon={faPencilRuler}>
           Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
           ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
           appetere at. Audire facilisis no sit, in diceret.
-        </HoverShadowBox>
-        <HoverShadowBox title="Accounting" icon={faCalculator}>
+        </CareerBox>
+        <CareerBox title="Accounting" icon={faCalculator}>
           Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
           ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
           appetere at. Audire facilisis no sit, in diceret.
-        </HoverShadowBox>
-        <HoverShadowBox title="Tech" icon={faMicrochip}>
+        </CareerBox>
+        <CareerBox title="Tech" icon={faMicrochip}>
           Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
           ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
           appetere at. Audire facilisis no sit, in diceret.
-        </HoverShadowBox>
-        <HoverShadowBox title="Consulting" icon={faLightbulb}>
+        </CareerBox>
+        <CareerBox title="Consulting" icon={faLightbulb}>
           Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
           ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
           appetere at. Audire facilisis no sit, in diceret.
-        </HoverShadowBox>
-        <HoverShadowBox title="Finance" icon={faPiggyBank}>
+        </CareerBox>
+        <CareerBox title="Finance" icon={faPiggyBank}>
           Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
           ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
           appetere at. Audire facilisis no sit, in diceret.
-        </HoverShadowBox>
+        </CareerBox>
       </Flex>
 
       <CenterHeader>Delta Sigma Pi History</CenterHeader>
