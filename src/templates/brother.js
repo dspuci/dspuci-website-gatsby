@@ -27,7 +27,7 @@ export default ({ data }) => {
 
   return (
     <StandardLayout>
-      <Flex flexWrap="wrap">
+      <Flex flexWrap="wrap" style={{ marginTop: 50 }}>
         <Box style={{ textAlign: "center" }} p={3} width={[1, 1 / 3, 1 / 4]}>
           <Image
             width={175}
