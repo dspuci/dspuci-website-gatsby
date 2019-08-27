@@ -6,10 +6,11 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
   color: black;
   display: table;
   width: 100%;
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {
@@ -22,11 +23,15 @@
   display: table-cell;
   vertical-align: middle;
   margin: 0 auto;
+  text-align: center;
 }
 
 .coverTitle {
+  display: inline-block;
   width: 100%;
+  max-width: 500px;
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
+  line-height: 1.4;
 }
