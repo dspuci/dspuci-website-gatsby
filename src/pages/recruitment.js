@@ -49,7 +49,7 @@ export default () => (
         />
       </a>
 
-      <CenterHeader>Why join?</CenterHeader>
+      <CenterHeader marginBottom={70}>Why join?</CenterHeader>
       <ImageTextRow
         title="Career Advantage"
         imagePosition="right"

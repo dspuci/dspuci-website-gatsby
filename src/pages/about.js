@@ -160,6 +160,7 @@ export default () => (
         </Box>
       </Flex>
 
+      <CenterHeader marginBottom={70}>Our Values</CenterHeader>
       <ImageTextRow
         title="Brotherhood"
         imagePosition="right"
