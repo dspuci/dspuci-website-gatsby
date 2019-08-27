@@ -65,7 +65,7 @@ export default () => (
         <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
       </Section>
 
-      <CenterHeader>Our Values</CenterHeader>
+      <CenterHeader marginBottom={70}>The values we hold</CenterHeader>
       <ImageTextRow
         title="Brotherhood"
         imagePosition="right"
@@ -97,7 +97,7 @@ export default () => (
         ceteros mei, tota libris accusamus ea duo.
       </ImageTextRow>
 
-      <CenterHeader>Areas of Focus</CenterHeader>
+      <CenterHeader>The things we do</CenterHeader>
       <Flex flexWrap="wrap">
         <CareerBox title="Marketing" icon={faBullhorn}>
           Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes

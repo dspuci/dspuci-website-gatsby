@@ -4,6 +4,16 @@ import { Flex, Box, Image, Text } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import { withPrefix } from "gatsby"
 
+const BrotherInfoBox = props => (
+  <Box
+    sx={{
+      marginBottom: 10,
+    }}
+  >
+    {props.children}
+  </Box>
+)
+
 export default ({ data }) => {
   let brotherInfo = {
     firstName: data.biosSpring19XlsxFormResponses1.First_Name.trim(),
@@ -27,7 +37,13 @@ export default ({ data }) => {
 
   return (
     <StandardLayout>
-      <Flex flexWrap="wrap" style={{ marginTop: 50 }}>
+      <Flex
+        flexWrap="wrap"
+        sx={{
+          marginTop: 50,
+          fontFamily: "Heebo",
+        }}
+      >
         <Box style={{ textAlign: "center" }} p={3} width={[1, 1 / 3, 1 / 4]}>
           <Image
             width={175}
@@ -36,22 +52,52 @@ export default ({ data }) => {
             )}
             borderRadius={8}
           />
-          <Text pt={2} fontWeight="bold" fontSize={[34, 24]}>
+          <Text pt={2} fontWeight="bold" fontSize={[38, 34]}>
             {brotherInfo.firstName} {brotherInfo.lastName}
           </Text>
         </Box>
-        <Box p={3} width={[1, 2 / 3, 3 / 4]}>
-          <ul>
-            <li>Year: {brotherInfo.year}</li>
-            <li>Major: {brotherInfo.majors_and_minors}</li>
-            <li>Pledge Class: {brotherInfo.class}</li>
-            <li>Family: {brotherInfo.family}</li>
-            <li>Hometown: {brotherInfo.hometown}</li>
-            <li>Industry of Interest: {brotherInfo.industry}</li>
-            <li>Recent Position: {brotherInfo.recentPosition}</li>
-            <li>Campus Involvements: {brotherInfo.involvements}</li>
-            <li>Hobbies: {brotherInfo.hobbies}</li>
-          </ul>
+        <Box
+          sx={{
+            padding: [0, 3],
+          }}
+          width={[1, 2 / 3, 3 / 4]}
+        >
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Year</Text>
+            <Text>{brotherInfo.year}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Major</Text>
+            <Text>{brotherInfo.majors_and_minors}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Pledge Class</Text>
+            <Text>{brotherInfo.class}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Family</Text>
+            <Text>{brotherInfo.family}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Hometown</Text>
+            <Text>{brotherInfo.hometown}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Industry of Interest</Text>
+            <Text>{brotherInfo.industry}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Recent Position</Text>
+            <Text>{brotherInfo.recentPosition}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Campus Involvements</Text>
+            <Text>{brotherInfo.involvements}</Text>
+          </BrotherInfoBox>
+          <BrotherInfoBox>
+            <Text fontWeight={"bold"}>Hobbies</Text>
+            <Text>{brotherInfo.hobbies}</Text>
+          </BrotherInfoBox>
         </Box>
       </Flex>
     </StandardLayout>

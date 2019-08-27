@@ -8,6 +8,7 @@ import ImageTextRow from "../components/ImageTextRow"
 import CenterHeader from "../components/CenterHeader"
 import HoverShadowBox from "../components/HoverShadowBox"
 import DescriptionText from "../components/DescriptionText"
+import Section from "../components/Section"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
@@ -52,15 +53,15 @@ export default () => (
       </Text>
 
       <CenterHeader>Schedule</CenterHeader>
-      <a href={recruitmentSchedule}>
-        <Image
-          src={recruitmentSchedule}
-          sx={{
-            marginBottom: 50,
-            boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
-          }}
-        />
-      </a>
+      <Image
+        onClick={() => (window.location = recruitmentSchedule)}
+        src={recruitmentSchedule}
+        sx={{
+          cursor: "pointer",
+          marginBottom: 50,
+          boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
+        }}
+      />
 
       <CenterHeader marginBottom={70}>Why join?</CenterHeader>
       <ImageTextRow
@@ -95,21 +96,6 @@ export default () => (
       </ImageTextRow>
 
       <CenterHeader>FAQ's</CenterHeader>
-      <HoverShadowBox>
-        <FAQHeader>Why should I join a business fraternity?</FAQHeader>
-        <DescriptionText>
-          You should join a business fraternity in order to make your college
-          career professionally worthwhile. While it is possible to obtain
-          various internships and professional knowledge without the aid of a
-          professional business fraternity, becoming a brother provides college
-          students with a vast alumni network in various industries,
-          professional events, recruitment events for companies such as
-          Deloitte, and community service events to further enrich to college
-          experience. Brotherhood is something that cannot be mimicked, and is
-          one of the most important aspects of the fraternity. Once you join
-          Delta Sigma Pi, you are a brother for life.
-        </DescriptionText>
-      </HoverShadowBox>
       <HoverShadowBox>
         <FAQHeader>
           What sets Delta Sigma Pi apart from other business fraternities?
