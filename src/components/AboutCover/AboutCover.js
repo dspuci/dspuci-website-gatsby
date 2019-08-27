@@ -9,7 +9,7 @@ export default props => (
       <Text
         className={styles.coverTitle}
         color={darkColor}
-        fontSize={[5, 6, 7, 7]}
+        fontSize={[6, 6, 7, 7]}
         fontFamily="Heebo"
       >
         America's <Text fontWeight="bold">Foremost</Text> Business Fraternity
