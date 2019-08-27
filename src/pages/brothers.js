@@ -5,12 +5,13 @@ import { Brother, LeaderBrother } from "../components/Brother"
 import { graphql } from "gatsby"
 import { Fade } from "react-reveal"
 import FamilyTree from "../components/FamilyTree/FamilyTree"
+import CenterHeader from "../components/CenterHeader"
 
 export default ({ data }) => {
   return (
     <StandardLayout>
       <Fade>
-        <h1>Executive Committee</h1>
+        <CenterHeader marginTop={20}>Executive Committee</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allLeadershipSpring19XlsxSheet1.nodes.map(brotherInfo => (
@@ -19,7 +20,7 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
-        <h1>Directors</h1>
+        <CenterHeader marginTop={20}>Directors</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allDirectorsSpring19XlsxSheet1.nodes.map(brotherInfo => (
@@ -28,7 +29,7 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
-        <h1>Our Brothers</h1>
+        <CenterHeader marginTop={20}>Our Brothers</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.allBiosSpring19XlsxFormResponses1.nodes.map(brotherInfo => (

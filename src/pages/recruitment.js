@@ -39,13 +39,15 @@ export default () => (
       </Text>
 
       <CenterHeader>Schedule</CenterHeader>
-      <Image
-        src={recruitmentSchedule}
-        sx={{
-          marginBottom: 50,
-          boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
-        }}
-      />
+      <a href={recruitmentSchedule}>
+        <Image
+          src={recruitmentSchedule}
+          sx={{
+            marginBottom: 50,
+            boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
+          }}
+        />
+      </a>
 
       <CenterHeader>Why join?</CenterHeader>
       <ImageTextRow
