@@ -6,8 +6,12 @@ import { withPrefix } from "gatsby"
 
 const BrotherInfoBox = props => (
   <Box
+    width={[1, 1 / 2]}
     sx={{
-      marginBottom: 10,
+      paddingLeft: [0, 3, 0],
+      paddingRight: [0, 3, 3],
+      paddingTop: 2,
+      paddingBottom: 2,
     }}
   >
     {props.children}
@@ -40,11 +44,11 @@ export default ({ data }) => {
       <Flex
         flexWrap="wrap"
         sx={{
-          marginTop: 50,
+          marginTop: 40,
           fontFamily: "Heebo",
         }}
       >
-        <Box style={{ textAlign: "center" }} p={3} width={[1, 1 / 3, 1 / 4]}>
+        <Box style={{ textAlign: "center" }} p={3} width={[1, 1 / 3, 1 / 3]}>
           <Image
             width={175}
             src={withPrefix(
@@ -56,48 +60,45 @@ export default ({ data }) => {
             {brotherInfo.firstName} {brotherInfo.lastName}
           </Text>
         </Box>
-        <Box
-          sx={{
-            padding: [0, 3],
-          }}
-          width={[1, 2 / 3, 3 / 4]}
-        >
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Year</Text>
-            <Text>{brotherInfo.year}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Major</Text>
-            <Text>{brotherInfo.majors_and_minors}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Pledge Class</Text>
-            <Text>{brotherInfo.class}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Family</Text>
-            <Text>{brotherInfo.family}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Hometown</Text>
-            <Text>{brotherInfo.hometown}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Industry of Interest</Text>
-            <Text>{brotherInfo.industry}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Recent Position</Text>
-            <Text>{brotherInfo.recentPosition}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Campus Involvements</Text>
-            <Text>{brotherInfo.involvements}</Text>
-          </BrotherInfoBox>
-          <BrotherInfoBox>
-            <Text fontWeight={"bold"}>Hobbies</Text>
-            <Text>{brotherInfo.hobbies}</Text>
-          </BrotherInfoBox>
+        <Box width={[1, 2 / 3, 2 / 3]}>
+          <Flex flexWrap="wrap">
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Year</Text>
+              <Text>{brotherInfo.year}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Pledge Class</Text>
+              <Text>{brotherInfo.class}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Hometown</Text>
+              <Text>{brotherInfo.hometown}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Family</Text>
+              <Text>{brotherInfo.family}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Major</Text>
+              <Text>{brotherInfo.majors_and_minors}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Industry of Interest</Text>
+              <Text>{brotherInfo.industry}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Recent Position</Text>
+              <Text>{brotherInfo.recentPosition}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Campus Involvements</Text>
+              <Text>{brotherInfo.involvements}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Hobbies</Text>
+              <Text>{brotherInfo.hobbies}</Text>
+            </BrotherInfoBox>
+          </Flex>
         </Box>
       </Flex>
     </StandardLayout>
