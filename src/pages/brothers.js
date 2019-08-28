@@ -15,7 +15,7 @@ export default ({ data }) => {
         <CenterHeader>Executive Committee</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.allLeadershipSpring19XlsxSheet1.nodes.map(brotherInfo => (
+        {data.executiveCommittee.nodes.map(brotherInfo => (
           <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
         ))}
       </Flex>
@@ -24,7 +24,7 @@ export default ({ data }) => {
         <CenterHeader>Directors</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.allDirectorsSpring19XlsxSheet1.nodes.map(brotherInfo => (
+        {data.directors.nodes.map(brotherInfo => (
           <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
         ))}
       </Flex>
@@ -33,7 +33,7 @@ export default ({ data }) => {
         <CenterHeader>Our Brothers</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.allBiosSpring19XlsxFormResponses1.nodes.map(brotherInfo => (
+        {data.brothers.nodes.map(brotherInfo => (
           <Brother brotherInfo={brotherInfo} />
         ))}
       </Flex>
@@ -41,7 +41,7 @@ export default ({ data }) => {
         <CenterHeader>Family Trees</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.allFile.nodes.map(family => (
+        {data.families.nodes.map(family => (
           <FamilyTree familyName={family.name} />
         ))}
       </Flex>
@@ -51,19 +51,19 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    allLeadershipSpring19XlsxSheet1 {
+    executiveCommittee: allLeadershipSpring19XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    allDirectorsSpring19XlsxSheet1 {
+    directors: allDirectorsSpring19XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    allBiosSpring19XlsxFormResponses1 {
+    brothers: allBiosSpring19XlsxFormResponses1 {
       nodes {
         First_Name
         Last_Name
@@ -72,7 +72,7 @@ export const query = graphql`
       }
     }
 
-    allFile(
+    families: allFile(
       filter: { sourceInstanceName: { eq: "families" } }
       sort: { fields: name }
     ) {

@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      spring19Bios: allBiosSpring19XlsxFormResponses1 {
+      bios: allBiosSpring19XlsxFormResponses1 {
         nodes {
           fields {
             slug
@@ -62,7 +62,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    result.data.spring19Bios.nodes.forEach(node => {
+    result.data.bios.nodes.forEach(node => {
       createPage({
         path: "brothers/" + node.fields.slug,
         component: path.resolve(`./src/templates/brother.js`),

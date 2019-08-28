@@ -26,18 +26,18 @@ const addDefaultSrc = ev => {
 
 export default ({ data }) => {
   let brotherInfo = {
-    firstName: data.biosSpring19XlsxFormResponses1.First_Name.trim(),
-    lastName: data.biosSpring19XlsxFormResponses1.Last_Name.trim(),
-    class: data.biosSpring19XlsxFormResponses1.Class.trim(),
-    year: data.biosSpring19XlsxFormResponses1.Year.trim(),
-    hometown: data.biosSpring19XlsxFormResponses1.Hometown.trim(),
-    majors_and_minors: data.biosSpring19XlsxFormResponses1.Majors_and_Minors.trim(),
-    industry: data.biosSpring19XlsxFormResponses1.Industry.trim(),
-    recentPosition: data.biosSpring19XlsxFormResponses1.Recent_Position.trim(),
-    involvements: data.biosSpring19XlsxFormResponses1.Involvements.trim(),
-    hobbies: data.biosSpring19XlsxFormResponses1.Hobbies.trim(),
-    family: data.biosSpring19XlsxFormResponses1.Family.trim(),
-    linkedInUrl: data.biosSpring19XlsxFormResponses1.LinkedIn_URL.trim(),
+    firstName: data.bio.First_Name.trim(),
+    lastName: data.bio.Last_Name.trim(),
+    class: data.bio.Class.trim(),
+    year: data.bio.Year.trim(),
+    hometown: data.bio.Hometown.trim(),
+    majors_and_minors: data.bio.Majors_and_Minors.trim(),
+    industry: data.bio.Industry.trim(),
+    recentPosition: data.bio.Recent_Position.trim(),
+    involvements: data.bio.Involvements.trim(),
+    hobbies: data.bio.Hobbies.trim(),
+    family: data.bio.Family.trim(),
+    linkedInUrl: data.bio.LinkedIn_URL.trim(),
   }
   brotherInfo.codeName = (
     brotherInfo.firstName +
@@ -114,7 +114,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    biosSpring19XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+    bio: biosSpring19XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
       First_Name
       Last_Name
       Class
