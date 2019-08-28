@@ -8,6 +8,8 @@ import { withPrefix } from "gatsby"
 import coatofarms from "../../images/coatofarms.jpg"
 import { Fade } from "react-reveal"
 
+const term = "spring19"
+
 class Brother extends React.Component {
   addDefaultSrc(ev) {
     ev.target.src = coatofarms
@@ -35,7 +37,7 @@ class Brother extends React.Component {
               width={175}
               height={262.5}
               src={withPrefix(
-                `/images/brothers/winter19/${brotherInfo.codeName}.jpg`
+                `/images/brothers/${term}/${brotherInfo.codeName}.jpg`
               )}
               borderRadius={8}
             />
@@ -88,7 +90,7 @@ class LeaderBrother extends React.Component {
               width={175}
               height={262.5}
               src={withPrefix(
-                `/images/brothers/winter19/${brotherInfo.codeName}.jpg`
+                `/images/brothers/${term}/${brotherInfo.codeName}.jpg`
               )}
               borderRadius={8}
             />

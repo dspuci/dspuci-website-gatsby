@@ -9,7 +9,7 @@ export default () => (
     coverElement={
       <ImageCover
         text="Where we work"
-        coverImage="careers2.jpeg"
+        coverImage="careers.jpeg"
         textColor="white"
       />
     }

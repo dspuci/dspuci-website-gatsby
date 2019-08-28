@@ -23,7 +23,7 @@ import {
   faPiggyBank,
 } from "@fortawesome/free-solid-svg-icons"
 
-import { genderData, yearData, majorData } from "../data/chapter_stats/fall19"
+import { genderData, yearData, majorData } from "../data/spring19/chapter_stats"
 
 export default () => (
   <CoverLayout navbarTextColor="black" coverElement={<AboutCover />}>

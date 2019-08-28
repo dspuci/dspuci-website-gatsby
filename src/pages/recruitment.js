@@ -12,7 +12,7 @@ import DescriptionText from "../components/DescriptionText"
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
 import communityImage from "../images/community.jpg"
-import recruitmentSchedule from "../images/recruitment_schedule_fall19.png"
+import recruitmentSchedule from "../../public/images/recruitment_schedules/fall19.png"
 
 const FAQHeader = props => (
   <Text

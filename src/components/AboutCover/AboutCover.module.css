@@ -3,7 +3,8 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../../images/about-us-cover.jpg") no-repeat center center fixed;
+    url("../../../public/images/cover_images/about.jpg") no-repeat center center
+      fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
