@@ -8,7 +8,6 @@ import ImageTextRow from "../components/ImageTextRow"
 import CenterHeader from "../components/CenterHeader"
 import HoverShadowBox from "../components/HoverShadowBox"
 import DescriptionText from "../components/DescriptionText"
-import Section from "../components/Section"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"

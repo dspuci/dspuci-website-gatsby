@@ -4,6 +4,8 @@ import { Flex, Box, Image, Text } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import { withPrefix } from "gatsby"
 
+import coatofarms from "../images/coatofarms.jpg"
+
 const BrotherInfoBox = props => (
   <Box
     width={[1, 1 / 2]}
@@ -17,6 +19,10 @@ const BrotherInfoBox = props => (
     {props.children}
   </Box>
 )
+
+const addDefaultSrc = ev => {
+  ev.target.src = coatofarms
+}
 
 export default ({ data }) => {
   let brotherInfo = {
@@ -51,6 +57,7 @@ export default ({ data }) => {
         <Box style={{ textAlign: "center" }} p={3} width={[1, 1 / 3, 1 / 3]}>
           <Image
             width={175}
+            onError={addDefaultSrc}
             src={withPrefix(
               `/images/brothers/winter19/${brotherInfo.codeName}.jpg`
             )}
