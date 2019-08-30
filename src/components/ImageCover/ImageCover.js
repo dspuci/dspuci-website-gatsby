@@ -17,6 +17,9 @@ class ImageCover extends React.Component {
         className={styles.imageCover}
         style={{
           backgroundImage:
+            (this.props.darkGradient
+              ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), "
+              : "") +
             "url(" +
             withPrefix(`/images/cover_images/${this.props.coverImage}`) +
             ")",

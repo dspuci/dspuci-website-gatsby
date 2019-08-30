@@ -1,16 +1,13 @@
 .aboutCover {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../public/images/cover_images/about.jpg") no-repeat center center
       fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
-  color: black;
+  height: 70vh;
+  color: white;
   display: table;
   width: 100%;
 }

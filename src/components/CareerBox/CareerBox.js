@@ -7,7 +7,7 @@ class CareerBox extends React.Component {
   render() {
     return (
       <Box width={[1, 1 / 2, 1 / 2, 1 / 3]}>
-        <HoverShadowBox>
+        <HoverShadowBox raise>
           <FontAwesomeIcon
             icon={this.props.icon}
             style={{

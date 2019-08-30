@@ -100,7 +100,7 @@ const Footer = props => (
       >
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
           <Image src={phoneIcon} width={20} />
-          <div>808-359-1585</div>
+          <div>(408) 529-7127</div>
         </Box>
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
           <Image src={emailIcon} width={30} />
@@ -138,6 +138,12 @@ const Footer = props => (
       >
         <Box width={1}>
           ©{new Date().getFullYear()} Delta Sigma Pi - Pi Sigma Chapter
+        </Box>
+        <Box width={1}>
+          Developed by{" "}
+          <a style={{ color: "white" }} href="https://linkedin.com/in/frafezy">
+            Farbod Rafezy
+          </a>
         </Box>
       </Flex>
     </Container>

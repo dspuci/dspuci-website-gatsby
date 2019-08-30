@@ -8,6 +8,7 @@ import ImageTextRow from "../components/ImageTextRow"
 import CenterHeader from "../components/CenterHeader"
 import HoverShadowBox from "../components/HoverShadowBox"
 import DescriptionText from "../components/DescriptionText"
+import Section from "../components/Section"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
@@ -30,26 +31,23 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="Fall Recruitment 2019"
+        text="Fall 2019 Recruitment"
         coverImage="beach.jpg"
         textColor="white"
+        darkGradient
       />
     }
   >
     <Fade bottom distance="40px">
-      <Text
-        sx={{
-          width: "100%",
-          maxWidth: 500,
-          margin: "90px auto",
-          textAlign: "center",
-        }}
-      >
-        Our chapter aims to create a high-impact, supportive culture where
-        immensely passionate people are encouraged to pursue their professional
-        and personal dreams. Attend our recruitment events to find out what sets
-        Delta Sigma Pi above and apart.
-      </Text>
+      <Section sx={{ justifyContent: "left" }}>
+        <h1 style={{ marginBottom: 10 }}>Be a part of something greater.</h1>
+        <div>
+          Our chapter aims to create a high-impact, supportive culture where
+          immensely passionate people are encouraged to pursue their
+          professional and personal dreams. Attend our recruitment events to
+          find out what sets Delta Sigma Pi above and apart.
+        </div>
+      </Section>
 
       <CenterHeader>Schedule</CenterHeader>
       <Image
@@ -62,7 +60,7 @@ export default () => (
         }}
       />
 
-      <CenterHeader marginBottom={70}>Why join?</CenterHeader>
+      <CenterHeader>Why join?</CenterHeader>
       <ImageTextRow
         title="Career Advantage"
         imagePosition="right"

@@ -8,9 +8,10 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="Where we work"
+        text="Careers"
         coverImage="careers.jpeg"
         textColor="white"
+        darkGradient
       />
     }
   >
