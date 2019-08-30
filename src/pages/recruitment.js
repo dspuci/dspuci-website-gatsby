@@ -93,7 +93,7 @@ export default () => (
       </ImageTextRow>
 
       <CenterHeader>FAQ's</CenterHeader>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>
           What sets Delta Sigma Pi apart from other business fraternities?
         </FAQHeader>
@@ -109,7 +109,7 @@ export default () => (
           Delta Sigma Pi is in more than 47 countries around the world.
         </DescriptionText>
       </HoverShadowBox>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>What majors do you accept?</FAQHeader>
         <DescriptionText>
           Here is a list of the majors we accept: Business Administration,
@@ -120,7 +120,7 @@ export default () => (
           coming out to our recruitment week.
         </DescriptionText>
       </HoverShadowBox>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>What is pledging?</FAQHeader>
         <DescriptionText>
           Pledging is an intensive six week process designed to help prospective
@@ -137,7 +137,7 @@ export default () => (
           emphasis on personal and professional development of the individual.
         </DescriptionText>
       </HoverShadowBox>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>
           I've applied before, but didn't receive an invitation to pledge.
           Should i reapply?
@@ -148,7 +148,7 @@ export default () => (
           students going through the recruitment process for the first time.
         </DescriptionText>
       </HoverShadowBox>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>
           What criteria is used when deciding whom is given an invitation to
           pledge?
@@ -158,7 +158,7 @@ export default () => (
           dedication and social compatibility.
         </DescriptionText>
       </HoverShadowBox>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>How do I stand out during recruitment?</FAQHeader>
         <DescriptionText>
           Be sure to always smile and make conversation with all of the brothers
@@ -168,7 +168,7 @@ export default () => (
           get to know the brothers.
         </DescriptionText>
       </HoverShadowBox>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>How many pledges are accepted each quarter?</FAQHeader>
         <DescriptionText>
           There is no specific amount of pledges that Delta Sigma Pi gives
@@ -176,7 +176,7 @@ export default () => (
           compatibility of the prospective members and the brothers.
         </DescriptionText>
       </HoverShadowBox>
-      <HoverShadowBox>
+      <HoverShadowBox raise>
         <FAQHeader>
           Can I pledge for Delta Sigma Pi if I am a member of another fraternity
           or a sorority?
