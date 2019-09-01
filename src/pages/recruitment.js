@@ -3,7 +3,7 @@ import { Text, Image } from "rebass"
 import { Fade } from "react-reveal"
 
 import { CoverLayout } from "../components/Layout"
-import ImageCover from "../components/ImageCover"
+import VideoCover from "../components/VideoCover"
 import ImageTextRow from "../components/ImageTextRow"
 import CenterHeader from "../components/CenterHeader"
 import HoverShadowBox from "../components/HoverShadowBox"
@@ -30,9 +30,9 @@ export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ImageCover
+      <VideoCover
         text="Fall 2019 Recruitment"
-        coverImage="beach.jpg"
+        coverVideo="vid.mp4"
         textColor="white"
         darkGradient
       />

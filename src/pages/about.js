@@ -3,7 +3,7 @@ import { Flex, Box } from "rebass"
 import { Fade } from "react-reveal"
 
 import { CoverLayout } from "../components/Layout"
-import AboutCover from "../components/AboutCover"
+import ImageCover from "../components/ImageCover"
 import ImageTextRow from "../components/ImageTextRow"
 import CareerBox from "../components/CareerBox"
 import CenterHeader from "../components/CenterHeader"
@@ -26,7 +26,17 @@ import {
 import { genderData, yearData, majorData } from "../data/spring19/chapter_stats"
 
 export default () => (
-  <CoverLayout navbarTextColor="white" coverElement={<AboutCover />}>
+  <CoverLayout
+    navbarTextColor="white"
+    coverElement={
+      <ImageCover
+        text="About Us"
+        coverImage="about.jpg"
+        textColor="white"
+        darkGradient
+      />
+    }
+  >
     <Fade bottom distance="40px">
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10 }}>

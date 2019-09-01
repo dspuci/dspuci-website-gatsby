@@ -84,16 +84,17 @@ class Navbar extends React.Component {
     super(props)
     this.state = {
       toggled: false,
+      type: this.props.type,
     }
-
-    this.setNavbarType()
 
     this.handleMenuClick = this.handleMenuClick.bind(this)
     this.handleCloseButtonClick = this.handleCloseButtonClick.bind(this)
   }
 
-  componentDidUpdate(prevProps) {
-    this.setNavbarType()
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.type !== this.state.type) {
+      this.setState({ type: nextProps.type })
+    }
   }
 
   handleMenuClick() {
@@ -108,24 +109,28 @@ class Navbar extends React.Component {
     })
   }
 
-  setNavbarType() {
-    if (this.props.type === "solid" || this.props.type === "opaque") {
-      this.navbarType = styles.navbarSolid
-    } else if (this.props.type === "transparent-white") {
-      this.navbarType = styles.navbarTransparentWhite
-    } else if (this.props.type === "transparent-black") {
-      this.navbarType = styles.navbarTransparentBlack
-    }
-  }
-
   render() {
+    const typeStyles = {
+      solid: styles.navbarSolid,
+      opaque: styles.navbarSolid,
+      "transparent-white": styles.navbarTransparentWhite,
+      "transparent-black": styles.navbarTransparentBlack,
+    }
+    const typeStylesBackground = {
+      solid: styles.navbarBackgroundSolid,
+      opaque: styles.navbarBackgroundSolid,
+      "transparent-white": styles.navbarBackgroundTransparent,
+      "transparent-black": styles.navbarBackgroundTransparent,
+    }
+
     return (
       <div>
+        <div className={typeStylesBackground[this.state.type]}></div>
         <FullBar
           className={[
             styles.navbar,
             styles.navbarDesktop,
-            this.navbarType,
+            typeStyles[this.state.type],
             this.props.className,
           ].join(" ")}
         />
@@ -133,7 +138,7 @@ class Navbar extends React.Component {
           className={[
             styles.navbar,
             styles.navbarMobile,
-            this.navbarType,
+            typeStyles[this.state.type],
             this.props.className,
           ].join(" ")}
           onClick={this.handleMenuClick}
