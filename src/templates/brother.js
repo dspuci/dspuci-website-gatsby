@@ -42,11 +42,10 @@ export default ({ data }) => {
   if (data.bio.Minor != null) {
     brotherInfo["minor"] = data.bio.Minor.trim()
   }
-  brotherInfo.codeName = (
-    brotherInfo.firstName +
-    "_" +
-    brotherInfo.lastName
-  ).toLowerCase()
+  brotherInfo.codeName = `${brotherInfo.firstName} ${brotherInfo.lastName}`
+    .split(" ")
+    .join("_")
+    .toLowerCase()
 
   return (
     <StandardLayout>

@@ -3,11 +3,10 @@ const path = require(`path`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === "BiosFall19Xlsx__FormResponses1") {
-    const slug = (
-      node["First Name"].trim() +
-      "_" +
-      node["Last Name"].trim()
-    ).toLowerCase()
+    const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
+      .split(" ")
+      .join("_")
+      .toLowerCase()
     createNodeField({
       node,
       name: `slug`,

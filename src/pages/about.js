@@ -62,12 +62,10 @@ export default () => (
         </Box>
         <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>100%</div>
-          <div style={{ font: "22px Heebo" }}>Full Time and</div>
           <div style={{ font: "22px Heebo" }}>Internship Placement</div>
         </Box>
         <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>5%</div>
-          <div style={{ font: "22px Heebo" }}> Recruitment</div>
+          <div style={{ font: "bold 80px Heebo" }}>8%</div>
           <div style={{ font: "22px Heebo" }}>Acceptance Rate</div>
         </Box>
       </Section>
@@ -164,8 +162,8 @@ export default () => (
         </CareerBox>
         <CareerBox title="Accounting" icon={faCalculator}>
           We’ve placed countless brothers in every Big Four accounting firm,
-          where they build successful careers in audit, tax, assurance, and more
-          professional services.
+          where they build successful careers in audit, tax, assurance, and
+          other professional services.
         </CareerBox>
         <CareerBox title="Consulting" icon={faLightbulb}>
           Our brothers are among the few from UC Irvine to start careers in

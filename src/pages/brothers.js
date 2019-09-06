@@ -35,7 +35,15 @@ export default ({ data }) => {
       <Flex flexWrap="wrap">
         {data.brothers.nodes
           .sort((a, b) =>
-            a.Last_Name > b.Last_Name ? 1 : b.Last_Name > a.Last_Name ? -1 : 0
+            a.Last_Name > b.Last_Name
+              ? 1
+              : b.Last_Name > a.Last_Name
+              ? -1
+              : a.First_Name > b.First_Name
+              ? 1
+              : b.First_Name > a.First_Name
+              ? -1
+              : 0
           )
           .map(brotherInfo => (
             <Brother brotherInfo={brotherInfo} />
