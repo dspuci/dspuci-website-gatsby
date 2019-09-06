@@ -19,7 +19,7 @@ const Links = () => (
     <ListLink to="/recruitment">Recruitment</ListLink>
     <ListLink to="/brothers">Brothers</ListLink>
     <ListLink to="/careers">Careers</ListLink>
-    <ListLink to="/gallery">Gallery</ListLink>
+    {/* <ListLink to="/gallery">Gallery</ListLink> */}
   </ul>
 )
 

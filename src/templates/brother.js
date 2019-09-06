@@ -31,13 +31,16 @@ export default ({ data }) => {
     class: data.bio.Class.trim(),
     year: data.bio.Year.trim(),
     hometown: data.bio.Hometown.trim(),
-    majors_and_minors: data.bio.Majors_and_Minors.trim(),
+    major: data.bio.Major.trim(),
     industry: data.bio.Industry.trim(),
     recentPosition: data.bio.Recent_Position.trim(),
     involvements: data.bio.Involvements.trim(),
     hobbies: data.bio.Hobbies.trim(),
     family: data.bio.Family.trim(),
     linkedInUrl: data.bio.LinkedIn_URL.trim(),
+  }
+  if (data.bio.Minor != null) {
+    brotherInfo["minor"] = data.bio.Minor.trim()
   }
   brotherInfo.codeName = (
     brotherInfo.firstName +
@@ -59,7 +62,7 @@ export default ({ data }) => {
             width={175}
             onError={addDefaultSrc}
             src={withPrefix(
-              `/images/brothers/spring19/${brotherInfo.codeName}.jpg`
+              `/images/brothers/fall19/${brotherInfo.codeName}.jpg`
             )}
             borderRadius={8}
           />
@@ -69,6 +72,12 @@ export default ({ data }) => {
         </Box>
         <Box width={[1, 2 / 3, 2 / 3]}>
           <Flex flexWrap="wrap">
+            {/* {Object.entries(brotherInfo).map(entry => (
+              <BrotherInfoBox>
+                <Text fontWeight={"bold"}>{entry[0]}</Text>
+                <Text>{entry[1]}</Text>
+              </BrotherInfoBox>
+            ))} */}
             <BrotherInfoBox>
               <Text fontWeight={"bold"}>Year</Text>
               <Text>{brotherInfo.year}</Text>
@@ -87,7 +96,11 @@ export default ({ data }) => {
             </BrotherInfoBox>
             <BrotherInfoBox>
               <Text fontWeight={"bold"}>Major</Text>
-              <Text>{brotherInfo.majors_and_minors}</Text>
+              <Text>{brotherInfo.major}</Text>
+            </BrotherInfoBox>
+            <BrotherInfoBox>
+              <Text fontWeight={"bold"}>Minor</Text>
+              <Text>{"minor" in brotherInfo ? brotherInfo.minor : "N/A"}</Text>
             </BrotherInfoBox>
             <BrotherInfoBox>
               <Text fontWeight={"bold"}>Industry of Interest</Text>
@@ -114,13 +127,14 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    bio: biosSpring19XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+    bio: biosFall19XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
       First_Name
       Last_Name
       Class
       Year
       Hometown
-      Majors_and_Minors
+      Major
+      Minor
       Industry
       Recent_Position
       Involvements

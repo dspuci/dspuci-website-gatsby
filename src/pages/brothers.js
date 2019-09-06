@@ -30,12 +30,19 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
-        <CenterHeader>Our Brothers</CenterHeader>
+        <CenterHeader>All Brothers</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.brothers.nodes.map(brotherInfo => (
+        {data.brothers.nodes
+          .sort((a, b) =>
+            a.Last_Name > b.Last_Name ? 1 : b.Last_Name > a.Last_Name ? -1 : 0
+          )
+          .map(brotherInfo => (
+            <Brother brotherInfo={brotherInfo} />
+          ))}
+        {/* {data.brothers.nodes.map(brotherInfo => (
           <Brother brotherInfo={brotherInfo} />
-        ))}
+        ))} */}
       </Flex>
       <Fade>
         <CenterHeader>Family Trees</CenterHeader>
@@ -51,19 +58,19 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    executiveCommittee: allLeadershipSpring19XlsxSheet1 {
+    executiveCommittee: allLeadershipFall19XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    directors: allDirectorsSpring19XlsxSheet1 {
+    directors: allDirectorsFall19XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    brothers: allBiosSpring19XlsxFormResponses1 {
+    brothers: allBiosFall19XlsxFormResponses1 {
       nodes {
         First_Name
         Last_Name

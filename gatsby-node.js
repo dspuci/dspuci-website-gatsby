@@ -2,7 +2,7 @@ const path = require(`path`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "BiosSpring19Xlsx__FormResponses1") {
+  if (node.internal.type === "BiosFall19Xlsx__FormResponses1") {
     const slug = (
       node["First Name"].trim() +
       "_" +
@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      bios: allBiosSpring19XlsxFormResponses1 {
+      bios: allBiosFall19XlsxFormResponses1 {
         nodes {
           fields {
             slug

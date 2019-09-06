@@ -1,0 +1,41 @@
+.homeTitle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: bold;
+  z-index: 0;
+}
+
+@media (max-width: 800px) {
+  .homeTitle {
+    padding-bottom: 100px;
+  }
+}
+
+.homeTitle h1 {
+  font-size: 140px;
+  font-family: "Georgia";
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.homeTitle hr {
+  border: none;
+  height: 2px;
+  color: white;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 160px;
+}
+
+.homeTitle h2 {
+  font-size: 18px;
+  font-family: "Georgia";
+  font-weight: 100;
+}

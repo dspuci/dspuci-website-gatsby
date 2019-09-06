@@ -39,9 +39,21 @@ class VideoCover extends React.Component {
           autoplay="autoplay"
           loop="loop"
           muted="muted"
-          poster="http://www.calakpsi.com/assets/home_background-414ceafd08e6d81c26b4f1c2bb644c26.png"
-          src={withPrefix(`/images/cover_images/${this.props.coverVideo}`)}
-        ></video>
+          poster={withPrefix(`/images/cover_images/${this.props.backupImage}`)}
+        >
+          <source
+            src={withPrefix(
+              `/images/cover_images/${this.props.coverVideo}.webm`
+            )}
+            type="video/webm"
+          ></source>
+          <source
+            src={withPrefix(
+              `/images/cover_images/${this.props.coverVideo}.mp4`
+            )}
+            type="video/mp4"
+          ></source>
+        </video>
         <Text
           sx={{
             position: "relative",

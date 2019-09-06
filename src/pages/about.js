@@ -16,14 +16,14 @@ import communityImage from "../images/community.jpg"
 
 import {
   faBullhorn,
-  faPencilRuler,
   faCalculator,
   faMicrochip,
   faLightbulb,
   faPiggyBank,
+  faUserTie,
 } from "@fortawesome/free-solid-svg-icons"
 
-import { genderData, yearData, majorData } from "../data/spring19/chapter_stats"
+import { genderData, yearData, majorData } from "../data/fall19/chapter_stats"
 
 export default () => (
   <CoverLayout
@@ -43,31 +43,39 @@ export default () => (
           Empowering personal and professional growth.
         </h1>
         <div>
-          Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
-          ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
-          appetere at. Audire facilisis no sit, in diceret conclusionemque eum.
-          In scripta ceteros mei, tota libris accusamus ea duo.
+          As the largest and oldest business fraternity at UC Irvine, Delta
+          Sigma Pi - Pi Sigma Chapter has inspired impactful careers for over a
+          decade, establishing a higher standard of personal and career success.
+          As a professional fraternity, we hold community and brotherhood at our
+          core—our growth is guided by the lifelong connections formed between
+          brothers.
         </div>
       </Section>
       <Section>
-        <Box width={[1, 1 / 2, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>53</div>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>44</div>
           <div style={{ font: "22px Heebo" }}>Active Brothers</div>
         </Box>
-        <Box width={[1, 1 / 2, 1 / 3]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>250+</div>
           <div style={{ font: "22px Heebo" }}>Alumni Network</div>
         </Box>
-        <Box width={[1, 1 / 2, 1 / 3]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>100%</div>
-          <div style={{ font: "22px Heebo" }}>Full Time Rate</div>
+          <div style={{ font: "22px Heebo" }}>Full Time and</div>
+          <div style={{ font: "22px Heebo" }}>Internship Placement</div>
+        </Box>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>5%</div>
+          <div style={{ font: "22px Heebo" }}> Recruitment</div>
+          <div style={{ font: "22px Heebo" }}>Acceptance Rate</div>
         </Box>
       </Section>
 
       <Section
         sx={{
           textAlign: "center",
-          backgroundColor: "purple",
+          backgroundColor: "#330066",
           color: "white",
           fontSize: 36,
           padding: 30,
@@ -82,53 +90,72 @@ export default () => (
 
       <Section>
         <ResponsiveDoughnut data={genderData} legendLines={1} text="Gender" />
-        <ResponsiveDoughnut data={yearData} legendLines={1} text="Year" />
+        <ResponsiveDoughnut data={yearData} legendLines={2} text="Year" />
         <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
       </Section>
 
-      <CenterHeader>Values</CenterHeader>
       <ImageTextRow
         title="Brotherhood"
         imagePosition="right"
         imageSrc={brotherhoodImage}
       >
-        Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes ut
-        vix. Cu tamquam vulputate reprimique sea, vis volumus albucius appetere
-        at. Audire facilisis no sit, in diceret conclusionemque eum. In scripta
-        ceteros mei, tota libris accusamus ea duo.
+        Our community has cultivated mentorship, inspiration, and countless
+        opportunities to learn and grow. Our brothers have built lifelong
+        friendships—not only within our chapter, but with brothers in many of
+        the 220+ national collegiate chapters.
       </ImageTextRow>
       <ImageTextRow
         title="Professionalism"
         imagePosition="left"
         imageSrc={professionalismImage}
       >
-        Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes ut
-        vix. Cu tamquam vulputate reprimique sea, vis volumus albucius appetere
-        at. Audire facilisis no sit, in diceret conclusionemque eum. In scripta
-        ceteros mei, tota libris accusamus ea duo.
+        Delta Sigma Pi offers a career advantage like no other. For over a
+        decade, our chapter has cultivated professionalism and kickstarted
+        impactful careers through a focus on industry education and workshops,
+        industry conferences, recruiting and networking events, and much more.
       </ImageTextRow>
       <ImageTextRow
-        title="Community"
+        title="Community Service"
         imagePosition="right"
         imageSrc={communityImage}
       >
-        Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes ut
-        vix. Cu tamquam vulputate reprimique sea, vis volumus albucius appetere
-        at. Audire facilisis no sit, in diceret conclusionemque eum. In scripta
-        ceteros mei, tota libris accusamus ea duo.
+        Our brotherhood actively strengthens our communities through service. By
+        organizing more than eight high-impact service initiatives a year, we
+        act on our commitment to service.
       </ImageTextRow>
 
-      <CenterHeader>Industries</CenterHeader>
+      <CenterHeader>Our Values</CenterHeader>
+      <Flex flexWrap="wrap" sx={{ justifyContent: "center" }}>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Respect</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Integrity</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Initiative</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Innovation</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Humility</div>
+        </Box>
+      </Flex>
+
+      <CenterHeader marginTop={80} marginBottom={20}>
+        Industries
+      </CenterHeader>
       <Flex flexWrap="wrap">
         <CareerBox title="Finance" icon={faPiggyBank}>
-          Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
-          ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
-          appetere at. Audire facilisis no sit, in diceret.
+          Investment banking, wealth management, financial analysts, and
+          beyond—our brothers set the standard for impactful careers in finance
+          at the world’s biggest firms and corporations.
         </CareerBox>
         <CareerBox title="Marketing" icon={faBullhorn}>
-          Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
-          ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
-          appetere at. Audire facilisis no sit, in diceret.
+          Our brothers are influencing how companies communicate products and
+          services through product marketing, brand strategy, communications,
+          and more.
         </CareerBox>
         <CareerBox title="Tech" icon={faMicrochip}>
           Whether it’s software engineering, product management, or data
@@ -136,21 +163,41 @@ export default () => (
           future of technology.
         </CareerBox>
         <CareerBox title="Accounting" icon={faCalculator}>
-          Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
-          ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
-          appetere at. Audire facilisis no sit, in diceret.
+          We’ve placed countless brothers in every Big Four accounting firm,
+          where they build successful careers in audit, tax, assurance, and more
+          professional services.
         </CareerBox>
         <CareerBox title="Consulting" icon={faLightbulb}>
-          Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
-          ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
-          appetere at. Audire facilisis no sit, in diceret.
+          Our brothers are among the few from UC Irvine to start careers in
+          management consulting, tasked with providing strategic guidance to the
+          world’s biggest companies.
         </CareerBox>
-        <CareerBox title="Design" icon={faPencilRuler}>
-          Lorem ipsum dolor sit amet, mel et impetus dissentiet, nobis nonumes
-          ut vix. Cu tamquam vulputate reprimique sea, vis volumus albucius
-          appetere at. Audire facilisis no sit, in diceret.
+        <CareerBox title="Other" icon={faUserTie}>
+          There are limitless applications of business—we have brothers pursuing
+          entrepreneurship, experience and interface design, human resources,
+          and much more.
         </CareerBox>
       </Flex>
+
+      <CenterHeader marginBottom={20}>History</CenterHeader>
+      <div
+        style={{
+          maxWidth: 700,
+          margin: "0 auto",
+          marginBottom: 80,
+          color: "#999",
+        }}
+      >
+        In 1907, Delta Sigma Pi was founded by four business students at New
+        York University who saw an opportunity to impact the lives of their
+        fellow business students. In 1975, Delta Sigma Pi officially became the
+        nation's first co-ed business fraternity. Today, we have 296 chartered
+        collegiate chapters and over 275,000 initiated members nationally. Pi
+        Sigma Chapter at the University of California, Irvine was founded in
+        2008 by Adam Su and Myles Sterett. Over a decade later, our chapter has
+        become the premier business fraternity on campus, unparalleled in our
+        professional success and brotherhood.
+      </div>
     </Fade>
   </CoverLayout>
 )

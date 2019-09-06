@@ -1,5 +1,6 @@
 .homeCover {
-  background: url("../../images/background.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -41,7 +42,7 @@
 }
 
 .homeTitle h2 {
-  font-size: 26px;
+  font-size: 18px;
   font-family: "Georgia";
   font-weight: 100;
 }

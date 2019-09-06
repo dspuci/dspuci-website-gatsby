@@ -4,8 +4,8 @@ import { Doughnut } from "react-chartjs-2"
 
 export default props => (
   <Box
-    width={[1, 1 / 2, 1 / 3]}
-    sx={{ textAlign: "center", padding: [20, 0, 0] }}
+    width={[1, 1 / 2, 1 / 2, 1 / 3]}
+    sx={{ textAlign: "center", padding: [20, 20, 20] }}
   >
     <Doughnut
       height={200 + (props.legendLines - 1) * 15}

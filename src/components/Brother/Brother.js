@@ -8,7 +8,7 @@ import { withPrefix } from "gatsby"
 import coatofarms from "../../images/coatofarms.jpg"
 import { Fade } from "react-reveal"
 
-const term = "spring19"
+const term = "fall19"
 
 class Brother extends React.Component {
   addDefaultSrc(ev) {
@@ -19,11 +19,11 @@ class Brother extends React.Component {
     let brotherInfo = {
       firstName: this.props.brotherInfo.First_Name.trim(),
       lastName: this.props.brotherInfo.Last_Name.trim(),
-      codeName: (
-        this.props.brotherInfo.First_Name.trim() +
-        "_" +
-        this.props.brotherInfo.Last_Name.trim()
-      ).toLowerCase(),
+      codeName: `${this.props.brotherInfo.First_Name.trim()} ${this.props.brotherInfo.Last_Name.trim()}`
+        .split(" ")
+        .join("_")
+        .toLowerCase(),
+
       subtitle: this.props.brotherInfo.Class.trim() + " class",
       linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
     }
