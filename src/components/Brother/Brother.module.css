@@ -1,0 +1,32 @@
+.brother {
+  text-align: center;
+}
+
+.image {
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.image:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-top: -3px;
+  margin-bottom: 3px;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.class {
+  text-transform: lowercase;
+  font-style: italic;
+  color: #707070;
+}
+
+.linkedinIcon {
+  color: #c0c0c0;
+}
+
+.linkedinIcon:hover {
+  color: #a0a0a0;
+}

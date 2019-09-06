@@ -1,7 +1,8 @@
 import React from "react"
 import styles from "./Navbar.module.css"
-import { Link } from "gatsby"
-import { lightColor, darkColor } from "../../styles/defaultColors"
+import { Link, navigate } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 const ListLink = props => (
   <li>
@@ -15,24 +16,31 @@ const Links = () => (
   <ul>
     <ListLink to="/">Home</ListLink>
     <ListLink to="/about">About</ListLink>
+    <ListLink to="/recruitment">Recruitment</ListLink>
     <ListLink to="/brothers">Brothers</ListLink>
     <ListLink to="/careers">Careers</ListLink>
-    <ListLink to="/recruitment">Recruitment</ListLink>
-    <ListLink to="/gallery">Gallery</ListLink>
+    {/* <ListLink to="/gallery">Gallery</ListLink> */}
   </ul>
 )
 
 const NavTopMargin = () => <div style={{ height: 80 }} />
 
 class MinimalBar extends React.Component {
+  handleBrandButtonClick() {
+    navigate("/")
+  }
+
   render() {
-    if (!this.props.show) {
-      return null
-    }
     return (
       <div className={this.props.className}>
+        <button
+          className={styles.brandButton}
+          onClick={this.handleBrandButtonClick}
+        >
+          ΔΣΠ
+        </button>
         <button className={styles.menuButton} onClick={this.props.onClick}>
-          <span>Menu</span>
+          <FontAwesomeIcon icon={faBars} />
         </button>
       </div>
     )
@@ -52,27 +60,20 @@ class FullBar extends React.Component {
 class NavMobileMenu extends React.Component {
   constructor(props) {
     super(props)
-    if (!this.props.backgroundColor) {
-      this.textColor = darkColor
-      this.backgroundColor = lightColor
-      return
-    }
-    this.textColor = this.props.textColor
-    this.backgroundColor = this.props.backgroundColor
+    this.className = this.props.className
   }
   render() {
     if (!this.props.show) {
-      return null
+      this.className = styles.hidden + " " + this.props.className
+    } else {
+      this.className = this.props.className
     }
     return (
-      <div
-        className={this.props.className}
-        style={{ backgroundColor: this.backgroundColor }}
-      >
+      <div className={this.className}>
         <button className={styles.closeButton} onClick={this.props.onClick}>
-          <span style={{ color: this.textColor }}>Close</span>
+          <FontAwesomeIcon icon={faTimes} />
         </button>
-        <Links textColor={this.textColor} />
+        <Links />
       </div>
     )
   }
@@ -83,16 +84,17 @@ class Navbar extends React.Component {
     super(props)
     this.state = {
       toggled: false,
+      type: this.props.type,
     }
-
-    this.setNavbarType()
 
     this.handleMenuClick = this.handleMenuClick.bind(this)
     this.handleCloseButtonClick = this.handleCloseButtonClick.bind(this)
   }
 
-  componentDidUpdate(prevProps) {
-    this.setNavbarType()
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.type !== this.state.type) {
+      this.setState({ type: nextProps.type })
+    }
   }
 
   handleMenuClick() {
@@ -107,25 +109,28 @@ class Navbar extends React.Component {
     })
   }
 
-  setNavbarType() {
-    if (this.props.type === "solid" || this.props.type === "opaque") {
-      this.navbarType = styles.navbarSolid
-    } else if (this.props.type === "transparent-white") {
-      this.navbarType = styles.navbarTransparentWhite
-    } else if (this.props.type === "transparent-black") {
-      this.navbarType = styles.navbarTransparentBlack
-    }
-    console.log(this.navbarType)
-  }
-
   render() {
+    const typeStyles = {
+      solid: styles.navbarSolid,
+      opaque: styles.navbarSolid,
+      "transparent-white": styles.navbarTransparentWhite,
+      "transparent-black": styles.navbarTransparentBlack,
+    }
+    const typeStylesBackground = {
+      solid: styles.navbarBackgroundSolid,
+      opaque: styles.navbarBackgroundSolid,
+      "transparent-white": styles.navbarBackgroundTransparent,
+      "transparent-black": styles.navbarBackgroundTransparent,
+    }
+
     return (
       <div>
+        <div className={typeStylesBackground[this.state.type]}></div>
         <FullBar
           className={[
             styles.navbar,
             styles.navbarDesktop,
-            this.navbarType,
+            typeStyles[this.state.type],
             this.props.className,
           ].join(" ")}
         />
@@ -133,10 +138,9 @@ class Navbar extends React.Component {
           className={[
             styles.navbar,
             styles.navbarMobile,
-            this.navbarType,
+            typeStyles[this.state.type],
             this.props.className,
           ].join(" ")}
-          show={!this.state.toggled}
           onClick={this.handleMenuClick}
         />
         <NavMobileMenu

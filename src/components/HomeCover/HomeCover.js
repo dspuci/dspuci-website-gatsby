@@ -6,7 +6,7 @@ export default props => (
     <div className={styles.homeTitle}>
       <h1>ΔΣΠ</h1>
       <hr />
-      <h2>Pi Sigma</h2>
+      <h2>Delta Sigma Pi - Pi Sigma Chapter</h2>
     </div>
   </div>
 )

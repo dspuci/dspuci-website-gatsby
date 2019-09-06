@@ -1,60 +1,203 @@
 import React from "react"
+import { Flex, Box } from "rebass"
+import { Fade } from "react-reveal"
+
 import { CoverLayout } from "../components/Layout"
-import AboutCover from "../components/AboutCover"
+import ImageCover from "../components/ImageCover"
+import ImageTextRow from "../components/ImageTextRow"
+import CareerBox from "../components/CareerBox"
+import CenterHeader from "../components/CenterHeader"
+import ResponsiveDoughnut from "../components/ResponsiveDoughnut"
+import Section from "../components/Section"
+
+import brotherhoodImage from "../images/brotherhood.jpg"
+import professionalismImage from "../images/professionalism.jpg"
+import communityImage from "../images/community.jpg"
+
+import {
+  faBullhorn,
+  faCalculator,
+  faMicrochip,
+  faLightbulb,
+  faPiggyBank,
+  faUserTie,
+} from "@fortawesome/free-solid-svg-icons"
+
+import { genderData, yearData, majorData } from "../data/fall19/chapter_stats"
 
 export default () => (
-  <CoverLayout navbarTextColor="black" coverElement={<AboutCover />}>
-    <h1>Delta Sigma Pi History</h1>
-    <p>
-      Delta Sigma Pi is a co-ed professional fraternity organized to foster the
-      study of business in universities; to encourage scholarship, social
-      activity and the association of students for their mutual advancement by
-      research and practice; to promote closer affiliation between the
-      commercial world and students of commerce, and to further a higher
-      standard of commercial ethics and culture and the civic and commercial
-      welfare of the community. Delta Sigma Pi’s four founding members are
-      Alexander Frank Makay, Henry Albert Tienken, Harold Valentine Jacobs, and
-      Alfred Moysello, all of which were students at New York University. Delta
-      Sigma Pi was founded on November 7, 1907, and has since initiated over
-      265,000 brothers worldwide. There are currently over 220 active collegiate
-      chapters, with many more alumni chapters, which continue to bring pride to
-      the name Delta Sigma Pi. While every brother in Delta Sigma Pi is
-      significant in his or her own way, some notable Deltasigs include S.
-      Truett Cathy, the Founder and Chairman of Chick-fil-A, Fordon Bethune,
-      Chairman and CEO of Continental Airlines and Henry W. Bloch, Honorary
-      Chairman of H & R Block. However, the network of brothers in Delta Sigma
-      Pi span far and wide from various industries, such as high technology
-      start ups, to venture capitalists, to tax accountants to marketing
-      managers. Our brothers do not only spread over America; there are
-      Deltasigs all over the world and no matter where one may go, he or she
-      will always find a brother there with him or her.{" "}
-    </p>
-    <h1>Pi Sigma History</h1>
-    <p>
-      The Pi Sigma Chapter of the International Fraternity of Delta Sigma Pi is
-      located at the University of California, Irvine, and was founded on May
-      31, 2008. The Pi Sigma Chapter began because Adam Su and Myles Sterett saw
-      a need within the UC Irvine community for a fraternity that focused on
-      growing others professionally and fostering a sense of brotherhood. Nearly
-      a decade later, Pi Sigma is intent on maintaining those two goals, and
-      have since won a multitude of regional, provincial and national awards for
-      our professional activities, community service and alumni relations. From
-      our humble beginnings as the Sigma Beta Iota colony to now being the Pi
-      Sigma Chapter, we have always been dedicated to hosting a myriad of
-      professional, community service and social events in order to further our
-      professionalism, dedication to helping the community and our sense of
-      brotherhood. As of fall 2017, we have a total of 257 brothers who have
-      entered Delta Sigma Pi through pledging with the Sigma Beta Iota colony
-      and Pi Sigma Chapter. Being the three time winner of the National
-      Outstanding Professional Events award (2011, 2012 & 2014), the Pi Sigma
-      Chapter is unparalleled in terms of professionalism. Our professional
-      events range from recruitment for Big 4, hotel management tours, speakers,
-      consultation services, tech company tours, as so on. Since our network
-      encompasses brothers from all around the world in a variety of industries,
-      no matter your interest, you will find another brother who will be able to
-      help you develop professionally and get a job. Our alumni network also
-      continues to prove itself with the our chapter being the three time winner
-      of the National Outstanding Alumni Relations award (2013, 2015 & 2017).
-    </p>
+  <CoverLayout
+    navbarTextColor="white"
+    coverElement={
+      <ImageCover
+        text="About Us"
+        coverImage="about.jpg"
+        textColor="white"
+        darkGradient
+      />
+    }
+  >
+    <Fade bottom distance="40px">
+      <Section sx={{ justifyContent: "left" }}>
+        <h1 style={{ marginBottom: 10 }}>
+          Empowering personal and professional growth.
+        </h1>
+        <div>
+          As the largest and oldest business fraternity at UC Irvine, Delta
+          Sigma Pi - Pi Sigma Chapter has inspired impactful careers for over a
+          decade, establishing a higher standard of personal and career success.
+          As a professional fraternity, we hold community and brotherhood at our
+          core—our growth is guided by the lifelong connections formed between
+          brothers.
+        </div>
+      </Section>
+      <Section>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>44</div>
+          <div style={{ font: "22px Heebo" }}>Active Brothers</div>
+        </Box>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>250+</div>
+          <div style={{ font: "22px Heebo" }}>Alumni Network</div>
+        </Box>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>100%</div>
+          <div style={{ font: "22px Heebo" }}>Full Time and</div>
+          <div style={{ font: "22px Heebo" }}>Internship Placement</div>
+        </Box>
+        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+          <div style={{ font: "bold 80px Heebo" }}>5%</div>
+          <div style={{ font: "22px Heebo" }}> Recruitment</div>
+          <div style={{ font: "22px Heebo" }}>Acceptance Rate</div>
+        </Box>
+      </Section>
+
+      <Section
+        sx={{
+          textAlign: "center",
+          backgroundColor: "#330066",
+          color: "white",
+          fontSize: 36,
+          padding: 30,
+        }}
+      >
+        <Box width={1}>UC IRVINE'S</Box>
+        <Box width={1} style={{ fontFamily: "Heebo", fontWeight: "bold" }}>
+          LARGEST AND OLDEST
+        </Box>
+        <Box width={1}>BUSINESS FRATERNITY</Box>
+      </Section>
+
+      <Section>
+        <ResponsiveDoughnut data={genderData} legendLines={1} text="Gender" />
+        <ResponsiveDoughnut data={yearData} legendLines={2} text="Year" />
+        <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
+      </Section>
+
+      <ImageTextRow
+        title="Brotherhood"
+        imagePosition="right"
+        imageSrc={brotherhoodImage}
+      >
+        Our community has cultivated mentorship, inspiration, and countless
+        opportunities to learn and grow. Our brothers have built lifelong
+        friendships—not only within our chapter, but with brothers in many of
+        the 220+ national collegiate chapters.
+      </ImageTextRow>
+      <ImageTextRow
+        title="Professionalism"
+        imagePosition="left"
+        imageSrc={professionalismImage}
+      >
+        Delta Sigma Pi offers a career advantage like no other. For over a
+        decade, our chapter has cultivated professionalism and kickstarted
+        impactful careers through a focus on industry education and workshops,
+        industry conferences, recruiting and networking events, and much more.
+      </ImageTextRow>
+      <ImageTextRow
+        title="Community Service"
+        imagePosition="right"
+        imageSrc={communityImage}
+      >
+        Our brotherhood actively strengthens our communities through service. By
+        organizing more than eight high-impact service initiatives a year, we
+        act on our commitment to service.
+      </ImageTextRow>
+
+      <CenterHeader>Our Values</CenterHeader>
+      <Flex flexWrap="wrap" sx={{ justifyContent: "center" }}>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Respect</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Integrity</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Initiative</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Innovation</div>
+        </Box>
+        <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
+          <div style={{ fontSize: "26px" }}>Humility</div>
+        </Box>
+      </Flex>
+
+      <CenterHeader marginTop={80} marginBottom={20}>
+        Industries
+      </CenterHeader>
+      <Flex flexWrap="wrap">
+        <CareerBox title="Finance" icon={faPiggyBank}>
+          Investment banking, wealth management, financial analysts, and
+          beyond—our brothers set the standard for impactful careers in finance
+          at the world’s biggest firms and corporations.
+        </CareerBox>
+        <CareerBox title="Marketing" icon={faBullhorn}>
+          Our brothers are influencing how companies communicate products and
+          services through product marketing, brand strategy, communications,
+          and more.
+        </CareerBox>
+        <CareerBox title="Tech" icon={faMicrochip}>
+          Whether it’s software engineering, product management, or data
+          analytics, our brothers are experienced and prepared to shape the
+          future of technology.
+        </CareerBox>
+        <CareerBox title="Accounting" icon={faCalculator}>
+          We’ve placed countless brothers in every Big Four accounting firm,
+          where they build successful careers in audit, tax, assurance, and more
+          professional services.
+        </CareerBox>
+        <CareerBox title="Consulting" icon={faLightbulb}>
+          Our brothers are among the few from UC Irvine to start careers in
+          management consulting, tasked with providing strategic guidance to the
+          world’s biggest companies.
+        </CareerBox>
+        <CareerBox title="Other" icon={faUserTie}>
+          There are limitless applications of business—we have brothers pursuing
+          entrepreneurship, experience and interface design, human resources,
+          and much more.
+        </CareerBox>
+      </Flex>
+
+      <CenterHeader marginBottom={20}>History</CenterHeader>
+      <div
+        style={{
+          maxWidth: 700,
+          margin: "0 auto",
+          marginBottom: 80,
+          color: "#999",
+        }}
+      >
+        In 1907, Delta Sigma Pi was founded by four business students at New
+        York University who saw an opportunity to impact the lives of their
+        fellow business students. In 1975, Delta Sigma Pi officially became the
+        nation's first co-ed business fraternity. Today, we have 296 chartered
+        collegiate chapters and over 275,000 initiated members nationally. Pi
+        Sigma Chapter at the University of California, Irvine was founded in
+        2008 by Adam Su and Myles Sterett. Over a decade later, our chapter has
+        become the premier business fraternity on campus, unparalleled in our
+        professional success and brotherhood.
+      </div>
+    </Fade>
   </CoverLayout>
 )

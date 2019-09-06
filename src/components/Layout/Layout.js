@@ -96,18 +96,18 @@ const Footer = props => (
         fontSize={16}
         flexWrap="wrap"
         justifyContent="center"
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "center", paddingTop: 40 }}
       >
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
-          <Image src={phoneIcon} height={15} />
-          <div>808-359-1585</div>
+          <Image src={phoneIcon} width={20} />
+          <div>SVP: (408) 529-7127</div>
         </Box>
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
-          <Image src={emailIcon} height={15} />
+          <Image src={emailIcon} width={30} />
           <div>svp@dspuci.com</div>
         </Box>
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
-          <Image src={uciLogo} height={15} />
+          <Image src={uciLogo} width={30} />
           <div>Irvine, CA</div>
         </Box>
       </Flex>
@@ -120,12 +120,12 @@ const Footer = props => (
       >
         <Box mb={30} width={[1 / 6, 1 / 12]}>
           <a href="https://www.facebook.com/DSPUCI/">
-            <Image src={facebookIcon} height={24} />
+            <Image src={facebookIcon} width={24} />
           </a>
         </Box>
         <Box mb={30} width={[1 / 6, 1 / 12]}>
           <a href="https://www.instagram.com/dspuci/">
-            <Image src={instagramIcon} height={24} />
+            <Image src={instagramIcon} width={24} />
           </a>
         </Box>
       </Flex>
@@ -138,6 +138,12 @@ const Footer = props => (
       >
         <Box width={1}>
           ©{new Date().getFullYear()} Delta Sigma Pi - Pi Sigma Chapter
+        </Box>
+        <Box width={1}>
+          Developed by{" "}
+          <a style={{ color: "white" }} href="https://linkedin.com/in/frafezy">
+            Farbod Rafezy
+          </a>
         </Box>
       </Flex>
     </Container>
