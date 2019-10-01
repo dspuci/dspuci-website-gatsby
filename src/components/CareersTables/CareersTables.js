@@ -30,7 +30,7 @@ const CareersTable = props => (
 
 class YearButton extends React.Component {
   handleClick = () => {
-    this.props.onYearButtonClick(this.props.value)
+    this.props.onClick(this.props.value)
   }
 
   render() {
@@ -51,10 +51,10 @@ class YearButton extends React.Component {
 }
 
 class CareersTables extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      currentYear: "2019",
+      currentYear: props.defaultYear,
     }
   }
 
@@ -121,7 +121,7 @@ class CareersTables extends React.Component {
                   <YearButton
                     value={key}
                     currentYear={this.state.currentYear}
-                    onYearButtonClick={this.handleYearButtonClick}
+                    onClick={this.handleYearButtonClick}
                   />
                 ))}
               {careersData[this.state.currentYear].map(table => (

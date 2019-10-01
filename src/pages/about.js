@@ -52,21 +52,17 @@ export default () => (
         </div>
       </Section>
       <Section>
-        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>44</div>
           <div style={{ font: "22px Heebo" }}>Active Brothers</div>
         </Box>
-        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>250+</div>
           <div style={{ font: "22px Heebo" }}>Alumni Network</div>
         </Box>
-        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
+        <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>100%</div>
           <div style={{ font: "22px Heebo" }}>Internship Placement</div>
-        </Box>
-        <Box width={[1, 1 / 2, 1 / 4]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>8%</div>
-          <div style={{ font: "22px Heebo" }}>Acceptance Rate</div>
         </Box>
       </Section>
 

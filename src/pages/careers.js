@@ -27,6 +27,6 @@ export default () => (
         unicorn startups.
       </div>
     </Section>
-    <CareersTables />
+    <CareersTables defaultYear={"2019"} />
   </CoverLayout>
 )

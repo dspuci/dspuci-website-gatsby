@@ -189,9 +189,10 @@ export default () => (
           different contributions that various individuals can make. However, we
           are still looking for highly motivated scholars that not only work
           well independently, but within a group as well. Potential, as well as
-          present qualities, is a determining factor in the bid process. Some
-          factors we take into consideration are professional aptitude, past
-          successes, willingness to learn, passion, and social compatibility.
+          present qualities, is a determining factor in the selection process.
+          Some factors we take into consideration are professional aptitude,
+          past successes, willingness to learn, passion, and social
+          compatibility.
         </DescriptionText>
       </HoverShadowBox>
       <HoverShadowBox>
