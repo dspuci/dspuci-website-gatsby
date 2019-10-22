@@ -83,6 +83,29 @@ export default () => (
         </a>
       </div>
 
+      <div
+        style={{
+          display: "inline-block",
+          width: "100%",
+          textAlign: "center",
+          marginBottom: 30,
+        }}
+      >
+        <a
+          style={{
+            backgroundColor: "#eee",
+            color: "black",
+            display: "inline-block",
+            padding: 10,
+            textDecoration: "none",
+            borderRadius: 12,
+          }}
+          href={withPrefix(`/files/DeltaSigmaPi_ApplicationPt1.pdf`)}
+        >
+          Download Application Part I PDF
+        </a>
+      </div>
+
       <CenterHeader>Why join?</CenterHeader>
       <ImageTextRow
         title="Career Advantage"
@@ -143,9 +166,7 @@ export default () => (
         <DescriptionText>
           Business Administration, Business Economics, Business Information
           Management, Economics, Informatics, Information and Computer Science,
-          and Quantitative Economics. We take students of other majors into our
-          pledging process on a case by case basis, so don’t let your major be a
-          deterrent from coming out to our recruitment week.
+          and Quantitative Economics.
         </DescriptionText>
       </HoverShadowBox>
       <HoverShadowBox>
