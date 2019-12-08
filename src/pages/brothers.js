@@ -66,19 +66,19 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    executiveCommittee: allLeadershipFall19XlsxSheet1 {
+    executiveCommittee: allLeadershipWinter20XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    directors: allDirectorsFall19XlsxSheet1 {
+    directors: allDirectorsWinter20XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    brothers: allBiosFall19XlsxFormResponses1 {
+    brothers: allBiosWinter20XlsxFormResponses1 {
       nodes {
         First_Name
         Last_Name

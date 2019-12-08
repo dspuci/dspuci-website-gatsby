@@ -61,7 +61,7 @@ export default ({ data }) => {
             width={175}
             onError={addDefaultSrc}
             src={withPrefix(
-              `/images/brothers/fall19/${brotherInfo.codeName}.jpg`
+              `/images/brothers/winter20/${brotherInfo.codeName}.jpg`
             )}
             borderRadius={8}
           />
@@ -126,7 +126,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    bio: biosFall19XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+    bio: biosWinter20XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
       First_Name
       Last_Name
       Class
