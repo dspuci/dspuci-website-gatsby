@@ -91,6 +91,14 @@ class CareersTables extends React.Component {
                 Location
               }
             }
+            internships2020: allCareersXlsxInternships2020 {
+              nodes {
+                Name
+                Position
+                Company
+                Location
+              }
+            }
           }
         `}
         render={data => {
@@ -106,6 +114,10 @@ class CareersTables extends React.Component {
               },
             ],
             "2020": [
+              {
+                name: "Internships",
+                data: data.internships2020,
+              },
               {
                 name: "Full Time Offers",
                 data: data.fullTimeOffers2020,
