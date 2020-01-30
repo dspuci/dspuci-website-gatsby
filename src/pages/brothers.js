@@ -35,7 +35,15 @@ export default ({ data }) => {
       <Flex flexWrap="wrap">
         {data.brothers.nodes
           .sort((a, b) =>
-            a.Last_Name > b.Last_Name ? 1 : b.Last_Name > a.Last_Name ? -1 : 0
+            a.Last_Name > b.Last_Name
+              ? 1
+              : b.Last_Name > a.Last_Name
+              ? -1
+              : a.First_Name > b.First_Name
+              ? 1
+              : b.First_Name > a.First_Name
+              ? -1
+              : 0
           )
           .map(brotherInfo => (
             <Brother brotherInfo={brotherInfo} />
@@ -58,19 +66,19 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    executiveCommittee: allLeadershipFall19XlsxSheet1 {
+    executiveCommittee: allLeadershipWinter20XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    directors: allDirectorsFall19XlsxSheet1 {
+    directors: allDirectorsWinter20XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    brothers: allBiosFall19XlsxFormResponses1 {
+    brothers: allBiosWinter20XlsxFormResponses1 {
       nodes {
         First_Name
         Last_Name

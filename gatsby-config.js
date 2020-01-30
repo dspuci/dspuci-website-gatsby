@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: `/dspuci-website-gatsby`,
   siteMetadata: {
     title: `Delta Sigma Pi | Pi Sigma`,
     siteUrl: `https://www.dspuci.com`,
@@ -23,7 +22,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `families`,
-        path: `${__dirname}/static/images/families/fall19/`,
+        path: `${__dirname}/static/images/families/winter20/`,
       },
     },
     {

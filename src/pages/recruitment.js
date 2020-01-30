@@ -83,6 +83,29 @@ export default () => (
         </a>
       </div>
 
+      <div
+        style={{
+          display: "inline-block",
+          width: "100%",
+          textAlign: "center",
+          marginBottom: 30,
+        }}
+      >
+        <a
+          style={{
+            backgroundColor: "#eee",
+            color: "black",
+            display: "inline-block",
+            padding: 10,
+            textDecoration: "none",
+            borderRadius: 12,
+          }}
+          href={withPrefix(`/files/DeltaSigmaPi_ApplicationPt1.pdf`)}
+        >
+          Download Application Part I PDF
+        </a>
+      </div>
+
       <CenterHeader>Why join?</CenterHeader>
       <ImageTextRow
         title="Career Advantage"
@@ -103,7 +126,8 @@ export default () => (
         Joining the DSP family means mentorship, inspiration, and countless
         opportunities to learn and grow. Build lifelong friendships alongside an
         extensive network of business professionals -- with over 220 collegiate
-        chapters, no matter where you go, you can count on brothers for support.
+        chapters, no matter where you go, you can count on your brothers for
+        support.
       </ImageTextRow>
       <ImageTextRow
         title="Unrivaled Leaders"
@@ -142,9 +166,7 @@ export default () => (
         <DescriptionText>
           Business Administration, Business Economics, Business Information
           Management, Economics, Informatics, Information and Computer Science,
-          and Quantitative Economics. We take students of other majors into our
-          pledging process on a case by case basis, so don’t let your major be a
-          deterrent from coming out to our recruitment week.
+          and Quantitative Economics.
         </DescriptionText>
       </HoverShadowBox>
       <HoverShadowBox>
@@ -174,7 +196,8 @@ export default () => (
         <DescriptionText>
           If you have grown personally and professionally since your last
           recruitment process, you have an advantage over those students going
-          through the recruitment process for the first time.
+          through the recruitment process for the first time and are welcome to
+          apply again.
         </DescriptionText>
       </HoverShadowBox>
       <HoverShadowBox>
@@ -187,9 +210,10 @@ export default () => (
           different contributions that various individuals can make. However, we
           are still looking for highly motivated scholars that not only work
           well independently, but within a group as well. Potential, as well as
-          present qualities, is a determining factor in the bid process. Some
-          factors we take into consideration are professional aptitude, past
-          successes, willingness to learn, passion, and social compatibility.
+          present qualities, is a determining factor in the selection process.
+          Some factors we take into consideration are professional aptitude,
+          past successes, willingness to learn, passion, and social
+          compatibility.
         </DescriptionText>
       </HoverShadowBox>
       <HoverShadowBox>
@@ -208,7 +232,7 @@ export default () => (
         </FAQHeader>
         <DescriptionText>
           Yes. However, you can not pledge for Delta Sigma Pi if you are a part
-          of another professional fraternity.
+          of another professional business fraternity.
         </DescriptionText>
       </HoverShadowBox>
       <HoverShadowBox>

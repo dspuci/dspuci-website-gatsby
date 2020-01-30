@@ -4,7 +4,7 @@ import styles from "./FamilyTree.module.css"
 import { withPrefix } from "gatsby"
 import { Fade } from "react-reveal"
 
-const term = "fall19"
+const term = "winter20"
 
 class FamilyTree extends React.Component {
   render() {

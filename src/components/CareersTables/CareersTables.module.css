@@ -1,0 +1,25 @@
+.button {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.activeButton {
+  background-color: #330099;
+  color: white;
+}
+
+.inactiveButton {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.inactiveButton:hover {
+  background-color: #d8d8d8;
+}

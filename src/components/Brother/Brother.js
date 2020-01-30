@@ -8,7 +8,7 @@ import { withPrefix } from "gatsby"
 import coatofarms from "../../images/coatofarms.jpg"
 import { Fade } from "react-reveal"
 
-const term = "fall19"
+const term = "winter20"
 
 class Brother extends React.Component {
   addDefaultSrc(ev) {
@@ -70,36 +70,30 @@ class LeaderBrother extends React.Component {
   }
 
   render() {
-    let brotherInfo = {
-      firstName: this.props.name.trim().split(" ")[0],
-      lastName: this.props.name.trim().split(" ")[1],
-      codeName: (
-        this.props.name.trim().split(" ")[0] +
-        "_" +
-        this.props.name.trim().split(" ")[1]
-      ).toLowerCase(),
-      subtitle: this.props.title.trim(),
-    }
+    let fullName = this.props.name
+    let codeName = fullName
+      .split(" ")
+      .join("_")
+      .toLowerCase()
+    let subtitle = this.props.title.trim()
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to={`brothers/${brotherInfo.codeName}`}>
+          <Link to={`brothers/${codeName}`}>
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}
               width={175}
               height={262.5}
-              src={withPrefix(
-                `/images/brothers/${term}/${brotherInfo.codeName}.jpg`
-              )}
+              src={withPrefix(`/images/brothers/${term}/${codeName}.jpg`)}
               borderRadius={8}
             />
           </Link>
           <Text className={styles.name} fontSize={[18, 16, 16, 14]}>
-            {brotherInfo.firstName} {brotherInfo.lastName}
+            {fullName}
           </Text>
           <Text className={styles.class} fontSize={[14, 13, 12, 11]}>
-            {brotherInfo.subtitle}
+            {subtitle}
           </Text>
         </Fade>
       </Box>
