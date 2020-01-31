@@ -1,0 +1,50 @@
+.proWeekCover {
+    background: #0A2B5D;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: table;
+    width: 100%;
+}
+
+.homeTitle {
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.homeTitle h1 {
+    font-size: 130px;
+    font-family: "Georgia";
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.homeTitle p {
+    font-size: 30px;
+    font-family: "Georgia";
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button:hover {
+    opacity: 0.75;
+}

@@ -16,6 +16,7 @@ const Links = () => (
   <ul>
     <ListLink to="/">Home</ListLink>
     <ListLink to="/about">About</ListLink>
+    <ListLink to="/proweek">Pro-Week</ListLink>
     <ListLink to="/recruitment">Recruitment</ListLink>
     <ListLink to="/brothers">Brothers</ListLink>
     <ListLink to="/careers">Careers</ListLink>
