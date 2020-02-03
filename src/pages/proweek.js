@@ -39,7 +39,7 @@ export default () => (
           Develop Yourself Professionally
         </h1>
         <div>
-          Professionalism Week is a series of busienss workshops and a case study competition hosted by Delta Sigma Pi to 
+          Professionalism Week is a series of business workshops and a case study competition hosted by Delta Sigma Pi to 
           promote professional development at UCI. Events open to all students, no fees/registration needed.
         </div>
       </Section>
@@ -79,7 +79,7 @@ export default () => (
         <br />
         <div>
           <b>Case Study Workshop - Business 101 (2/13): </b>Learn about case studies and their 
-          application in real world interviews. Presentation will cover how to effecitively 
+          application in real-world interviews. The presentation will cover how to effectively 
           solve cases and break down the sample case (view below) for the Case Study Competition.
         </div>
       </Section>
@@ -94,11 +94,11 @@ export default () => (
 
       <Section>
         <div>
-          Delta Sigma Pi proudly presents its inagurual Case study Competition to wrap up DSP 
-          Professional Week. It is designed to provide UCI students with an opportunity to 
-          compete and showcase their busieness acumen and public speaking skills. Non-competitors 
-          are encouraged to come watch the Final Round competitors present in front of judges 
-          from the consulting industry.
+        Delta Sigma Pi proudly presents its inaugural Case study Competition to wrap up DSP 
+        Professional Week. It is designed to provide UCI students with an opportunity to 
+        compete and showcase their business acumen and public speaking skills. Non-competitors 
+        are encouraged to come to watch the Final Round competitors present in front of judges 
+        from the consulting industry.
         </div>
       </Section>
 
@@ -110,9 +110,9 @@ export default () => (
         <div>
         • Teams of 2-3 UCI Students <br/>
         • 1st Place - $100/Team, 2nd Place - $50/Team, 3rd Place - $25/Team, 4th Place - $25/Team<br/>
-        • 20 Min to review case with team; 5-7 min presnetation; 3 min Q&A; 5 min  Feedback.Discussion<br/>
-        • Competitors must be bale to attend both Prelim./Final Rounds if advanced<br/>
-        • Must sign up by Sunday (2/16) at 11:59PM. Limited Spots - First come, first serce
+        • 20 mins to review case with team; 5-7 min presentation; 3 min Q&A; 5 min Feedback/Discussion<br/>
+        • Competitors must be bale to attend both Prelim/Final Rounds if advanced<br/>
+        • Must sign up by <b>Sunday (2/16)</b> at <b>11:59PM</b>. Limited Spots - First come, first serve
         </div>
       </Section>
 
