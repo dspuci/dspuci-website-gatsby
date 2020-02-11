@@ -44,7 +44,8 @@ export default () => (
         </div>
       </Section>
 
-      <CenterHeader>Week 6 (2/10 - 2/14) Schedule</CenterHeader>
+      <CenterHeader>Week 6 Schedule</CenterHeader>
+      <p style={{textAlign: "center", marginTop: "-40px"}}>February 12 - February 14</p>
 
       <Flex flexWrap="wrap" alignItems="center" justifyContent="center" marginBottom="-20px">
         <EventBox title="CRUSHING IT WITH LINKEDIN WORKSHOP" imageSrc={linkedInBox}>
@@ -136,10 +137,10 @@ export default () => (
       </Section>
 
       <Flex>
-        <Box width={[1, 1, 1, 1 / 2]}>
+        <Box width={[1, 1 / 2]}>
           <Image src={weekOneFlyer} />
         </Box>
-        <Box width={[1, 1, 1, 1 / 2]}>
+        <Box width={[1, 1 / 2]}>
           <Image src={weekTwoFlyer} />
         </Box>
       </Flex>
