@@ -2,7 +2,7 @@ const path = require(`path`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "BiosWinter20Xlsx__FormResponses1") {
+  if (node.internal.type === "BiosSummer20Xlsx__FormResponses1") {
     const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
       .split(" ")
       .join("_")
