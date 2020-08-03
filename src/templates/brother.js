@@ -6,6 +6,13 @@ import { withPrefix } from "gatsby"
 
 import coatofarms from "../images/coatofarms.jpg"
 
+const yearMap = {
+  "1st": "Freshman",
+  "2nd": "Sophomore",
+  "3rd": "Junior",
+  "4th": "Senior"
+}
+
 const BrotherInfoBox = props => (
   <Box
     width={[1]}
@@ -72,7 +79,7 @@ export default ({ data }) => {
             {brotherInfo.firstName} {brotherInfo.lastName}
           </Text>
           <Text fontWeight="100" fontSize={[18, 22]}>
-            {brotherInfo.year} | {brotherInfo.major}{brotherInfo.minor ? "; " + brotherInfo.minor : null}
+            {yearMap[brotherInfo.year]} | {brotherInfo.major}{brotherInfo.minor ? "; " + brotherInfo.minor : null}
           </Text>
           <div style={{width: '100%', borderBottom: '1px solid black', height: '10px'}}></div>
           <Flex flexWrap="wrap" py={3}>

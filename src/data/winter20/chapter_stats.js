@@ -37,7 +37,7 @@ const majorData = {
   ],
   datasets: [
     {
-      data: [26, 17, 9, 2, 2, 1],
+      data: [18, 6, 3, 2, 2, 1],
       backgroundColor: [
         "rgb(68,179,194)",
         "rgb(241,169,78)",
