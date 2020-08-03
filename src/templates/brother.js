@@ -35,7 +35,6 @@ export default ({ data }) => {
     industry: data.bio.Industry.trim(),
     recentPosition: data.bio.Recent_Position.trim(),
     involvements: data.bio.Involvements.trim(),
-    hobbies: data.bio.Hobbies.trim(),
     family: data.bio.Family.trim(),
     linkedInUrl: data.bio.LinkedIn_URL.trim(),
     bios: data.bio.Bios,
@@ -118,7 +117,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    bio: biosWinter20XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+    bio: biosSummer20XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
       First_Name
       Last_Name
       Class
@@ -129,7 +128,6 @@ export const query = graphql`
       Industry
       Recent_Position
       Involvements
-      Hobbies
       Family
       LinkedIn_URL
       Bios

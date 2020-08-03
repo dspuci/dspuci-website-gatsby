@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      bios: allBiosWinter20XlsxFormResponses1 {
+      bios: allBiosSummer20XlsxFormResponses1 {
         nodes {
           fields {
             slug
