@@ -1,6 +1,6 @@
 .cardContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
@@ -19,11 +19,15 @@
 }
 
 .textContainer h2 {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .textContainer h3 {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.textContainer p {
+  font-size: 14px;
 }
 
 @media (max-width: 800px) {

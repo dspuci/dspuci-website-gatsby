@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import imageOne from '../../images/ryan_recruitment.jpeg'
 import imageTwo from '../../images/tiffany_recruitment.jpeg'
@@ -30,6 +30,7 @@ const RecCarousel = (props) => {
       arrowRight={<FontAwesomeIcon icon={faChevronRight} size="2x"/>}
       arrowRightDisabled={<FontAwesomeIcon icon={faChevronRight} color="gray" size="2x"/>}
       addArrowClickHandler={true}
+      centered
     >
       <SpotlightCard 
         src={imageOne}

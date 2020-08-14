@@ -30,7 +30,7 @@ class Brother extends React.Component {
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to={`brothers/${brotherInfo.codeName}`}>
+          <Link to={`${brotherInfo.codeName}`}>
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}
@@ -79,7 +79,7 @@ class LeaderBrother extends React.Component {
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to={`brothers/${codeName}`}>
+          <Link to={`${codeName}`}>
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}

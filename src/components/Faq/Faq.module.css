@@ -9,7 +9,6 @@
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   cursor: pointer;
-  padding: 10px;
   display: flex;
   align-items: center;
   border: none;
@@ -43,6 +42,7 @@
   background-color: white;
   overflow: auto;
   transition: max-height 0.6s ease;
+  padding: 6px;
 }
 
 /* Style the accordion content text */

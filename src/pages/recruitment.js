@@ -1,5 +1,5 @@
 import React from "react"
-import { Text, Flex } from "rebass"
+import { Flex } from "rebass"
 import { Fade } from "react-reveal"
 
 import { CoverLayout } from "../components/Layout"
@@ -13,25 +13,15 @@ import RecCarousel from "../components/RecCarousel/RecCarousel"
 import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
-import recruitmentSchedule from "../../public/images/recruitment_schedules/fall19.png"
-
-const FAQHeader = props => (
-  <Text
-    fontSize={30}
-    fontWeight="bold"
-    fontFamily="Heebo"
-    sx={{ marginBottom: 10 }}
-  >
-    {props.children}
-  </Text>
-)
+//import recruitmentSchedule from "../../public/images/recruitment_schedules/fall19.png"
 
 export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="FALL RECRUITMENT: COMING SOON"
+        text="FALL RECRUITMENT:"
+        text2="COMING SOON"
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient
@@ -43,7 +33,7 @@ export default () => (
         <div style={{width: '100%', borderBottom: '1px solid black'}}>
           <p>
           We’re committed to hosting a memorable recruitment experience for prospective members in a remote format in Fall 2020. 
-          Be sure to follow us on Facebook and Instagram for any updates on recruitment. 
+          Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" target="_blank" rel="noreferrer">Facebook</a> and <a href="https://www.instagram.com/dspuci/" target="_blank" rel="noreferrer">Instagram</a> for any updates on recruitment. 
           In the meantime, take a look below to find out more about Delta Sigma Pi. 
           </p>
         </div>
@@ -170,7 +160,7 @@ export default () => (
       <Accordion 
         title="What should I do if I have further questions that were not addressed here?"
         content="
-        If you have more questions, feel free to email svp@dspuci.com.
+          If you have more questions, feel free to email svp@dspuci.com.
         "
       />
       </Fade>

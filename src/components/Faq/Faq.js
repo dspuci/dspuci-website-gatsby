@@ -9,7 +9,7 @@ import styles from "./Faq.module.css";
 
 const FAQHeader = props => (
     <Text
-        fontSize={[20, 30]}
+        fontSize={[16, 20]}
         fontWeight="bold"
         fontFamily="Heebo"
         sx={{ marginBottom: 10 }}
