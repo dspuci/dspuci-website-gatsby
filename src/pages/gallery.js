@@ -4,11 +4,16 @@ import { graphql } from "gatsby"
 import { StandardLayout } from "../components/Layout"
 import Album from "../components/Album"
 import CenterHeader from "../components/CenterHeader"
+import {Helmet} from "react-helmet";
 
 import styles from "./gallery.module.css"
 
 export default ({ data }) => (
   <StandardLayout>
+    <Helmet>
+        <title>Gallery | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter Gallery Page" content="Delta Sigma Pi - Pi Sigma Chapter Gallery Page" />
+    </Helmet>
     <CenterHeader>Gallery</CenterHeader>
     <div className={styles.grid}>
       {data.albumPreviews.group.map(albumPreview => (

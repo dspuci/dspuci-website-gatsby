@@ -7,10 +7,15 @@ import { StandardLayout } from "../components/Layout"
 import { Brother, LeaderBrother } from "../components/Brother"
 import FamilyTree from "../components/FamilyTree/FamilyTree"
 import CenterHeader from "../components/CenterHeader"
+import {Helmet} from "react-helmet";
 
 export default ({ data }) => {
   return (
     <StandardLayout>
+      <Helmet>
+        <title>Brothers | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter Brothers Page" content="Delta Sigma Pi - Pi Sigma Chapter Brothers Page" />
+      </Helmet>
       <Fade>
         <CenterHeader>Executive Committee</CenterHeader>
       </Fade>

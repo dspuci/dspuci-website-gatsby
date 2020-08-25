@@ -4,6 +4,7 @@ import { Fade } from "react-reveal"
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 import Section from "../components/Section"
+import {Helmet} from "react-helmet";
 
 export default () => (
   <CoverLayout
@@ -17,6 +18,10 @@ export default () => (
       />
     }
   >
+    <Helmet>
+        <title>Case Study Competition | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter Case Study Competition Page" content="Delta Sigma Pi - Pi Sigma Chapter Case Study Competition Page" />
+    </Helmet>
     <Fade>
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10, fontSize: 40}}>Delta Sigma Pi: Professionalism Week - Winter 2020</h1>

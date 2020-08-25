@@ -55,6 +55,7 @@ class CareersTables extends React.Component {
     super(props)
     this.state = {
       currentYear: props.defaultYear,
+      currentIndustry: ""
     }
   }
 

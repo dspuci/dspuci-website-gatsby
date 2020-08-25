@@ -4,6 +4,7 @@ import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 import Section from "../components/Section"
 import CareersTables from "../components/CareersTables"
+import {Helmet} from "react-helmet";
 
 export default () => (
   <CoverLayout
@@ -17,6 +18,10 @@ export default () => (
       />
     }
   >
+    <Helmet>
+        <title>Careers | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter Careers Page" content="Delta Sigma Pi - Pi Sigma Chapter Careers Page" />
+    </Helmet>
     <Section sx={{ justifyContent: "left" }}>
       <h1 style={{ marginBottom: 10 }}>A higher standard of career success.</h1>
       <div>

@@ -14,6 +14,8 @@ import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
 import communityImage from "../images/community.jpg"
 
+import {Helmet} from "react-helmet";
+
 import {
   faBullhorn,
   faCalculator,
@@ -37,6 +39,10 @@ export default () => (
       />
     }
   >
+    <Helmet>
+        <title>About | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter About Page" content="Delta Sigma Pi - Pi Sigma Chapter About Page" />
+    </Helmet>
     <Fade bottom distance="40px">
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10 }}>

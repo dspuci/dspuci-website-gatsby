@@ -9,6 +9,7 @@ import Section from "../components/Section"
 import ImageBox from "../components/ImageBox"
 import Accordion from "../components/Faq"
 import RecCarousel from "../components/RecCarousel/RecCarousel"
+import {Helmet} from "react-helmet";
 
 import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
@@ -28,6 +29,10 @@ export default () => (
       />
     }
   >
+    <Helmet>
+        <title>Recruitment | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" />
+    </Helmet>
     <Fade bottom distance="40px">
       <Section sx={{ justifyContent: "left" }}>
         <div style={{width: '100%', borderBottom: '1px solid black'}}>

@@ -33,5 +33,16 @@ module.exports = {
       },
     },
     `gatsby-transformer-excel`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Delta Sigma Pi - Pi Sigma Chapter`,
+        short_name: `DSP`,
+        start_url: `/`,
+        icon: `src/images/dsp-sigil.png`
+      }
+    }
   ],
 }
