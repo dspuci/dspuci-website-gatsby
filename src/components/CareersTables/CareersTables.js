@@ -50,17 +50,45 @@ class YearButton extends React.Component {
   }
 }
 
+class IndustryButton extends React.Component {
+  handleClick = () => {
+    this.props.onClick(this.props.value)
+  }
+
+  render() {
+    return (
+      <button
+        onClick={this.handleClick}
+        className={[
+          styles.button,
+          this.props.currentIndustry === this.props.value
+            ? styles.activeButton
+            : styles.inactiveButton,
+        ].join(" ")}
+      >
+        {this.props.value}
+      </button>
+    )
+  }
+}
+
 class CareersTables extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       currentYear: props.defaultYear,
-      currentIndustry: ""
+      currentIndustry: "All"
     }
+    this.handleYearButtonClick = this.handleYearButtonClick.bind(this);
+    this.handleIndustryButtonClick = this.handleIndustryButtonClick.bind(this);
   }
 
   handleYearButtonClick = year => {
     this.setState({ currentYear: year })
+  }
+
+  handleIndustryButtonClick = industry => {
+    this.setState({ currentIndustry: industry});
   }
 
   render() {
@@ -100,6 +128,22 @@ class CareersTables extends React.Component {
                 Location
               }
             }
+            internshipsOperations2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Operations"}}) {
+              nodes {
+                Name
+                Position
+                Company
+                Location
+              }
+            }
+            internshipsOperations2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Operations"}}) {
+              nodes {
+                Name
+                Position
+                Company
+                Location
+              }
+            }
           }
         `}
         render={data => {
@@ -107,21 +151,33 @@ class CareersTables extends React.Component {
             "2019": [
               {
                 name: "Internships",
-                data: data.internships2019,
+                data: {
+                  "All": data.internships2019,
+                  "Operations": data.internshipsOperations2019
+                }
               },
               {
                 name: "Full Time Offers",
-                data: data.fullTimeOffers2019,
+                data: {
+                  "All": data.internships2019,
+                  "Operations": data.internshipsOperations2019
+                }
               },
             ],
             "2020": [
               {
                 name: "Internships",
-                data: data.internships2020,
+                data: {
+                  "All": data.internships2020,
+                  "Operations": data.internshipsOperations2020
+                }
               },
               {
                 name: "Full Time Offers",
-                data: data.fullTimeOffers2020,
+                data: {
+                  "All": data.fullTimeOffers2020,
+                  "Operations": data.internshipsOperations2020
+                }
               },
             ],
           }
@@ -137,10 +193,20 @@ class CareersTables extends React.Component {
                     onClick={this.handleYearButtonClick}
                   />
                 ))}
+              <div></div>
+              {Object.keys(careersData[this.state.currentYear][0].data)
+              .reverse()
+              .map(key => (
+                <IndustryButton
+                  value={key}
+                  currentIndustry={this.state.currentIndustry}
+                  onClick={this.handleIndustryButtonClick}
+                />
+              ))}
               {careersData[this.state.currentYear].map(table => (
                 <CareersTable
-                  title={`${this.state.currentYear} ${table.name}`}
-                  data={table.data}
+                  title={`${this.state.currentYear} ${table.name} ${this.state.currentIndustry}`}
+                  data={table.data[this.state.currentIndustry]}
                 />
               ))}
             </div>
