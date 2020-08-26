@@ -8,7 +8,7 @@ const CareersTable = props => {
   return(
     <div>
       <CenterHeader>{props.title}</CenterHeader>
-      <SubHeader>{props.subTitle !== "All" ? (props.subTitle === "Tech & PM" ? "Technology & PM" : (props.subTitle === "HR & Administration" ? "Human Resources & Administration" : props.subTitle)) : null}</SubHeader>
+      <SubHeader>{props.subTitle !== "All" ? (props.subTitle === "HR & Administration" ? "Human Resources & Administration" : props.subTitle) : null}</SubHeader>
       <div style={{ overflowX: "auto" }}>
         <table style={{ fontSize: 16 }}>
           <tbody>
@@ -107,7 +107,7 @@ class CareersTables extends React.Component {
           data: {
             "Finance & Accounting": this.props.data.internshipsFinanceAndAccounting2019,
             "Marketing & Sales": this.props.data.internshipsMarketingAndSales2019,
-            "Tech & PM": this.props.data.internshipsTechnologyAndPM2019,
+            "Technology & PM": this.props.data.internshipsTechnologyAndPM2019,
             "HR & Administration": this.props.data.internshipsHumanResourcesAndAdministration2019,
             "Operations": this.props.data.internshipsOperations2019,
             "Consulting": this.props.data.internshipsConsulting2019,
@@ -119,7 +119,7 @@ class CareersTables extends React.Component {
           data: {
             "Finance & Accounting": this.props.data.fullTimeOffersFinanceAndAccounting2019,
             "Marketing & Sales": this.props.data.fullTimeOffersMarketingAndSales2019,
-            "Tech & PM": this.props.data.fullTimeOffersTechnologyAndPM2019,
+            "Technology & PM": this.props.data.fullTimeOffersTechnologyAndPM2019,
             "HR & Administration": this.props.data.fullTimeOffersHumanResourcesAndAdministration2019,
             "Operations": this.props.data.fullTimeOffersOperations2019,
             "Consulting": this.props.data.fullTimeOffersConsulting2019,
@@ -134,7 +134,7 @@ class CareersTables extends React.Component {
           data: {
             "Finance & Accounting": this.props.data.internshipsFinanceAndAccounting2020,
             "Marketing & Sales": this.props.data.internshipsMarketingAndSales2020,
-            "Tech & PM": this.props.data.internshipsTechnologyAndPM2020,
+            "Technology & PM": this.props.data.internshipsTechnologyAndPM2020,
             "HR & Administration": this.props.data.internshipsHumanResourcesAndAdministration2020,
             "Operations": this.props.data.internshipsOperations2020,
             "Consulting": this.props.data.internshipsConsulting2020,
@@ -147,7 +147,7 @@ class CareersTables extends React.Component {
           data: {
             "Finance & Accounting": this.props.data.fullTimeOffersFinanceAndAccounting2020,
             "Marketing & Sales": this.props.data.fullTimeOffersMarketingAndSales2020,
-            "Tech & PM": this.props.data.fullTimeOffersTechnologyAndPM2020,
+            "Technology & PM": this.props.data.fullTimeOffersTechnologyAndPM2020,
             "HR & Administration": this.props.data.fullTimeOffersHumanResourcesAndAdministration2020,
             "Operations": this.props.data.fullTimeOffersOperations2020,
             "Consulting": this.props.data.fullTimeOffersConsulting2020,
