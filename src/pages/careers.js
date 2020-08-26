@@ -95,14 +95,6 @@ export const query = graphql`
       Location
     }
   }
-  fullTimeOffersOthers2020: allCareersXlsxFullTimeOffers2020(filter: {Industry: {eq: "Others"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
   fullTimeOffers2019: allCareersXlsxFullTimeOffers2019 {
     nodes {
       Name
@@ -152,14 +144,6 @@ export const query = graphql`
     }
   }
   fullTimeOffersConsulting2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Consulting"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  fullTimeOffersOthers2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Others"}}) {
     nodes {
       Name
       Position
@@ -223,14 +207,6 @@ export const query = graphql`
       Location
     }
   }
-  internshipsOthers2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Others"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
   internships2020: allCareersXlsxInternships2020 {
     nodes {
       Name
@@ -280,14 +256,6 @@ export const query = graphql`
     }
   }
   internshipsConsulting2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Consulting"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internshipsOthers2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Others"}}) {
     nodes {
       Name
       Position
