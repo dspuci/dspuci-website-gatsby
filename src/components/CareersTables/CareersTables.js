@@ -105,25 +105,25 @@ class CareersTables extends React.Component {
         {
           name: "Internships",
           data: {
+            "All": this.props.data.internships2019,
             "Consulting": this.props.data.internshipsConsulting2019,
             "Finance & Accounting": this.props.data.internshipsFinanceAndAccounting2019,
             "HR & Administration": this.props.data.internshipsHumanResourcesAndAdministration2019,
             "Marketing & Sales": this.props.data.internshipsMarketingAndSales2019,
             "Operations": this.props.data.internshipsOperations2019,
             "Technology & PM": this.props.data.internshipsTechnologyAndPM2019,
-            "All": this.props.data.internships2019,
           }
         },
         {
           name: "Full Time Offers",
           data: {
+            "All": this.props.data.fullTimeOffers2019,
             "Consulting": this.props.data.fullTimeOffersConsulting2019,
             "Finance & Accounting": this.props.data.fullTimeOffersFinanceAndAccounting2019,
             "HR & Administration": this.props.data.fullTimeOffersHumanResourcesAndAdministration2019,
             "Marketing & Sales": this.props.data.fullTimeOffersMarketingAndSales2019,
             "Operations": this.props.data.fullTimeOffersOperations2019,
             "Technology & PM": this.props.data.fullTimeOffersTechnologyAndPM2019,
-            "All": this.props.data.fullTimeOffers2019,
 
           }
         },
@@ -132,26 +132,25 @@ class CareersTables extends React.Component {
         {
           name: "Internships",
           data: {
+            "All": this.props.data.internships2020,
             "Consulting": this.props.data.internshipsConsulting2020,
             "Finance & Accounting": this.props.data.internshipsFinanceAndAccounting2020,
             "HR & Administration": this.props.data.internshipsHumanResourcesAndAdministration2020,
             "Marketing & Sales": this.props.data.internshipsMarketingAndSales2020,
             "Operations": this.props.data.internshipsOperations2020,
             "Technology & PM": this.props.data.internshipsTechnologyAndPM2020,
-            "All": this.props.data.internships2020,
-
           }
         },
         {
           name: "Full Time Offers",
           data: {
+            "All": this.props.data.fullTimeOffers2020,
             "Consulting": this.props.data.fullTimeOffersConsulting2020,
             "Finance & Accounting": this.props.data.fullTimeOffersFinanceAndAccounting2020,
             "HR & Administration": this.props.data.fullTimeOffersHumanResourcesAndAdministration2020,
             "Marketing & Sales": this.props.data.fullTimeOffersMarketingAndSales2020,
             "Operations": this.props.data.fullTimeOffersOperations2020,
             "Technology & PM": this.props.data.fullTimeOffersTechnologyAndPM2020,
-            "All": this.props.data.fullTimeOffers2020,
           }
         },
       ],
