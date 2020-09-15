@@ -1,6 +1,7 @@
 import React from "react"
-import { Flex } from "rebass"
+import { Flex, Image } from "rebass"
 import { Fade } from "react-reveal"
+import { withPrefix } from "gatsby"
 
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
@@ -14,7 +15,7 @@ import {Helmet} from "react-helmet";
 import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
-//import recruitmentSchedule from "../../public/images/recruitment_schedules/fall19.png"
+import recruitmentSchedule from "../../public/images/recruitment_schedules/fall20.jpeg"
 
 export default () => (
   <CoverLayout
@@ -22,7 +23,7 @@ export default () => (
     coverElement={
       <ImageCover
         text="FALL RECRUITMENT:"
-        text2="COMING SOON"
+        text2="INSPIRE"
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient
@@ -34,7 +35,7 @@ export default () => (
         <meta name="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" />
     </Helmet>
     <Fade bottom distance="40px">
-      <Section sx={{ justifyContent: "left" }}>
+      {/* <Section sx={{ justifyContent: "left" }}>
         <div style={{width: '100%', borderBottom: '1px solid black'}}>
           <p>
           We’re committed to hosting a memorable recruitment experience for prospective members in a remote format in Fall 2020. 
@@ -42,11 +43,22 @@ export default () => (
           In the meantime, take a look below to find out more about Delta Sigma Pi. 
           </p>
         </div>
-      </Section>
+      </Section> */}
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
         <p>Our chapter aims to create a high-impact, supportive culture where immensely passionate people are encouraged to pursue their professional and personal dreams. Attend our recruitment events to find out what sets Delta Sigma Pi above and apart. </p>
       </Section>
+
+      <CenterHeader>Schedule</CenterHeader>
+      <Image
+        onClick={() => (window.location = recruitmentSchedule)}
+        src={recruitmentSchedule}
+        sx={{
+          cursor: "pointer",
+          marginBottom: 30,
+          boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
+        }}
+      />
       
       <CenterHeader>Why Join?</CenterHeader>
 
