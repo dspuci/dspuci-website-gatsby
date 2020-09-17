@@ -41,6 +41,7 @@ class VideoCover extends React.Component {
           loop="loop"
           muted="muted"
           preload
+          playsInline
           poster={withPrefix(`/images/cover_images/${this.props.backupImage}`)}
         >
           <source

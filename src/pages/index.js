@@ -55,9 +55,9 @@ export default () => (
         Three years ago, I took the first step to attend recruitment, and my journey since then has exceeded all expectations. I strongly encourage you to take the first step as well – attend our upcoming recruitment events and learn more about becoming a part of our Fraternity.
         <br/><br/>
         Sincerely,
-        <br/><br/>
+        <br/>
         Henry Wang
-        <br/><br/>
+        <br/>
         President, Pi Sigma Chapter
       </ImageTextRowTwo>
 
