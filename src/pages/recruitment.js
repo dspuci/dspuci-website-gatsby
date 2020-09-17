@@ -22,8 +22,8 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="FALL RECRUITMENT:"
-        text2="INSPIRE"
+        text="FALL 2020"
+        text2="RECRUITMENT: INSPIRE"
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient
@@ -57,8 +57,17 @@ export default () => (
           cursor: "pointer",
           marginBottom: 30,
           boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
+          width: ['100%', '60%'],
+          margin: '0 auto',
+          position: "relative",
+          display: 'block',
+          margin: "0 auto",
+          textAlign: "center",
         }}
       />
+      <Section sx={{ justifyContent: "center" }}>
+        <p>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/757378431712140/" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2020 Recruitment: Inspire</a> for any and all updates.</p>
+      </Section>
       
       <CenterHeader>Why Join?</CenterHeader>
 

@@ -1,0 +1,33 @@
+.button {
+  color: #303030;
+  text-align: center;
+  margin: 15px auto;
+  display: inline-block;
+  background: transparent;
+  text-decoration: none;
+  color: white;
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background: white;
+  color: #1A182A;
+}
+
+.button:hover > a {
+  color: #1A182A;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.25s;
+}
