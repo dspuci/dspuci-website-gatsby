@@ -28,18 +28,6 @@ export default () => (
         <meta name="Delta Sigma Pi - Pi Sigma Chapter Home Page" content="Delta Sigma Pi - Pi Sigma Chapter Home Page" />
     </Helmet>
 
-    <Flex flexWrap="wrap" justifyContent="center" sx={{paddingTop: '30px'}}>
-      <ImageBox image={careerAdvantage} title="About Us">
-        Delta Sigma Pi offers a career advantage like no other. For over a decade, our chapter has kickstarted and cultivated impactful careers in finance, consulting, marketing, accounting, technology, entrepreneurship, and more. Unsure of what path to choose? We’ll help you out.
-      </ImageBox>
-      <ImageBox image={unrivaledLeaders} title="Brotherhood">
-        With countless opportunities for growth, our brothers become recognized leaders, within the fraternity and beyond. At UCI, our brothers hold leadership positions in over 25 campus organizations – some have even started their own.
-      </ImageBox>
-      <ImageBox image={lifelongBrotherhood} title="Careers">
-        Joining the DSP family means mentorship, inspiration, and countless opportunities to learn and grow. Build lifelong friendships alongside an extensive network of business professionals – with over 300 national chapters and 250 UCI alumni, you can count on your brothers for support no matter where you go.
-      </ImageBox>
-    </Flex>
-
     <CenterHeader>Letter from the President</CenterHeader>
       <ImageTextRowTwo
         imagePosition="left"
