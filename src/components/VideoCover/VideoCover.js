@@ -40,6 +40,7 @@ class VideoCover extends React.Component {
           autoplay="autoplay"
           loop="loop"
           muted="muted"
+          preload
           poster={withPrefix(`/images/cover_images/${this.props.backupImage}`)}
         >
           <source
