@@ -65,25 +65,25 @@ export default () => (
         Henry Wang | President, Pi Sigma Chapter
       </ImageTextRowTwo>
       <Flex flexWrap="wrap" justifyContent="center" marginBottom="-20px">
-        <ImageBox image={careerAdvantage} title="ABOUT US">
+        <ImageBox image={unrivaledLeaders} title="ABOUT US">
           Established in 2008, the Pi Sigma Chapter of Delta Sigma Pi at UC Irvine is the oldest business 
           fraternity on campus. Our chapter has cultivated a growing legacy of achievement, mentorship, 
           and leadership within business and beyond.
           <div style={{textAlign: 'center'}}>
-            <Button to="/about" text="OUR CHAPTER"></Button>
+            <Button to="/about" text="ABOUT US"></Button>
           </div>
         </ImageBox>
-        <ImageBox image={unrivaledLeaders} title="BROTHERS">
+        <ImageBox image={lifelongBrotherhood} title="BROTHERS">
           From various professional aspirations to pastime hobbies, our brothers are incredibly unique and 
           diverse. Our drive to succeed and support for one another makes us a tight-knit community like no other.    
           <div style={{textAlign: 'center'}}>
-            <Button to="/brothers" text="MEET US"></Button>   
+            <Button to="/brothers" text="OUR BROTHERS"></Button>   
           </div> 
         </ImageBox>
-        <ImageBox image={lifelongBrotherhood} title="CAREERS">
+        <ImageBox image={careerAdvantage} title="CAREERS">
           We have countless brothers with competitive internships and full-time experience in finance, 
           marketing, technology, accounting, consulting, entrepreneurship, and more – the opportunities 
-          for professional and personal growth are endless with Delta Sigma Pi.
+          for growth are endless with Delta Sigma Pi.
           <div style={{textAlign: 'center'}}>
             <Button to="/careers" text="OUR CAREERS"></Button>
           </div>
