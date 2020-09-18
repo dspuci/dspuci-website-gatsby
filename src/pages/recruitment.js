@@ -22,8 +22,8 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="FALL 2020"
-        text2="RECRUITMENT: INSPIRE"
+        text="FALL 2020 RECRUITMENT:"
+        text2="INSPIRE"
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient
@@ -76,8 +76,7 @@ export default () => (
           Delta Sigma Pi offers a career advantage like no other. For over a decade, our chapter has kickstarted and cultivated impactful careers in finance, consulting, marketing, accounting, technology, entrepreneurship, and more. Unsure of what path to choose? We’ll help you out.
         </ImageBox>
         <ImageBox image={unrivaledLeaders} title="UNRIVALED LEADERS">
-          With countless opportunities for growth, our brothers become recognized leaders, within the fraternity and beyond. At UCI, our brothers hold leadership positions in over 25 campus organizations – some have even started their own.
-        </ImageBox>
+          With countless opportunities for growth, our brothers become recognized leaders, within the fraternity and beyond. We hold leadership positions in over 25 campus organizations – some have even started their own.        </ImageBox>
         <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD">
           Joining the DSP family means mentorship, inspiration, and countless opportunities to learn and grow. Build lifelong friendships alongside an extensive network of business professionals – with over 300 national chapters and 250 UCI alumni, you can count on your brothers for support no matter where you go.
         </ImageBox>
@@ -123,9 +122,9 @@ export default () => (
       <Accordion
         title="What majors does Delta Sigma Pi accept?"
         content="
-          Business Administration, Business Economics, Business Information
-          Management, Economics, Informatics, Information and Computer Science,
-          and Quantitative Economics.
+          Business Administration, Business Information Management, Business Economics, 
+          Quantitative Economics, Economics, or a major in the School of Information and 
+          Computer Sciences. 
         "
       />
       <Accordion

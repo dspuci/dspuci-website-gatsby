@@ -42,7 +42,6 @@
   background-color: white;
   overflow: auto;
   transition: max-height 0.6s ease;
-  padding: 6px;
 }
 
 /* Style the accordion content text */

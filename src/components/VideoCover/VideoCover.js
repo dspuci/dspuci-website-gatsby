@@ -37,12 +37,12 @@ class VideoCover extends React.Component {
             transform: "translateX(-50%) translateY(-50%)",
             zIndex: -1,
           }}
-          autoplay="autoplay"
+          autoPlay="autoplay"
           loop="loop"
           muted="muted"
-          preload
+          preload="true"
           playsInline
-          poster={withPrefix(`/images/cover_images/${this.props.backupImage}`)}
+          poster={this.props.backupImage}
         >
           <source
             src={this.props.coverVideo}
@@ -54,7 +54,7 @@ class VideoCover extends React.Component {
           sx={{
             position: "relative",
             display: 'block',
-            width: ['60%', '20%'],
+            width: ['50%', '12%'],
             margin: "0 auto",
             textAlign: "center",
           }}
@@ -71,10 +71,11 @@ class VideoCover extends React.Component {
             lineHeight: 1.4,
             fontWeight: "100",
             zIndex: 0,
-            letterSpacing: '8px'
+            letterSpacing: '8px',
+            fontFamily: 'Lato, sans-serif'
           }}
           color={textColor}
-          fontSize={[5, 6, 7, 8]}
+          fontSize={[4, 4, 5, 6]}
           fontFamily="Heebo"
         >
           {this.props.textOne}
@@ -84,6 +85,7 @@ class VideoCover extends React.Component {
             position: "relative",
             display: "inline-block",
             width: "100%",
+            padding: '0 5%',
             maxWidth: '100%',
             textAlign: "center",
             margin: "10px auto",
@@ -94,16 +96,16 @@ class VideoCover extends React.Component {
             letterSpacing: '4px'
           }}
           color={textColor}
-          fontSize={[1, 2, 2, 1]}
+          fontSize={[1, 1, 1, 1]}
           fontFamily="Heebo"
         >
           {this.props.textTwo}
         </Text>
-          <Link to="/recruitment">
-            <button className={styles.button}>
-              APPLY NOW
-            </button>
-          </Link>
+        <Link to="/recruitment">
+          <button className={styles.button}>
+            LEARN MORE
+          </button>
+        </Link>
       </div>
     )
   }
