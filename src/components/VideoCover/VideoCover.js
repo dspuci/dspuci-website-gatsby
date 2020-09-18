@@ -13,7 +13,7 @@ class VideoCover extends React.Component {
       textColor = darkColor
     }
     return (
-      <div
+      <div 
         style={{
           width: "100vw",
           height: "100vh",
@@ -21,10 +21,7 @@ class VideoCover extends React.Component {
           position: "relative",
           display: "table-cell",
           verticalAlign: "middle",
-          textAlign: "center",
-          background: this.props.darkGradient
-            ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))"
-            : "",
+          textAlign: "center"
         }}
       >
         <video
@@ -43,12 +40,27 @@ class VideoCover extends React.Component {
           preload="true"
           playsInline
           poster={this.props.backupImage}
+          className={styles.video}
         >
           <source
             src={this.props.coverVideo}
             type="video/mp4"
           ></source>
         </video>
+        <img 
+          style={{
+            minWidth: "100%",
+            minHeight: "100%",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translateX(-50%) translateY(-50%)",
+            zIndex: -1,
+            objectFit: "cover"
+          }}
+          src={this.props.backupImage}
+          className={styles.img}
+        />
         <Image 
           src={this.props.coverImage}
           sx={{
