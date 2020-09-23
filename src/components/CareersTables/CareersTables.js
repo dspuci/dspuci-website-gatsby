@@ -181,7 +181,7 @@ class CareersTables extends React.Component {
     }
     return (
       <div>
-        <div style={{display: 'flex', width: '100%', justifyContent: 'center'}}>
+        <div style={{display: 'flex', width: '100%', justifyContent: 'center', flexWrap: 'wrap'}}>
           {Object.keys(careersData)
             .reverse()
             .map(key => (
