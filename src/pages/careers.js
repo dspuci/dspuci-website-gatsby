@@ -47,54 +47,6 @@ export const query = graphql`
       Location
     }
   }
-  fullTimeOffersOperations2020: allCareersXlsxFullTimeOffers2020(filter: {Industry: {eq: "Operations"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  fullTimeOffersFinanceAndAccounting2020: allCareersXlsxFullTimeOffers2020(filter: {Industry: {eq: "Finance & Accounting"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  fullTimeOffersMarketingAndSales2020: allCareersXlsxFullTimeOffers2020(filter: {Industry: {eq: "Marketing & Sales"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  fullTimeOffersTechnologyAndPM2020: allCareersXlsxFullTimeOffers2020(filter: {Industry: {eq: "Technology & PM"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  fullTimeOffersHumanResourcesAndAdministration2020: allCareersXlsxFullTimeOffers2020(filter: {Industry: {eq: "Human Resources & Administration"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  fullTimeOffersConsulting2020: allCareersXlsxFullTimeOffers2020(filter: {Industry: {eq: "Consulting"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
   fullTimeOffers2019: allCareersXlsxFullTimeOffers2019 {
     nodes {
       Name
@@ -103,7 +55,7 @@ export const query = graphql`
       Location
     }
   }
-  fullTimeOffersOperations2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Operations"}}) {
+  fullTimeOffers2018: allCareersXlsxFullTimeOffers2018 {
     nodes {
       Name
       Position
@@ -111,7 +63,7 @@ export const query = graphql`
       Location
     }
   }
-  fullTimeOffersFinanceAndAccounting2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Finance & Accounting"}}) {
+  fullTimeOffers2017: allCareersXlsxFullTimeOffers2017 {
     nodes {
       Name
       Position
@@ -119,7 +71,7 @@ export const query = graphql`
       Location
     }
   }
-  fullTimeOffersMarketingAndSales2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Marketing & Sales"}}) {
+  fullTimeOffers2016: allCareersXlsxFullTimeOffers2016 {
     nodes {
       Name
       Position
@@ -127,7 +79,7 @@ export const query = graphql`
       Location
     }
   }
-  fullTimeOffersTechnologyAndPM2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Technology & PM"}}) {
+  fullTimeOffers2015: allCareersXlsxFullTimeOffers2015 {
     nodes {
       Name
       Position
@@ -135,71 +87,7 @@ export const query = graphql`
       Location
     }
   }
-  fullTimeOffersHumanResourcesAndAdministration2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Human Resources & Administration"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  fullTimeOffersConsulting2019: allCareersXlsxFullTimeOffers2019(filter: {Industry: {eq: "Consulting"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internships2019: allCareersXlsxInternships2019 {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internshipsOperations2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Operations"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internshipsFinanceAndAccounting2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Finance & Accounting"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internshipsMarketingAndSales2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Marketing & Sales"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internshipsTechnologyAndPM2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Technology & PM"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internshipsHumanResourcesAndAdministration2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Human Resources & Administration"}}) {
-    nodes {
-      Name
-      Position
-      Company
-      Location
-    }
-  }
-  internshipsConsulting2019: allCareersXlsxInternships2019(filter: {Industry: {eq: "Consulting"}}) {
+  fullTimeOffers2014: allCareersXlsxFullTimeOffers2014 {
     nodes {
       Name
       Position
@@ -215,7 +103,7 @@ export const query = graphql`
       Location
     }
   }
-  internshipsOperations2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Operations"}}) {
+  internships2019: allCareersXlsxInternships2019 {
     nodes {
       Name
       Position
@@ -223,7 +111,7 @@ export const query = graphql`
       Location
     }
   }
-  internshipsFinanceAndAccounting2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Finance & Accounting"}}) {
+  internships2018: allCareersXlsxInternships2018 {
     nodes {
       Name
       Position
@@ -231,7 +119,7 @@ export const query = graphql`
       Location
     }
   }
-  internshipsMarketingAndSales2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Marketing & Sales"}}) {
+  internships2017: allCareersXlsxInternships2017 {
     nodes {
       Name
       Position
@@ -239,7 +127,7 @@ export const query = graphql`
       Location
     }
   }
-  internshipsTechnologyAndPM2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Technology & PM"}}) {
+  internships2016: allCareersXlsxInternships2016 {
     nodes {
       Name
       Position
@@ -247,7 +135,7 @@ export const query = graphql`
       Location
     }
   }
-  internshipsHumanResourcesAndAdministration2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Human Resources & Administration"}}) {
+  internships2015: allCareersXlsxInternships2015 {
     nodes {
       Name
       Position
@@ -255,7 +143,7 @@ export const query = graphql`
       Location
     }
   }
-  internshipsConsulting2020: allCareersXlsxInternships2020(filter: {Industry: {eq: "Consulting"}}) {
+  internships2014: allCareersXlsxInternships2014 {
     nodes {
       Name
       Position

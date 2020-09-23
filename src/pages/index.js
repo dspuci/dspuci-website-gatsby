@@ -70,14 +70,14 @@ export default () => (
           fraternity on campus. Our chapter has cultivated a growing legacy of achievement, mentorship, 
           and leadership within business and beyond.
           <div style={{textAlign: 'center'}}>
-            <Button to="/about" text="ABOUT US"></Button>
+            <Button to="/about" text="WHO WE ARE"></Button>
           </div>
         </ImageBox>
         <ImageBox image={lifelongBrotherhood} title="BROTHERS">
           From various professional aspirations to pastime hobbies, our brothers are incredibly unique and 
           diverse. Our drive to succeed and support for one another makes us a tight-knit community like no other.    
           <div style={{textAlign: 'center'}}>
-            <Button to="/brothers" text="OUR BROTHERS"></Button>   
+            <Button to="/brothers" text="MEET OUR BROTHERS"></Button>   
           </div> 
         </ImageBox>
         <ImageBox image={careerAdvantage} title="CAREERS">
@@ -85,7 +85,7 @@ export default () => (
           marketing, technology, accounting, consulting, entrepreneurship, and more – the opportunities 
           for growth are endless with Delta Sigma Pi.
           <div style={{textAlign: 'center'}}>
-            <Button to="/careers" text="OUR CAREERS"></Button>
+            <Button to="/careers" text="OUR EXPERIENCE"></Button>
           </div>
         </ImageBox>
       </Flex>

@@ -8,7 +8,7 @@ const CareersTable = props => {
   return(
     <div>
       <CenterHeader>{props.title}</CenterHeader>
-      <SubHeader>{props.subTitle !== "All" ? (props.subTitle === "HR & Administration" ? "Human Resources & Administration" : props.subTitle) : null}</SubHeader>
+      {/* <SubHeader>{props.subTitle !== "All" ? (props.subTitle === "HR & Administration" ? "Human Resources & Administration" : props.subTitle) : null}</SubHeader> */}
       <div style={{ overflowX: "auto" }}>
         <table style={{ fontSize: 16 }}>
           <tbody>
@@ -16,15 +16,16 @@ const CareersTable = props => {
               <th>Name</th>
               <th>Position</th>
               <th>Company</th>
-              <th>Location</th>
             </tr>
             {props.data.nodes.map(node => (
+              !["Finance & Accounting", "Marketing & Sales", "Human Resources & Administration", "Technology & PM", "Consulting"].includes(node.Name) ? 
               <tr>
                 <td>{node.Name}</td>
                 <td>{node.Position}</td>
                 <td>{node.Company}</td>
-                <td>{node.Location}</td>
               </tr>
+              :
+            <h1 style={{fontSize: '1rem', margin: '1rem 0 0.5rem 0'}}>{node.Name}</h1>
             ))}
           </tbody>
         </table>
@@ -101,57 +102,74 @@ class CareersTables extends React.Component {
 
   render() {
     const careersData = {
-      "2019": [
-        {
-          name: "Internships",
-          data: {
-            "All": this.props.data.internships2019,
-            "Consulting": this.props.data.internshipsConsulting2019,
-            "Finance & Accounting": this.props.data.internshipsFinanceAndAccounting2019,
-            "HR & Administration": this.props.data.internshipsHumanResourcesAndAdministration2019,
-            "Marketing & Sales": this.props.data.internshipsMarketingAndSales2019,
-            "Operations": this.props.data.internshipsOperations2019,
-            "Technology & PM": this.props.data.internshipsTechnologyAndPM2019,
-          }
-        },
+      "2014": [
         {
           name: "Full Time Offers",
-          data: {
-            "All": this.props.data.fullTimeOffers2019,
-            "Consulting": this.props.data.fullTimeOffersConsulting2019,
-            "Finance & Accounting": this.props.data.fullTimeOffersFinanceAndAccounting2019,
-            "HR & Administration": this.props.data.fullTimeOffersHumanResourcesAndAdministration2019,
-            "Marketing & Sales": this.props.data.fullTimeOffersMarketingAndSales2019,
-            "Operations": this.props.data.fullTimeOffersOperations2019,
-            "Technology & PM": this.props.data.fullTimeOffersTechnologyAndPM2019,
-
-          }
+          data: this.props.data.fullTimeOffers2014
+        },
+        {
+          name: "Internships",
+          data: this.props.data.internships2014
+        },
+      ],
+      "2015": [
+        {
+          name: "Full Time Offers",
+          data: this.props.data.fullTimeOffers2015
+        },
+        {
+          name: "Internships",
+          data: this.props.data.internships2015
+        },
+      ],
+      "2016": [
+        {
+          name: "Full Time Offers",
+          data: this.props.data.fullTimeOffers2016
+        },
+        {
+          name: "Internships",
+          data: this.props.data.internships2016
+        },
+      ],
+      "2017": [
+        {
+          name: "Full Time Offers",
+          data: this.props.data.fullTimeOffers2017
+        },
+        {
+          name: "Internships",
+          data: this.props.data.internships2017
+        },
+      ],
+      "2018": [
+        {
+          name: "Full Time Offers",
+          data: this.props.data.fullTimeOffers2018
+        },
+        {
+          name: "Internships",
+          data: this.props.data.internships2018
+        },
+      ],
+      "2019": [
+        {
+          name: "Full Time Offers",
+          data: this.props.data.fullTimeOffers2019
+        },
+        {
+          name: "Internships",
+          data: this.props.data.internships2019
         },
       ],
       "2020": [
         {
-          name: "Internships",
-          data: {
-            "All": this.props.data.internships2020,
-            "Consulting": this.props.data.internshipsConsulting2020,
-            "Finance & Accounting": this.props.data.internshipsFinanceAndAccounting2020,
-            "HR & Administration": this.props.data.internshipsHumanResourcesAndAdministration2020,
-            "Marketing & Sales": this.props.data.internshipsMarketingAndSales2020,
-            "Operations": this.props.data.internshipsOperations2020,
-            "Technology & PM": this.props.data.internshipsTechnologyAndPM2020,
-          }
+          name: "Full Time Offers",
+          data: this.props.data.fullTimeOffers2020
         },
         {
-          name: "Full Time Offers",
-          data: {
-            "All": this.props.data.fullTimeOffers2020,
-            "Consulting": this.props.data.fullTimeOffersConsulting2020,
-            "Finance & Accounting": this.props.data.fullTimeOffersFinanceAndAccounting2020,
-            "HR & Administration": this.props.data.fullTimeOffersHumanResourcesAndAdministration2020,
-            "Marketing & Sales": this.props.data.fullTimeOffersMarketingAndSales2020,
-            "Operations": this.props.data.fullTimeOffersOperations2020,
-            "Technology & PM": this.props.data.fullTimeOffersTechnologyAndPM2020,
-          }
+          name: "Internships",
+          data: this.props.data.internships2020
         },
       ],
     }
@@ -169,22 +187,11 @@ class CareersTables extends React.Component {
             ))}
         </div>
         <div style={{width: '100%', height: '2vh'}}></div>
-        <div style={{display: 'flex', width: '100%', justifyContent: 'center', flexWrap: 'wrap'}}>
-          {Object.keys(careersData[this.state.currentYear][0].data)
-          .map(key => (
-            <IndustryButton
-              value={key}
-              currentIndustry={this.state.currentIndustry}
-              onClick={this.handleIndustryButtonClick}
-            />
-          ))}
-        </div>
         {careersData[this.state.currentYear].map(table => (
-          Object.keys(table.data[this.state.currentIndustry].nodes).length !== 0 ?
+          Object.keys(table.data.nodes).length !== 0 ?
           <CareersTable
             title={`${this.state.currentYear} ${table.name}`}
-            subTitle={`${this.state.currentIndustry}`}
-            data={table.data[this.state.currentIndustry]}
+            data={table.data}
           /> : null
         ))}
       </div>

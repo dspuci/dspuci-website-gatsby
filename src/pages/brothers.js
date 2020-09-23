@@ -89,6 +89,7 @@ export const query = graphql`
         Last_Name
         Class
         LinkedIn_URL
+        Email
       }
     }
 
