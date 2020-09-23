@@ -21,7 +21,11 @@ const CareersTable = props => {
               </tr>
               :
               <>
-                <h1 style={{fontSize: '1.5rem', margin: '1.25rem 0 0.75rem 0'}}>{node.Name}</h1>
+              <tr>
+                <td colSpan="2" style={{borderBottom: 'none'}}>
+                  <h1 style={{fontSize: '1.5rem', margin: '1.25rem 0 0.75rem 0'}} colSpan="3">{node.Name}</h1>
+                </td>
+              </tr>
                 <tr style={{fontSize: '1rem'}}>
                   <th>Name</th>
                   <th>Position</th>

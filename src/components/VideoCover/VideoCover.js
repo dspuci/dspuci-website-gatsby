@@ -115,7 +115,7 @@ class VideoCover extends React.Component {
         </Text>
         <Link to="/recruitment">
           <button className={styles.button}>
-            LEARN MORE
+            HOW TO JOIN
           </button>
         </Link>
       </div>
