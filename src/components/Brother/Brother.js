@@ -58,6 +58,7 @@ class Brother extends React.Component {
             <FontAwesomeIcon
               className={styles.linkedinIcon}
               icon={faLinkedin}
+              size="xs"
             />
           </a>
           <a
@@ -69,6 +70,7 @@ class Brother extends React.Component {
             <FontAwesomeIcon
               className={styles.linkedinIcon}
               icon={faEnvelope}
+              size="xs"
             />
           </a>
         </Fade>
