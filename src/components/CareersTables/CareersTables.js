@@ -13,7 +13,7 @@ const CareersTable = props => {
         <table style={{ fontSize: 16 }}>
           <tbody>
             {props.data.nodes.map(node => (
-              !["Finance & Accounting", "Marketing & Sales", "Human Resources & Administration", "Technology & PM", "Consulting", "Operations"].includes(node.Name) ? 
+              !["Finance & Accounting", "Marketing & Sales", "Human Resources & Administration", "Technology & PM", "Consulting", "Operations", "Other", "Others"].includes(node.Name) ? 
               <tr>
                 <td>{node.Name}</td>
                 <td>{node.Position}</td>
