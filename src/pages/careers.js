@@ -3,7 +3,8 @@ import React from "react"
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 import Section from "../components/Section"
-import CareersTables from "../components/CareersTables"
+import CareersTables from "../components/CareersTables";
+import CenterHeader from "../components/CenterHeader";
 import {Helmet} from "react-helmet";
 
 export default ({data}) => (
@@ -23,7 +24,17 @@ export default ({data}) => (
         <meta name="Delta Sigma Pi - Pi Sigma Chapter Careers Page" content="Delta Sigma Pi - Pi Sigma Chapter Careers Page" />
     </Helmet>
     <Section sx={{ justifyContent: "left" }}>
-      <h1 style={{ marginBottom: 10 }}>A higher standard of career success.</h1>
+      <h1>A higher standard of career success.</h1>
+      <div>
+        At UC Irvine, we’re redefining and raising the bar of successful
+        careers, and our experiences speak to our commitment to professional
+        development. We have countless brothers with competitive internships and
+        full-time experience at Fortune 500 companies, prestigious firms, and
+        unicorn startups.
+      </div>
+    </Section>
+    <Section sx={{ justifyContent: "left" }}>
+      <CenterHeader>WHERE HAVE WE WORKED?</CenterHeader>
       <div>
         At UC Irvine, we’re redefining and raising the bar of successful
         careers, and our experiences speak to our commitment to professional

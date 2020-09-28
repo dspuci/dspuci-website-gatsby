@@ -84,11 +84,10 @@ class VideoCover extends React.Component {
             fontWeight: "100",
             zIndex: 0,
             letterSpacing: '8px',
-            fontFamily: 'Lato, sans-serif'
           }}
           color={textColor}
           fontSize={[4, 4, 5, 6]}
-          fontFamily="Heebo"
+          fontFamily="Lato"
         >
           {this.props.textOne}
         </Text>
@@ -109,7 +108,7 @@ class VideoCover extends React.Component {
           }}
           color={textColor}
           fontSize={[1, 1, 1, 1]}
-          fontFamily="Heebo"
+          fontFamily="Lato"
         >
           {this.props.textTwo}
         </Text>

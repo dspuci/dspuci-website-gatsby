@@ -12,6 +12,11 @@ const CareersTable = props => {
       <div style={{ overflowX: "auto" }}>
         <table style={{ fontSize: 16 }}>
           <tbody>
+            {/* <tr style={{fontSize: '1rem'}}>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Company</th>
+            </tr> */}
             {props.data.nodes.map(node => (
               !["Finance & Accounting", "Marketing & Sales", "Human Resources & Administration", "Technology & PM", "Consulting", "Operations", "Other", "Others"].includes(node.Name) ? 
               <tr>
@@ -20,18 +25,11 @@ const CareersTable = props => {
                 <td>{node.Company}</td>
               </tr>
               :
-              <>
               <tr>
                 <td colSpan="2" style={{borderBottom: 'none'}}>
-                  <h1 style={{fontSize: '1.5rem', margin: '1.25rem 0 0.75rem 0'}} colSpan="3">{node.Name}</h1>
+                  <h1 style={{fontSize: '1.5rem', margin: '0.5rem 0 0 0'}} colSpan="3">{node.Name}</h1>
                 </td>
               </tr>
-                <tr style={{fontSize: '1rem'}}>
-                  <th>Name</th>
-                  <th>Position</th>
-                  <th>Company</th>
-                </tr>
-              </>
             ))}
           </tbody>
         </table>
