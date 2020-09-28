@@ -35,7 +35,7 @@ export default ({data}) => (
       </div>
     </Section>
     <Section sx={{ justifyContent: "left" }}>
-      <CenterHeader>Our Experience</CenterHeader>
+      <CenterHeader marginTop="0px">Our Experience</CenterHeader>
       <CompanyPics></CompanyPics>
     </Section>
     <CareersTables defaultYear={"2020"} data={data}/>

@@ -7,7 +7,7 @@ import styles from "./CareersTables.module.css"
 const CareersTable = props => {
   return(
     <div>
-      <CenterHeader>{props.title}</CenterHeader>
+      <CenterHeader marginTop="30px">{props.title}</CenterHeader>
       {/* <SubHeader>{props.subTitle !== "All" ? (props.subTitle === "HR & Administration" ? "Human Resources & Administration" : props.subTitle) : null}</SubHeader> */}
       <div style={{ overflowX: "auto" }}>
         <table style={{ fontSize: 16 }}>
