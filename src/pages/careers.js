@@ -6,6 +6,7 @@ import Section from "../components/Section"
 import CareersTables from "../components/CareersTables";
 import CenterHeader from "../components/CenterHeader";
 import {Helmet} from "react-helmet";
+import CompanyPics from "../components/CompanyPics/CompanyPics";
 
 export default ({data}) => (
   <CoverLayout
@@ -34,14 +35,8 @@ export default ({data}) => (
       </div>
     </Section>
     <Section sx={{ justifyContent: "left" }}>
-      <CenterHeader>WHERE HAVE WE WORKED?</CenterHeader>
-      <div>
-        At UC Irvine, we’re redefining and raising the bar of successful
-        careers, and our experiences speak to our commitment to professional
-        development. We have countless brothers with competitive internships and
-        full-time experience at Fortune 500 companies, prestigious firms, and
-        unicorn startups.
-      </div>
+      <CenterHeader>Our Experience</CenterHeader>
+      <CompanyPics></CompanyPics>
     </Section>
     <CareersTables defaultYear={"2020"} data={data}/>
   </CoverLayout>

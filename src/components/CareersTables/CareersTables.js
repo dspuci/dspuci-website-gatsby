@@ -108,7 +108,7 @@ class CareersTables extends React.Component {
     const careersData = {
       "2014": [
         {
-          name: "Full Time Offers",
+          name: "Full Time",
           data: this.props.data.fullTimeOffers2014
         },
         {
@@ -118,7 +118,7 @@ class CareersTables extends React.Component {
       ],
       "2015": [
         {
-          name: "Full Time Offers",
+          name: "Full Time",
           data: this.props.data.fullTimeOffers2015
         },
         {
@@ -128,7 +128,7 @@ class CareersTables extends React.Component {
       ],
       "2016": [
         {
-          name: "Full Time Offers",
+          name: "Full Time",
           data: this.props.data.fullTimeOffers2016
         },
         {
@@ -138,7 +138,7 @@ class CareersTables extends React.Component {
       ],
       "2017": [
         {
-          name: "Full Time Offers",
+          name: "Full Time",
           data: this.props.data.fullTimeOffers2017
         },
         {
@@ -148,7 +148,7 @@ class CareersTables extends React.Component {
       ],
       "2018": [
         {
-          name: "Full Time Offers",
+          name: "Full Time",
           data: this.props.data.fullTimeOffers2018
         },
         {
@@ -158,7 +158,7 @@ class CareersTables extends React.Component {
       ],
       "2019": [
         {
-          name: "Full Time Offers",
+          name: "Full Time",
           data: this.props.data.fullTimeOffers2019
         },
         {
@@ -168,7 +168,7 @@ class CareersTables extends React.Component {
       ],
       "2020": [
         {
-          name: "Full Time Offers",
+          name: "Full Time",
           data: this.props.data.fullTimeOffers2020
         },
         {
