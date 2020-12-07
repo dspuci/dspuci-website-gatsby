@@ -45,6 +45,14 @@ export default ({data}) => (
 
 export const query = graphql`
 {
+  fullTimeOffers2021: allCareersXlsxFullTimeOffers2021 {
+    nodes {
+      Name
+      Position
+      Company
+      Location
+    }
+  }
   fullTimeOffers2020: allCareersXlsxFullTimeOffers2020 {
     nodes {
       Name
@@ -94,6 +102,14 @@ export const query = graphql`
     }
   }
   fullTimeOffers2014: allCareersXlsxFullTimeOffers2014 {
+    nodes {
+      Name
+      Position
+      Company
+      Location
+    }
+  }
+  internships2021: allCareersXlsxInternships2021 {
     nodes {
       Name
       Position

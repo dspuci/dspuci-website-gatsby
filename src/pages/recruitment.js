@@ -22,8 +22,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="FALL 2020 RECRUITMENT:"
-        text2="INSPIRE"
+        text="HOW TO JOIN"
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient
@@ -49,7 +48,7 @@ export default () => (
         <p>Our chapter aims to create a high-impact, supportive culture where immensely passionate people are encouraged to pursue their professional and personal dreams. Attend our recruitment events to find out what sets Delta Sigma Pi above and apart. </p>
       </Section>
 
-      <CenterHeader>Schedule</CenterHeader>
+      {/* <CenterHeader>Schedule</CenterHeader>
       <Image
         onClick={() => (window.location = recruitmentSchedule)}
         src={recruitmentSchedule}
@@ -64,10 +63,10 @@ export default () => (
           margin: "0 auto",
           textAlign: "center",
         }}
-      />
-      <Section sx={{ justifyContent: "center" }}>
+      /> */}
+      {/* <Section sx={{ justifyContent: "center" }}>
         <p>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/757378431712140/" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2020 Recruitment: Inspire</a> for any and all updates.</p>
-      </Section>
+      </Section> */}
       
       <CenterHeader>Why Join?</CenterHeader>
 
