@@ -1,7 +1,8 @@
 import React from "react"
-import { Text } from "rebass"
-import { withPrefix } from "gatsby"
+import { Text, Image } from "rebass"
+import { withPrefix, Link } from "gatsby"
 import { darkColor, lightColor } from "../../styles/defaultColors"
+import styles from "./Layout.module.css"
 
 class VideoCover extends React.Component {
   render() {
@@ -12,18 +13,15 @@ class VideoCover extends React.Component {
       textColor = darkColor
     }
     return (
-      <div
+      <div 
         style={{
           width: "100vw",
-          height: "70vh",
+          height: "100vh",
           overflow: "hidden",
           position: "relative",
           display: "table-cell",
           verticalAlign: "middle",
-          textAlign: "center",
-          background: this.props.darkGradient
-            ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))"
-            : "",
+          textAlign: "center"
         }}
       >
         <video
@@ -36,43 +34,89 @@ class VideoCover extends React.Component {
             transform: "translateX(-50%) translateY(-50%)",
             zIndex: -1,
           }}
-          autoplay="autoplay"
+          autoPlay="autoplay"
           loop="loop"
           muted="muted"
-          poster={withPrefix(`/images/cover_images/${this.props.backupImage}`)}
+          preload="true"
+          playsInline
+          poster={this.props.backupImage}
+          className={styles.video}
         >
           <source
-            src={withPrefix(
-              `/images/cover_images/${this.props.coverVideo}.webm`
-            )}
-            type="video/webm"
-          ></source>
-          <source
-            src={withPrefix(
-              `/images/cover_images/${this.props.coverVideo}.mp4`
-            )}
+            src={this.props.coverVideo}
             type="video/mp4"
           ></source>
         </video>
+        <img 
+          style={{
+            minWidth: "100%",
+            minHeight: "100%",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translateX(-50%) translateY(-50%)",
+            zIndex: -1,
+            objectFit: "cover"
+          }}
+          src={this.props.backupImage}
+          className={styles.img}
+        />
+        <Image 
+          src={this.props.coverImage}
+          sx={{
+            position: "relative",
+            display: 'block',
+            width: ['50%', '12%'],
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+          />
         <Text
           sx={{
             position: "relative",
             display: "inline-block",
             width: "100%",
-            maxWidth: 500,
+            maxWidth: 1000,
             textAlign: "center",
-            margin: "0 auto",
+            margin: "10px auto",
             textTransform: "uppercase",
             lineHeight: 1.4,
-            fontWeight: "bold",
+            fontWeight: "100",
             zIndex: 0,
+            letterSpacing: '8px',
           }}
           color={textColor}
-          fontSize={[6, 6, 7, 8]}
-          fontFamily="Heebo"
+          fontSize={[4, 4, 5, 6]}
+          fontFamily="Lato"
         >
-          {this.props.text}
+          {this.props.textOne}
         </Text>
+        <Text
+          sx={{
+            position: "relative",
+            display: "inline-block",
+            width: "100%",
+            padding: '0 5%',
+            maxWidth: '100%',
+            textAlign: "center",
+            margin: "10px auto",
+            textTransform: "uppercase",
+            lineHeight: 1.4,
+            fontWeight: "100",
+            zIndex: 0,
+            letterSpacing: '4px'
+          }}
+          color={textColor}
+          fontSize={[1, 1, 1, 1]}
+          fontFamily="Lato"
+        >
+          {this.props.textTwo}
+        </Text>
+        <Link to="/recruitment">
+          <button className={styles.button}>
+            HOW TO JOIN
+          </button>
+        </Link>
       </div>
     )
   }

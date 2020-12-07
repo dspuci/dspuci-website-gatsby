@@ -33,6 +33,7 @@ class ImageCover extends React.Component {
             fontFamily="Heebo"
           >
             {this.props.text}
+            {this.props.text2 ? <><br/> {this.props.text2}</> : null}
           </Text>
         </div>
       </div>

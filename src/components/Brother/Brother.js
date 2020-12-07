@@ -3,6 +3,7 @@ import { Box, Image, Text } from "rebass"
 import styles from "./Brother.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby"
 import { withPrefix } from "gatsby"
 import coatofarms from "../../images/coatofarms.jpg"
@@ -26,11 +27,12 @@ class Brother extends React.Component {
 
       subtitle: this.props.brotherInfo.Class.trim() + " class",
       linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
+      email: "mailto:" + this.props.brotherInfo.Email.trim()
     }
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to={`brothers/${brotherInfo.codeName}`}>
+          <Link to={`${brotherInfo.codeName}`}>
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}
@@ -56,6 +58,19 @@ class Brother extends React.Component {
             <FontAwesomeIcon
               className={styles.linkedinIcon}
               icon={faLinkedin}
+              size="xs"
+            />
+          </a>
+          <a
+            href={brotherInfo.email}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{marginLeft: '20px'}}
+          >
+            <FontAwesomeIcon
+              className={styles.linkedinIcon}
+              icon={faEnvelope}
+              size="xs"
             />
           </a>
         </Fade>
@@ -79,7 +94,7 @@ class LeaderBrother extends React.Component {
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to={`brothers/${codeName}`}>
+          <Link to={`${codeName}`}>
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}

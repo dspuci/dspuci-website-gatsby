@@ -102,7 +102,7 @@ export default ({ data }) => {
           <Box width={[1, 1 / 2]} pr={3}>
             <Flex flexWrap="wrap">
               <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Recent Positions</Text>
+                <Text fontWeight={"bold"}>Recent Position</Text>
                 <Text>{brotherInfo.recentPosition}</Text>
               </BrotherInfoBox>
               <BrotherInfoBox>

@@ -10,6 +10,7 @@ import phoneIcon from "../../images/phone.png"
 import emailIcon from "../../images/email.png"
 import facebookIcon from "../../images/facebook.png"
 import instagramIcon from "../../images/instagram.png"
+import VideoCover from '../VideoCover'
 
 class Layout extends React.Component {
   constructor(props) {
@@ -77,6 +78,25 @@ class CoverLayout extends React.Component {
     )
   }
 }
+
+class VideoCoverLayout extends React.Component {
+  render() {
+    return (
+      <Layout navbarTransparent navbarTextColor={this.props.navbarTextColor}>
+        <VideoCover 
+          textColor="white" 
+          backupImage={this.props.image} 
+          coverVideo={this.props.video} 
+          coverImage={this.props.coverImage} 
+          textOne={this.props.textOne} 
+          textTwo={this.props.textTwo}>
+        </VideoCover>
+        <Container>{this.props.children}</Container>
+      </Layout>
+    )
+  }
+}
+
 
 class StandardLayout extends React.Component {
   render() {
@@ -150,4 +170,4 @@ const Footer = props => (
   </footer>
 )
 
-export { CoverLayout, StandardLayout }
+export { CoverLayout, VideoCoverLayout, StandardLayout }

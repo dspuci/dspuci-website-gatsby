@@ -9,13 +9,13 @@
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   cursor: pointer;
-  padding: 10px;
   display: flex;
   align-items: center;
   border: none;
   outline: none;
   background-color: transparent;
   text-align: left;
+  overflow: hidden;
 }
 
 /* Style the accordion content title */
@@ -35,7 +35,7 @@
 .accordion__icon__rotate {
   margin-left: auto;
   transition: transform 0.6s ease;
-  transform: rotate(-90deg);
+  transform: rotate(-180deg);
 }
 
 /* Style the accordion content panel. Note: hidden by default */
@@ -43,6 +43,9 @@
   background-color: white;
   overflow: auto;
   transition: max-height 0.6s ease;
+  padding: 0 6px;
+  overflow: hidden;
+
 }
 
 /* Style the accordion content text */

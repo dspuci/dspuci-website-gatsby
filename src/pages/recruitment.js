@@ -1,6 +1,7 @@
 import React from "react"
-import { Text, Flex } from "rebass"
+import { Flex, Image } from "rebass"
 import { Fade } from "react-reveal"
+import { withPrefix } from "gatsby"
 
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
@@ -9,48 +10,63 @@ import Section from "../components/Section"
 import ImageBox from "../components/ImageBox"
 import Accordion from "../components/Faq"
 import RecCarousel from "../components/RecCarousel/RecCarousel"
+import {Helmet} from "react-helmet";
 
 import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
-import recruitmentSchedule from "../../public/images/recruitment_schedules/fall19.png"
-
-const FAQHeader = props => (
-  <Text
-    fontSize={30}
-    fontWeight="bold"
-    fontFamily="Heebo"
-    sx={{ marginBottom: 10 }}
-  >
-    {props.children}
-  </Text>
-)
+import recruitmentSchedule from "../../public/images/recruitment_schedules/fall20.jpeg"
 
 export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="FALL RECRUITMENT: COMING SOON"
+        text="FALL 2020 RECRUITMENT:"
+        text2="INSPIRE"
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient
       />
     }
   >
+    <Helmet>
+        <title>Recruitment | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" />
+    </Helmet>
     <Fade bottom distance="40px">
-      <Section sx={{ justifyContent: "left" }}>
+      {/* <Section sx={{ justifyContent: "left" }}>
         <div style={{width: '100%', borderBottom: '1px solid black'}}>
           <p>
           We’re committed to hosting a memorable recruitment experience for prospective members in a remote format in Fall 2020. 
-          Be sure to follow us on Facebook and Instagram for any updates on recruitment. 
+          Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" target="_blank" rel="noreferrer">Facebook</a> and <a href="https://www.instagram.com/dspuci/" target="_blank" rel="noreferrer">Instagram</a> for any updates on recruitment. 
           In the meantime, take a look below to find out more about Delta Sigma Pi. 
           </p>
         </div>
-      </Section>
+      </Section> */}
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
         <p>Our chapter aims to create a high-impact, supportive culture where immensely passionate people are encouraged to pursue their professional and personal dreams. Attend our recruitment events to find out what sets Delta Sigma Pi above and apart. </p>
+      </Section>
+
+      <CenterHeader>Schedule</CenterHeader>
+      <Image
+        onClick={() => (window.location = recruitmentSchedule)}
+        src={recruitmentSchedule}
+        sx={{
+          cursor: "pointer",
+          marginBottom: 30,
+          boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
+          width: ['100%', '60%'],
+          margin: '0 auto',
+          position: "relative",
+          display: 'block',
+          margin: "0 auto",
+          textAlign: "center",
+        }}
+      />
+      <Section sx={{ justifyContent: "center" }}>
+        <p>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/757378431712140/" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2020 Recruitment: Inspire</a> for any and all updates.</p>
       </Section>
       
       <CenterHeader>Why Join?</CenterHeader>
@@ -60,8 +76,7 @@ export default () => (
           Delta Sigma Pi offers a career advantage like no other. For over a decade, our chapter has kickstarted and cultivated impactful careers in finance, consulting, marketing, accounting, technology, entrepreneurship, and more. Unsure of what path to choose? We’ll help you out.
         </ImageBox>
         <ImageBox image={unrivaledLeaders} title="UNRIVALED LEADERS">
-          With countless opportunities for growth, our brothers become recognized leaders, within the fraternity and beyond. At UCI, our brothers hold leadership positions in over 25 campus organizations – some have even started their own.
-        </ImageBox>
+          With countless opportunities for growth, our brothers become recognized leaders, within the fraternity and beyond. We hold leadership positions in over 25 campus organizations – some have even started their own.        </ImageBox>
         <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD">
           Joining the DSP family means mentorship, inspiration, and countless opportunities to learn and grow. Build lifelong friendships alongside an extensive network of business professionals – with over 300 national chapters and 250 UCI alumni, you can count on your brothers for support no matter where you go.
         </ImageBox>
@@ -107,9 +122,9 @@ export default () => (
       <Accordion
         title="What majors does Delta Sigma Pi accept?"
         content="
-          Business Administration, Business Economics, Business Information
-          Management, Economics, Informatics, Information and Computer Science,
-          and Quantitative Economics.
+          Business Administration, Business Information Management, Business Economics, 
+          Quantitative Economics, Economics, or a major in the School of Information and 
+          Computer Sciences. 
         "
       />
       <Accordion
@@ -170,7 +185,7 @@ export default () => (
       <Accordion 
         title="What should I do if I have further questions that were not addressed here?"
         content="
-        If you have more questions, feel free to email svp@dspuci.com.
+          If you have more questions, feel free to email svp@dspuci.com.
         "
       />
       </Fade>

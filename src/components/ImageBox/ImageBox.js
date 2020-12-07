@@ -1,7 +1,6 @@
 import React from "react"
-import { Box, Image } from "rebass"
+import { Box } from "rebass"
 import styles from "./ImageBox.module.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class ImageBox extends React.Component {
   render() {

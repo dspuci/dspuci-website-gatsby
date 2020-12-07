@@ -6,7 +6,6 @@ import { Box, Image } from "rebass"
 import ProWeekCover from "../components/ProWeekCover"
 import { CoverLayout } from "../components/Layout"
 import Section from "../components/Section"
-import ImageTextRow from "../components/ImageTextRow"
 import Button from "../components/Button"
 import EventBox from "../components/EventBox"
 import CenterHeader from "../components/CenterHeader"
@@ -18,6 +17,7 @@ import panel from "../images/proweek-panel.png"
 import presentation from "../images/proweek-presentation.png"
 import casestudy from "../images/proweek-casestudy.png"
 import trophy from "../images/proweek-trophy.png"
+import {Helmet} from "react-helmet";
 
 export default () => (
   <CoverLayout
@@ -31,7 +31,10 @@ export default () => (
       />
     }
   >
-
+    <Helmet>
+        <title>Pro Week 2020 | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter Pro Week 2020 Page" content="Delta Sigma Pi - Pi Sigma Chapter Pro Week 2020 Page" />
+    </Helmet>
     <Fade bottom distance="40px">
 
       <Section sx={{ justifyContent: "left" }}>

@@ -13,7 +13,7 @@ class HoverShadowBox extends React.Component {
         }
         sx={{
           margin: 10,
-          padding: [20, 30, 40, 50],
+          padding: [10, 10, 20, 30],
         }}
       >
         {this.props.children}

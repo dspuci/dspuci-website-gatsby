@@ -2,7 +2,6 @@ import React from "react"
 import { Box, Image } from "rebass"
 import HoverShadowBox from "../HoverShadowBox"
 import styles from "./EventBox.module.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class EventBox extends React.Component {
   render() {

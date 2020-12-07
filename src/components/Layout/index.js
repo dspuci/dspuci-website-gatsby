@@ -1,3 +1,3 @@
-import { CoverLayout, StandardLayout } from "./Layout"
+import { CoverLayout, StandardLayout, VideoCoverLayout } from "./Layout"
 
-export { CoverLayout, StandardLayout }
+export { CoverLayout, VideoCoverLayout, StandardLayout }

@@ -14,6 +14,8 @@ import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
 import communityImage from "../images/community.jpg"
 
+import {Helmet} from "react-helmet";
+
 import {
   faBullhorn,
   faCalculator,
@@ -37,6 +39,10 @@ export default () => (
       />
     }
   >
+    <Helmet>
+        <title>About | Delta Sigma Pi - Pi Sigma Chapter</title>
+        <meta name="Delta Sigma Pi - Pi Sigma Chapter About Page" content="Delta Sigma Pi - Pi Sigma Chapter About Page" />
+    </Helmet>
     <Fade bottom distance="40px">
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10 }}>
@@ -54,7 +60,7 @@ export default () => (
       <Section>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>35</div>
-          <div style={{ font: "22px Heebo" }}>Brothers</div>
+          <div style={{ font: "22px Heebo" }}>Collegiate Brothers</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
           <div style={{ font: "bold 80px Heebo" }}>250+</div>
@@ -96,7 +102,7 @@ export default () => (
         Our community has cultivated mentorship, inspiration, and countless
         opportunities to learn and grow. Our brothers have built lifelong
         friendships—not only within our chapter, but with brothers in many of
-        the 220+ national collegiate chapters.
+        the 300+ national collegiate chapters.
       </ImageTextRow>
       <ImageTextRow
         title="Professionalism"
@@ -182,15 +188,19 @@ export default () => (
           color: "#999",
         }}
       >
-        In 1907, Delta Sigma Pi was founded by four business students at New
-        York University who saw an opportunity to impact the lives of their
-        fellow business students. In 1975, Delta Sigma Pi officially became the
-        nation's first co-ed business fraternity. Today, we have 296 chartered
-        collegiate chapters and over 275,000 initiated members nationally. Pi
-        Sigma Chapter at the University of California, Irvine was founded in
-        2008 by Adam Su and Myles Sterett. Over a decade later, our chapter has
-        become the premier business fraternity on campus, unparalleled in our
-        professional success and brotherhood.
+        Delta Sigma Pi was founded on November 7, 1907 by four business students at 
+        New York University who saw an opportunity to impact the lives of their 
+        fellow business students. In 1975, Delta Sigma Pi officially became the 
+        nation's first co-ed business fraternity. Today, we have over 300 collegiate 
+        chapters and over 290,000 initiated members worldwide. 
+        <br/><br/>
+        As the oldest business fraternity at UC Irvine, the Pi Sigma Chapter of Delta 
+        Sigma Pi has championed professionalism and a lifetime of opportunity for our 
+        members since 2008. We are the only fraternity on campus to restrict membership 
+        to business and technology related majors, which is instrumental to our unrivaled 
+        career success and lifelong brotherhood. Over a decade later, our chapter has 
+        become the premier business fraternity on campus, unparalleled in our professional 
+        success and brotherhood.
       </div>
     </Fade>
   </CoverLayout>
