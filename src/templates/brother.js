@@ -3,8 +3,14 @@ import { graphql } from "gatsby"
 import { Flex, Box, Image, Text } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import { withPrefix } from "gatsby"
-
+import styled from 'styled-components'
 import coatofarms from "../images/coatofarms.jpg"
+
+const Padding = styled.div`
+  width: 100%;
+  borderBottom: 1px solid black;
+  height: 10px;
+`
 
 const yearMap = {
   "1st": "Freshman",
@@ -32,22 +38,23 @@ const addDefaultSrc = ev => {
 }
 
 export default ({ data }) => {
+  const bio = data.bio.nodes[[0]];
   let brotherInfo = {
-    firstName: data.bio.First_Name.trim(),
-    lastName: data.bio.Last_Name.trim(),
-    class: data.bio.Class.trim(),
-    year: data.bio.Year.trim(),
-    hometown: data.bio.Hometown.trim(),
-    major: data.bio.Major.trim(),
-    industry: data.bio.Industry.trim(),
-    recentPosition: data.bio.Recent_Position.trim(),
-    involvements: data.bio.Involvements.trim(),
-    family: data.bio.Family.trim(),
-    linkedInUrl: data.bio.LinkedIn_URL.trim(),
-    bios: data.bio.Bios,
+    firstName: bio.firstname.trim(),
+    lastName: bio.lastname.trim(),
+    class: bio.class.trim(),
+    year: bio.year.trim(),
+    hometown: bio.hometown.trim(),
+    major: bio.major.trim(),
+    industry: bio.industry.trim(),
+    recentPosition: bio.recentposition.trim(),
+    involvements: bio.involvements.trim(),
+    family: bio.family.trim(),
+    linkedInUrl: bio.linkedinurl.trim(),
+    bios: bio.bios,
   }
-  if (data.bio.Minor != null) {
-    brotherInfo["minor"] = data.bio.Minor.trim()
+  if (bio.minor != null) {
+    brotherInfo.minor = bio.minor.trim()
   }
   brotherInfo.codeName = `${brotherInfo.firstName} ${brotherInfo.lastName}`
     .split(" ")
@@ -112,7 +119,7 @@ export default ({ data }) => {
             </Flex>
           </Box>
           </Flex>
-          <div style={{width: '100%', borderBottom: '1px solid black', height: '10px'}}></div>
+          <Padding />
         </Box>
         <Box width={[1]} style={{ textAlign: "center" }} p={3}>
           <Text>{brotherInfo.bios}</Text>
@@ -122,22 +129,25 @@ export default ({ data }) => {
   )
 }
 
+// TO CHANGE BIO CHANGE THIS
 export const query = graphql`
-  query($slug: String!) {
-    bio: biosSummer20XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
-      First_Name
-      Last_Name
-      Class
-      Year
-      Hometown
-      Major
-      Minor
-      Industry
-      Recent_Position
-      Involvements
-      Family
-      LinkedIn_URL
-      Bios
+  query ($slug: String!) {
+    bio: allGoogleSheetSummer2020Row(filter: {slug: {eq: $slug}}) {
+      nodes {
+        firstname
+        lastname
+        class
+        year
+        hometown
+        major
+        minor
+        industry
+        recentposition
+        involvements
+        family
+        linkedinurl
+        bios
+      }
     }
   }
 `

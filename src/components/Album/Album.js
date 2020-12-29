@@ -1,11 +1,14 @@
 import React from "react"
 import styles from "./Album.module.css"
 import { withPrefix } from "gatsby"
+import styled from 'styled-components';
+
+const Container = styled.div``;
 
 class Album extends React.Component {
   render() {
     return (
-      <div
+      <Container
         onClick={() =>
           window.open(
             withPrefix(`/gallery/albums/${this.props.albumName}`),
@@ -23,7 +26,7 @@ class Album extends React.Component {
         }}
       >
         <div className={styles.albumName}>{this.props.albumName}</div>
-      </div>
+      </Container>
     )
   }
 }

@@ -21,7 +21,7 @@ export default ({ data }) => {
       </Fade>
       <Flex flexWrap="wrap">
         {data.executiveCommittee.nodes.map(brotherInfo => (
-          <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
+          <LeaderBrother name={brotherInfo.name} title={brotherInfo.title} />
         ))}
       </Flex>
       <br />
@@ -30,7 +30,7 @@ export default ({ data }) => {
       </Fade>
       <Flex flexWrap="wrap">
         {data.directors.nodes.map(brotherInfo => (
-          <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
+          <LeaderBrother name={brotherInfo.name} title={brotherInfo.title} />
         ))}
       </Flex>
       <br />
@@ -40,22 +40,19 @@ export default ({ data }) => {
       <Flex flexWrap="wrap">
         {data.brothers.nodes
           .sort((a, b) =>
-            a.Last_Name > b.Last_Name
+            a.lastname > b.lastname
               ? 1
-              : b.Last_Name > a.Last_Name
+              : b.lastname > a.lastname
               ? -1
-              : a.First_Name > b.First_Name
+              : a.firstname > b.firstname
               ? 1
-              : b.First_Name > a.First_Name
+              : b.firstname > a.firstname
               ? -1
               : 0
           )
           .map(brotherInfo => (
             <Brother brotherInfo={brotherInfo} />
           ))}
-        {/* {data.brothers.nodes.map(brotherInfo => (
-          <Brother brotherInfo={brotherInfo} />
-        ))} */}
       </Flex>
       <Fade>
         <CenterHeader>Family Trees</CenterHeader>
@@ -69,27 +66,28 @@ export default ({ data }) => {
   )
 }
 
+// TO CHANGE BIO CHANGE THIS
 export const query = graphql`
   {
-    executiveCommittee: allLeadershipSummer20XlsxSheet1 {
+    executiveCommittee: allGoogleSheetEcSummer2020Row {
       nodes {
-        Name
-        Title
+        name
+        title
       }
     }
-    directors: allDirectorsSummer20XlsxSheet1 {
+    directors: allGoogleSheetDirectorsSummer2020Row {
       nodes {
-        Name
-        Title
+        name
+        title
       }
     }
-    brothers: allBiosSummer20XlsxFormResponses1 {
+    brothers: allGoogleSheetSummer2020Row {
       nodes {
-        First_Name
-        Last_Name
-        Class
-        LinkedIn_URL
-        Email
+        firstname
+        lastname
+        class
+        linkedinurl
+        email
       }
     }
 

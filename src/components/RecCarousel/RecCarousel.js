@@ -11,7 +11,7 @@ import styles from "./RecCarousel.module.css"
 const SpotlightCard = (props) => {
   return(
     <div className={styles.cardContainer}>
-      <img src={props.src} className={styles.img}/>
+      <img src={props.src} className={styles.img} alt="spotlight card"/>
       <div className={styles.textContainer}>
         <h2>{props.name}</h2>
         <h3>{props.description}</h3>

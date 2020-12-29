@@ -1,10 +1,10 @@
-import React from "react"
+import React, { Component } from "react"
 import { Image } from "rebass"
 import { withPrefix } from "gatsby"
 import styles from "./ImageModal.module.css"
 
 
-class ImageModal extends React.Component {
+class ImageModal extends Component {
     constructor(props) {
         super(props)
         this.escFunction = this.escFunction.bind(this);
@@ -26,11 +26,13 @@ class ImageModal extends React.Component {
 
     render() {
         return (
-        <div className={styles.modalContainer} onClick={this.props.action}>
-            <Image className={styles.image} src={withPrefix(
-              this.props.source
-            )}/>
-        </div>
+            <button onClick={this.props.action}>
+                <div className={styles.modalContainer} >
+                    <Image className={styles.image} src={withPrefix(
+                        this.props.source
+                    )}/>
+                </div>
+            </button>
         )
     }
 }

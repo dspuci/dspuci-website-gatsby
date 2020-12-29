@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex } from "rebass";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import CenterHeader from "../components/CenterHeader";
 import ImageTextRowTwo from "../components/ImageTextRowTwo";
 import backup from "../images/backup.png";
