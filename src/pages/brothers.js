@@ -67,6 +67,8 @@ export default ({ data }) => {
 }
 
 // TO CHANGE BIO CHANGE THIS
+// TO CHANGE EC CHANGE THIS
+// TO CHANGE DIRECTORS CHANGE THIS
 export const query = graphql`
   {
     executiveCommittee: allGoogleSheetEcSummer2020Row {

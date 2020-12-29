@@ -14,14 +14,7 @@ module.exports = {
           credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
       }
     },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
-          worksheetTitle: 'Full Time Offers 2021',
-          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
-      }
-    },
+    // TO CHANGE DIRECTORS CHANGE THIS
     {
       resolve: 'gatsby-source-google-sheets',
       options: {
@@ -30,11 +23,20 @@ module.exports = {
           credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
       }
     },
+    // TO CHANGE EC CHANGE THIS
     {
       resolve: 'gatsby-source-google-sheets',
       options: {
           spreadsheetId: '1TYYVzl9wHkFFXd8PbZGxAc0FIV3A8sf5MCNvKVcJxDM',
           worksheetTitle: 'EC Summer 2020',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2021',
           credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
       }
     },

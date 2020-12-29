@@ -42,7 +42,7 @@ export default ({data}) => (
   </CoverLayout>
 )
 
-
+// UPDATE THIS TO ADD NEW YEARS
 export const query = graphql`
 {
   fullTimeOffers2021: allGoogleSheetFullTimeOffers2021Row {
