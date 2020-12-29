@@ -25,6 +25,22 @@ module.exports = {
     {
       resolve: 'gatsby-source-google-sheets',
       options: {
+          spreadsheetId: '1CF92edHHjq2C90Guep9t5l9d5wt9sn8XTv1jnlqqCs4',
+          worksheetTitle: 'Directors Summer 2020',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1TYYVzl9wHkFFXd8PbZGxAc0FIV3A8sf5MCNvKVcJxDM',
+          worksheetTitle: 'EC Summer 2020',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
           spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
           worksheetTitle: 'Internships 2021',
           credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
@@ -146,13 +162,6 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
       },
     },
     {

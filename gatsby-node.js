@@ -13,27 +13,26 @@ exports.onCreateNode = ({ node, actions }) => {
       name: `slug`,
       value: slug,
     })
-    console.log(`slug: ${slug}`);
-  } else if (
-    node.sourceInstanceName === "gallery" &&
-    node.internal.type === "Directory"
-  ) {
-    const slug = node.name
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
-  } else if (
-    node.sourceInstanceName === "gallery" &&
-    node.internal.type === "File"
-  ) {
-    const slug = node.relativePath
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
+  // } else if (
+  //   node.sourceInstanceName === "gallery" &&
+  //   node.internal.type === "Directory"
+  // ) {
+  //   const slug = node.name
+  //   createNodeField({
+  //     node,
+  //     name: `slug`,
+  //     value: slug,
+  //   })
+  // } else if (
+  //   node.sourceInstanceName === "gallery" &&
+  //   node.internal.type === "File"
+  // ) {
+  //   const slug = node.relativePath
+  //   createNodeField({
+  //     node,
+  //     name: `slug`,
+  //     value: slug,
+  //   })
   }
 }
 

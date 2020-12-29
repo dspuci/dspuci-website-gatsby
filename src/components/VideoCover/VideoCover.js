@@ -42,6 +42,9 @@ class VideoCover extends React.Component {
           poster={this.props.backupImage}
           className={styles.video}
         >
+          <track default
+           kind="captions" 
+          />
           <source
             src={this.props.coverVideo}
             type="video/mp4"

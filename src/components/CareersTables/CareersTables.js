@@ -52,27 +52,27 @@ class YearButton extends React.Component {
   }
 }
 
-class IndustryButton extends React.Component {
-  handleClick = () => {
-    this.props.onClick(this.props.value)
-  }
+// class IndustryButton extends React.Component {
+//   handleClick = () => {
+//     this.props.onClick(this.props.value)
+//   }
 
-  render() {
-    return (
-      <button
-        onClick={this.handleClick}
-        className={[
-          styles.button,
-          this.props.currentIndustry === this.props.value
-            ? styles.activeButton
-            : styles.inactiveButton,
-        ].join(" ")}
-      >
-        {this.props.value}
-      </button>
-    )
-  }
-}
+//   render() {
+//     return (
+//       <button
+//         onClick={this.handleClick}
+//         className={[
+//           styles.button,
+//           this.props.currentIndustry === this.props.value
+//             ? styles.activeButton
+//             : styles.inactiveButton,
+//         ].join(" ")}
+//       >
+//         {this.props.value}
+//       </button>
+//     )
+//   }
+// }
 
 class CareersTables extends React.Component {
   constructor(props) {
