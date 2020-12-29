@@ -1,5 +1,5 @@
 import React from "react"
-
+import { graphql } from 'gatsby'
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 import Section from "../components/Section"
@@ -45,132 +45,132 @@ export default ({data}) => (
 
 export const query = graphql`
 {
-  fullTimeOffers2021: allCareersXlsxFullTimeOffers2021 {
+  fullTimeOffers2021: allGoogleSheetFullTimeOffers2021Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  fullTimeOffers2020: allCareersXlsxFullTimeOffers2020 {
+  fullTimeOffers2020: allGoogleSheetFullTimeOffers2020Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  fullTimeOffers2019: allCareersXlsxFullTimeOffers2019 {
+  fullTimeOffers2019: allGoogleSheetFullTimeOffers2019Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  fullTimeOffers2018: allCareersXlsxFullTimeOffers2018 {
+  fullTimeOffers2018: allGoogleSheetFullTimeOffers2018Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  fullTimeOffers2017: allCareersXlsxFullTimeOffers2017 {
+  fullTimeOffers2017: allGoogleSheetFullTimeOffers2017Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  fullTimeOffers2016: allCareersXlsxFullTimeOffers2016 {
+  fullTimeOffers2016: allGoogleSheetFullTimeOffers2016Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  fullTimeOffers2015: allCareersXlsxFullTimeOffers2015 {
+  fullTimeOffers2015: allGoogleSheetFullTimeOffers2015Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  fullTimeOffers2014: allCareersXlsxFullTimeOffers2014 {
+  fullTimeOffers2014: allGoogleSheetFullTimeOffers2014Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2021: allCareersXlsxInternships2021 {
+  internships2021: allGoogleSheetInternships2021Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2020: allCareersXlsxInternships2020 {
+  internships2020: allGoogleSheetInternships2020Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2019: allCareersXlsxInternships2019 {
+  internships2019: allGoogleSheetInternships2019Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2018: allCareersXlsxInternships2018 {
+  internships2018: allGoogleSheetInternships2018Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2017: allCareersXlsxInternships2017 {
+  internships2017: allGoogleSheetInternships2017Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2016: allCareersXlsxInternships2016 {
+  internships2016: allGoogleSheetInternships2016Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2015: allCareersXlsxInternships2015 {
+  internships2015: allGoogleSheetInternships2015Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
-  internships2014: allCareersXlsxInternships2014 {
+  internships2014: allGoogleSheetInternships2014Row {
     nodes {
-      Name
-      Position
-      Company
-      Location
+      name
+      position
+      company
+      location
     }
   }
 }

@@ -5,6 +5,143 @@ module.exports = {
     description: `Website for the Pi Sigma Chapter of the International Fraternity of Delta Sigma Pi located at UC Irvine`,
   },
   plugins: [
+    // TO CHANGE BIO CHANGE THIS
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1HMZMGACdCa6ZbkbhadXYpsoCCTYivKgqdGPssBk_OMw',
+          worksheetTitle: 'Summer 2020',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2021',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2021',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2020',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2020',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2019',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2019',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2018',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2018',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2017',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2017',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2016',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2016',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2015',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2015',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Full Time Offers 2014',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+          spreadsheetId: '1rAwRsgGkS9dIdi0K48onDa2_E61j4yfHjR2Rv2dsq9g',
+          worksheetTitle: 'Internships 2014',
+          credentials: require('./delta-sigma-pi-website-501ee1cf0a8f.json')
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

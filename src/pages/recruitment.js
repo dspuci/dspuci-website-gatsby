@@ -1,7 +1,7 @@
 import React from "react"
-import { Flex, Image } from "rebass"
+import { Flex } from "rebass"
 import { Fade } from "react-reveal"
-import { withPrefix } from "gatsby"
+// import { withPrefix } from "gatsby"
 
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
@@ -15,7 +15,7 @@ import {Helmet} from "react-helmet";
 import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
-import recruitmentSchedule from "../../public/images/recruitment_schedules/fall20.jpeg"
+// import recruitmentSchedule from "../../public/images/recruitment_schedules/fall20.jpeg"
 
 export default () => (
   <CoverLayout

@@ -1,33 +1,25 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
 import CenterHeader from "../CenterHeader"
-import SubHeader from "../SubHeader"
 import styles from "./CareersTables.module.css"
 
 const CareersTable = props => {
   return(
     <div>
       <CenterHeader marginTop="30px">{props.title}</CenterHeader>
-      {/* <SubHeader>{props.subTitle !== "All" ? (props.subTitle === "HR & Administration" ? "Human Resources & Administration" : props.subTitle) : null}</SubHeader> */}
       <div style={{ overflowX: "auto" }}>
         <table style={{ fontSize: 16 }}>
           <tbody>
-            {/* <tr style={{fontSize: '1rem'}}>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Company</th>
-            </tr> */}
             {props.data.nodes.map(node => (
-              !["Finance & Accounting", "Marketing & Sales", "Human Resources & Administration", "Technology & PM", "Consulting", "Operations", "Other", "Others"].includes(node.Name) ? 
+              !["Finance & Accounting", "Marketing & Sales", "Human Resources & Administration", "Technology & PM", "Consulting", "Operations", "Other", "Others"].includes(node.name) ? 
               <tr>
-                <td>{node.Name}</td>
-                <td>{node.Position}</td>
-                <td>{node.Company}</td>
+                <td>{node.name}</td>
+                <td>{node.position}</td>
+                <td>{node.company}</td>
               </tr>
               :
               <tr>
                 <td colSpan="2" style={{borderBottom: 'none'}}>
-                  <h1 style={{fontSize: '1.5rem', margin: '0.5rem 0 0 0'}} colSpan="3">{node.Name}</h1>
+                  <h1 style={{fontSize: '1.5rem', margin: '0.5rem 0 0 0'}} colSpan="3">{node.name}</h1>
                 </td>
               </tr>
             ))}

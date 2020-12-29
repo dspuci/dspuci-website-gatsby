@@ -69,6 +69,7 @@ export default ({ data }) => {
   )
 }
 
+// TO CHANGE BIO CHANGE THIS
 export const query = graphql`
   {
     executiveCommittee: allLeadershipSummer20XlsxSheet1 {
@@ -83,13 +84,13 @@ export const query = graphql`
         Title
       }
     }
-    brothers: allBiosSummer20XlsxFormResponses1 {
+    brothers: allGoogleSheetSummer2020Row {
       nodes {
-        First_Name
-        Last_Name
-        Class
-        LinkedIn_URL
-        Email
+        firstname
+        lastname
+        class
+        linkedinurl
+        email
       }
     }
 

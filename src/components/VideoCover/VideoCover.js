@@ -1,6 +1,6 @@
 import React from "react"
 import { Text, Image } from "rebass"
-import { withPrefix, Link } from "gatsby"
+import { Link } from "gatsby"
 import { darkColor, lightColor } from "../../styles/defaultColors"
 import styles from "./Layout.module.css"
 
@@ -56,10 +56,11 @@ class VideoCover extends React.Component {
             left: "50%",
             transform: "translateX(-50%) translateY(-50%)",
             zIndex: -1,
-            objectFit: "cover"
+            objectFit: "cover",
           }}
           src={this.props.backupImage}
           className={styles.img}
+          alt= "back up"
         />
         <Image 
           src={this.props.coverImage}
