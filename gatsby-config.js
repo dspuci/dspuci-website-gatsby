@@ -19,7 +19,7 @@ module.exports = {
       resolve: 'gatsby-source-google-sheets',
       options: {
           spreadsheetId: '1CF92edHHjq2C90Guep9t5l9d5wt9sn8XTv1jnlqqCs4',
-          worksheetTitle: 'Directors Summer 2020',
+          worksheetTitle: 'Directors Winter 2020',
           credentials: require('./dspuci-website-1608893916127-6515fe8f7bc6.json')
       }
     },

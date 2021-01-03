@@ -77,7 +77,7 @@ export const query = graphql`
         title
       }
     }
-    directors: allGoogleSheetDirectorsSummer2020Row {
+    directors: allGoogleSheetDirectorsWinter2020Row {
       nodes {
         name
         title
