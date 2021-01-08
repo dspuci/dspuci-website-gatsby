@@ -2,13 +2,18 @@ import React from "react"
 import { Fade } from "react-reveal"
 import { Flex } from "rebass"
 import { Box, Image } from "rebass"
+import {Link} from 'react-router'
 
 import ProWeekCover from "../components/ProWeekCover"
+import ProAccCover from "../components/ProAccCover"
 import { CoverLayout } from "../components/Layout"
 import Section from "../components/Section"
 import Button from "../components/Button"
 import EventBox from "../components/EventBox"
 import CenterHeader from "../components/CenterHeader"
+
+import Typical from 'react-typical'
+import professionalAccelerator from '../images/professionalAccelerator.jpg'
 
 import weekOneFlyer from "../images/proweek-flyer1.jpg"
 import weekTwoFlyer from "../images/proweek-flyer2.jpg"
@@ -19,17 +24,17 @@ import casestudy from "../images/proweek-casestudy.png"
 import trophy from "../images/proweek-trophy.png"
 import {Helmet} from "react-helmet";
 
+
 export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ProWeekCover
-        text="Professionalism Week"
-        coverImage="proweek-skyline.jpg"
+      <ProAccCover
+        coverImage= {professionalAccelerator.jpg}
         textColor="white"
         darkGradient
       />
-    }
+    } 
   >
     <Helmet>
         <title>Pro Week 2020 | Delta Sigma Pi - Pi Sigma Chapter</title>
@@ -39,15 +44,15 @@ export default () => (
 
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10 }}>
-          Develop Yourself Professionally
+          Gain Relevant Professional Skills
         </h1>
         <div>
-          Professionalism Week is a series of business workshops and a case study competition hosted by Delta Sigma Pi to 
-          promote professional development at UCI. Events open to all students, no fees/registration needed.
+          Delta Sigma Pi - Pi Sigma Chapter is proud to announce our Professional Development program and invites YOU to apply! The program is geared towards all undergraduate UC Irvine students looking to gain more insight into navigating all
+          aspects of the business world. We are excited to extend our resources and community through our first peer-to-peer mentorship program!
         </div>
       </Section>
 
-      <CenterHeader>Week 6 Schedule</CenterHeader>
+      {/* <CenterHeader>Week 6 Schedule</CenterHeader>
       <p style={{textAlign: "center", marginTop: "-40px"}}>February 12 - February 14</p>
 
       <Flex flexWrap="wrap" alignItems="center" justifyContent="center" marginBottom="-20px">
@@ -86,7 +91,18 @@ export default () => (
           application in real-world interviews. The presentation will cover how to effectively 
           solve cases and break down the sample case (view below) for the Case Study Competition.
         </div>
-      </Section>
+      </Section> */}
+
+
+
+      <CenterHeader> Program Details </CenterHeader>
+      <div>
+        Applicants accepted into the program will be provided with meaningful connections, unique perspectives on achieving professional and personal growth and insights from our network of brothers and industry professionals. 
+        Participants will be paired with mentors who will encourage progress in the program by providing feedback as well as answering any questions. This virtual 5-week program will host a variety of events, including professional workshops, Zoom socials, and a capstone project (Stay Tuned!). 
+        Weekly Zoom workshops will be taking place on Tuesdays. 
+      </div>
+
+
 
       <Section style={{ marginBottom: 10, marginTop: -30}}>
         <div style={{width: "100vw", height: "10vh", display: "flex", alignItems: "center", justifyContent: "center"}}>
@@ -94,7 +110,9 @@ export default () => (
         </div>
       </Section>
 
-      <CenterHeader>Case Study Competition</CenterHeader>
+
+
+      {/* <CenterHeader>Case Study Competition</CenterHeader>
 
       <Section>
         <div>
@@ -138,7 +156,6 @@ export default () => (
           <Button text="Register Now!" to="/registration"/>
         </div>
       </Section>
-
       <Flex>
         <Box width={[1, 1 / 2]}>
           <Image src={weekOneFlyer} />
@@ -146,7 +163,7 @@ export default () => (
         <Box width={[1, 1 / 2]}>
           <Image src={weekTwoFlyer} />
         </Box>
-      </Flex>
+      </Flex> */}
 
     </Fade>
 

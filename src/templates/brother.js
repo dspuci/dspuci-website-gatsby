@@ -81,6 +81,8 @@ export default ({ data }) => {
             borderRadius={8}
           />
         </Box>
+
+
         <Box width={[1, 2 / 3, 2 / 3]}>
           <Text pt={2} fontWeight="bold" fontSize={[34, 44]}>
             {brotherInfo.firstName} {brotherInfo.lastName}
@@ -118,11 +120,14 @@ export default ({ data }) => {
               </BrotherInfoBox>
             </Flex>
           </Box>
+          <div style ={{width:'100%'}}>
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}> Bio</Text>
+                  <Text>{brotherInfo.bios}</Text>
+                </BrotherInfoBox>
+              </div>
           </Flex>
           <Padding />
-        </Box>
-        <Box width={[1]} style={{ textAlign: "center" }} p={3}>
-          <Text>{brotherInfo.bios}</Text>
         </Box>
       </Flex>
     </StandardLayout>

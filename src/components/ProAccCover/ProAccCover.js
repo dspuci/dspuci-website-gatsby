@@ -22,13 +22,13 @@
 // )
 
 import React from "react"
-import styles from "./ProWeekCover.module.css"
+import styles from "./ProAccCover.module.css"
 import { Text } from "rebass"
 import { withPrefix } from "gatsby"
 import { darkColor, lightColor } from "../../styles/defaultColors"
 import Typical from 'react-typical'
 
-class ProWeekCover extends React.Component {
+class ProAccCover extends React.Component {
   render() {
     let textColor
     if (this.props.textColor === "white") {
@@ -46,10 +46,10 @@ class ProWeekCover extends React.Component {
               ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), "
               : "") +
             "url(" +
-            withPrefix(`/images/cover_images/${this.props.coverImage}`) +
-            ")",
+            withPrefix(`../images/${this.props.coverImage}`) +")",
         }}
       >
+        
         <div className={styles.coverTitleContainer}>
             <Text
             className={styles.coverTitle}
@@ -57,13 +57,18 @@ class ProWeekCover extends React.Component {
             fontSize={[5, 6, 6, 8]}
             fontFamily="Heebo"
           >
-            {this.props.text}
+            <Typical
+              loop = {Infinity}
+              steps = {['MENTORSHIP', 5000, 'PROFESSIONALISM', 5000, 'PERSONAL DEVELOPMENT', 5000, 'COMMUNITY', 5000, 'PROFESSIONAL DEVELOPMENT PROGRAM', 10000]}
+            />
           </Text>
+          
         </div>
       </div>
     )
   }
 }
 
-export default ProWeekCover
+export default ProAccCover
 
+//INDUSTRY EXPERIENCE
