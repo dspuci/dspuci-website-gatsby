@@ -1,8 +1,7 @@
 import React from "react"
 import { Fade } from "react-reveal"
-import { Flex } from "rebass"
+import { Flex, Link } from "rebass"
 import { Box, Image } from "rebass"
-import {Link} from 'react-router'
 
 import ProWeekCover from "../components/ProWeekCover"
 import ProAccCover from "../components/ProAccCover"
@@ -30,7 +29,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage= {professionalAccelerator.jpg}
+        coverImage
         textColor="white"
         darkGradient
       />
@@ -106,7 +105,10 @@ export default () => (
 
       <Section style={{ marginBottom: 10, marginTop: -30}}>
         <div style={{width: "100vw", height: "10vh", display: "flex", alignItems: "center", justifyContent: "center"}}>
-          <Button text="View Sample Study" to="/casestudy"/>
+          <Link href="https://www.facebook.com/events/416619736423943">
+          <Button text="View Event Page">
+          </Button>
+          </Link>
         </div>
       </Section>
 
