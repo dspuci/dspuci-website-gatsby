@@ -36,18 +36,19 @@ class ProAccCover extends React.Component {
     } else if (this.props.textColor === "black") {
       textColor = darkColor
     }
-
+    console.log(withPrefix(`../images/${this.props.coverImage}`) +")")
     return (
       <div
-        className={styles.proWeekCover}
-        style={{
-          backgroundImage:
-            (this.props.darkGradient
-              ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), "
-              : "") +
-            "url(" +
-            withPrefix(`../images/${this.props.coverImage}`) +")",
-        }}
+      className={styles.proWeekCover}
+      style={{
+        backgroundImage:
+          (this.props.darkGradient
+            ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), "
+            : "") +
+          "url(" +
+          withPrefix(`/images/cover_images/${this.props.coverImage}`) +
+          ")",
+      }}
       >
         
         <div className={styles.coverTitleContainer}>

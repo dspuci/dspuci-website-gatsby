@@ -11,11 +11,11 @@ import Button from "../components/Button"
 import EventBox from "../components/EventBox"
 import CenterHeader from "../components/CenterHeader"
 
-import Typical from 'react-typical'
-import professionalAccelerator from '../images/professionalAccelerator.jpg'
 
-import weekOneFlyer from "../images/proweek-flyer1.jpg"
-import weekTwoFlyer from "../images/proweek-flyer2.jpg"
+// import weekOneFlyer from "../images/proweek-flyer1.jpg"
+// import weekTwoFlyer from "../images/proweek-flyer2.jpg"
+import finalsJudge1 from '../images/finalsJudge1.jpg'
+import finalsJudge2 from '../images/finalsJudge2.jpg'
 import linkedInBox from "../images/proweek-linkedinBox.png"
 import panel from "../images/proweek-panel.png"
 import presentation from "../images/proweek-presentation.png"
@@ -29,7 +29,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage
+        coverImage="professionalAccelerator.jpg"
         textColor="white"
         darkGradient
       />
@@ -97,7 +97,7 @@ export default () => (
       <CenterHeader> Program Details </CenterHeader>
       <div>
         Applicants accepted into the program will be provided with meaningful connections, unique perspectives on achieving professional and personal growth and insights from our network of brothers and industry professionals. 
-        Participants will be paired with mentors who will encourage progress in the program by providing feedback as well as answering any questions. This virtual 5-week program will host a variety of events, including professional workshops, Zoom socials, and a capstone project (Stay Tuned!). 
+        Participants will be paired with mentors who will encourage progress in the program by providing feedback as well as answering any questions. This virtual 6-week program will host a variety of events, including professional workshops, Zoom socials, and exclusive projects. 
         Weekly Zoom workshops will be taking place on Tuesdays. 
       </div>
 
@@ -114,19 +114,16 @@ export default () => (
 
 
 
-      {/* <CenterHeader>Case Study Competition</CenterHeader>
+      <CenterHeader>Case Study Competition</CenterHeader>
 
       <Section>
         <div>
-        Delta Sigma Pi proudly presents its inaugural Case study Competition to wrap up DSP 
-        Professional Week. It is designed to provide UCI students with an opportunity to 
-        compete and showcase their business acumen and public speaking skills. Non-competitors 
-        are encouraged to come to watch the Final Round competitors present in front of judges 
-        from the consulting industry.
+        Furthermore, to wrap up the program we are proud to bring back our second annual case study competition! The last workshop of the program (Week 8, Case Studies 101) will preface the competition held later that week (dates TBA) and will cover relevant information for interested participants. 
+        This is open to all undergrad students at UC Irvine, featuring 2 competition rounds, guest judges, and exciting prizes. No experience necessary!
         </div>
       </Section>
 
-      <Section sx={{ justifyContent: "left" }}>
+      {/* <Section sx={{ justifyContent: "left" }}>
       <h1 style={{ marginBottom: 10 }}>
           Case Study Competition Logistics:
         </h1>
@@ -138,9 +135,15 @@ export default () => (
         • Competitors must be bale to attend both Prelim/Final Rounds if advanced<br/>
         • Must sign up by <b>Sunday (2/16)</b> at <b>11:59PM</b>. Limited Spots - First come, first serve
         </div>
+      </Section> */}
+
+      <Section sx={{justifyContent: 'left'}}>
+        <h1>
+          Final Round Judges from First Annual Case Competition:
+        </h1>
       </Section>
 
-      <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
+      {/* <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
         <EventBox title="CASE STUDY COMPETITION PRELIMINARY ROUND" imageSrc={casestudy}>
           Wednesday (2/19) - 7PM-9PM
           <br />
@@ -151,21 +154,21 @@ export default () => (
           <br />
           SB1 1200 (1st Floor Merage Auditorium)
         </EventBox>
-      </Flex>
+      </Flex> */}
 
-      <Section style={{ marginBottom: 10, marginTop: -30}}>
+      {/* <Section style={{ marginBottom: 10, marginTop: -30}}>
         <div style={{width: "100vw", height: "10vh", display: "flex", alignItems: "center", justifyContent: "center"}}>
           <Button text="Register Now!" to="/registration"/>
         </div>
-      </Section>
+      </Section> */}
       <Flex>
         <Box width={[1, 1 / 2]}>
-          <Image src={weekOneFlyer} />
+          <Image src={finalsJudge1} />
         </Box>
         <Box width={[1, 1 / 2]}>
-          <Image src={weekTwoFlyer} />
+          <Image src={finalsJudge2} />
         </Box>
-      </Flex> */}
+      </Flex> 
 
     </Fade>
 
