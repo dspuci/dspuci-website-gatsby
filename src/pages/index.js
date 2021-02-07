@@ -4,7 +4,7 @@ import { Flex } from "rebass";
 import CenterHeader from "../components/CenterHeader";
 import ImageTextRowTwo from "../components/ImageTextRowTwo";
 import backup from "../images/backup.png";
-import presidentImage from '../images/president.jpg'
+import presidentImage from '../images/meghan_cadigal.jpg'
 import dsp_seal from '../images/dsp_seal.png'
 import { VideoCoverLayout } from "../components/Layout";
 import { Helmet } from "react-helmet";
@@ -62,35 +62,35 @@ export default () => (
         imagePosition="left"
         imageSrc={presidentImage}
       >
-        Three years ago, coming into UC Irvine as a Business Administration major, I had questions 
-        on my career path and even what my college experience was going to look like. Seeking answers, 
-        I started looking for a high-achieving business community on campus, which brought me to Delta 
-        Sigma Pi’s Fall 2017 Recruitment – and I never looked back. Today, I’m humbled and proud to be 
-        able to consider the brothers in this chapter as my closest friends, greatest supporters, career 
-        mentors, and family.
+        I came to UC Irvine as a third-year transfer and Business Administration undergrad. 
+        Coming from a background where professional resources weren’t openly accessible, 
+        I knew coming into college I wanted to immediately get a jump start on my professional and personal growth. 
+        Once I met the brothers of Delta Sigma Pi and learned more about this organization during Fall 2019 Recruitment, 
+        I felt hopeful of achieving my goals. Now as I am nearing the end of my collegiate career, 
+        I am both proud and humbled by my own achievements, and also by the amazing friends and family I have made along the way. 
         <br/><br/>
-        Over the years, I’ve seen firsthand the work and dedication that keeps this organization in a 
-        tier of its own. There’s no secret to our track record of achievement – if you talk to our brothers, 
-        you’ll quickly understand that our fraternal brotherhood is the common denominator in our career 
-        success. When I initiated, older brothers would always take time out of their schedule to walk me 
-        through a mock interview or fix up my resume before internship season. Every brother was a text or 
-        call away, like brothers before them had been. This continuous cycle of mentorship, sacrifice, and 
-        support is at the core of our unrivaled career success and fraternal legacy.
+        Since joining, the unconditional support that I have seen and experienced from other brothers has inspired me to 
+        give back to our community in any way I can. Whether it is interview prep, finding an internship, or getting help 
+        in classes, every brother is more than willing to be there for you. The amount of excitement that our chapter shares 
+        when someone achieves their goals or gets their dream position is both pure and heartwarming. Delta Sigma Pi is a 
+        brotherhood that will be there for you every step of the way while being your biggest cheerleaders.
         <br/><br/>
-        Professional achievement aside, our chapter is home to an incredibly diverse group of students – 
-        different identities, hometowns, music tastes – but one thing stays consistent. Ask any brother 
-        why he or she decided to join Delta Sigma Pi, and the response will be, “The people.” Genuine 
-        compassion, empathy, and humor keep us together, even when we’re apart. Between the boba runs, 
-        Disneyland trips, and even traveling the world together, the lifelong memories and friendships built 
-        between our brothers make Delta Sigma Pi much more than just any other organization.
+        What makes the Pi Sigma Chapter so special is the people. Whether you want to be the 
+        CEO of your own company or do freelance work while traveling the world, our brothers will 
+        support your aspirations and help you get there. Our chapter comes from many different walks of life 
+        and each of us has our own passions and interests. Our diverse interests are what help us continuously 
+        learn and grow from one another. The laughs, compassion, and trust within our organization are what 
+        have kept our chapter’s bond so strong during these difficult times. The lifelong memories and 
+        friendships created within our chapter are what differentiates us as a family rather than just a group of like-minded individuals.
         <br/><br/>
-        Three years ago, I took the first step to attend recruitment, and my journey since then has 
-        exceeded all expectations. I strongly encourage you to take the first step as well – attend 
-        our upcoming recruitment events and learn more about becoming a part of our Fraternity.
+        Having never attended a networking event before, my first night of recruitment was terrifying; 
+        however, once I got to meet the brothers of Delta Sigma Pi, that feeling of fear disappeared. 
+        I felt comfortable, accepted, and excited to see what else was in store. If you are interested 
+        in learning more about our chapter and investing in yourself, I strongly encourage you to attend our upcoming recruitment events.
         <br/><br/>
         Sincerely,
         <br/>
-        Henry Wang | President, Pi Sigma Chapter
+        Meghan Cadigal | President, Pi Sigma Chapter
       </ImageTextRowTwo>
       </Fade>
 
