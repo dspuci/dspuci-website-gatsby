@@ -15,14 +15,14 @@ import {Helmet} from "react-helmet";
 import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
+import ProAccCover from "../components/ProAccCover"
 // import recruitmentSchedule from "../../public/images/recruitment_schedules/fall20.jpeg"
 
 export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ImageCover
-        text="HOW TO JOIN"
+      <ProAccCover
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient

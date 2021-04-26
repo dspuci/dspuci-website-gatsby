@@ -16,6 +16,7 @@ import CenterHeader from "../components/CenterHeader"
 // import weekTwoFlyer from "../images/proweek-flyer2.jpg"
 import finalsJudge1 from '../images/finalsJudge1.jpg'
 import finalsJudge2 from '../images/finalsJudge2.jpg'
+import caseComp from '../images/2021_Case_Comp.jpg'
 import linkedInBox from "../images/proweek-linkedinBox.png"
 import panel from "../images/proweek-panel.png"
 import presentation from "../images/proweek-presentation.png"
@@ -101,6 +102,12 @@ export default () => (
         Weekly Zoom workshops will be taking place on Tuesdays. 
       </div>
 
+      <Section>
+        <div>
+        Unfortunately, applications for our Winter 2021 Program have closed, but look out for more information coming soon on our Spring recruitment or see details below for our second annual Case Study Competition!
+        </div>
+      </Section>
+
 
 
       <Section style={{ marginBottom: 10, marginTop: -30}}>
@@ -118,10 +125,23 @@ export default () => (
 
       <Section>
         <div>
-        Furthermore, to wrap up the program we are proud to bring back our second annual case study competition! The last workshop of the program (Week 8, Case Studies 101) will preface the competition held later that week (dates TBA) and will cover relevant information for interested participants. 
-        This is open to all undergrad students at UC Irvine, featuring 2 competition rounds, guest judges, and exciting prizes. No experience necessary!
+        Furthermore, to wrap up the program we are proud to bring back our second annual case study competition! 
+        The last workshop of the program (Week 8, Case Studies 101) will preface the competition held later that 
+        week (Prelims 2/24, Final Round 2/26) and will cover relevant information for interested participants. 
+        The workshop and competition are open to all undergrad students at UC Irvine and provides students with 
+        an opportunity to compete and showcase their public speaking skills and business acumen. Non-competitors 
+        are encouraged to come watch the Final Round competitors present in front of judges from the consulting industry.
         </div>
       </Section>
+
+      <Section style={{ marginBottom: 10, marginTop: -30}}>
+        <div style={{width: "100vw", height: "10vh", display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <Link href = "https://www.facebook.com/events/433219017737909">
+        <Button text= "View Event Page"/>
+        </Link>
+        </div>
+      </Section>
+
 
       {/* <Section sx={{ justifyContent: "left" }}>
       <h1 style={{ marginBottom: 10 }}>
@@ -137,11 +157,6 @@ export default () => (
         </div>
       </Section> */}
 
-      <Section sx={{justifyContent: 'left'}}>
-        <h1>
-          Final Round Judges from First Annual Case Competition:
-        </h1>
-      </Section>
 
       {/* <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
         <EventBox title="CASE STUDY COMPETITION PRELIMINARY ROUND" imageSrc={casestudy}>
@@ -161,12 +176,9 @@ export default () => (
           <Button text="Register Now!" to="/registration"/>
         </div>
       </Section> */}
-      <Flex>
+      <Flex flexWrap='wrap' alignItems="center" justifyContent = "center">
         <Box width={[1, 1 / 2]}>
-          <Image src={finalsJudge1} />
-        </Box>
-        <Box width={[1, 1 / 2]}>
-          <Image src={finalsJudge2} />
+          <Image src={caseComp} />
         </Box>
       </Flex> 
 

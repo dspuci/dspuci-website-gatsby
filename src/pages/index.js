@@ -8,7 +8,7 @@ import presidentImage from '../images/meghan_cadigal.jpg'
 import dsp_seal from '../images/dsp_seal.png'
 import { VideoCoverLayout } from "../components/Layout";
 import { Helmet } from "react-helmet";
-import video from '../images/index.mp4';
+import video from '../images/Website_05.mp4';
 import ImageBox from "../components/ImageBox";
 import Button from "../components/TransparentButton";
 import { Fade } from "react-reveal"
