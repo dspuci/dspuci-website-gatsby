@@ -71,13 +71,13 @@ export default ({ data }) => {
 // TO CHANGE DIRECTORS CHANGE THIS
 export const query = graphql`
   {
-    executiveCommittee: allGoogleSheetEcSummer2020Row {
+    executiveCommittee: allGoogleSheetEcSummer2021Row {
       nodes {
         name
         title
       }
     }
-    directors: allGoogleSheetDirectorsWinter2020Row {
+    directors: allGoogleSheetDirectorsSummer2021Row {
       nodes {
         name
         title

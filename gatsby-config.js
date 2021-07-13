@@ -19,7 +19,7 @@ module.exports = {
       resolve: 'gatsby-source-google-sheets',
       options: {
           spreadsheetId: '1CF92edHHjq2C90Guep9t5l9d5wt9sn8XTv1jnlqqCs4',
-          worksheetTitle: 'Directors Winter 2020',
+          worksheetTitle: 'Directors Summer 2021',
           credentials: require('./dspuci-website-1608893916127-6515fe8f7bc6.json')
       }
     },
@@ -28,7 +28,7 @@ module.exports = {
       resolve: 'gatsby-source-google-sheets',
       options: {
           spreadsheetId: '1TYYVzl9wHkFFXd8PbZGxAc0FIV3A8sf5MCNvKVcJxDM',
-          worksheetTitle: 'EC Summer 2020',
+          worksheetTitle: 'EC Summer 2021',
           credentials: require('./dspuci-website-1608893916127-6515fe8f7bc6.json')
       }
     },
