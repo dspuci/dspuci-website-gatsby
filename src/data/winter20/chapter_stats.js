@@ -2,7 +2,7 @@ const genderData = {
     labels: ["Male", "Female"],
     datasets: [
       {
-        data: [20, 18],
+        data: [20, 17],
         backgroundColor: ["rgb(158, 207, 230)", "rgb(151, 129, 213)"],
       },
     ],
@@ -12,7 +12,7 @@ const genderData = {
     labels: ["Freshman", "Sophomore", "Junior", "Senior"],
     datasets: [
       {
-        data: [5, 11, 13, 9],
+        data: [9, 13, 15, 0],
         backgroundColor: [
           "rgb(241,169,78)",
           "rgb(112, 226, 113)",
@@ -30,7 +30,7 @@ const genderData = {
     labels: ["Bus. Admin", "Bus. Econ", "Computer Science", "BIM", "Quant. Econ"],
     datasets: [
       {
-        data: [22, 5, 6, 3, 2],
+        data: [19, 7, 6, 3, 1],
         backgroundColor: [
           "rgb(68,179,194)",
         "rgb(241,169,78)",
