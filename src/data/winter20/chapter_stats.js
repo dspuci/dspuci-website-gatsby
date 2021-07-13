@@ -12,7 +12,7 @@ const genderData = {
     labels: ["Freshman", "Sophomore", "Junior", "Senior"],
     datasets: [
       {
-        data: [9, 13, 15, 0],
+        data: [0, 9, 13, 15],
         backgroundColor: [
           "rgb(241,169,78)",
           "rgb(112, 226, 113)",
