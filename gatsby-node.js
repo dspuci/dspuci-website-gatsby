@@ -3,7 +3,7 @@ const path = require(`path`)
 // TO CHANGE BIO CHANGE THIS
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "allGoogleSheetSummer2020Row") {
+  if (node.internal.type === "allGoogleSheetSummer2021Row") {
     const slug = `${node.firstname.trim()} ${node.lastname.trim()}`
       .split(" ")
       .join("_")
@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      bios: allGoogleSheetSummer2020Row {
+      bios: allGoogleSheetSummer2021Row {
         nodes {
           slug
         }

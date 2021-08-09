@@ -32,7 +32,7 @@ You can access GraphQL queries through `localhost:8000/__graphql`
 
 Access DOT Google Drive. Access Bro Bios Google Sheets and either add a new worksheet or edit an existing one. 
 
-In the code, update all instances of `allGoogleSheetSummer2020Row`. This GraphQL query points to that sheet. In `gatsby-node.js`, you should be able to change the worksheet name to a the dataset of your term.  
+In the code, update all instances of `allGoogleSheetSummer2021Row`. This GraphQL query points to that sheet. In `gatsby-node.js`, you should be able to change the worksheet name to a the dataset of your term.  
 
 **Caution: If you want to add new fields, you must edit the code to reflect additional field changes or it will BREAK**
 

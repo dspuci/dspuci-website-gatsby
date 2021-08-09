@@ -83,7 +83,7 @@ export const query = graphql`
         title
       }
     }
-    brothers: allGoogleSheetSummer2020Row {
+    brothers: allGoogleSheetSummer2021Row {
       nodes {
         firstname
         lastname

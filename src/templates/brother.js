@@ -137,7 +137,7 @@ export default ({ data }) => {
 // TO CHANGE BIO CHANGE THIS
 export const query = graphql`
   query ($slug: String!) {
-    bio: allGoogleSheetSummer2020Row(filter: {slug: {eq: $slug}}) {
+    bio: allGoogleSheetSummer2021Row(filter: {slug: {eq: $slug}}) {
       nodes {
         firstname
         lastname

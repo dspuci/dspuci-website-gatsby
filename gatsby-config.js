@@ -10,7 +10,7 @@ module.exports = {
       resolve: 'gatsby-source-google-sheets',
       options: {
           spreadsheetId: '1HMZMGACdCa6ZbkbhadXYpsoCCTYivKgqdGPssBk_OMw',
-          worksheetTitle: 'Summer 2020',
+          worksheetTitle: 'Summer 2021',
           credentials: require('./dspuci-website-1608893916127-6515fe8f7bc6.json')
       }
     },
