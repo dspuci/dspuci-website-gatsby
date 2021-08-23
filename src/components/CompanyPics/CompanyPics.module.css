@@ -1,19 +1,19 @@
 .container {
-    display: flex;
-    direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .container img {
-    width: 9%;
-    margin: 0 0.5%;
+  width: 9%;
+  margin: 0 0.5%;
 }
 
 @media (max-width: 800px) {
-    .container img {
-        width: 25%;
-        margin: 0 2.5%;
-    }
+  .container img {
+    width: 25%;
+    margin: 0 2.5%;
+  }
 }

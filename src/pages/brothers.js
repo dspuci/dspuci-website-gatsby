@@ -7,20 +7,23 @@ import { StandardLayout } from "../components/Layout"
 import { Brother, LeaderBrother } from "../components/Brother"
 import FamilyTree from "../components/FamilyTree/FamilyTree"
 import CenterHeader from "../components/CenterHeader"
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet"
 
 export default ({ data }) => {
   return (
     <StandardLayout>
       <Helmet>
         <title>Brothers | Delta Sigma Pi - Pi Sigma Chapter</title>
-        <meta name="Delta Sigma Pi - Pi Sigma Chapter Brothers Page" content="Delta Sigma Pi - Pi Sigma Chapter Brothers Page" />
+        <meta
+          name="Delta Sigma Pi - Pi Sigma Chapter Brothers Page"
+          content="Delta Sigma Pi - Pi Sigma Chapter Brothers Page"
+        />
       </Helmet>
       <Fade>
         <CenterHeader>Executive Committee</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.executiveCommittee.nodes.map(brotherInfo => (
+        {data.executiveCommittee.nodes.map((brotherInfo) => (
           <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
         ))}
       </Flex>
@@ -29,7 +32,7 @@ export default ({ data }) => {
         <CenterHeader>Directors</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.directors.nodes.map(brotherInfo => (
+        {data.directors.nodes.map((brotherInfo) => (
           <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
         ))}
       </Flex>
@@ -50,7 +53,7 @@ export default ({ data }) => {
               ? -1
               : 0
           )
-          .map(brotherInfo => (
+          .map((brotherInfo) => (
             <Brother brotherInfo={brotherInfo} />
           ))}
         {/* {data.brothers.nodes.map(brotherInfo => (
@@ -61,7 +64,7 @@ export default ({ data }) => {
         <CenterHeader>Family Trees</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.families.nodes.map(family => (
+        {data.families.nodes.map((family) => (
           <FamilyTree familyName={family.name} />
         ))}
       </Flex>
@@ -71,19 +74,19 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    executiveCommittee: allLeadershipSummer20XlsxSheet1 {
+    executiveCommittee: allLeadershipSummer21XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    directors: allDirectorsSummer20XlsxSheet1 {
+    directors: allDirectorsSummer21XlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    brothers: allBiosSummer20XlsxFormResponses1 {
+    brothers: allBiosSummer21XlsxFormResponses1 {
       nodes {
         First_Name
         Last_Name

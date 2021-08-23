@@ -8,23 +8,22 @@ import ImageModal from "../ImageModal/ImageModal"
 const term = "winter20"
 
 class FamilyTree extends React.Component {
-
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      modalState: true
-    };
+      modalState: true,
+    }
 
     // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this)
     // this.escFunction = this.escFunction.bind(this);
   }
 
   handleClick(e) {
     // e.preventDefault();
-    this.setState(state => ({
-      modalState: !state.modalState
-    }));
+    this.setState((state) => ({
+      modalState: !state.modalState,
+    }))
   }
 
   render() {
@@ -40,7 +39,12 @@ class FamilyTree extends React.Component {
             onClick={this.handleClick}
           />
         </Fade>
-        {this.state.modalState ? null : <ImageModal action={this.handleClick} source={`/images/families/${term}/${this.props.familyName}.png`}/>}
+        {this.state.modalState ? null : (
+          <ImageModal
+            action={this.handleClick}
+            source={`/images/families/${term}/${this.props.familyName}.png`}
+          />
+        )}
       </Box>
     )
   }

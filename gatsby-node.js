@@ -2,7 +2,7 @@ const path = require(`path`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "BiosSummer20Xlsx__FormResponses1") {
+  if (node.internal.type === "BiosSummer21Xlsx__FormResponses1") {
     const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
       .split(" ")
       .join("_")
@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      bios: allBiosSummer20XlsxFormResponses1 {
+      bios: allBiosSummer21XlsxFormResponses1 {
         nodes {
           fields {
             slug
@@ -60,8 +60,8 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
-    result.data.bios.nodes.forEach(node => {
+  `).then((result) => {
+    result.data.bios.nodes.forEach((node) => {
       createPage({
         path: "brothers/" + node.fields.slug,
         component: path.resolve(`./src/templates/brother.js`),
@@ -73,7 +73,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    result.data.albums.nodes.forEach(node => {
+    result.data.albums.nodes.forEach((node) => {
       createPage({
         path: "gallery/albums/" + node.fields.slug,
         component: path.resolve(`./src/templates/album.js`),

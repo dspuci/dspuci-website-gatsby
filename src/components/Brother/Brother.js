@@ -27,7 +27,7 @@ class Brother extends React.Component {
 
       subtitle: this.props.brotherInfo.Class.trim() + " class",
       linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
-      email: "mailto:" + this.props.brotherInfo.Email.trim()
+      email: "mailto:" + this.props.brotherInfo.Email.trim(),
     }
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
@@ -65,7 +65,7 @@ class Brother extends React.Component {
             href={brotherInfo.email}
             target="_blank"
             rel="noopener noreferrer"
-            style={{marginLeft: '20px'}}
+            style={{ marginLeft: "20px" }}
           >
             <FontAwesomeIcon
               className={styles.linkedinIcon}
@@ -86,10 +86,7 @@ class LeaderBrother extends React.Component {
 
   render() {
     let fullName = this.props.name
-    let codeName = fullName
-      .split(" ")
-      .join("_")
-      .toLowerCase()
+    let codeName = fullName.split(" ").join("_").toLowerCase()
     let subtitle = this.props.title.trim()
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>

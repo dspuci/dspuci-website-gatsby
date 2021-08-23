@@ -8,7 +8,7 @@ export default ({ data }) => {
   return (
     <StandardLayout>
       <div style={{ textAlign: "center", marginTop: 50 }}>
-        {data.images.nodes.map(node => (
+        {data.images.nodes.map((node) => (
           <a href={withPrefix(`/images/gallery/${node.relativePath}`)}>
             <Image
               style={{

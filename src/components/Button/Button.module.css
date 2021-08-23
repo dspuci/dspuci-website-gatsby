@@ -1,21 +1,21 @@
 .button {
-    background-color: #9284CF;
-    color: white;
-    padding: 15px 40px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 10px;
-    margin-top: 0px;
-    -webkit-transition: margin-top 0.1s;
-    transition: margin-top 0.1s;
-    cursor: pointer;
+  background-color: #9284cf;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 0px;
+  -webkit-transition: margin-top 0.1s;
+  transition: margin-top 0.1s;
+  cursor: pointer;
 }
 
 .button p {
-    margin: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .button:hover {
-    margin-top: -5px
+  margin-top: -5px;
 }

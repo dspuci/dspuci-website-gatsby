@@ -1,17 +1,20 @@
-import React from 'react';
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-import imageOne from '../../images/ryan_recruitment.jpeg'
-import imageTwo from '../../images/tiffany_recruitment.jpeg'
-import imageThree from '../../images/brian_recruitment.jpeg'
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import React from "react"
+import Carousel from "@brainhubeu/react-carousel"
+import "@brainhubeu/react-carousel/lib/style.css"
+import imageOne from "../../images/ryan_recruitment.jpeg"
+import imageTwo from "../../images/tiffany_recruitment.jpeg"
+import imageThree from "../../images/brian_recruitment.jpeg"
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styles from "./RecCarousel.module.css"
 
 const SpotlightCard = (props) => {
-  return(
+  return (
     <div className={styles.cardContainer}>
-      <img src={props.src} className={styles.img}/>
+      <img src={props.src} className={styles.img} alt={props.src} />
       <div className={styles.textContainer}>
         <h2>{props.name}</h2>
         <h3>{props.description}</h3>
@@ -21,18 +24,22 @@ const SpotlightCard = (props) => {
   )
 }
 
-const RecCarousel = (props) => {
-  return(
+const RecCarousel = () => {
+  return (
     <Carousel
       clickToChange
-      arrowLeft={<FontAwesomeIcon icon={faChevronLeft} size="2x"/>}
-      arrowLeftDisabled={<FontAwesomeIcon icon={faChevronLeft} color="gray" size="2x"/>}
-      arrowRight={<FontAwesomeIcon icon={faChevronRight} size="2x"/>}
-      arrowRightDisabled={<FontAwesomeIcon icon={faChevronRight} color="gray" size="2x"/>}
+      arrowLeft={<FontAwesomeIcon icon={faChevronLeft} size="2x" />}
+      arrowLeftDisabled={
+        <FontAwesomeIcon icon={faChevronLeft} color="gray" size="2x" />
+      }
+      arrowRight={<FontAwesomeIcon icon={faChevronRight} size="2x" />}
+      arrowRightDisabled={
+        <FontAwesomeIcon icon={faChevronRight} color="gray" size="2x" />
+      }
       addArrowClickHandler={true}
       centered
     >
-      <SpotlightCard 
+      <SpotlightCard
         src={imageOne}
         name="Ryan Lau"
         description="Initiated in my Third Year Fall | Business Economics | Interested in Corporate Strategy"
@@ -45,7 +52,7 @@ const RecCarousel = (props) => {
         every second I’ve had at school and am sad to see it come to an end this school year. I can confidently 
         say that joining DSP was one of the best decisions I’ve ever made in college."
       />
-      <SpotlightCard 
+      <SpotlightCard
         src={imageTwo}
         name="Tiffany Than"
         description="Initiated in my First Year Fall | Business Administration | Interested in Human Resources"
@@ -58,7 +65,7 @@ const RecCarousel = (props) => {
         Every bro is so willing to help and motivate each other to succeed, and I am proud to say that I’ve found 
         some life long friendships in DSP as well."
       />
-      <SpotlightCard 
+      <SpotlightCard
         src={imageThree}
         name="Brian Anderson"
         description="Initiated in my Second Year Fall | Computer Science & Engineering | Interested in Tech and Law"
@@ -76,4 +83,4 @@ const RecCarousel = (props) => {
   )
 }
 
-export default RecCarousel;
+export default RecCarousel

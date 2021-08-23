@@ -41,8 +41,8 @@ module.exports = {
         name: `Delta Sigma Pi - Pi Sigma Chapter`,
         short_name: `DSP`,
         start_url: `/`,
-        icon: `src/images/dsp-sigil.png`
-      }
-    }
+        icon: `src/images/dsp-sigil.png`,
+      },
+    },
   ],
 }

@@ -10,10 +10,10 @@ const yearMap = {
   "1st": "Freshman",
   "2nd": "Sophomore",
   "3rd": "Junior",
-  "4th": "Senior"
+  "4th": "Senior",
 }
 
-const BrotherInfoBox = props => (
+const BrotherInfoBox = (props) => (
   <Box
     width={[1]}
     sx={{
@@ -27,7 +27,7 @@ const BrotherInfoBox = props => (
   </Box>
 )
 
-const addDefaultSrc = ev => {
+const addDefaultSrc = (ev) => {
   ev.target.src = coatofarms
 }
 
@@ -79,40 +79,53 @@ export default ({ data }) => {
             {brotherInfo.firstName} {brotherInfo.lastName}
           </Text>
           <Text fontWeight="100" fontSize={[18, 22]}>
-            {yearMap[brotherInfo.year]} | {brotherInfo.major}{brotherInfo.minor ? "; " + brotherInfo.minor : null}
+            {yearMap[brotherInfo.year]} | {brotherInfo.major}
+            {brotherInfo.minor ? "; " + brotherInfo.minor : null}
           </Text>
-          <div style={{width: '100%', borderBottom: '1px solid black', height: '10px'}}></div>
+          <div
+            style={{
+              width: "100%",
+              borderBottom: "1px solid black",
+              height: "10px",
+            }}
+          ></div>
           <Flex flexWrap="wrap" py={3}>
-          <Box width={[1, 1 / 2]} pr={3}>
-            <Flex flexWrap="wrap">
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Hometown</Text>
-                <Text>{brotherInfo.hometown}</Text>
-              </BrotherInfoBox>
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Pledge Class</Text>
-                <Text>{brotherInfo.class}</Text>
-              </BrotherInfoBox>
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Industry of Interest</Text>
-                <Text>{brotherInfo.industry}</Text>
-              </BrotherInfoBox>
-            </Flex>
-          </Box>
-          <Box width={[1, 1 / 2]} pr={3}>
-            <Flex flexWrap="wrap">
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Recent Position</Text>
-                <Text>{brotherInfo.recentPosition}</Text>
-              </BrotherInfoBox>
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Campus Involvements</Text>
-                <Text>{brotherInfo.involvements}</Text>
-              </BrotherInfoBox>
-            </Flex>
-          </Box>
+            <Box width={[1, 1 / 2]} pr={3}>
+              <Flex flexWrap="wrap">
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Hometown</Text>
+                  <Text>{brotherInfo.hometown}</Text>
+                </BrotherInfoBox>
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Pledge Class</Text>
+                  <Text>{brotherInfo.class}</Text>
+                </BrotherInfoBox>
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Industry of Interest</Text>
+                  <Text>{brotherInfo.industry}</Text>
+                </BrotherInfoBox>
+              </Flex>
+            </Box>
+            <Box width={[1, 1 / 2]} pr={3}>
+              <Flex flexWrap="wrap">
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Recent Position</Text>
+                  <Text>{brotherInfo.recentPosition}</Text>
+                </BrotherInfoBox>
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Campus Involvements</Text>
+                  <Text>{brotherInfo.involvements}</Text>
+                </BrotherInfoBox>
+              </Flex>
+            </Box>
           </Flex>
-          <div style={{width: '100%', borderBottom: '1px solid black', height: '10px'}}></div>
+          <div
+            style={{
+              width: "100%",
+              borderBottom: "1px solid black",
+              height: "10px",
+            }}
+          ></div>
         </Box>
         <Box width={[1]} style={{ textAlign: "center" }} p={3}>
           <Text>{brotherInfo.bios}</Text>
@@ -124,7 +137,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    bio: biosSummer20XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+    bio: biosSummer21XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
       First_Name
       Last_Name
       Class
