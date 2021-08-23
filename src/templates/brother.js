@@ -31,7 +31,11 @@ const addDefaultSrc = (ev) => {
 }
 
 export default ({ data }) => {
-  const bio = data.bio.nodes[[0]];
+  if (!data || !data.bio) {
+    return null;
+  }
+  const bio = data.bio;
+
   let brotherInfo = {
     firstName: bio.First_Name.trim(),
     lastName: bio.Last_Name.trim(),

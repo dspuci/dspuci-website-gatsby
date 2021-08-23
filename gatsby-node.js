@@ -49,14 +49,16 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then((result) => {
+    console.log(result);
     result.data.bios.nodes.forEach((node) => {
+      console.log(node.fields.slug);
       createPage({
-        path: "brothers/" + node.slug,
+        path: "brothers/" + node.fields.slug,
         component: path.resolve(`./src/templates/brother.js`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
-          slug: node.slug,
+          slug: node.fields.slug,
         },
       })
     })
