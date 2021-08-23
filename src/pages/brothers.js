@@ -76,23 +76,23 @@ export const query = graphql`
   {
     executiveCommittee: allLeadershipSummer21XlsxSheet1 {
       nodes {
-        name
-        title
+        Name
+        Title
       }
     }
     directors: allDirectorsSummer21XlsxSheet1 {
       nodes {
-        name
-        title
+        Name
+        Title
       }
     }
     brothers: allBiosSummer21XlsxFormResponses1 {
       nodes {
-        firstname
-        lastname
-        class
-        linkedinurl
-        email
+        Last_Name
+        First_Name
+        LinkedIn_URL
+        Email
+        Class
       }
     }
 

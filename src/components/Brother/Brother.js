@@ -20,9 +20,9 @@ class Brother extends React.Component {
 
   render() {
     let brotherInfo = {
-      firstName: this.props.brotherInfo.firstname.trim(),
-      lastName: this.props.brotherInfo.lastname.trim(),
-      codeName: `${this.props.brotherInfo.firstname.trim()} ${this.props.brotherInfo.lastname.trim()}`
+      firstName: this.props.brotherInfo.First_Name.trim(),
+      lastName: this.props.brotherInfo.Last_Name.trim(),
+      codeName: `${this.props.brotherInfo.First_Name.trim()} ${this.props.brotherInfo.Last_Name.trim()}`
         .split(" ")
         .join("_")
         .toLowerCase(),

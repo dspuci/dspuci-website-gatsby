@@ -1,9 +1,8 @@
 import React from "react"
 import { Fade } from "react-reveal"
-import { Flex, Link } from "rebass"
+import { Flex } from "rebass"
 import { Box, Image } from "rebass"
 
-import ProWeekCover from "../components/ProWeekCover"
 import ProAccCover from "../components/ProAccCover"
 import { CoverLayout } from "../components/Layout"
 import Section from "../components/Section"
@@ -14,8 +13,8 @@ import CenterHeader from "../components/CenterHeader"
 
 // import weekOneFlyer from "../images/proweek-flyer1.jpg"
 // import weekTwoFlyer from "../images/proweek-flyer2.jpg"
-import finalsJudge1 from '../images/finalsJudge1.jpg'
-import finalsJudge2 from '../images/finalsJudge2.jpg'
+// import finalsJudge1 from '../images/finalsJudge1.jpg'
+// import finalsJudge2 from '../images/finalsJudge2.jpg'
 import caseComp from '../images/2021_Case_Comp.jpg'
 import linkedInBox from "../images/proweek-linkedinBox.png"
 import panel from "../images/proweek-panel.png"
@@ -43,7 +42,7 @@ export default () => (
         content="Delta Sigma Pi - Pi Sigma Chapter Pro Week 2020 Page"
       />
     </Helmet>
-    <Fade bottom distance="40px">
+    {/* <Fade bottom distance="40px">
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10 }}>Develop Yourself Professionally</h1>
         <div>
@@ -216,6 +215,6 @@ export default () => (
           <Image src={weekTwoFlyer} />
         </Box>
       </Flex>
-    </Fade>
+    </Fade> */}
   </CoverLayout>
 )

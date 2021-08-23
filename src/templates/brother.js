@@ -3,14 +3,7 @@ import { graphql } from "gatsby"
 import { Flex, Box, Image, Text } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import { withPrefix } from "gatsby"
-import styled from 'styled-components'
 import coatofarms from "../images/coatofarms.jpg"
-
-const Padding = styled.div`
-  width: 100%;
-  borderBottom: 1px solid black;
-  height: 10px;
-`
 
 const yearMap = {
   "1st": "Freshman",
@@ -40,18 +33,18 @@ const addDefaultSrc = (ev) => {
 export default ({ data }) => {
   const bio = data.bio.nodes[[0]];
   let brotherInfo = {
-    firstName: bio.firstname.trim(),
-    lastName: bio.lastname.trim(),
-    class: bio.class.trim(),
-    year: bio.year.trim(),
-    hometown: bio.hometown.trim(),
-    major: bio.major.trim(),
-    industry: bio.industry.trim(),
-    recentPosition: bio.recentposition.trim(),
-    involvements: bio.involvements.trim(),
-    family: bio.family.trim(),
-    linkedInUrl: bio.linkedinurl.trim(),
-    bios: bio.bios,
+    firstName: bio.First_Name.trim(),
+    lastName: bio.Last_Name.trim(),
+    class: bio.Class.trim(),
+    year: bio.Year.trim(),
+    hometown: bio.Hometown.trim(),
+    major: bio.Major.trim(),
+    industry: bio.Industry.trim(),
+    recentPosition: bio.Recent_Position.trim(),
+    involvements: bio.Involvements.trim(),
+    family: bio.Family.trim(),
+    linkedInUrl: bio.LinkedIn_URL.trim(),
+    bios: bio.Bios,
   }
   if (bio.minor != null) {
     brotherInfo.minor = bio.minor.trim()

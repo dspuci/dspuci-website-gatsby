@@ -20,7 +20,7 @@ const CareersTable = (props) => {
                 "Real Estate",
                 "Other",
                 "Others",
-              ].includes(node.name) ? (
+              ].includes(node.Name) ? (
                 <tr>
                   <td>{node.Name}</td>
                   <td>{node.Position}</td>
@@ -67,6 +67,28 @@ class YearButton extends React.Component {
     )
   }
 }
+
+// class IndustryButton extends React.Component {
+//   handleClick = () => {
+//     this.props.onClick(this.props.value)
+//   }
+
+//   render() {
+//     return (
+//       <button
+//         onClick={this.handleClick}
+//         className={[
+//           styles.button,
+//           this.props.currentIndustry === this.props.value
+//             ? styles.activeButton
+//             : styles.inactiveButton,
+//         ].join(" ")}
+//       >
+//         {this.props.value}
+//       </button>
+//     )
+//   }
+// }
 
 class CareersTables extends React.Component {
   constructor(props) {
