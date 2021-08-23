@@ -3,8 +3,8 @@ const path = require(`path`)
 // TO CHANGE BIO CHANGE THIS
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "allGoogleSheetSummer2021Row") {
-    const slug = `${node.firstname.trim()} ${node.lastname.trim()}`
+  if (node.internal.type === "BiosSummer21Xlsx__FormResponses1") {
+    const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
       .split(" ")
       .join("_")
       .toLowerCase()
@@ -40,21 +40,25 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      bios: allGoogleSheetSummer2021Row {
+      bios: allBiosSummer21XlsxFormResponses1 {
         nodes {
-          slug
+          fields {
+            slug
+          }
         }
       }
     }
-  `).then(result => {
-    result.data.bios.nodes.forEach(node => {
+  `).then((result) => {
+    console.log(result);
+    result.data.bios.nodes.forEach((node) => {
+      console.log(node.fields.slug);
       createPage({
-        path: "brothers/" + node.slug,
+        path: "brothers/" + node.fields.slug,
         component: path.resolve(`./src/templates/brother.js`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
-          slug: node.slug,
+          slug: node.fields.slug,
         },
       })
     })

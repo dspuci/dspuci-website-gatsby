@@ -4,7 +4,7 @@ import { Link, navigate } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
-const ListLink = props => (
+const ListLink = (props) => (
   <li>
     <Link to={props.to} style={props.style}>
       {props.children}

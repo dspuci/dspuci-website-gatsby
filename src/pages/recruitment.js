@@ -1,7 +1,6 @@
 import React from "react"
 import { Flex } from "rebass"
 import { Fade } from "react-reveal"
-// import { withPrefix } from "gatsby"
 
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
@@ -10,7 +9,7 @@ import Section from "../components/Section"
 import ImageBox from "../components/ImageBox"
 import Accordion from "../components/Faq"
 import RecCarousel from "../components/RecCarousel/RecCarousel"
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet"
 
 import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
@@ -30,8 +29,11 @@ export default () => (
     }
   >
     <Helmet>
-        <title>Recruitment | Delta Sigma Pi - Pi Sigma Chapter</title>
-        <meta name="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page" />
+      <title>Recruitment | Delta Sigma Pi - Pi Sigma Chapter</title>
+      <meta
+        name="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page"
+        content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page"
+      />
     </Helmet>
     <Fade bottom distance="40px">
       {/* <Section sx={{ justifyContent: "left" }}>
@@ -45,7 +47,12 @@ export default () => (
       </Section> */}
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
-        <p>Our chapter aims to create a high-impact, supportive culture where immensely passionate people are encouraged to pursue their professional and personal dreams. Attend our recruitment events to find out what sets Delta Sigma Pi above and apart. </p>
+        <p>
+          Our chapter aims to create a high-impact, supportive culture where
+          immensely passionate people are encouraged to pursue their
+          professional and personal dreams. Attend our recruitment events to
+          find out what sets Delta Sigma Pi above and apart.{" "}
+        </p>
       </Section>
 
       {/* <CenterHeader>Schedule</CenterHeader>
@@ -67,17 +74,29 @@ export default () => (
       {/* <Section sx={{ justifyContent: "center" }}>
         <p>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/757378431712140/" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2020 Recruitment: Inspire</a> for any and all updates.</p>
       </Section> */}
-      
+
       <CenterHeader>Why Join?</CenterHeader>
 
       <Flex flexWrap="wrap" justifyContent="center" marginBottom="-20px">
         <ImageBox image={careerAdvantage} title="CAREER ADVANTAGE">
-          Delta Sigma Pi offers a career advantage like no other. For over a decade, our chapter has kickstarted and cultivated impactful careers in finance, consulting, marketing, accounting, technology, entrepreneurship, and more. Unsure of what path to choose? We’ll help you out.
+          Delta Sigma Pi offers a career advantage like no other. For over a
+          decade, our chapter has kickstarted and cultivated impactful careers
+          in finance, consulting, marketing, accounting, technology,
+          entrepreneurship, and more. Unsure of what path to choose? We’ll help
+          you out.
         </ImageBox>
         <ImageBox image={unrivaledLeaders} title="UNRIVALED LEADERS">
-          With countless opportunities for growth, our brothers become recognized leaders, within the fraternity and beyond. We hold leadership positions in over 25 campus organizations – some have even started their own.        </ImageBox>
+          With countless opportunities for growth, our brothers become
+          recognized leaders, within the fraternity and beyond. We hold
+          leadership positions in over 25 campus organizations – some have even
+          started their own.{" "}
+        </ImageBox>
         <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD">
-          Joining the DSP family means mentorship, inspiration, and countless opportunities to learn and grow. Build lifelong friendships alongside an extensive network of business professionals – with over 300 national chapters and 250 UCI alumni, you can count on your brothers for support no matter where you go.
+          Joining the DSP family means mentorship, inspiration, and countless
+          opportunities to learn and grow. Build lifelong friendships alongside
+          an extensive network of business professionals – with over 300
+          national chapters and 250 UCI alumni, you can count on your brothers
+          for support no matter where you go.
         </ImageBox>
       </Flex>
     </Fade>
@@ -143,7 +162,7 @@ export default () => (
           build the highest caliber of brotherhood and professionalism.
         "
       />
-      <Accordion 
+      <Accordion
         title="If I do not get an invitation to pledge the first time, can I apply again?"
         content="
           If you have grown personally and professionally since your last
@@ -152,7 +171,7 @@ export default () => (
           apply again.
         "
       />
-      <Accordion 
+      <Accordion
         title="What criteria is used when deciding whom is given an invitation to
         pledge?"
         content="
@@ -166,7 +185,7 @@ export default () => (
           compatibility.
         "
       />
-      <Accordion 
+      <Accordion
         title="How many pledges are accepted each quarter?"
         content="
           The number of invitations we extend varies widely depending on how many 
@@ -174,19 +193,19 @@ export default () => (
           ranged in size from as little as six or as many as thirteen.
         "
       />
-      <Accordion 
+      <Accordion
         title="Can I pledge for Delta Sigma Pi if I am a member of a social fraternity or a sorority?"
         content="
           Yes. However, you can not pledge for Delta Sigma Pi if you are a part
           of another professional business fraternity.
         "
       />
-      <Accordion 
+      <Accordion
         title="What should I do if I have further questions that were not addressed here?"
         content="
           If you have more questions, feel free to email svp@dspuci.com.
         "
       />
-      </Fade>
+    </Fade>
   </CoverLayout>
 )

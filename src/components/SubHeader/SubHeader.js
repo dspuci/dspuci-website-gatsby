@@ -1,6 +1,6 @@
 import React from "react"
 
-export default props => (
+export default (props) => (
   <h2
     style={{
       marginTop: props.marginTop ? props.marginTop : 0,

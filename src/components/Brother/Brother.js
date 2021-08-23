@@ -20,16 +20,16 @@ class Brother extends React.Component {
 
   render() {
     let brotherInfo = {
-      firstName: this.props.brotherInfo.firstname.trim(),
-      lastName: this.props.brotherInfo.lastname.trim(),
-      codeName: `${this.props.brotherInfo.firstname.trim()} ${this.props.brotherInfo.lastname.trim()}`
+      firstName: this.props.brotherInfo.First_Name.trim(),
+      lastName: this.props.brotherInfo.Last_Name.trim(),
+      codeName: `${this.props.brotherInfo.First_Name.trim()} ${this.props.brotherInfo.Last_Name.trim()}`
         .split(" ")
         .join("_")
         .toLowerCase(),
 
-      subtitle: this.props.brotherInfo.class.trim() + " class",
-      linkedInUrl: this.props.brotherInfo.linkedinurl.trim(),
-      email: "mailto:" + this.props.brotherInfo.email.trim()
+      subtitle: this.props.brotherInfo.Class.trim() + " class",
+      linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
+      email: "mailto:" + this.props.brotherInfo.Email.trim(),
     }
     
     return (
@@ -68,7 +68,7 @@ class Brother extends React.Component {
             href={brotherInfo.email}
             target="_blank"
             rel="noopener noreferrer"
-            style={{marginLeft: '20px'}}
+            style={{ marginLeft: "20px" }}
           >
             <FontAwesomeIcon
               className={styles.linkedinIcon}
@@ -89,10 +89,7 @@ class LeaderBrother extends React.Component {
 
   render() {
     let fullName = this.props.name
-    let codeName = fullName
-      .split(" ")
-      .join("_")
-      .toLowerCase()
+    let codeName = fullName.split(" ").join("_").toLowerCase()
     let subtitle = this.props.title.trim()
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>

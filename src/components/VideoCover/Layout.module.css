@@ -1,5 +1,4 @@
 .container {
-  
 }
 
 .button {
@@ -23,11 +22,11 @@
 
 .button:hover {
   background: white;
-  color: #1A182A;
+  color: #1a182a;
 }
 
 .button:hover > a {
-  color: #1A182A;
+  color: #1a182a;
 }
 
 a {

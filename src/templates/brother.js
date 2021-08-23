@@ -3,23 +3,16 @@ import { graphql } from "gatsby"
 import { Flex, Box, Image, Text } from "rebass"
 import { StandardLayout } from "../components/Layout"
 import { withPrefix } from "gatsby"
-import styled from 'styled-components'
 import coatofarms from "../images/coatofarms.jpg"
-
-const Padding = styled.div`
-  width: 100%;
-  borderBottom: 1px solid black;
-  height: 10px;
-`
 
 const yearMap = {
   "1st": "Freshman",
   "2nd": "Sophomore",
   "3rd": "Junior",
-  "4th": "Senior"
+  "4th": "Senior",
 }
 
-const BrotherInfoBox = props => (
+const BrotherInfoBox = (props) => (
   <Box
     width={[1]}
     sx={{
@@ -33,25 +26,29 @@ const BrotherInfoBox = props => (
   </Box>
 )
 
-const addDefaultSrc = ev => {
+const addDefaultSrc = (ev) => {
   ev.target.src = coatofarms
 }
 
 export default ({ data }) => {
-  const bio = data.bio.nodes[[0]];
+  if (!data || !data.bio) {
+    return null;
+  }
+  const bio = data.bio;
+
   let brotherInfo = {
-    firstName: bio.firstname.trim(),
-    lastName: bio.lastname.trim(),
-    class: bio.class.trim(),
-    year: bio.year.trim(),
-    hometown: bio.hometown.trim(),
-    major: bio.major.trim(),
-    industry: bio.industry.trim(),
-    recentPosition: bio.recentposition.trim(),
-    involvements: bio.involvements.trim(),
-    family: bio.family.trim(),
-    linkedInUrl: bio.linkedinurl.trim(),
-    bios: bio.bios,
+    firstName: bio.First_Name.trim(),
+    lastName: bio.Last_Name.trim(),
+    class: bio.Class.trim(),
+    year: bio.Year.trim(),
+    hometown: bio.Hometown.trim(),
+    major: bio.Major.trim(),
+    industry: bio.Industry.trim(),
+    recentPosition: bio.Recent_Position.trim(),
+    involvements: bio.Involvements.trim(),
+    family: bio.Family.trim(),
+    linkedInUrl: bio.LinkedIn_URL.trim(),
+    bios: bio.Bios,
   }
   if (bio.minor != null) {
     brotherInfo.minor = bio.minor.trim()
@@ -88,46 +85,56 @@ export default ({ data }) => {
             {brotherInfo.firstName} {brotherInfo.lastName}
           </Text>
           <Text fontWeight="100" fontSize={[18, 22]}>
-            {yearMap[brotherInfo.year]} | {brotherInfo.major}{brotherInfo.minor ? "; " + brotherInfo.minor : null}
+            {yearMap[brotherInfo.year]} | {brotherInfo.major}
+            {brotherInfo.minor ? "; " + brotherInfo.minor : null}
           </Text>
-          <div style={{width: '100%', borderBottom: '1px solid black', height: '10px'}}></div>
+          <div
+            style={{
+              width: "100%",
+              borderBottom: "1px solid black",
+              height: "10px",
+            }}
+          ></div>
           <Flex flexWrap="wrap" py={3}>
-          <Box width={[1, 1 / 2]} pr={3}>
-            <Flex flexWrap="wrap">
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Hometown</Text>
-                <Text>{brotherInfo.hometown}</Text>
-              </BrotherInfoBox>
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Pledge Class</Text>
-                <Text>{brotherInfo.class}</Text>
-              </BrotherInfoBox>
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Industry of Interest</Text>
-                <Text>{brotherInfo.industry}</Text>
-              </BrotherInfoBox>
-            </Flex>
-          </Box>
-          <Box width={[1, 1 / 2]} pr={3}>
-            <Flex flexWrap="wrap">
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Recent Position</Text>
-                <Text>{brotherInfo.recentPosition}</Text>
-              </BrotherInfoBox>
-              <BrotherInfoBox>
-                <Text fontWeight={"bold"}>Campus Involvements</Text>
-                <Text>{brotherInfo.involvements}</Text>
-              </BrotherInfoBox>
-            </Flex>
-          </Box>
-          <div style ={{width:'100%'}}>
+            <Box width={[1, 1 / 2]} pr={3}>
+              <Flex flexWrap="wrap">
                 <BrotherInfoBox>
-                  <Text fontWeight={"bold"}> Bio</Text>
-                  <Text>{brotherInfo.bios}</Text>
+                  <Text fontWeight={"bold"}>Hometown</Text>
+                  <Text>{brotherInfo.hometown}</Text>
                 </BrotherInfoBox>
-              </div>
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Pledge Class</Text>
+                  <Text>{brotherInfo.class}</Text>
+                </BrotherInfoBox>
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Industry of Interest</Text>
+                  <Text>{brotherInfo.industry}</Text>
+                </BrotherInfoBox>
+              </Flex>
+            </Box>
+            <Box width={[1, 1 / 2]} pr={3}>
+              <Flex flexWrap="wrap">
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Recent Position</Text>
+                  <Text>{brotherInfo.recentPosition}</Text>
+                </BrotherInfoBox>
+                <BrotherInfoBox>
+                  <Text fontWeight={"bold"}>Campus Involvements</Text>
+                  <Text>{brotherInfo.involvements}</Text>
+                </BrotherInfoBox>
+              </Flex>
+            </Box>
           </Flex>
-          <Padding />
+          <div
+            style={{
+              width: "100%",
+              borderBottom: "1px solid black",
+              height: "10px",
+            }}
+          ></div>
+        </Box>
+        <Box width={[1]} style={{ textAlign: "center" }} p={3}>
+          <Text>{brotherInfo.bios}</Text>
         </Box>
       </Flex>
     </StandardLayout>
@@ -136,23 +143,21 @@ export default ({ data }) => {
 
 // TO CHANGE BIO CHANGE THIS
 export const query = graphql`
-  query ($slug: String!) {
-    bio: allGoogleSheetSummer2021Row(filter: {slug: {eq: $slug}}) {
-      nodes {
-        firstname
-        lastname
-        class
-        year
-        hometown
-        major
-        minor
-        industry
-        recentposition
-        involvements
-        family
-        linkedinurl
-        bios
-      }
+  query($slug: String!) {
+    bio: biosSummer21XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+      First_Name
+      Last_Name
+      Class
+      Year
+      Hometown
+      Major
+      Minor
+      Industry
+      Recent_Position
+      Involvements
+      Family
+      LinkedIn_URL
+      Bios
     }
   }
 `

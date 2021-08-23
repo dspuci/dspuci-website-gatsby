@@ -66,4 +66,3 @@ class ProWeekCover extends React.Component {
 }
 
 export default ProWeekCover
-

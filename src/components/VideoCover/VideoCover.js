@@ -13,7 +13,7 @@ class VideoCover extends React.Component {
       textColor = darkColor
     }
     return (
-      <div 
+      <div
         style={{
           width: "100vw",
           height: "100vh",
@@ -21,7 +21,7 @@ class VideoCover extends React.Component {
           position: "relative",
           display: "table-cell",
           verticalAlign: "middle",
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         <video
@@ -42,15 +42,9 @@ class VideoCover extends React.Component {
           poster={this.props.backupImage}
           className={styles.video}
         >
-          <track default
-           kind="captions" 
-          />
-          <source
-            src={this.props.coverVideo}
-            type="video/mp4"
-          ></source>
+          <source src={this.props.coverVideo} type="video/mp4"></source>
         </video>
-        <img 
+        <img
           style={{
             minWidth: "100%",
             minHeight: "100%",
@@ -65,16 +59,16 @@ class VideoCover extends React.Component {
           className={styles.img}
           alt= "back up"
         />
-        <Image 
+        <Image
           src={this.props.coverImage}
           sx={{
             position: "relative",
-            display: 'block',
-            width: ['50%', '12%'],
+            display: "block",
+            width: ["50%", "12%"],
             margin: "0 auto",
             textAlign: "center",
           }}
-          />
+        />
         <Text
           sx={{
             position: "relative",
@@ -87,7 +81,7 @@ class VideoCover extends React.Component {
             lineHeight: 1.4,
             fontWeight: "100",
             zIndex: 0,
-            letterSpacing: '8px',
+            letterSpacing: "8px",
           }}
           color={textColor}
           fontSize={[4, 4, 5, 6]}
@@ -100,15 +94,15 @@ class VideoCover extends React.Component {
             position: "relative",
             display: "inline-block",
             width: "100%",
-            padding: '0 5%',
-            maxWidth: '100%',
+            padding: "0 5%",
+            maxWidth: "100%",
             textAlign: "center",
             margin: "10px auto",
             textTransform: "uppercase",
             lineHeight: 1.4,
             fontWeight: "100",
             zIndex: 0,
-            letterSpacing: '4px'
+            letterSpacing: "4px",
           }}
           color={textColor}
           fontSize={[1, 1, 1, 1]}
@@ -117,9 +111,7 @@ class VideoCover extends React.Component {
           {this.props.textTwo}
         </Text>
         <Link to="/recruitment">
-          <button className={styles.button}>
-            HOW TO JOIN
-          </button>
+          <button className={styles.button}>HOW TO JOIN</button>
         </Link>
       </div>
     )
