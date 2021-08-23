@@ -26,6 +26,7 @@ import styles from "./ProWeekCover.module.css"
 import { Text } from "rebass"
 import { withPrefix } from "gatsby"
 import { darkColor, lightColor } from "../../styles/defaultColors"
+import Typical from 'react-typical'
 
 class ProWeekCover extends React.Component {
   render() {
@@ -50,7 +51,7 @@ class ProWeekCover extends React.Component {
         }}
       >
         <div className={styles.coverTitleContainer}>
-          <Text
+            <Text
             className={styles.coverTitle}
             color={textColor}
             fontSize={[5, 6, 6, 8]}

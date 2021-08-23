@@ -26,17 +26,17 @@ export default ({ data }) => {
   )
 }
 
-export const query = graphql`
-  query($slug: String!) {
-    images: allFile(
-      filter: {
-        sourceInstanceName: { eq: "gallery" }
-        relativeDirectory: { eq: $slug }
-      }
-    ) {
-      nodes {
-        relativePath
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query($slug: String!) {
+//     images: allFile(
+//       filter: {
+//         sourceInstanceName: { eq: "gallery" }
+//         relativeDirectory: { eq: $slug }
+//       }
+//     ) {
+//       nodes {
+//         relativePath
+//       }
+//     }
+//   }
+// `

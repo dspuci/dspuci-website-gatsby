@@ -1,0 +1,36 @@
+.proWeekCover {
+    background: #0A2B5D;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+    color: white;
+    display: table;
+    width: 100%;
+}
+
+.coverTitleContainer {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.coverTitle {
+    display: inline-block;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .proWeekCover {
+        background-attachment: scroll;
+    }
+}
+

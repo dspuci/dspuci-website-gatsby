@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { Image } from "rebass"
 import { withPrefix } from "gatsby"
 import styles from "./ImageModal.module.css"

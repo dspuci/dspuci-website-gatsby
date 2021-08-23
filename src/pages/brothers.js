@@ -43,22 +43,19 @@ export default ({ data }) => {
       <Flex flexWrap="wrap">
         {data.brothers.nodes
           .sort((a, b) =>
-            a.Last_Name > b.Last_Name
+            a.lastname > b.lastname
               ? 1
-              : b.Last_Name > a.Last_Name
+              : b.lastname > a.lastname
               ? -1
-              : a.First_Name > b.First_Name
+              : a.firstname > b.firstname
               ? 1
-              : b.First_Name > a.First_Name
+              : b.firstname > a.firstname
               ? -1
               : 0
           )
           .map((brotherInfo) => (
             <Brother brotherInfo={brotherInfo} />
           ))}
-        {/* {data.brothers.nodes.map(brotherInfo => (
-          <Brother brotherInfo={brotherInfo} />
-        ))} */}
       </Flex>
       <Fade>
         <CenterHeader>Family Trees</CenterHeader>
@@ -72,27 +69,30 @@ export default ({ data }) => {
   )
 }
 
+// TO CHANGE BIO CHANGE THIS
+// TO CHANGE EC CHANGE THIS
+// TO CHANGE DIRECTORS CHANGE THIS
 export const query = graphql`
   {
     executiveCommittee: allLeadershipSummer21XlsxSheet1 {
       nodes {
-        Name
-        Title
+        name
+        title
       }
     }
     directors: allDirectorsSummer21XlsxSheet1 {
       nodes {
-        Name
-        Title
+        name
+        title
       }
     }
     brothers: allBiosSummer21XlsxFormResponses1 {
       nodes {
-        First_Name
-        Last_Name
-        Class
-        LinkedIn_URL
-        Email
+        firstname
+        lastname
+        class
+        linkedinurl
+        email
       }
     }
 

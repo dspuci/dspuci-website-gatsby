@@ -57,6 +57,7 @@ class VideoCover extends React.Component {
           }}
           src={this.props.backupImage}
           className={styles.img}
+          alt= "back up"
         />
         <Image
           src={this.props.coverImage}

@@ -1,17 +1,22 @@
 import React from "react"
 import { Fade } from "react-reveal"
-import { Flex } from "rebass"
+import { Flex, Link } from "rebass"
 import { Box, Image } from "rebass"
 
 import ProWeekCover from "../components/ProWeekCover"
+import ProAccCover from "../components/ProAccCover"
 import { CoverLayout } from "../components/Layout"
 import Section from "../components/Section"
 import Button from "../components/Button"
 import EventBox from "../components/EventBox"
 import CenterHeader from "../components/CenterHeader"
 
-import weekOneFlyer from "../images/proweek-flyer1.jpg"
-import weekTwoFlyer from "../images/proweek-flyer2.jpg"
+
+// import weekOneFlyer from "../images/proweek-flyer1.jpg"
+// import weekTwoFlyer from "../images/proweek-flyer2.jpg"
+import finalsJudge1 from '../images/finalsJudge1.jpg'
+import finalsJudge2 from '../images/finalsJudge2.jpg'
+import caseComp from '../images/2021_Case_Comp.jpg'
 import linkedInBox from "../images/proweek-linkedinBox.png"
 import panel from "../images/proweek-panel.png"
 import presentation from "../images/proweek-presentation.png"
@@ -19,17 +24,17 @@ import casestudy from "../images/proweek-casestudy.png"
 import trophy from "../images/proweek-trophy.png"
 import { Helmet } from "react-helmet"
 
+
 export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ProWeekCover
-        text="Professionalism Week"
-        coverImage="proweek-skyline.jpg"
+      <ProAccCover
+        coverImage="professionalAccelerator.jpg"
         textColor="white"
         darkGradient
       />
-    }
+    } 
   >
     <Helmet>
       <title>Pro Week 2020 | Delta Sigma Pi - Pi Sigma Chapter</title>
@@ -111,6 +116,21 @@ export default () => (
         </div>
       </Section>
 
+
+
+      <CenterHeader> Program Details </CenterHeader>
+      <div>
+        Applicants accepted into the program will be provided with meaningful connections, unique perspectives on achieving professional and personal growth and insights from our network of brothers and industry professionals. 
+        Participants will be paired with mentors who will encourage progress in the program by providing feedback as well as answering any questions. This virtual 6-week program will host a variety of events, including professional workshops, Zoom socials, and exclusive projects. 
+        Weekly Zoom workshops will be taking place on Tuesdays. 
+      </div>
+
+      <Section>
+        <div>
+        Unfortunately, applications for our Winter 2021 Program have closed, but look out for more information coming soon on our Spring recruitment or see details below for our second annual Case Study Competition!
+        </div>
+      </Section>
+
       <Section style={{ marginBottom: 10, marginTop: -30 }}>
         <div
           style={{
@@ -124,6 +144,8 @@ export default () => (
           <Button text="View Sample Study" to="/casestudy" />
         </div>
       </Section>
+
+
 
       <CenterHeader>Case Study Competition</CenterHeader>
 
@@ -156,6 +178,7 @@ export default () => (
         </div>
       </Section>
 
+
       <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
         <EventBox
           title="CASE STUDY COMPETITION PRELIMINARY ROUND"
@@ -184,11 +207,10 @@ export default () => (
         >
           <Button text="Register Now!" to="/registration" />
         </div>
-      </Section>
-
-      <Flex>
+      </Section> 
+      <Flex flexWrap='wrap' alignItems="center" justifyContent = "center">
         <Box width={[1, 1 / 2]}>
-          <Image src={weekOneFlyer} />
+          <Image src={caseComp} />
         </Box>
         <Box width={[1, 1 / 2]}>
           <Image src={weekTwoFlyer} />

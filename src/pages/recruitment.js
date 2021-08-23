@@ -20,8 +20,7 @@ export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ImageCover
-        text="HOW TO JOIN"
+      <ProAccCover
         coverImage="recruitment.jpg"
         textColor="white"
         darkGradient

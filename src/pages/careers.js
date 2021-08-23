@@ -1,5 +1,5 @@
 import React from "react"
-
+import { graphql } from 'gatsby'
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
 import Section from "../components/Section"

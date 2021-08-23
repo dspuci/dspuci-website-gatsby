@@ -12,15 +12,17 @@ import { Fade } from "react-reveal"
 const term = "winter20"
 
 class Brother extends React.Component {
+
+  // Adding the Coat of Arms to anyone who does not have a profile picture
   addDefaultSrc(ev) {
     ev.target.src = coatofarms
   }
 
   render() {
     let brotherInfo = {
-      firstName: this.props.brotherInfo.First_Name.trim(),
-      lastName: this.props.brotherInfo.Last_Name.trim(),
-      codeName: `${this.props.brotherInfo.First_Name.trim()} ${this.props.brotherInfo.Last_Name.trim()}`
+      firstName: this.props.brotherInfo.firstname.trim(),
+      lastName: this.props.brotherInfo.lastname.trim(),
+      codeName: `${this.props.brotherInfo.firstname.trim()} ${this.props.brotherInfo.lastname.trim()}`
         .split(" ")
         .join("_")
         .toLowerCase(),
@@ -29,6 +31,7 @@ class Brother extends React.Component {
       linkedInUrl: this.props.brotherInfo.LinkedIn_URL.trim(),
       email: "mailto:" + this.props.brotherInfo.Email.trim(),
     }
+    
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
