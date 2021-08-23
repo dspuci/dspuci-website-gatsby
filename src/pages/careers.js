@@ -41,7 +41,7 @@ export default ({ data }) => (
       <CenterHeader marginTop="0px">Our Experience</CenterHeader>
       <CompanyPics></CompanyPics>
     </Section>
-    <CareersTables defaultYear={"2020"} data={data} />
+    <CareersTables defaultYear={"2021"} data={data} />
   </CoverLayout>
 )
 

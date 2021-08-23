@@ -50,8 +50,8 @@ export default ({ data }) => {
     linkedInUrl: bio.LinkedIn_URL.trim(),
     bios: bio.Bios,
   }
-  if (bio.minor != null) {
-    brotherInfo.minor = bio.minor.trim()
+  if (bio.Minor != null) {
+    brotherInfo.minor = bio.Minor.trim()
   }
   brotherInfo.codeName = `${brotherInfo.firstName} ${brotherInfo.lastName}`
     .split(" ")
