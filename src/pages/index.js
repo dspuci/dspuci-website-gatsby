@@ -65,47 +65,44 @@ export default () => (
     <Fade>
       <CenterHeader>Letter from the President</CenterHeader>
       <ImageTextRowTwo imagePosition="left" imageSrc={presidentImage}>
-        Three years ago, coming into UC Irvine as a Business Administration
-        major, I had questions on my career path and even what my college
-        experience was going to look like. Seeking answers, I started looking
-        for a high-achieving business community on campus, which brought me to
-        Delta Sigma Pi’s Fall 2017 Recruitment – and I never looked back. Today,
-        I’m humbled and proud to be able to consider the brothers in this
-        chapter as my closest friends, greatest supporters, career mentors, and
-        family.
+        Dear Prospective Member,
         <br />
         <br />
-        Over the years, I’ve seen firsthand the work and dedication that keeps
-        this organization in a tier of its own. There’s no secret to our track
-        record of achievement – if you talk to our brothers, you’ll quickly
-        understand that our fraternal brotherhood is the common denominator in
-        our career success. When I initiated, older brothers would always take
-        time out of their schedule to walk me through a mock interview or fix up
-        my resume before internship season. Every brother was a text or call
-        away, like brothers before them had been. This continuous cycle of
-        mentorship, sacrifice, and support is at the core of our unrivaled
-        career success and fraternal legacy.
+        Three years ago, I moved into Mesa Court as a homesick freshman with doubts 
+        and hesitations about my college decision. I felt lost and alone in the new 
+        environment, and I had no idea what was out there for my future career. Being 
+        a Business Economics major, I knew the professional opportunities I wanted to 
+        pursue would not be served on a silver platter – I had to chase them myself. 
+        This is when I came across Delta Sigma Pi’s booth at the Fall 2018 Anteater 
+        Involvement Fair. Every conversation I had with the brothers at recruitment 
+        held more substance than the average small talk. Instead, I was asked about 
+        my goals and even learned about the brothers’ challenges. The best part? The 
+        knowledge and kindness I received didn’t just stop at recruitment, it lasted 
+        through every moment of my time in the Fraternity. 
         <br />
         <br />
-        Professional achievement aside, our chapter is home to an incredibly
-        diverse group of students – different identities, hometowns, music
-        tastes – but one thing stays consistent. Ask any brother why he or she
-        decided to join Delta Sigma Pi, and the response will be, “The people.”
-        Genuine compassion, empathy, and humor keep us together, even when we’re
-        apart. Between the boba runs, Disneyland trips, and even traveling the
-        world together, the lifelong memories and friendships built between our
-        brothers make Delta Sigma Pi much more than just any other organization.
+        Every brother and alum I’ve crossed paths with have shown me the true meaning 
+        of brotherhood. Time and time again, I witness my brothers’ willingness to help 
+        those around them – whatever the situation, whenever it is, and however they can. 
+        From compiling a spreadsheet of active internships to picking up a brother at 3AM 
+        because her car broke down, every brother is always a call or text away. Furthermore, 
+        our chapter is home to a diverse group of individuals. Talk to any of our brothers 
+        and you’ll find that we each have our own stories, passions, and even drives. 
+        Nonetheless, we educate and challenge each other to be the best version of ourselves 
+        and unite as one. Between studying at local coffee shops and traveling the world 
+        together, the memories we make and the friendships we build are forever. The brothers 
+        I’ve met are now my closest friends, strongest support system, and biggest inspirations. 
         <br />
         <br />
-        Three years ago, I took the first step to attend recruitment, and my
-        journey since then has exceeded all expectations. I strongly encourage
-        you to take the first step as well – attend our upcoming recruitment
-        events and learn more about becoming a part of our Fraternity.
+        My fraternal experience in these past years has far exceeded my expectations, and I’m 
+        beyond excited for what’s to come. I hope you join us at our upcoming recruitment so 
+        you can see for yourself why this organization is so special and how you can take the 
+        first step in becoming a part of our Fraternity. 
         <br />
         <br />
         Sincerely,
         <br />
-        Henry Wang | President, Pi Sigma Chapter
+        Jocelyn Kuo | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
