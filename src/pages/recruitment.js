@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex } from "rebass"
+import { Flex, Image } from "rebass"
 import { Fade } from "react-reveal"
 
 import { CoverLayout } from "../components/Layout"
@@ -15,7 +15,8 @@ import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
 import ProAccCover from "../components/ProAccCover"
-// import recruitmentSchedule from "../../public/images/recruitment_schedules/fall20.jpeg"
+import recruitmentSchedule from "../images/fall21.jpg"
+
 
 export default () => (
   <CoverLayout
@@ -36,15 +37,15 @@ export default () => (
       />
     </Helmet>
     <Fade bottom distance="40px">
-      {/* <Section sx={{ justifyContent: "left" }}>
+      {/* { <Section sx={{ justifyContent: "left" }}>
         <div style={{width: '100%', borderBottom: '1px solid black'}}>
           <p>
-          We’re committed to hosting a memorable recruitment experience for prospective members in a remote format in Fall 2020. 
-          Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" target="_blank" rel="noreferrer">Facebook</a> and <a href="https://www.instagram.com/dspuci/" target="_blank" rel="noreferrer">Instagram</a> for any updates on recruitment. 
+          We’re committed to hosting a memorable recruitment experience for prospective members in a remote format in Fall 2021. 
+          Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{color: '#5FA0EC'}}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{color: '#5FA0EC'}}>Instagram</a> for any updates on recruitment. 
           In the meantime, take a look below to find out more about Delta Sigma Pi. 
           </p>
         </div>
-      </Section> */}
+      </Section>} */}
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
         <p>
@@ -54,8 +55,7 @@ export default () => (
           find out what sets Delta Sigma Pi above and apart.{" "}
         </p>
       </Section>
-
-      {/* <CenterHeader>Schedule</CenterHeader>
+      {<CenterHeader>Schedule</CenterHeader>}
       <Image
         onClick={() => (window.location = recruitmentSchedule)}
         src={recruitmentSchedule}
@@ -63,17 +63,17 @@ export default () => (
           cursor: "pointer",
           marginBottom: 30,
           boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
-          width: ['100%', '60%'],
+          width: ['125%', '85%'],
           margin: '0 auto',
           position: "relative",
           display: 'block',
           margin: "0 auto",
           textAlign: "center",
         }}
-      /> */}
-      {/* <Section sx={{ justifyContent: "center" }}>
-        <p>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/757378431712140/" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2020 Recruitment: Inspire</a> for any and all updates.</p>
-      </Section> */}
+      />
+      { <Section sx={{ justifyContent: "center" }}>
+        <p>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/812738526084963" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2021 Recruitment: Find Your Fire</a> for any and all updates.</p>
+      </Section> }
 
       <CenterHeader>Why Join?</CenterHeader>
 

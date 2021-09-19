@@ -60,7 +60,7 @@ class ProAccCover extends React.Component {
           >
             <Typical
               loop = {Infinity}
-              steps = {['HOW TO JOIN', 5000]}
+              steps = {['RECRUITMENT', 5000]}
             />
           </Text>
           
