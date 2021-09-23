@@ -1,6 +1,7 @@
 import React from "react"
 import { Flex, Image } from "rebass"
 import { Fade } from "react-reveal"
+import { withPrefix } from "gatsby"
 
 import { CoverLayout } from "../components/Layout"
 import ImageCover from "../components/ImageCover"
@@ -72,8 +73,11 @@ export default () => (
         }}
       />
       { <Section sx={{ justifyContent: "center" }}>
-        <p>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/812738526084963" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2021 Recruitment: Find Your Fire</a> for any and all updates.</p>
-      </Section> }
+        <p>RSVP to our Facebook event page at <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2021 Recruitment: Find Your Fire</a> for any and all updates. </p>
+        <p>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</p>
+        {/* <p><a href={withPrefix("/files/Application_part_1_fall21.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1.</a></p> */}
+        </Section> }
+
 
       <CenterHeader>Why Join?</CenterHeader>
 

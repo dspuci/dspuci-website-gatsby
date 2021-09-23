@@ -27,14 +27,15 @@ const genderData = {
     legend: {
       display: false,
     },
-    labels: ["Bus. Admin", "Bus. Econ", "Computer Science", "BIM", "Quant. Econ"],
+    labels: ["Bus. Admin", "Bus. Econ", "Computer Science", "CSE", "BIM", "Quant. Econ"],
     datasets: [
       {
-        data: [19, 7, 6, 3, 1],
+        data: [19, 7, 6, 1, 3, 1],
         backgroundColor: [
           "rgb(68,179,194)",
         "rgb(241,169,78)",
         "rgb(228,86,65)",
+        "rgb(204,0,0)",
         "rgb(93,76,70)",
         "rgb(123,141,142)",
         ],
