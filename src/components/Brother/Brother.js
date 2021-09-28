@@ -9,7 +9,7 @@ import { withPrefix } from "gatsby"
 import coatofarms from "../../images/coatofarms.jpg"
 import { Fade } from "react-reveal"
 
-const term = "winter20"
+const term = "fall21"
 
 class Brother extends React.Component {
 
