@@ -57,7 +57,8 @@ export default () => (
         </p>
       </Section>
       {<CenterHeader>Schedule</CenterHeader>}
-      <p><center>RSVP to our Facebook event page at <a href=" https://www.facebook.com/events/812738526084963" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2021 Recruitment: Find Your Fire</a> for any and all updates.</center></p>
+      <p><center>RSVP to our Facebook event page at <a href=" https://www.facebook.com/events/812738526084963" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2021 Recruitment: Find Your Fire</a> for any and all updates.</center>
+      <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p>
       <Image
         onClick={() => (window.location = recruitmentSchedule)}
         src={recruitmentSchedule}
@@ -74,9 +75,9 @@ export default () => (
         }}
       />
       {<Section sx={{ justifyContent: "center" }}>
-        <p>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.<br></br>
-        <br />
-        <center><a href={withPrefix("/files/Application_part_1_fall21.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a></center></p>
+        <p><center><a href={withPrefix("/files/Application_part_1_fall21.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due October 4th, 11:59 PM.</center>
+        <center> Please attatch a clear headshot of yourself to the application</center></p>
+
         </Section> }
 
 
