@@ -8,7 +8,7 @@ class ImageTextRowTwo extends React.Component {
         flexWrap="wrap"
         sx={{
           display: "flex",
-          width: "103%",
+          width: "104%",
           marginBottom: [20, 20, 40, 90],
           flexDirection:
             this.props.imagePosition === "right" ? "row-reverse" : "row",
