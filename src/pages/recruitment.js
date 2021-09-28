@@ -76,7 +76,7 @@ export default () => (
       />
       {<Section sx={{ justifyContent: "center" }}>
         <p><center><a href={withPrefix("/files/Application_part_1_fall21.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due October 4th, 11:59 PM.</center>
-        <center> Please attatch a clear headshot of yourself to the application</center></p>
+        <center> Please attach a clear headshot of yourself to the application.</center></p>
 
         </Section> }
 
