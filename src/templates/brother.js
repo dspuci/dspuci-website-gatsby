@@ -73,7 +73,7 @@ export default ({ data }) => {
             width={280}
             onError={addDefaultSrc}
             src={withPrefix(
-              `/images/brothers/fall21/${brotherInfo.codeName}.jpg`
+              `/images/brothers/fall2021/${brotherInfo.codeName}.jpg`
             )}
             borderRadius={8}
           />
