@@ -10,10 +10,10 @@ import Button from "../components/Button"
 import EventBox from "../components/EventBox"
 import CenterHeader from "../components/CenterHeader"
 
-import competition_illustration from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/competition_illustration.png"
-import panel_illustration from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/panel_illustration.png"
-import workshop_illustration from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/workshop_illustration.png"
-import proweekflyer from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/proweek-flyer22.jpeg"
+import competition_illustration from '../images/competition_illustration.png'
+import panel_illustration from "../images/panel_illustration.png"
+import workshop_illustration from "../images/workshop_illustration.png"
+import proweekflyer from "../images/proweek-flyer22.jpeg"
 // import weekOneFlyer from "../images/proweek-flyer1.jpg"
 // import weekTwoFlyer from "../images/proweek-flyer2.jpg"
 // import finalsJudge1 from '../images/finalsJudge1.jpg'
@@ -181,7 +181,8 @@ export default () => (
         <h1 style={{ marginBottom: 10 }}>Case Study Competition Logistics:</h1>
         <br />
         <div>
-          • Teams of 2 UCI Students <br />
+          • Teams of 2 UCI Students 
+          <br />
           • Prizes total up to 100's of dollars
           <br />
           • Take-home case; 48 hours preparation, 5 min presentation with (optional) slides,

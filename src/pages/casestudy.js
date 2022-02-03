@@ -30,9 +30,9 @@ export default () => (
         <h1 style={{ marginBottom: 10, fontSize: 40 }}>
           Delta Sigma Pi: Professionalism Week - Winter 2022
         </h1>
-        <h1 style={{ marginBottom: 10, fontSize: 40 }}>
+        {/* <h1 style={{ marginBottom: 10, fontSize: 40 }}>
           Case Study Competition - Sample Case
-        </h1>
+        </h1> */}
       </Section>
 
       <Section sx={{ justifyContent: "left" }}>

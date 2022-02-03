@@ -21,8 +21,8 @@
 //   </div>
 // )
 
-import { CoverLayout } from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/components/Layout"
-import ImageCover from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/components/ImageCover"
+// import { CoverLayout } from "../components/Layout"
+// import ImageCover from "../components/ImageCover"
 import React from "react"
 import styles from "./ProAccCover.module.css"
 import { Text } from "rebass"
