@@ -21,6 +21,8 @@
 //   </div>
 // )
 
+import { CoverLayout } from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/components/Layout"
+import ImageCover from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/components/ImageCover"
 import React from "react"
 import styles from "./ProAccCover.module.css"
 import { Text } from "rebass"
@@ -60,7 +62,7 @@ class ProAccCover extends React.Component {
           >
             <Typical
               loop = {Infinity}
-              steps = {['HOW TO JOIN', 5000]}
+              steps = {['PROFESSIONALISM WEEK', 5000]}
             />
           </Text>
           
@@ -71,5 +73,3 @@ class ProAccCover extends React.Component {
 }
 
 export default ProAccCover
-
-//INDUSTRY EXPERIENCE

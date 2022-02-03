@@ -12,7 +12,7 @@ export default () => (
     coverElement={
       <ImageCover
         text="Case Study Competition Sample Case"
-        coverImage="casestudy.jpg"
+        coverImage="purple.jpg"
         textColor="white"
         darkGradient
       />
@@ -28,7 +28,7 @@ export default () => (
     <Fade>
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10, fontSize: 40 }}>
-          Delta Sigma Pi: Professionalism Week - Winter 2020
+          Delta Sigma Pi: Professionalism Week - Winter 2022
         </h1>
         <h1 style={{ marginBottom: 10, fontSize: 40 }}>
           Case Study Competition - Sample Case
@@ -36,18 +36,19 @@ export default () => (
       </Section>
 
       <Section sx={{ justifyContent: "left" }}>
-        <h1 style={{ marginBottom: 10 }}>Case Instructions:</h1>
+        {/* <h1 style={{ marginBottom: 10 }}>Case Instructions:</h1> */}
         <div>
-          - You have 20 minutes to review this case with your teammates. No
+          {/* - You have 20 minutes to review this case with your teammates. No
           phones/tech during case prep.
           <br />
           - You may take notes (notecards/pens provided at event) and use them
-          during the presentation.
-          <br />
-          - You will assume the role of a consulting firm hired to present the
+          during the presentation. */}
+          {/* <br /> */}
+          • You will assume the role of a consulting firm hired to present the
           case deliverables to the client (judges).
-          <br />- Presentation to judges: 5-7 minutes, Q&A: 3 minutes,
-          Feedback/Discussion: 5 minutes
+          <br />
+          • Presentation to judges: 5 minutes, Q&A: 5 minutes,
+          Feedback/Discussion: 3 minutes
         </div>
       </Section>
 
@@ -92,22 +93,22 @@ export default () => (
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10 }}>Case Deliverables:</h1>
         <div>
-          - Identify company’s unique value proposition.
+          • Identify company’s unique value proposition.
           <br />
-          - Identify steps and information needed prior to implementing a
+          • Identify steps and information needed prior to implementing a
           marketing campaign.
           <br />
-          - Explain trends in the industry pertaining to teenagers and young
+          • Explain trends in the industry pertaining to teenagers and young
           adults.
           <br />
-          - Conduct a cost-benefit analysis on potential amenities and offerings
+          • Conduct a cost-benefit analysis on potential amenities and offerings
           at hotel restaurants, spa, fitness centers, and other operations
-          <br />- Identify potential pain-points of the current rewards program
+          <br />• Identify potential pain-points of the current rewards program
           for young adult club members.
         </div>
       </Section>
 
-      <Section sx={{ justifyContent: "left" }}>
+      {/* <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 10 }}>Case Solution:</h1>
         <div>
           The solution and detailed breakdown of this case, along with why case
@@ -121,7 +122,7 @@ export default () => (
         <h1 style={{ marginBottom: 10 }}>
           UCI Student Center | Doheny Beach B
         </h1>
-      </Section>
+      </Section> */}
     </Fade>
   </CoverLayout>
 )

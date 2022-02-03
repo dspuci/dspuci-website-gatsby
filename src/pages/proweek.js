@@ -10,7 +10,10 @@ import Button from "../components/Button"
 import EventBox from "../components/EventBox"
 import CenterHeader from "../components/CenterHeader"
 
-
+import competition_illustration from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/competition_illustration.png"
+import panel_illustration from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/panel_illustration.png"
+import workshop_illustration from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/workshop_illustration.png"
+import proweekflyer from "C:/Users/Droo/DoT/dspuci-website-gatsby/src/images/proweek-flyer22.jpeg"
 // import weekOneFlyer from "../images/proweek-flyer1.jpg"
 // import weekTwoFlyer from "../images/proweek-flyer2.jpg"
 // import finalsJudge1 from '../images/finalsJudge1.jpg'
@@ -29,33 +32,41 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage="professionalAccelerator.jpg"
+        coverImage="proweek.jpeg"
         textColor="white"
         darkGradient
       />
     } 
   >
     <Helmet>
-      <title>Pro Week 2020 | Delta Sigma Pi - Pi Sigma Chapter</title>
+      <title>Pro Event 2022 | Delta Sigma Pi - Pi Sigma Chapter</title>
       <meta
         name="Delta Sigma Pi - Pi Sigma Chapter Pro Week 2020 Page"
         content="Delta Sigma Pi - Pi Sigma Chapter Pro Week 2020 Page"
       />
     </Helmet>
-    {/* <Fade bottom distance="40px">
+    <Fade bottom distance="40px">
       <Section sx={{ justifyContent: "left" }}>
-        <h1 style={{ marginBottom: 10 }}>Develop Yourself Professionally</h1>
+        <h1 style={{ marginBottom: 15 }}>Develop Yourself Professionally</h1>
         <div>
-          Professionalism Week is a series of business workshops and a case
-          study competition hosted by Delta Sigma Pi to promote professional
-          development at UCI. Events open to all students, no fees/registration
-          needed.
+        Welcome to Delta Sigma Pi - Pi Sigma Chapter’s Winter Professionalism Event! 
+        This program is open to all students, regardless of major, who seek to explore 
+        all aspects of the professional realm. We invite you to a week-long program that 
+        consists of a workshop, panel, and competition that guides your personal and 
+        professional growth as well as examines the different dimensions of business. 
+        Come spend time with us and strengthen your business acumen and solidify your 
+        professional aspirations! We’re excited to offer the unique perspectives and 
+        experiences of our network of alumni, meaningful connections with active brothers, 
+        and valuable insights from industry professionals. We encourage you to come take 
+        advantage of these opportunities to develop yourself to your fullest potential. 
+
+
         </div>
       </Section>
 
       <CenterHeader>Week 6 Schedule</CenterHeader>
       <p style={{ textAlign: "center", marginTop: "-40px" }}>
-        February 12 - February 14
+        February 7 - February 11
       </p>
 
       <Flex
@@ -65,28 +76,28 @@ export default () => (
         marginBottom="-20px"
       >
         <EventBox
-          title="CRUSHING IT WITH LINKEDIN WORKSHOP"
-          imageSrc={linkedInBox}
+          title="PROFESSIONALISM PANEL"
+          imageSrc={panel_illustration}
         >
-          Tuesday (2/11) - 7PM-9PM
+          Monday (2/7) - 6PM-7PM
           <br />
-          Emerald Bay A
+          Virtual
         </EventBox>
         <EventBox
-          title="INTERNSHIP PANEL - 1ST YEAR INTERNSHIPS"
-          imageSrc={panel}
+          title="CASE STUDY WORKSHOP"
+          imageSrc={workshop_illustration}
         >
-          Wednesday (2/12) - 7PM-9PM
+          Wednesday (2/9) - 6PM-7:30PM
           <br />
-          Newport Beach B
+          In-person | Virtual
         </EventBox>
         <EventBox
-          title="CASE STUDY WORKSHOP - BUSINESS 101"
-          imageSrc={presentation}
+          title="CASE STUDY COMPETITION"
+          imageSrc={competition_illustration}
         >
-          Thursday (2/13) - 4PM-6PM
+          Friday (2/11) - 6PM-8:30PM
           <br />
-          Doheny Beach B
+          Virtual
         </EventBox>
       </Flex>
 
@@ -95,29 +106,36 @@ export default () => (
         style={{ marginBottom: "-20px" }}
       >
         <div>
-          <b>Crushing It With LinkedIn Workshop (2/11): </b>Hear from Senior
-          LinkedIn Representative, Ryan Zervakos, on leveraging LinkedIn and
-          networking. Open networking afterwards.
+          <b>Professionalism Panel (2/7): </b>Looking to widen your horizon and learn about 
+          different industries? Join us for our Professionalism Panel on Monday, February 7th
+          at 6 PM! Professionals from a variety of industries are coming to talk to us about 
+          their experiences and careers. Come to our panel for an insightful and entertaining
+          discussion! Speakers will be announced soon.
         </div>
         <br />
         <div>
-          <b>Internship Panel - 1st Year Internships (2/12): </b>Hear from a
-          panel of UCI students on how they landed a summer internship after
-          their freshman year and their current jobs/internships in various
-          industries. Open networking afterwards.
+          <b>Case Study Workshops (2/9): </b>Assess your business acumen with us at our case study
+          workshop on Wednesday, February 9th at 6 PM! Case studies may seem intimidating, We’ll
+          be going over how to approach case studies and prepare you for the exciting case study
+          competition. 
         </div>
         <br />
         <div>
-          <b>Case Study Workshop - Business 101 (2/13): </b>Learn about case
-          studies and their application in real-world interviews. The
-          presentation will cover how to effectively solve cases and break down
-          the sample case (view below) for the Case Study Competition.
+          <b>Case Study Competition (2/11): </b>Test your business knowledge in our third annual 
+          case study competition and win hundreds of dollars! Participants will have 48 hours to
+           take home the case study, prepare a presentation, and finally present in front of 6 
+           UCI alumni on Friday, February 11th. The competition will be separated into two rounds. 
+           During the first round, your team will present your solutions in front of judges. 
+           Finalists will then present in the second round to a panel of judges (everyone is 
+           encouraged to watch)!
+
+
         </div>
       </Section>
 
 
 
-      <CenterHeader> Program Details </CenterHeader>
+      {/* <CenterHeader> Program Details </CenterHeader>
       <div>
         Applicants accepted into the program will be provided with meaningful connections, unique perspectives on achieving professional and personal growth and insights from our network of brothers and industry professionals. 
         Participants will be paired with mentors who will encourage progress in the program by providing feedback as well as answering any questions. This virtual 6-week program will host a variety of events, including professional workshops, Zoom socials, and exclusive projects. 
@@ -128,7 +146,7 @@ export default () => (
         <div>
         Unfortunately, applications for our Winter 2021 Program have closed, but look out for more information coming soon on our Spring recruitment or see details below for our second annual Case Study Competition!
         </div>
-      </Section>
+      </Section> */}
 
       <Section style={{ marginBottom: 10, marginTop: -30 }}>
         <div
@@ -150,7 +168,7 @@ export default () => (
 
       <Section>
         <div>
-          Delta Sigma Pi proudly presents its inaugural Case study Competition
+          Delta Sigma Pi proudly presents its third annual Case study Competition
           to wrap up DSP Professional Week. It is designed to provide UCI
           students with an opportunity to compete and showcase their business
           acumen and public speaking skills. Non-competitors are encouraged to
@@ -163,22 +181,25 @@ export default () => (
         <h1 style={{ marginBottom: 10 }}>Case Study Competition Logistics:</h1>
         <br />
         <div>
-          • Teams of 2-3 UCI Students <br />
-          • 1st Place - $100/Team, 2nd Place - $50/Team, 3rd Place - $25/Team,
-          4th Place - $25/Team
+          • Teams of 2 UCI Students <br />
+          • Prizes total up to 100's of dollars
           <br />
-          • 20 mins to review case with team; 5-7 min presentation; 3 min Q&A; 5
-          min Feedback/Discussion
+          • Take-home case; 48 hours preparation, 5 min presentation with (optional) slides,
+          5 min Q&A, and 3 min Feedback/Discussion
           <br />
-          • Competitors must be bale to attend both Prelim/Final Rounds if
+          • First Round: privately judged by UCI alumni
+          <br />
+          • Second Round: public presentation by the top four finalists
+          <br />
+          • Competitors must be able to attend both Prelim/Final Rounds if
           advanced
-          <br />• Must sign up by <b>Sunday (2/16)</b> at <b>11:59PM</b>.
-          Limited Spots - First come, first serve
+          <br />• Must sign up by <b>Wednesday (2/8)</b> at <b>11:59PM</b>.
         </div>
       </Section>
 
+      <CenterHeader>Registration Starting Sunday (2/6)</CenterHeader>
 
-      <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
+      {/* <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
         <EventBox
           title="CASE STUDY COMPETITION PRELIMINARY ROUND"
           imageSrc={casestudy}
@@ -192,9 +213,9 @@ export default () => (
           <br />
           SB1 1200 (1st Floor Merage Auditorium)
         </EventBox>
-      </Flex>
+      </Flex> */}
 
-      <Section style={{ marginBottom: 10, marginTop: -30 }}>
+      {/* <Section style={{ marginBottom: 10, marginTop: -30 }}>
         <div
           style={{
             width: "100vw",
@@ -204,17 +225,17 @@ export default () => (
             justifyContent: "center",
           }}
         >
-          <Button text="Register Now!" to="/registration" />
+          <Button text="Register" to="/registration" />
         </div>
-      </Section> 
+      </Section>  */}
       <Flex flexWrap='wrap' alignItems="center" justifyContent = "center">
-        <Box width={[1, 1 / 2]}>
-          <Image src={caseComp} />
+        <Box width={[1, 3 / 5]}>
+          <Image src={proweekflyer} />
         </Box>
-        <Box width={[1, 1 / 2]}>
+        {/* <Box width={[1, 1 / 2]}>
           <Image src={weekTwoFlyer} />
-        </Box>
+        </Box> */}
       </Flex>
-    </Fade> */}
+    </Fade> 
   </CoverLayout>
 )
