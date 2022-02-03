@@ -32,7 +32,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage="proweek.jpeg"
+        coverImage="proweek.jpg"
         textColor="white"
         darkGradient
       />
