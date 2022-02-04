@@ -89,7 +89,7 @@ export default () => (
         >
           Wednesday (2/9) - 6PM-7:30PM
           <br />
-          In-person | Virtual
+          SB2 116 | Virtual Option Available
         </EventBox>
         <EventBox
           title="CASE STUDY COMPETITION"
@@ -183,7 +183,7 @@ export default () => (
         <div>
           • Teams of 2 UCI Students 
           <br />
-          • Prizes total up to 100's of dollars
+          • Prizes total up to $600
           <br />
           • Take-home case; 48 hours preparation, 5 min presentation with (optional) slides,
           5 min Q&A, and 3 min Feedback/Discussion
