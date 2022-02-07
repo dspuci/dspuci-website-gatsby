@@ -198,7 +198,7 @@ export default () => (
         </div>
       </Section>
 
-      <CenterHeader>Registration Starting Sunday (2/6)</CenterHeader>
+      {/* <CenterHeader>Registration Starting Sunday (2/6)</CenterHeader> */}
 
       {/* <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
         <EventBox
@@ -216,7 +216,7 @@ export default () => (
         </EventBox>
       </Flex> */}
 
-      {/* <Section style={{ marginBottom: 10, marginTop: -30 }}>
+      <Section style={{ marginBottom: 10, marginTop: -30 }}>
         <div
           style={{
             width: "100vw",
@@ -228,7 +228,8 @@ export default () => (
         >
           <Button text="Register" to="/registration" />
         </div>
-      </Section>  */}
+      </Section> 
+      
       <Flex flexWrap='wrap' alignItems="center" justifyContent = "center">
         <Box width={[1, 3 / 5]}>
           <Image src={proweekflyer} />

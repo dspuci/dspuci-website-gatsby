@@ -14,7 +14,7 @@ export default () => (
     </Helmet>
     <div style={{ width: "100%", overflow: "hidden" }}>
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSd8BIafgzVgDZJ7ZSm2ez_P0tv7FVzbekXdaEAPki7mOHlJlQ/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdECf7Piq8jMn5Zq7V6sS4Xhbcequ0flt9T2bJkvgOTi2aGEA/viewform"
         width="100%"
         height="1280"
         frameborder="0"
