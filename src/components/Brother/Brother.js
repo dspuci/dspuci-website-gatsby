@@ -9,7 +9,7 @@ import { withPrefix } from "gatsby"
 import coatofarms from "../../images/coatofarms.jpg"
 import { Fade } from "react-reveal"
 
-const term = "fall21"
+const term = "winter20"
 
 class Brother extends React.Component {
 
@@ -42,8 +42,7 @@ class Brother extends React.Component {
               width={175}
               height={262.5}
               src={withPrefix(
-                `/images/brothers/${term}/${brotherInfo.codeName}.jpg`
-              )}
+                `/images/brothers/${term}/${brotherInfo.codeName}.jpg`)}
               borderRadius={8}
             />
           </Link>
