@@ -24,7 +24,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage="recruitment.jpg"
+        coverImage="chase.jpg"
         textColor="white"
         darkGradient
       />
