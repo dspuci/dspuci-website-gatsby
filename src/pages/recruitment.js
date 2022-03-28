@@ -16,7 +16,7 @@ import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
 import ProAccCover from "../components/ProAccCover"
-import recruitmentSchedule from "../images/fall21.jpg"
+import recruitmentSchedule from "../images/spring22.png"
 
 
 export default () => (
@@ -24,7 +24,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage="chase.jpg"
+        coverImage="recruitment.jpg"
         textColor="white"
         darkGradient
       />
@@ -56,8 +56,8 @@ export default () => (
           find out what sets Delta Sigma Pi above and apart.{" "}
         </p>
       </Section>
-      {/* {<CenterHeader>Schedule</CenterHeader>}
-      <p><center><a href={withPrefix("/files/Application_part_1_fall21.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due October 4th, 11:59 PM to svp@dspuci.com.</center>
+      {<CenterHeader>Schedule</CenterHeader>}
+      <p><center><a href={withPrefix("/files/Application_part_1_fall21.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (4/4) by 11:59 PM to svp@dspuci.com.</center>
       <center> Please attach a clear headshot of yourself to the application.</center></p>
       
       <Image
@@ -76,9 +76,9 @@ export default () => (
         }}
       />
       {<Section sx={{ justifyContent: "center" }}>
-        <p><center>RSVP to our Facebook event page at <a href=" https://www.facebook.com/events/812738526084963" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Fall 2021 Recruitment: Find Your Fire</a> for any and all updates.</center>
-        <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p>
-        </Section> } */}
+        <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2022 Recruitment: Chase</a> for any and all updates.</center></p>
+        {/* <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p> */}
+        </Section> }
 
 
       <CenterHeader>Why Join?</CenterHeader>
