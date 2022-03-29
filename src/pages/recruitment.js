@@ -57,7 +57,7 @@ export default () => (
         </p>
       </Section>
       {<CenterHeader>Schedule</CenterHeader>}
-      <p><center><a href={withPrefix("/files/Application_part_1_fall21.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (4/4) by 11:59 PM to svp@dspuci.com.</center>
+      <p><center><a href={withPrefix("/files/S'22 DSP Application Part 1.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (4/4) by 11:59 PM to svp@dspuci.com.</center>
       <center> Please attach a clear headshot of yourself to the application.</center></p>
       
       <Image
