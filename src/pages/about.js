@@ -12,7 +12,7 @@ import Section from "../components/Section"
 
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
-import communityImage from "../images/community.jpg"
+import communityImage from "../images/communityservice.jpg"
 
 import { Helmet } from "react-helmet"
 
