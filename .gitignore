@@ -1,3 +1,5 @@
 .cache
 .DS_STORE
 yarn-error.log
+node_modules
+public
