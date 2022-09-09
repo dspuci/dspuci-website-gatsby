@@ -68,43 +68,51 @@ export default () => (
         {/* Dear Prospective Member,
         <br /> */}
         {/* <br /> */}
-        You know that feeling when a package arrives in the mail that you forgot 
-        you even ordered? It’s something like an unexpected rush, a highlight-of-my-day 
-        that’s talked-about-for-weeks moment. Finding the words to describe my past 3 years 
-        in Delta Sigma Pi, in all its entirety, has been near impossible – it’s 
-        something that I’ve been able to encompass best only through moments and 
-        feelings. It was the feeling of relief when I, as a timid freshman 
-        overwhelmed by the possibilities of my own major and career choices, was 
-        personally invited to learn more about a unique opportunity of professionalism 
-        and community on campus. The feeling of anticipation-turned-awe as I attended 
-        recruitment, exchanged inspiring conversations with brothers about our 
-        aspirations, dreams, and interests, and left fulfilled. The moments of 
-        warmth and pride as I continuously witness my brothers’ achievements and 
-        personal growth. 
+        “The best things in life are not things, they are moments.” I know it's an 
+        overdone and cheesy quote, but when I think about my time in Delta Sigma Pi, 
+        I can’t help but cherish the moments and memories that have gotten me to where 
+        I am today. My journey started with a moment of nervousness and wonder as 
+        I attended my first recruitment event and was amazed by all the brothers’ 
+        aspirations and goals. Over the past 3 years, I’ve experienced countless 
+        moments of growth as I was encouraged to work hard towards my professional 
+        development. I’ve collected moments wrapped in happiness and comfort with 
+        people I consider my closest friends. Together, these memories have made 
+        my college experience unforgettable and special. As I enter my last year 
+        at UCI, I feel moments of fulfillment and pride as I witness my brothers’ 
+        achievements and personal accomplishments. 
+
         <br />
         <br />
-        Much like a surprise delivery, every moment I’ve spent in the chapter has
-         exceeded my expectations by far. Each brother in the chapter has such 
-         unique passions and backstories, and we are able to use this individuality 
-         to challenge each other to always strive for better. We push each other to 
-         prep for interviews, expand our networks, or excel in the job application 
-         process, but also to try that new hobby we’ve always wanted to try or book 
-         those travel plans. I never thought I could be capable of joining such a 
-         driven, tight-knit organization, much less lead one, but Delta Sigma Pi has 
-         pushed me to defy all expectations. This brotherhood is truly made up of the 
-         most selfless, intelligent and caring individuals I know, and I spend every day 
-         grateful that I have had the privilege of crossing paths with each of them. 
+        Moments are better when you have people to share them with. The Pi Sigma 
+        chapter is full of brothers with unique backstories and passions, and we 
+        use our differences to constantly challenge and inspire one another. We 
+        make time for each other, whether it be preparing for interviews, late 
+        night studying, making spontaneous travel plans, or even pulling an 
+        all-nighter just for fun. Coming into UCI, I did not expect myself to join 
+        such a tight-knit community of driven individuals, let alone lead one, but 
+        Delta Sigma Pi has always inspired me to go above and beyond expectations. 
+        This brotherhood has shown me all the best things about hard work, sacrifice, 
+        and friendship, and I am very thankful to be a part of it.
+
         <br />
         <br />
-        My experience in the Fraternity has been more than memorable, and I’m excited 
-        to see how the chapter continues to grow. I hope that you will consider joining 
-        us at our upcoming recruitment to see for yourself what makes this community so 
-        special, and to take this first step in joining the Fraternity yourself :) 
+        My experience in Delta Sigma Pi has been incredibly special and I’m excited 
+        to see the chapter continue to grow. I hope that you will consider joining
+         us at our Fall recruitment and see what makes this community special for 
+         yourself. Taking the first step can be hard, but the possibilities are 
+         limitless. After all, little freshman year me would’ve never even expected 
+         having the opportunity to write this message. 
+
+        <br />
+        <br />
+        See you soon :)
+
         <br />
         <br />
         Sincerely,
+
         <br />
-        Grace Hsiang | President - Pi Sigma Chapter
+        Megha Bhargava | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
