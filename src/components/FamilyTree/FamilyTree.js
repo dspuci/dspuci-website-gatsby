@@ -5,7 +5,7 @@ import { withPrefix } from "gatsby"
 import { Fade } from "react-reveal"
 import ImageModal from "../ImageModal/ImageModal"
 
-const term = "winter20"
+const term = "winter23"
 
 class FamilyTree extends React.Component {
   constructor(props) {

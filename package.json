@@ -35,6 +35,7 @@
     "gatsby-transformer-excel": "^2.2.2",
     "google-spreadsheet": "^3.0.14",
     "googleapis": "^66.0.0",
+    "package.json": "^2.0.1",
     "react-chartjs-2": "^2.7.6",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
