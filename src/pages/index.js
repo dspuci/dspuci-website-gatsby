@@ -112,7 +112,7 @@ export default () => (
         Sincerely,
 
         <br />
-        Megha Bhargava | President - Pi Sigma Chapter
+        Sean Devine | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
