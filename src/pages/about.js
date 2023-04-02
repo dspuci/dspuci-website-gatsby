@@ -13,6 +13,7 @@ import Section from "../components/Section"
 import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
 import communityImage from "../images/communityservice.jpg"
+import ALs from "../images/alpha_lambdas.jpeg"
 
 import { Helmet } from "react-helmet"
 
@@ -25,7 +26,7 @@ import {
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons"
 
-import { genderData, yearData, majorData } from "../data/summer21/chapter_stats"
+import { genderData, yearData, majorData } from "../data/spring23/chapter_stats"
 
 export default () => (
   <CoverLayout
@@ -33,7 +34,7 @@ export default () => (
     coverElement={
       <ImageCover
         text="About Us"
-        coverImage="about.jpg"
+        coverImage="testing3.jpg"
         textColor="white"
         darkGradient
       />
@@ -62,11 +63,11 @@ export default () => (
       </Section>
       <Section>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>39</div>
+          <div style={{ font: "bold 80px Heebo" }}>48</div>
           <div style={{ font: "22px Heebo" }}>Collegiate Brothers</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>250+</div>
+          <div style={{ font: "bold 80px Heebo" }}>275+</div>
           <div style={{ font: "22px Heebo" }}>Alumni Network</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
@@ -100,7 +101,7 @@ export default () => (
       <ImageTextRow
         title="Brotherhood"
         imagePosition="right"
-        imageSrc={brotherhoodImage}
+        imageSrc={ALs}
       >
         Our community has cultivated mentorship, inspiration, and countless
         opportunities to learn and grow. Our brothers have built lifelong

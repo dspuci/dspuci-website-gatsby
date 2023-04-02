@@ -12,9 +12,9 @@ import ImageBox from "../components/ImageBox"
 import Button from "../components/TransparentButton"
 import { Fade } from "react-reveal"
 
-import careerAdvantage from "../images/careers.jpg"
-import lifelongBrotherhood from "../images/brothers.jpg"
-import unrivaledLeaders from "../images/about_us.jpg"
+import careerAdvantage from "../images/2022_YakultTour.jpg"
+import lifelongBrotherhood from "../images/2022_Spring_Retreat.png"
+import unrivaledLeaders from "../images/2022_Dodge4Dollars.jpg"
 
 export default () => (
   <VideoCoverLayout

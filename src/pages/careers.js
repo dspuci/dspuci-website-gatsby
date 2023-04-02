@@ -14,7 +14,7 @@ export default ({ data }) => (
     coverElement={
       <ImageCover
         text="Careers"
-        coverImage="careers.jpg"
+        coverImage="careers_alumni_cover.jpg"
         textColor="white"
         darkGradient
       />
@@ -41,12 +41,20 @@ export default ({ data }) => (
       <CenterHeader marginTop="0px">Our Experience</CenterHeader>
       <CompanyPics></CompanyPics>
     </Section>
-    <CareersTables defaultYear={"2022"} data={data} />
+    <CareersTables defaultYear={"2023"} data={data} />
   </CoverLayout>
 )
 
 export const query = graphql`
-  {
+  { 
+    fullTimeOffers2023: allCareersXlsxFullTimeOffers2023 {
+      nodes {
+        Name
+        Position
+        Company
+        Location
+      }
+    }
     fullTimeOffers2022: allCareersXlsxFullTimeOffers2022 {
       nodes {
         Name
@@ -112,6 +120,14 @@ export const query = graphql`
       }
     }
     fullTimeOffers2014: allCareersXlsxFullTimeOffers2014 {
+      nodes {
+        Name
+        Position
+        Company
+        Location
+      }
+    }
+    internships2023: allCareersXlsxInternships2023 {
       nodes {
         Name
         Position

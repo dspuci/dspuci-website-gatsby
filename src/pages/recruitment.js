@@ -17,6 +17,9 @@ import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
 import ProAccCover from "../components/ProAccCover"
 import recruitmentSchedule from "../images/spring22.png"
+import springSchedule from "../images/spring23_flyer.png"
+import stella_comp from "../images/stella_zhang_comp.jpg"
+import j_j_j from "../images/jessie_jake_jacob.jpg"
 
 
 export default () => (
@@ -24,7 +27,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage="recruitment.jpg"
+        coverImage="flyer_23.png"
         textColor="white"
         darkGradient
       />
@@ -38,15 +41,15 @@ export default () => (
       />
     </Helmet>
     <Fade bottom distance="40px">
-      {/* { <Section sx={{ justifyContent: "left" }}>
+      { <Section sx={{ justifyContent: "left" }}>
         <div style={{width: '100%', borderBottom: '1px solid black'}}>
           <p>
-          We’re committed to hosting a memorable recruitment experience for prospective members in a remote format in Fall 2021. 
+          We’re committed to hosting a memorable recruitment experience for prospective members in Spring 2023. 
           Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{color: '#5FA0EC'}}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{color: '#5FA0EC'}}>Instagram</a> for any updates on recruitment. 
           In the meantime, take a look below to find out more about Delta Sigma Pi. 
           </p>
         </div>
-      </Section>} */}
+      </Section>}
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
         <p>
@@ -56,13 +59,14 @@ export default () => (
           find out what sets Delta Sigma Pi above and apart.{" "}
         </p>
       </Section>
-      {/* {<CenterHeader>Schedule</CenterHeader>}
-      <p><center><a href={withPrefix("/files/S'22 DSP Application Part 1.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (4/4) by 11:59 PM to svp@dspuci.com.</center>
-      <center> Please attach a clear headshot of yourself to the application.</center></p>
+      {<CenterHeader>Spring 2023 Recruitment - Where Will You Land?</CenterHeader>}
+      {/* <p><center><a href={withPrefix("/files/DeltaSigmaPi_ApplicationPt11.pdf")} download style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (4/10) by 11:59 PM to svp@dspuci.com.</center>
+      <center> Please attach a clear headshot of yourself along with Application Part 1.</center></p>
+      <p><center>Application Part 2(Cover Letter + Resume) is due Thursday (4/13) by 11:59 PM to svp@dspuci.com.</center></p> */}
       
       <Image
-        onClick={() => (window.location = recruitmentSchedule)}
-        src={recruitmentSchedule}
+        onClick={() => (window.location = springSchedule)}
+        src={springSchedule}
         sx={{
           cursor: "pointer",
           marginBottom: 30,
@@ -75,16 +79,15 @@ export default () => (
           textAlign: "center",
         }}
       />
-      {<Section sx={{ justifyContent: "center" }}>
-        <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2022 Recruitment: Chase</a> for any and all updates.</center></p>
-        {/* <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p> */}
-        {/* </Section> } */}
-
+      {/* <Section sx={{ justifyContent: "center" }}>
+        <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2023 Recruitment: Chase</a> for any and all updates.</center></p>
+        <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p>
+      </Section> */}
 
       <CenterHeader>Why Join?</CenterHeader>
 
       <Flex flexWrap="wrap" justifyContent="center" marginBottom="-20px">
-        <ImageBox image={careerAdvantage} title="CAREER ADVANTAGE">
+        <ImageBox image={stella_comp} title="CAREER ADVANTAGE">
           Delta Sigma Pi offers a career advantage like no other. For over a
           decade, our chapter has kickstarted and cultivated impactful careers
           in finance, consulting, marketing, accounting, technology,
@@ -97,11 +100,11 @@ export default () => (
           leadership positions in over 25 campus organizations – some have even
           started their own.{" "}
         </ImageBox>
-        <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD">
+        <ImageBox image={j_j_j} title="LIFELONG BROTHERHOOD">
           Joining the DSP family means mentorship, inspiration, and countless
           opportunities to learn and grow. Build lifelong friendships alongside
           an extensive network of business professionals – with over 300
-          national chapters and 250 UCI alumni, you can count on your brothers
+          national chapters and 275 UCI alumni, you can count on your brothers
           for support no matter where you go.
         </ImageBox>
       </Flex>
