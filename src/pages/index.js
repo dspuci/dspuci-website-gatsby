@@ -68,40 +68,29 @@ export default () => (
         {/* Dear Prospective Member,
         <br /> */}
         {/* <br /> */}
-        “The best things in life are not things, they are moments.” I know it's an 
-        overdone and cheesy quote, but when I think about my time in Delta Sigma Pi, 
-        I can’t help but cherish the moments and memories that have gotten me to where 
-        I am today. My journey started with a moment of nervousness and wonder as 
-        I attended my first recruitment event and was amazed by all the brothers’ 
-        aspirations and goals. Over the past 3 years, I’ve experienced countless 
-        moments of growth as I was encouraged to work hard towards my professional 
-        development. I’ve collected moments wrapped in happiness and comfort with 
-        people I consider my closest friends. Together, these memories have made 
-        my college experience unforgettable and special. As I enter my last year 
-        at UCI, I feel moments of fulfillment and pride as I witness my brothers’ 
-        achievements and personal accomplishments. 
+        “College is a turbulent time filled with excitement, uncertainty, and most 
+        importantly opportunity. Delta Sigma Pi has enabled me to make the most of 
+        my time at UCI, by being the one constant that I can always rely on. It has 
+        been a source of laughter, support, and growth that gives me the faith to just 
+        leap into the unknown without worrying about where I will land.
 
         <br />
         <br />
-        Moments are better when you have people to share them with. The Pi Sigma 
-        chapter is full of brothers with unique backstories and passions, and we 
-        use our differences to constantly challenge and inspire one another. We 
-        make time for each other, whether it be preparing for interviews, late 
-        night studying, making spontaneous travel plans, or even pulling an 
-        all-nighter just for fun. Coming into UCI, I did not expect myself to join 
-        such a tight-knit community of driven individuals, let alone lead one, but 
-        Delta Sigma Pi has always inspired me to go above and beyond expectations. 
-        This brotherhood has shown me all the best things about hard work, sacrifice, 
-        and friendship, and I am very thankful to be a part of it.
+        Everyone has heard that “growth comes from discomfort”. But what is often 
+        overlooked is that you don’t need to face the discomfort alone. I’m fortunate 
+        to be surrounded by people who expect the best from me and are constantly 
+        pushing to be better themselves. I know that I can trust these people to be by 
+        my side, no matter whether I want to learn a new sport, prepare for interviews, 
+        take part in a competition, or just go on a spontaneous adventure! They make the 
+        difference between overcoming or succumbing.
 
         <br />
         <br />
-        My experience in Delta Sigma Pi has been incredibly special and I’m excited 
-        to see the chapter continue to grow. I hope that you will consider joining
-         us at our Fall recruitment and see what makes this community special for 
-         yourself. Taking the first step can be hard, but the possibilities are 
-         limitless. After all, little freshman year me would’ve never even expected 
-         having the opportunity to write this message. 
+        My experience in Delta Sigma Pi has been incredibly special and I’m excited to 
+        see the chapter continue to grow. I hope that you will join us at our Spring 
+        recruitment and see what makes this community special for yourself. Taking the 
+        first step can be hard, but once you do, the possibilities are endless. I look 
+        forward to welcoming you into our home away from home.
 
         <br />
         <br />
