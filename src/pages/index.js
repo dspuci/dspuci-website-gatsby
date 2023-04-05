@@ -68,7 +68,7 @@ export default () => (
         {/* Dear Prospective Member,
         <br /> */}
         {/* <br /> */}
-        “College is a turbulent time filled with excitement, uncertainty, and most 
+        College is a turbulent time filled with excitement, uncertainty, and most 
         importantly opportunity. Delta Sigma Pi has enabled me to make the most of 
         my time at UCI, by being the one constant that I can always rely on. It has 
         been a source of laughter, support, and growth that gives me the faith to just 
@@ -90,7 +90,7 @@ export default () => (
         see the chapter continue to grow. I hope that you will join us at our Spring 
         recruitment and see what makes this community special for yourself. Taking the 
         first step can be hard, but once you do, the possibilities are endless. I look 
-        forward to welcoming you into our home away from home.
+        forward to welcoming you into our home away from home. 
 
         <br />
         <br />
