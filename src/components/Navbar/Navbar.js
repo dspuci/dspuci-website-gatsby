@@ -17,8 +17,8 @@ const Links = () => (
     <ListLink to="/">Home</ListLink>
     <ListLink to="/about">About Us</ListLink>
     {/* <ListLink to="/proweek">Professionalism Event</ListLink> */}
-    {/* ListLink to="/recruitment">How to Join</ListLink > */}
-    <ListLink to="/recruitment">S'23 Recruitment</ListLink >
+    <ListLink to="/recruitment">How to Join</ListLink >
+    {/* <ListLink to="/recruitment">S'23 Recruitment</ListLink > */}
     <ListLink to="/brothers">Brothers</ListLink>
     <ListLink to="/careers">Careers</ListLink>
     {/* <ListLink to="/gallery">Gallery</ListLink> */}

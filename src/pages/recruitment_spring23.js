@@ -41,7 +41,7 @@ export default () => (
       />
     </Helmet>
     <Fade bottom distance="40px">
-      {/* { <Section sx={{ justifyContent: "left" }}>
+      { <Section sx={{ justifyContent: "left" }}>
         <div style={{width: '100%', borderBottom: '1px solid black'}}>
           <p>
           We’re committed to hosting a memorable recruitment experience for prospective members in Spring 2023. 
@@ -49,7 +49,7 @@ export default () => (
           In the meantime, take a look below to find out more about Delta Sigma Pi. 
           </p>
         </div>
-      </Section>} */}
+      </Section>}
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
         <p>
@@ -59,13 +59,13 @@ export default () => (
           find out what sets Delta Sigma Pi above and apart.{" "}
         </p>
       </Section>
-      {/* {<CenterHeader>Spring 2023 Recruitment - Where Will You Land?</CenterHeader>}
+      {<CenterHeader>Spring 2023 Recruitment - Where Will You Land?</CenterHeader>}
       <p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 2</a> is due Thursday (4/13) by 11:59 PM. Interview information will be sent out on Friday (4/14), and interviews will be held on Saturday (4/15).</center></p>
-      <p><center><a href="https://calendly.com/dspuci/coffeechats" style={{color: '#5FA0EC'}}>EC Coffee Chats</a> are now available on a first come first serve basis.</center></p> */}
+      {/* <p><center><a href="https://calendly.com/dspuci/coffeechats" style={{color: '#5FA0EC'}}>EC Coffee Chats</a> are now available on a first come first serve basis.</center></p> */}
       {/* <center> Please attach a clear headshot of yourself along with Application Part 1.</center></p>
       <p><center>Application Part 2(Cover Letter + Resume) is due Thursday (4/13) by 11:59 PM to svp@dspuci.com.</center></p> */}
       
-      {/* <Image
+      <Image
         onClick={() => (window.location = springSchedule)}
         src={springSchedule}
         sx={{
@@ -79,7 +79,7 @@ export default () => (
           margin: "0 auto",
           textAlign: "center",
         }}
-      /> */}
+      />
       {/* <Section sx={{ justifyContent: "center" }}>
         <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2023 Recruitment: Chase</a> for any and all updates.</center></p>
         <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p>

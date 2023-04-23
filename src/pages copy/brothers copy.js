@@ -42,7 +42,6 @@ export default ({ data }) => {
       </Fade>
       <Flex flexWrap="wrap">
         {data.brothers.nodes
-          .filter(brotherInfo => brotherInfo.First_Name !== "Yeseo" && brotherInfo.First_Name !== "Darren" && brotherInfo.First_Name !== "Patrick")
           .sort((a, b) =>
             a.lastname > b.lastname
               ? 1
@@ -54,13 +53,9 @@ export default ({ data }) => {
               ? -1
               : 0
           )
-          .map((brotherInfo) => {
-            // add the if statement here
-            if (brotherInfo.First_Name !== "Yeseo") {
-              return <Brother brotherInfo={brotherInfo} />;
-            }
-            return null; // return null to exclude the brother from the list
-          })}
+          .map((brotherInfo) => (
+            <Brother brotherInfo={brotherInfo} />
+          ))}
       </Flex>
       <Fade>
         <CenterHeader>Family Trees</CenterHeader>
@@ -100,7 +95,6 @@ export const query = graphql`
         Class
       }
     }
-
     families: allFile(
       filter: { sourceInstanceName: { eq: "families" } }
       sort: { fields: name }
