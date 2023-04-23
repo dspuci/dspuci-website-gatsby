@@ -42,7 +42,7 @@ export default ({ data }) => {
       </Fade>
       <Flex flexWrap="wrap">
         {data.brothers.nodes
-          .filter(brotherInfo => brotherInfo.First_Name !== "Yeseo" && brotherInfo.First_Name !== "Darren" && brotherInfo.First_Name !== "Patrick")
+          .filter(brotherInfo => brotherInfo.First_Name !== "Yeseo" && brotherInfo.First_Name !== "Darren")
           .sort((a, b) =>
             a.lastname > b.lastname
               ? 1
