@@ -101,7 +101,7 @@ export default () => (
         Sincerely,
 
         <br />
-        Sean Devine | President - Pi Sigma Chapter
+        Jenny Wu | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>

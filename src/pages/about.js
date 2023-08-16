@@ -26,7 +26,7 @@ import {
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons"
 
-import { genderData, yearData, majorData } from "../data/spring23/chapter_stats"
+import { genderData, yearData, majorData } from "../data/summerfall23/chapter_stats"
 
 export default () => (
   <CoverLayout
@@ -63,11 +63,11 @@ export default () => (
       </Section>
       <Section>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>48</div>
+          <div style={{ font: "bold 80px Heebo" }}>49</div>
           <div style={{ font: "22px Heebo" }}>Collegiate Brothers</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>275+</div>
+          <div style={{ font: "bold 80px Heebo" }}>300+</div>
           <div style={{ font: "22px Heebo" }}>Alumni Network</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>

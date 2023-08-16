@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `families`,
-        path: `${__dirname}/static/images/families/winter23/`,
+        path: `${__dirname}/static/images/families/summerfall23/`,
       },
     },
     {

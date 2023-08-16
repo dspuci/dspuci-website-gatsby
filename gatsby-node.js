@@ -3,7 +3,7 @@ const path = require(`path`)
 // TO CHANGE BIO CHANGE THIS
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "BiosSummer21Xlsx__FormResponses1") {
+  if (node.internal.type === "BiosSummerfall23Xlsx__FormResponses1") {
     const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
       .split(" ")
       .join("_")
@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      bios: allBiosSummer21XlsxFormResponses1 {
+      bios: allBiosSummerfall23XlsxFormResponses1 {
         nodes {
           fields {
             slug
