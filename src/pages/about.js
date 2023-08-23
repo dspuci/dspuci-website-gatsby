@@ -34,7 +34,7 @@ export default () => (
     coverElement={
       <ImageCover
         text="About Us"
-        coverImage="testing3.jpg"
+        coverImage="AOinitiation_chapter.jpg"
         textColor="white"
         darkGradient
       />

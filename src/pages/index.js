@@ -68,33 +68,33 @@ export default () => (
         {/* Dear Prospective Member,
         <br /> */}
         {/* <br /> */}
-        College is a turbulent time filled with excitement, uncertainty, and most 
-        importantly opportunity. Delta Sigma Pi has enabled me to make the most of 
-        my time at UCI, by being the one constant that I can always rely on. It has 
-        been a source of laughter, support, and growth that gives me the faith to just 
-        leap into the unknown without worrying about where I will land.
+        Life is full of unexpected surprises that we all encounter, and it’s safe
+        to say that college is full of these moments.  It’s definitely a scary journey 
+        to navigate, and it isn’t one that is meant to be experienced alone. Along my 
+        own journey, I just happened to find a community of people that I could turn to at 
+        any moment in my life, which ultimately turned into a family and became my home.
+        <br />
+        <br />
+        I came out to Delta Sigma Pi during the spring quarter of my first year,
+        and safe to say it has truly changed my life in so many ways. Everyone in this 
+        chapter has pushed me to better myself professionally and personally, and I
+        could not have done it without their support. I have learned so much from the
+        different perspectives that everyone in this Fraternity has to offer and we can
+        we can only hope to share that knowledge with you as well. Reflecting on my time 
+        here at UCI, these past three years have definitely been a rollercoaster, but
+        I have shared so many laughs and experiences with all of the brothers. Freshman year
+        me didn’t know what I was capable of achieving, so being in this position where I 
+        can meet all of you soon at Fall recruitment is truly an honor that I cannot 
+        thank you enough for.
+
+
 
         <br />
         <br />
-        Everyone has heard that “growth comes from discomfort”. But what is often 
-        overlooked is that you don’t need to face the discomfort alone. I’m fortunate 
-        to be surrounded by people who expect the best from me and are constantly 
-        pushing to be better themselves. I know that I can trust these people to be by 
-        my side, no matter whether I want to learn a new sport, prepare for interviews, 
-        take part in a competition, or just go on a spontaneous adventure! They make the 
-        difference between overcoming or succumbing.
-
-        <br />
-        <br />
-        My experience in Delta Sigma Pi has been incredibly special and I’m excited to 
-        see the chapter continue to grow. I hope that you will join us at our Spring 
-        recruitment and see what makes this community special for yourself. Taking the 
-        first step can be hard, but once you do, the possibilities are endless. I look 
-        forward to welcoming you into our home away from home. 
-
-        <br />
-        <br />
-        See you soon :)
+        Through your own journey of unexpected surprises, I hope you are able to see what 
+        Delta Sigma Pi is all about and get a glimpse of who we are.  I will forever 
+        be grateful and proud that you seized this opportunity on your own journey and
+        can’t wait to see where you will land.
 
         <br />
         <br />
