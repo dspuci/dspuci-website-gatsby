@@ -151,8 +151,7 @@ export default () => (
         title="What majors does Delta Sigma Pi accept?"
         content="
           Business Administration, Business Information Management, Business Economics, 
-          Quantitative Economics, Economics, or a major in the School of Information and 
-          Computer Sciences. 
+          Quantitative Economics, and Economics. 
         "
       />
       <Accordion
