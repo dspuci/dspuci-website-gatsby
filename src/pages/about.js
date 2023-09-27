@@ -202,7 +202,7 @@ export default () => (
         As the oldest business fraternity at UC Irvine, the Pi Sigma Chapter of
         Delta Sigma Pi has championed professionalism and a lifetime of
         opportunity for our members since 2008. We are the only fraternity on
-        campus to restrict membership to business and technology related majors,
+        campus to restrict membership to business school majors,
         which is instrumental to our unrivaled career success and lifelong
         brotherhood. Over a decade later, our chapter has become the premier
         business fraternity on campus, unparalleled in our professional success

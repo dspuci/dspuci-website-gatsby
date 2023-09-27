@@ -16,7 +16,7 @@ import careerAdvantage from "../images/career_advantage.jpg"
 import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
 import ProAccCover from "../components/ProAccCover"
-import recruitmentSchedule from "../images/fall23_recruitment_flyer_back.png"
+import recruitmentSchedule from "../images/spring22.png"
 import springSchedule from "../images/spring23_flyer.png"
 import stella_comp from "../images/stella_zhang_comp.jpg"
 import j_j_j from "../images/jessie_jake_jacob.jpg"
@@ -27,10 +27,9 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage="fall23_recruitment_flyer_front.png"
+        coverImage="flyer_23.png"
         textColor="white"
         darkGradient
-        /*sstyle={{ position: 'relative', top: '-20px' }}*/
       />
     }
   >
@@ -45,8 +44,9 @@ export default () => (
       { <Section sx={{ justifyContent: "left" }}>
         <div style={{width: '100%', borderBottom: '1px solid black'}}>
           <p>
-          We’re committed to hosting a memorable recruitment experience for prospective members in Fall 2023. 
+          We’re committed to hosting a memorable recruitment experience for prospective members in Spring 2023. 
           Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{color: '#5FA0EC'}}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{color: '#5FA0EC'}}>Instagram</a> for any updates on recruitment. 
+          In the meantime, take a look below to find out more about Delta Sigma Pi. 
           </p>
         </div>
       </Section>}
@@ -59,18 +59,15 @@ export default () => (
           find out what sets Delta Sigma Pi above and apart.{" "}
         </p>
       </Section>
-      <CenterHeader>Come See Us Boothing</CenterHeader>
-      <p><center> We will be boothing on 10/2, 10/3 & 10/4 from 11:00 AM - 2:00 PM. Stop by and introduce yourself!</center></p>
-
-      {<CenterHeader>Fall 2023 Recruitment - Embrace Uncertainty</CenterHeader>}
-      {/*<p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 2</a> is due Thursday (4/13) by 11:59 PM. Interview information will be sent out on Friday (4/14), and interviews will be held on Saturday (4/15).</center></p>*/}
+      {<CenterHeader>FALL 2023 Recruitment - Where Will You Land?</CenterHeader>}
+      <p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 2</a> is due Thursday (4/13) by 11:59 PM. Interview information will be sent out on Friday (4/14), and interviews will be held on Saturday (4/15).</center></p>
       {/* <p><center><a href="https://calendly.com/dspuci/coffeechats" style={{color: '#5FA0EC'}}>EC Coffee Chats</a> are now available on a first come first serve basis.</center></p> */}
       {/* <center> Please attach a clear headshot of yourself along with Application Part 1.</center></p>
       <p><center>Application Part 2(Cover Letter + Resume) is due Thursday (4/13) by 11:59 PM to svp@dspuci.com.</center></p> */}
       
       <Image
-        onClick={() => (window.location = recruitmentSchedule)}
-        src={recruitmentSchedule}
+        onClick={() => (window.location = springSchedule)}
+        src={springSchedule}
         sx={{
           cursor: "pointer",
           marginBottom: 30,
@@ -137,7 +134,7 @@ export default () => (
         title="What sets Delta Sigma Pi apart from other business fraternities?"
         content="
           We are the only business fraternity at UC Irvine to restrict membership to 
-          business school majors, which is instrumental to our career 
+          business and technology related majors, which is instrumental to our career 
           focus and tight-knit brotherhood. As the oldest business fraternity on campus, 
           we have the largest alumni network in every industry for our brothers to connect 
           with. We organize more professional development initiatives than any other 
@@ -153,7 +150,7 @@ export default () => (
       <Accordion
         title="What majors does Delta Sigma Pi accept?"
         content="
-          Business Administration, Business Economics, 
+          Business Administration, Business Information Management, Business Economics, 
           Quantitative Economics, and Economics. 
         "
       />

@@ -4,7 +4,7 @@ import "@brainhubeu/react-carousel/lib/style.css"
 import imageOne from "../../images/max_recruitment.jpeg"
 import imageTwo from "../../images/julia_recruitment.png"
 import imageThree from "../../images/forest_recruitment.png"
-import imageFour from "../../images/brian_recruitment.jpeg"
+import imageFour from "../../images/mirsab_recruitment.jpeg"
 import {
   faChevronLeft,
   faChevronRight,
@@ -80,17 +80,15 @@ const RecCarousel = () => {
       />
       <SpotlightCard
         src={imageFour}
-        name="Brian Anderson"
-        description="Initiated in my Second Year Fall | Computer Science & Engineering | Interested in Tech and Law"
-        bio="As someone who is interested in a disjoint myriad of subjects and fields, I spent my first year at UCI 
-        trying to get involved in as much as I possibly could, joining organizations and taking a wide breadth of 
-        classes. However, it wasn’t until I joined DSP at the beginning of my second year that I truly felt like I 
-        found the centralized, all-encompassing hub for professional development and, even beyond that, the home on 
-        campus I had been searching for. I aspire to be an attorney, and it seems difficult to imagine a business-centric 
-        fraternity as a place conducive to that kind of career path. But despite the substantial deviation, the brothers 
-        have gone out of their way to aid me – from researching career avenues to providing internship opportunities. 
-        I can say with certainty that I have grown unprecedented amounts as a professional and an individual in the 
-        small time frame I have been a member."
+        name="Mirsab Mirza"
+        description="Initiated in my Second Year Fall | Economics, Social Policy & Public Service | Interested in Marketing and Public Health"
+        bio="Coming out of high school where I was involved in many business related organizations, I completed my first year at UCI knowing 
+        I was missing something. I wanted to be a part of a professional organization that promoted diverse thought and the importance of 
+        being yourself, but whether or not that organization existed was something I wasn’t sure about. It wasn’t until my second year that 
+        I properly sought into DSP and after meeting so many unique individuals with various aspirations, I knew it would fill the void I was
+         seeking for. Looking back, I can whole-heartedly say that DSP has become an integral part of my college experience and one that has 
+         shaped me both professionally and personally. Most of all, I have established bonds with people within the chapter that I hope to 
+         carry on much beyond my time here at UCI."
       />
     </Carousel>
   )
