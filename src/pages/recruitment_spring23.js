@@ -61,7 +61,7 @@ export default () => (
       </Section>
 
       {<CenterHeader>Fall 2023 Recruitment - Embrace Uncertainty</CenterHeader>}
-      {<p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (10/9) by 11:59 PM.</center></p>}
+      {<p><center> <a href="https://tinyurl.com/dspfall23app1" style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (10/9) by 11:59 PM.</center></p>}
       {/*<p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 2</a> is due Thursday (4/13) by 11:59 PM. Interview information will be sent out on Friday (4/14), and interviews will be held on Saturday (4/15).</center></p>*/}
       {/* <p><center><a href="https://calendly.com/dspuci/coffeechats" style={{color: '#5FA0EC'}}>EC Coffee Chats</a> are now available on a first come first serve basis.</center></p> */}
       {/* <center> Please attach a clear headshot of yourself along with Application Part 1.</center></p>
