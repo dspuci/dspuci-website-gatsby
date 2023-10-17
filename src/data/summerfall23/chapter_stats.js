@@ -2,7 +2,7 @@ const genderData = {
   labels: ["Male", "Female"],
   datasets: [
     {
-      data: [25, 24],
+      data: [25, 22],
       backgroundColor: ["rgb(158, 207, 230)", "rgb(151, 129, 213)"],
     },
   ],
