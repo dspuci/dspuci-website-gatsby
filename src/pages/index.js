@@ -110,6 +110,7 @@ export default () => (
         Fraternally,
 
         <br />
+        <br />
         Julia Lin | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
