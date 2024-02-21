@@ -77,21 +77,24 @@ export default ({ data }) => {
 // TO CHANGE BIO CHANGE THIS
 // TO CHANGE EC CHANGE THIS
 // TO CHANGE DIRECTORS CHANGE THIS
+    // executiveCommittee: allLeadershipWinter24XlsxSheet1 {
+    // directors: allDirectorsWinter24XlsxSheet1 {
+    // brothers: allBiosWinter24XlsxFormResponses1 {
 export const query = graphql`
   {
-    executiveCommittee: allLeadershipSummerfall23XlsxSheet1 {
+    executiveCommittee: allLeadershipCurrentdataXlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    directors: allDirectorsSummerfall23XlsxSheet1 {
+    directors: allDirectorsCurrentdataXlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    brothers: allBiosSummerfall23XlsxFormResponses1 {
+    brothers: allBiosCurrentdataXlsxFormResponses1 {
       nodes {
         Last_Name
         First_Name

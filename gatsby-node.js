@@ -3,7 +3,8 @@ const path = require(`path`)
 // TO CHANGE BIO CHANGE THIS
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "BiosSummerfall23Xlsx__FormResponses1") {
+  // if (node.internal.type === "BiosWinter24Xlsx__FormResponses1") {
+  if (node.internal.type === "BiosCurrentdataXlsx__FormResponses1") {
     const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
       .split(" ")
       .join("_")
@@ -36,32 +37,49 @@ exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
+      // bios: allBiosWinter24XlsxFormResponses1 {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      bios: allBiosSummerfall23XlsxFormResponses1 {
-        nodes {
-          fields {
-            slug
+      allBiosCurrentdataXlsxFormResponses1 {
+          nodes {
+            fields {
+              slug
+            }
           }
         }
-      }
+      
     }
   `).then((result) => {
     console.log(result);
-    result.data.bios.nodes.forEach((node) => {
-      console.log(node.fields.slug);
+    // result.data.bios.nodes.forEach((node) => {
+    // result.data.edges.forEach(({ node }) => {
+    //   console.log(node.fields.slug);
+    //   createPage({
+    //     path: "brothers/" + node.fields.slug,
+    //     component: path.resolve(`./src/templates/brother.js`),
+    //     context: {
+    //       // Data passed to context is available
+    //       // in page queries as GraphQL variables.
+    //       slug: node.fields.slug,
+    //     },
+    //   })
+    // })
+    // result.data.allBiosCurrentdataXlsxFormResponses1.edges.forEach(({ node }) => {
+    // result.data.bios.nodes.forEach((node) => {
+    result.data.allBiosCurrentdataXlsxFormResponses1.nodes.forEach((node) => {
       createPage({
-        path: "brothers/" + node.fields.slug,
+        path: `brothers/${node.fields.slug}`,
         component: path.resolve(`./src/templates/brother.js`),
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
+          // Data passed to context is available in page queries as GraphQL variables.
           slug: node.fields.slug,
         },
-      })
-    })
+      });
+    });
+  });
+};
 
     // result.data.albums.nodes.forEach(node => {
     //   createPage({
@@ -75,5 +93,5 @@ exports.createPages = ({ graphql, actions }) => {
     //     },
     //   })
     // })
-  })
-}
+//   })
+// }

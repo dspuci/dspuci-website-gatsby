@@ -59,7 +59,7 @@ This should have the following fields (*required):
 - Timestamp
 - First Name*
 - Last Name*
-- Slug (Not necessary, remove in future)
+- slug (Not necessary, remove in future)
 - Class
 - Year
 - Hometown

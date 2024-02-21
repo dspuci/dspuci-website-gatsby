@@ -73,7 +73,7 @@ export default ({ data }) => {
             width={280}
             onError={addDefaultSrc}
             src={withPrefix(
-              `/images/brothers/summerfall23/${brotherInfo.codeName}.jpg`
+              `/images/brothers/current_data/${brotherInfo.codeName}.jpg`
             )}
             borderRadius={8}
           />
@@ -144,7 +144,7 @@ export default ({ data }) => {
 // TO CHANGE BIO CHANGE THIS
 export const query = graphql`
   query($slug: String!) {
-    bio: biosSummerfall23XlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+    bio: biosCurrentdataXlsxFormResponses1(fields: { slug: { eq: $slug } }) {
       First_Name
       Last_Name
       Class

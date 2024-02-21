@@ -26,7 +26,7 @@ import {
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons"
 
-import { genderData, yearData, majorData } from "../data/summerfall23/chapter_stats"
+import { genderData, yearData, majorData } from "../data/current_data/chapter_stats"
 
 export default () => (
   <CoverLayout
