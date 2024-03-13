@@ -12,14 +12,12 @@ import Accordion from "../components/Faq"
 import RecCarousel from "../components/RecCarousel/RecCarousel"
 import { Helmet } from "react-helmet"
 
-import careerAdvantage from "../images/career_advantage.jpg"
-import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
+import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
 import ProAccCover from "../components/ProAccCover"
 import recruitmentSchedule from "../images/fall23_recruitment_flyer_back.png"
 import springSchedule from "../images/spring23_flyer.png"
 import stella_comp from "../images/stella_zhang_comp.jpg"
-import j_j_j from "../images/jessie_jake_jacob.jpg"
 
 
 export default () => (
@@ -30,7 +28,7 @@ export default () => (
         coverImage="fall23_recruitment_flyer_front.png"
         textColor="white"
         darkGradient
-        /*sstyle={{ position: 'relative', top: '-20px' }}*/
+      /*sstyle={{ position: 'relative', top: '-20px' }}*/
       />
     }
   >
@@ -42,11 +40,11 @@ export default () => (
       />
     </Helmet>
     <Fade bottom distance="40px">
-      { <Section sx={{ justifyContent: "left" }}>
-        <div style={{width: '100%', borderBottom: '1px solid black'}}>
+      {<Section sx={{ justifyContent: "left" }}>
+        <div style={{ width: '100%', borderBottom: '1px solid black' }}>
           <p>
-          We hold recruitment in the beginning of Fall and Spring quarter each year.
-          Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{color: '#5FA0EC'}}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{color: '#5FA0EC'}}>Instagram</a> for more information. 
+            We hold recruitment in the beginning of Fall and Spring quarter each year.
+            Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{ color: '#5FA0EC' }}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{ color: '#5FA0EC' }}>Instagram</a> for more information.
           </p>
         </div>
       </Section>}
@@ -59,8 +57,8 @@ export default () => (
           find out what sets Delta Sigma Pi above and apart.{" "}
         </p>
       </Section>
-      
-      
+
+
       {/* <Section sx={{ justifyContent: "center" }}>
         <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2023 Recruitment: Chase</a> for any and all updates.</center></p>
         <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p>
@@ -82,7 +80,7 @@ export default () => (
           leadership positions in over 25 campus organizations – some have even
           started their own.{" "}
         </ImageBox>
-        <ImageBox image={j_j_j} title="LIFELONG BROTHERHOOD">
+        <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD">
           Joining the DSP family means mentorship, inspiration, and countless
           opportunities to learn and grow. Build lifelong friendships alongside
           an extensive network of business professionals – with over 300

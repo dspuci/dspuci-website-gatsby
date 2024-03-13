@@ -36,7 +36,7 @@ export default () => (
         textColor="white"
         darkGradient
       />
-    } 
+    }
   >
     <Helmet>
       <title>Pro Event 2022 | Delta Sigma Pi - Pi Sigma Chapter</title>
@@ -49,16 +49,16 @@ export default () => (
       <Section sx={{ justifyContent: "left" }}>
         <h1 style={{ marginBottom: 15 }}>Develop Yourself Professionally</h1>
         <div>
-        Welcome to Delta Sigma Pi - Pi Sigma Chapter’s Winter Professionalism Event! 
-        This program is open to all students, regardless of major, who seek to explore 
-        all aspects of the professional realm. We invite you to a week-long program that 
-        consists of a workshop, panel, and competition that guides your personal and 
-        professional growth as well as examines the different dimensions of business. 
-        Come spend time with us and strengthen your business acumen and solidify your 
-        professional aspirations! We’re excited to offer the unique perspectives and 
-        experiences of our network of alumni, meaningful connections with active brothers, 
-        and valuable insights from industry professionals. We encourage you to come take 
-        advantage of these opportunities to develop yourself to your fullest potential. 
+          Welcome to Delta Sigma Pi - Pi Sigma Chapter’s Winter Professionalism Event!
+          This program is open to all students, regardless of major, who seek to explore
+          all aspects of the professional realm. We invite you to a week-long program that
+          consists of a workshop, panel, and competition that guides your personal and
+          professional growth as well as examines the different dimensions of business.
+          Come spend time with us and strengthen your business acumen and solidify your
+          professional aspirations! We’re excited to offer the unique perspectives and
+          experiences of our network of alumni, meaningful connections with active brothers,
+          and valuable insights from industry professionals. We encourage you to come take
+          advantage of these opportunities to develop yourself to your fullest potential.
 
 
         </div>
@@ -106,9 +106,9 @@ export default () => (
         style={{ marginBottom: "-20px" }}
       >
         <div>
-          <b>Professionalism Panel (2/7): </b>Looking to widen your horizon and learn about 
+          <b>Professionalism Panel (2/7): </b>Looking to widen your horizon and learn about
           different industries? Join us for our Professionalism Panel on Monday, February 7th
-          at 6 PM! Professionals from a variety of industries are coming to talk to us about 
+          at 6 PM! Professionals from a variety of industries are coming to talk to us about
           their experiences and careers. Come to our panel for an insightful and entertaining
           discussion! Speakers will be announced soon.
         </div>
@@ -117,17 +117,17 @@ export default () => (
           <b>Case Study Workshops (2/9): </b>Assess your business acumen with us at our case study
           workshop on Wednesday, February 9th at 6 PM! Case studies may seem intimidating, We’ll
           be going over how to approach case studies and prepare you for the exciting case study
-          competition. 
+          competition.
         </div>
         <br />
         <div>
-          <b>Case Study Competition (2/11): </b>Test your business knowledge in our third annual 
+          <b>Case Study Competition (2/11): </b>Test your business knowledge in our third annual
           case study competition and win hundreds of dollars! Participants will have 48 hours to
-           take home the case study, prepare a presentation, and finally present in front of 6 
-           UCI alumni on Friday, February 11th. The competition will be separated into two rounds. 
-           During the first round, your team will present your solutions in front of judges. 
-           Finalists will then present in the second round to a panel of judges (everyone is 
-           encouraged to watch)!
+          take home the case study, prepare a presentation, and finally present in front of 6
+          UCI alumni on Friday, February 11th. The competition will be separated into two rounds.
+          During the first round, your team will present your solutions in front of judges.
+          Finalists will then present in the second round to a panel of judges (everyone is
+          encouraged to watch)!
 
 
         </div>
@@ -181,7 +181,7 @@ export default () => (
         <h1 style={{ marginBottom: 10 }}>Case Study Competition Logistics:</h1>
         <br />
         <div>
-          • Teams of 2 UCI Students 
+          • Teams of 2 UCI Students
           <br />
           • Prizes total up to $600
           <br />
@@ -228,9 +228,9 @@ export default () => (
         >
           <Button text="Register" to="/registration" />
         </div>
-      </Section> 
-      
-      <Flex flexWrap='wrap' alignItems="center" justifyContent = "center">
+      </Section>
+
+      <Flex flexWrap='wrap' alignItems="center" justifyContent="center">
         <Box width={[1, 3 / 5]}>
           <Image src={proweekflyer} />
         </Box>
@@ -238,6 +238,6 @@ export default () => (
           <Image src={weekTwoFlyer} />
         </Box> */}
       </Flex>
-    </Fade> 
+    </Fade>
   </CoverLayout>
 )

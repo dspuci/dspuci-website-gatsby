@@ -10,9 +10,8 @@ import CenterHeader from "../components/CenterHeader"
 import ResponsiveDoughnut from "../components/ResponsiveDoughnut"
 import Section from "../components/Section"
 
-import brotherhoodImage from "../images/brotherhood.jpg"
 import professionalismImage from "../images/professionalism.jpg"
-import communityImage from "../images/communityservice.jpg"
+import communityImage from "../images/communityService.jpg"
 import ALs from "../images/alpha_lambdas.jpeg"
 
 import { Helmet } from "react-helmet"

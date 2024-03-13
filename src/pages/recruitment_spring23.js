@@ -12,15 +12,12 @@ import Accordion from "../components/Faq"
 import RecCarousel from "../components/RecCarousel/RecCarousel"
 import { Helmet } from "react-helmet"
 
-import careerAdvantage from "../images/career_advantage.jpg"
-import lifelongBrotherhood from "../images/lifelong_brotherhood.jpg"
+import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
 import ProAccCover from "../components/ProAccCover"
 import recruitmentSchedule from "../images/fall23_recruitment_flyer_back.png"
 import springSchedule from "../images/spring23_flyer.png"
 import stella_comp from "../images/stella_zhang_comp.jpg"
-import j_j_j from "../images/jessie_jake_jacob.jpg"
-
 
 export default () => (
   <CoverLayout
@@ -30,7 +27,7 @@ export default () => (
         coverImage="fall23_recruitment_flyer_front.png"
         textColor="white"
         darkGradient
-        /*sstyle={{ position: 'relative', top: '-20px' }}*/
+      /*sstyle={{ position: 'relative', top: '-20px' }}*/
       />
     }
   >
@@ -42,11 +39,11 @@ export default () => (
       />
     </Helmet>
     <Fade bottom distance="40px">
-      { <Section sx={{ justifyContent: "left" }}>
-        <div style={{width: '100%', borderBottom: '1px solid black'}}>
+      {<Section sx={{ justifyContent: "left" }}>
+        <div style={{ width: '100%', borderBottom: '1px solid black' }}>
           <p>
-          We’re committed to hosting a memorable recruitment experience for prospective members in Fall 2023. 
-          Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{color: '#5FA0EC'}}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{color: '#5FA0EC'}}>Instagram</a> for any updates on recruitment. 
+            We’re committed to hosting a memorable recruitment experience for prospective members in Fall 2023.
+            Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{ color: '#5FA0EC' }}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{ color: '#5FA0EC' }}>Instagram</a> for any updates on recruitment.
           </p>
         </div>
       </Section>}
@@ -61,12 +58,12 @@ export default () => (
       </Section>
 
       {<CenterHeader>Fall 2023 Recruitment - Embrace Uncertainty</CenterHeader>}
-      {<p><center> <a href="https://tinyurl.com/dspfall23app1" style={{color: '#5FA0EC'}}>Application Part 1</a> is due Monday (10/9) by 11:59 PM.</center></p>}
+      {<p><center> <a href="https://tinyurl.com/dspfall23app1" style={{ color: '#5FA0EC' }}>Application Part 1</a> is due Monday (10/9) by 11:59 PM.</center></p>}
       {/*<p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 2</a> is due Thursday (4/13) by 11:59 PM. Interview information will be sent out on Friday (4/14), and interviews will be held on Saturday (4/15).</center></p>*/}
       {/* <p><center><a href="https://calendly.com/dspuci/coffeechats" style={{color: '#5FA0EC'}}>EC Coffee Chats</a> are now available on a first come first serve basis.</center></p> */}
       {/* <center> Please attach a clear headshot of yourself along with Application Part 1.</center></p>
       <p><center>Application Part 2(Cover Letter + Resume) is due Thursday (4/13) by 11:59 PM to svp@dspuci.com.</center></p> */}
-      
+
       <Image
         onClick={() => (window.location = recruitmentSchedule)}
         src={recruitmentSchedule}
@@ -103,7 +100,7 @@ export default () => (
           leadership positions in over 25 campus organizations – some have even
           started their own.{" "}
         </ImageBox>
-        <ImageBox image={j_j_j} title="LIFELONG BROTHERHOOD">
+        <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD">
           Joining the DSP family means mentorship, inspiration, and countless
           opportunities to learn and grow. Build lifelong friendships alongside
           an extensive network of business professionals – with over 300

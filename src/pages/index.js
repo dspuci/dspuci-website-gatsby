@@ -13,7 +13,8 @@ import Button from "../components/TransparentButton"
 import { Fade } from "react-reveal"
 
 import careerAdvantage from "../images/2022_YakultTour.jpg"
-import lifelongBrotherhood from "../images/2022_Spring_Retreat.png"
+import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
+import brothers from "../images/brothers.jpg"
 import unrivaledLeaders from "../images/2022_Dodge4Dollars.jpg"
 
 export default () => (
@@ -43,7 +44,7 @@ export default () => (
             <Button to="/about" text="WHO WE ARE"></Button>
           </div>
         </ImageBox>
-        <ImageBox image={lifelongBrotherhood} title="BROTHERS">
+        <ImageBox image={brothers} title="BROTHERS">
           From various professional aspirations to pastime hobbies, our brothers
           are incredibly unique and diverse. Our drive to succeed and support
           for one another makes us a tight-knit community like no other.
@@ -71,38 +72,38 @@ export default () => (
         Dear Prospective Member,
         <br />
         <br />
-        Life is full of surprises, especially in college. It can be a bit scary, but you 
-        don't have to go through it alone. During my time at UCI, Delta Sigma Pi has been 
+        Life is full of surprises, especially in college. It can be a bit scary, but you
+        don't have to go through it alone. During my time at UCI, Delta Sigma Pi has been
         like a family to me.
         <br />
         <br />
-        Joining Delta Sigma Pi in my first year changed my life. The support and 
-        encouragement from everyone in the chapter has immensely fostered my growth both 
-        personally and professionally. We learn a lot from each other, and we want to share 
-        that knowledge with you too. Looking back on my three years here, it's been a mix of 
-        ups and downs, but I've had some of the best moments because of this chapter and met 
-        some of my best friends. The brothers in this chapter are some of my closest friends, 
-        mentors, and supporters. I wouldn’t be where I am today without this chapter and I am 
-        incredibly lucky to have found such a supportive and inspiring community to be a part 
+        Joining Delta Sigma Pi in my first year changed my life. The support and
+        encouragement from everyone in the chapter has immensely fostered my growth both
+        personally and professionally. We learn a lot from each other, and we want to share
+        that knowledge with you too. Looking back on my three years here, it's been a mix of
+        ups and downs, but I've had some of the best moments because of this chapter and met
+        some of my best friends. The brothers in this chapter are some of my closest friends,
+        mentors, and supporters. I wouldn’t be where I am today without this chapter and I am
+        incredibly lucky to have found such a supportive and inspiring community to be a part
         of throughout college.
 
 
 
         <br />
         <br />
-        Back when I was a freshman, I had no idea what I could achieve. Now, I'm truly excited 
-        and honored to serve as Delta Sigma Pi’s President and meet all of you at the upcoming 
-        Spring recruitment. 
+        Back when I was a freshman, I had no idea what I could achieve. Now, I'm truly excited
+        and honored to serve as Delta Sigma Pi’s President and meet all of you at the upcoming
+        Spring recruitment.
         <br />
         <br />
 
-        I hope as you go through recruitment and meet all of us, you'll see what Delta Sigma Pi 
-        is all about. Being a part of this brotherhood is about so much more than just professional 
-        development. It’s about inspiring leadership on and off campus, being the first to have the 
-        courage and grit to break into the most challenging industries and companies, giving back 
-        to our communities, supporting one another to reach our ambitions in both professional and 
-        personal aspects, mentoring the next generation of leaders, and so much more. I’m so 
-        incredibly grateful to be able to host this Spring’s recruitment — excited to meet all of 
+        I hope as you go through recruitment and meet all of us, you'll see what Delta Sigma Pi
+        is all about. Being a part of this brotherhood is about so much more than just professional
+        development. It’s about inspiring leadership on and off campus, being the first to have the
+        courage and grit to break into the most challenging industries and companies, giving back
+        to our communities, supporting one another to reach our ambitions in both professional and
+        personal aspects, mentoring the next generation of leaders, and so much more. I’m so
+        incredibly grateful to be able to host this Spring’s recruitment — excited to meet all of
         you and see where this journey takes you!
 
         <br />
