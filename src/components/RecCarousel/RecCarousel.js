@@ -44,7 +44,7 @@ const RecCarousel = () => {
       <SpotlightCard
         src={imageOne}
         name="Haylie Lee"
-        description="Initiated in my Second Year Spring | Businesss Administration | Interested in Marketing and Accounting"
+        description="Initiated in my Second Year Spring | Business Administration | Interested in Marketing and Accounting"
         bio="Of all of the decisions I’ve made in my three years of college as a current third year, joining DSP is definitely the 
         best and most invaluable one of them all. I recall being skeptical on coming out to recruitment for a while because I was nervous 
         about meeting so many new people, but I fully accept now that it is the best thing I could’ve done for myself in the long run, 
