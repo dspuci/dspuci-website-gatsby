@@ -12,7 +12,7 @@ const yearData = {
   labels: ["Freshman", "Sophomore", "Junior", "Senior"],
   datasets: [
     {
-      data: [0, 9, 22, 18],
+      data: [6, 12, 10, 8],
       backgroundColor: [
         "rgb(241,169,78)",
         "rgb(112, 226, 113)",
