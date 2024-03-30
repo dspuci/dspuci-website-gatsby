@@ -1,7 +1,8 @@
 import React from "react"
 import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
-import imageOne from "../../images/max_recruitment.jpeg"
+import imageOne from "../../images/haylie_recruitment.jpeg"
+import imageFive from "../../images/coca_recruitment.jpeg"
 import imageTwo from "../../images/julia_recruitment.png"
 import imageThree from "../../images/forest_recruitment.png"
 import imageFour from "../../images/mirsab_recruitment.jpeg"
@@ -42,15 +43,37 @@ const RecCarousel = () => {
     >
       <SpotlightCard
         src={imageOne}
-        name="Maxwell Xu"
-        description="Initiated in my First Year Fall | Economics | Interested in Product Marketing"
-        bio="With my first year of college being completely online, it felt like all the advice I got coming into freshman 
-        year didn’t apply anymore. I came in directionless in both who I am, and the person that I wanted to become. However, 
-        after joining DSP in the fall of my first year, I finally found a community that supported me through thick and thin, 
-        no matter the circumstances. The brothers were more than willing to go out of their way to help provide resources 
-        and advice on anything that I had questions about. I’ve not only gained so much insight on the professional world 
-        and my personal aspirations, but I’ve also gained a group of people I can call my life-long friends. Joining DSP 
-        was probably the most impactful and life-changing decision I’ve made in my college career so far!"
+        name="Haylie Lee"
+        description="Initiated in my Second Year Spring | Businesss Administration | Interested in Marketing and Accounting"
+        bio="Of all of the decisions I’ve made in my three years of college as a current third year, joining DSP is definitely the 
+        best and most invaluable one of them all. I recall being skeptical on coming out to recruitment for a while because I was nervous 
+        about meeting so many new people, but I fully accept now that it is the best thing I could’ve done for myself in the long run, 
+        both personally and professionally. I’ve been a brother for about almost a year now. During this year, I’ve made countless 
+        amazing memories, genuine friends and connections, and great progress for my career interests. DSP has changed my 
+        character in a great way, allowing me to step out of my comfort zone and become more socially and professionally confident 
+        while also giving me the opportunity to strengthen the skills that I came in with. I got my first internship through the 
+        connections I made here, which I am immensely excited for! However, undoubtedly, the thing I cherish the most out of 
+        everything are the wonderful friendships and bonds I’ve created with my brothers, specifically, my pledge class. 
+        Through DSP, I’ve gained 14 of my closest friends and supporters, people I can rely on and share my problems and 
+        accomplishments with. We’ve created so many memories together that I know I will treasure for the rest of my life, 
+        and I am sincerely thankful each and everyday that DSP lead me to such amazing people. I think my college experience 
+        would be very different had I not joined, and I do not take for granted a single thing that this business fraternity 
+        has blessed me with."
+      />
+      <SpotlightCard
+        src={imageFive}
+        name="Coca Ho"
+        description="Initiated in my First Year Spring | Business Administration | Interested in Consulting and Accounting"
+        bio="My decision to join DSP  stemmed from my desire to become part of a community filled with motivated and exceptional 
+        individuals. Since becoming a member, DSP has greatly enriched my college journey, transcending the bounds of a mere 
+        professional fraternity to become some of the closest friendships I've made. Many of my fondest college memories have 
+        come from our many adventures, including our quarterly retreats and pledge class bondings. Building relationships with 
+        my pledge class has truly been the highlight of my college experience. I cannot envision college—or life—without them!
+        Additionally, DSP has been instrumental in shaping my career development. The fraternity's culture of mutual 
+        encouragement and support has motivated me to continually strive for excellence. Being surrounded by such a diverse 
+        and ambitious group of people has truly motivated me to elevate my efforts, and for that, I am immensely thankful. 
+        Through DSP, I've not only honed crucial leadership and teamwork skills but also expanded my professional connections, 
+        proving invaluable as I chart my career path."
       />
       <SpotlightCard
         src={imageTwo}

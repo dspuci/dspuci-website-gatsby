@@ -3,7 +3,6 @@ const path = require(`path`)
 // TO CHANGE BIO CHANGE THIS
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-  // if (node.internal.type === "BiosWinter24Xlsx__FormResponses1") {
   if (node.internal.type === "BiosCurrentdataXlsx__FormResponses1") {
     const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
       .split(" ")
@@ -14,60 +13,43 @@ exports.onCreateNode = ({ node, actions }) => {
       name: `slug`,
       value: slug,
     })
-  // } else if (
-  //   node.sourceInstanceName === "gallery" &&
-  //   node.internal.type === "Directory"
-  // ) {
-  //   const slug = node.name
-  //   createNodeField({
-  //     node,
-  //     name: `slug`,
-  //     value: slug,
-  //   })
-  // } else if (
-  //   node.sourceInstanceName === "gallery" &&
-  //   node.internal.type === "File"
-  // ) {
-  //   const slug = node.relativePath
-  //   createNodeField({
-  //     node,
-  //     name: `slug`,
-  //     value: slug,
-  //   })
+    // } else if (
+    //   node.sourceInstanceName === "gallery" &&
+    //   node.internal.type === "Directory"
+    // ) {
+    //   const slug = node.name
+    //   createNodeField({
+    //     node,
+    //     name: `slug`,
+    //     value: slug,
+    //   })
+    // } else if (
+    //   node.sourceInstanceName === "gallery" &&
+    //   node.internal.type === "File"
+    // ) {
+    //   const slug = node.relativePath
+    //   createNodeField({
+    //     node,
+    //     name: `slug`,
+    //     value: slug,
+    //   })
   }
 }
 
-      // bios: allBiosWinter24XlsxFormResponses1 {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
       allBiosCurrentdataXlsxFormResponses1 {
-          nodes {
-            fields {
-              slug
-            }
+        nodes {
+          fields {
+            slug
           }
         }
-      
+      }
     }
   `).then((result) => {
-    console.log(result);
-    // result.data.bios.nodes.forEach((node) => {
-    // result.data.edges.forEach(({ node }) => {
-    //   console.log(node.fields.slug);
-    //   createPage({
-    //     path: "brothers/" + node.fields.slug,
-    //     component: path.resolve(`./src/templates/brother.js`),
-    //     context: {
-    //       // Data passed to context is available
-    //       // in page queries as GraphQL variables.
-    //       slug: node.fields.slug,
-    //     },
-    //   })
-    // })
-    // result.data.allBiosCurrentdataXlsxFormResponses1.edges.forEach(({ node }) => {
-    // result.data.bios.nodes.forEach((node) => {
+    console.log(result)
     result.data.allBiosCurrentdataXlsxFormResponses1.nodes.forEach((node) => {
       createPage({
         path: `brothers/${node.fields.slug}`,
@@ -76,22 +58,22 @@ exports.createPages = ({ graphql, actions }) => {
           // Data passed to context is available in page queries as GraphQL variables.
           slug: node.fields.slug,
         },
-      });
-    });
-  });
-};
+      })
+    })
+  })
+}
 
-    // result.data.albums.nodes.forEach(node => {
-    //   createPage({
-    //     path: "gallery/albums/" + node.slug,
-    //     component: path.resolve(`./src/templates/album.js`),
-    //     context: {
-    //       // Data passed to context is available
-    //       // in page queries as GraphQL variables.
-    //       // albumName: node.name,
-    //       slug: node.slug,
-    //     },
-    //   })
-    // })
+// result.data.albums.nodes.forEach(node => {
+//   createPage({
+//     path: "gallery/albums/" + node.slug,
+//     component: path.resolve(`./src/templates/album.js`),
+//     context: {
+//       // Data passed to context is available
+//       // in page queries as GraphQL variables.
+//       // albumName: node.name,
+//       slug: node.slug,
+//     },
+//   })
+// })
 //   })
 // }
