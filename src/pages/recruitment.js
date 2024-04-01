@@ -19,16 +19,15 @@ import recruitmentSchedule from "../images/fall23_recruitment_flyer_back.png"
 import springSchedule from "../images/spring23_flyer.png"
 import stella_comp from "../images/stella_zhang_comp.jpg"
 
-
 export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
       <ProAccCover
-        coverImage="fall23_recruitment_flyer_front.png"
+        coverImage="Spring24_Recruitment_Graphic_Front.png"
         textColor="white"
         darkGradient
-      /*sstyle={{ position: 'relative', top: '-20px' }}*/
+        /*sstyle={{ position: 'relative', top: '-20px' }}*/
       />
     }
   >
@@ -40,14 +39,30 @@ export default () => (
       />
     </Helmet>
     <Fade bottom distance="40px">
-      {<Section sx={{ justifyContent: "left" }}>
-        <div style={{ width: '100%', borderBottom: '1px solid black' }}>
-          <p>
-            We hold recruitment in the beginning of Fall and Spring quarter each year.
-            Be sure to follow us on <a href="https://www.facebook.com/DSPUCI/" style={{ color: '#5FA0EC' }}>Facebook</a> and <a href="https://www.instagram.com/dspuci/" style={{ color: '#5FA0EC' }}>Instagram</a> for more information.
-          </p>
-        </div>
-      </Section>}
+      {
+        <Section sx={{ justifyContent: "left" }}>
+          <div style={{ width: "100%", borderBottom: "1px solid black" }}>
+            <p>
+              We hold recruitment in the beginning of Fall and Spring quarter
+              each year. Be sure to follow us on{" "}
+              <a
+                href="https://www.facebook.com/DSPUCI/"
+                style={{ color: "#5FA0EC" }}
+              >
+                Facebook
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.instagram.com/dspuci/"
+                style={{ color: "#5FA0EC" }}
+              >
+                Instagram
+              </a>{" "}
+              for more information.
+            </p>
+          </div>
+        </Section>
+      }
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
         <p>
@@ -57,7 +72,6 @@ export default () => (
           find out what sets Delta Sigma Pi above and apart.{" "}
         </p>
       </Section>
-
 
       {/* <Section sx={{ justifyContent: "center" }}>
         <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2023 Recruitment: Chase</a> for any and all updates.</center></p>

@@ -28,7 +28,7 @@ import styles from "./ProAccCover.module.css"
 import { Text } from "rebass"
 import { withPrefix } from "gatsby"
 import { darkColor, lightColor } from "../../styles/defaultColors"
-import Typical from 'react-typical'
+import Typical from "react-typical"
 
 class ProAccCover extends React.Component {
   render() {
@@ -38,34 +38,29 @@ class ProAccCover extends React.Component {
     } else if (this.props.textColor === "black") {
       textColor = darkColor
     }
-    console.log(withPrefix(`../images/${this.props.coverImage}`) +")")
+    console.log(withPrefix(`../images/${this.props.coverImage}`) + ")")
     return (
       <div
-      className={styles.proWeekCover}
-      style={{
-        backgroundImage:
-          (this.props.darkGradient
-            ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), "
-            : "") +
-          "url(" +
-          withPrefix(`/images/cover_images/${this.props.coverImage}`) +
-          ")",
-      }}
+        className={styles.proWeekCover}
+        style={{
+          backgroundImage:
+            (this.props.darkGradient
+              ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), "
+              : "") +
+            "url(" +
+            withPrefix(`/images/cover_images/${this.props.coverImage}`) +
+            ")",
+        }}
       >
-        
         <div className={styles.coverTitleContainer}>
-            <Text
+          <Text
             className={styles.coverTitle}
             color={textColor}
             fontSize={[5, 6, 6, 8]}
             fontFamily="Heebo"
           >
-            <Typical
-              loop = {Infinity}
-              steps = {['HOW TO JOIN', 5000]}
-            />
+            <Typical loop={Infinity} steps={["HOW TO JOIN", 5000]} />
           </Text>
-          
         </div>
       </div>
     )

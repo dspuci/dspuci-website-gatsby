@@ -57,7 +57,7 @@ class VideoCover extends React.Component {
           }}
           src={this.props.backupImage}
           className={styles.img}
-          alt= "back up"
+          alt="back up"
         />
         <Image
           src={this.props.coverImage}
@@ -110,7 +110,7 @@ class VideoCover extends React.Component {
         >
           {this.props.textTwo}
         </Text>
-        <Link to="/recruitment">
+        <Link to="/recruitment_fall_spring">
           <button className={styles.button}>HOW TO JOIN</button>
         </Link>
       </div>

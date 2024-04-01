@@ -25,7 +25,11 @@ import {
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons"
 
-import { genderData, yearData, majorData } from "../data/current_data/chapter_stats"
+import {
+  genderData,
+  yearData,
+  majorData,
+} from "../data/current_data/chapter_stats"
 
 export default () => (
   <CoverLayout
@@ -62,7 +66,7 @@ export default () => (
       </Section>
       <Section>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>47</div>
+          <div style={{ font: "bold 80px Heebo" }}>54</div>
           <div style={{ font: "22px Heebo" }}>Collegiate Brothers</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
@@ -97,11 +101,7 @@ export default () => (
         <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
       </Section>
 
-      <ImageTextRow
-        title="Brotherhood"
-        imagePosition="right"
-        imageSrc={ALs}
-      >
+      <ImageTextRow title="Brotherhood" imagePosition="right" imageSrc={ALs}>
         Our community has cultivated mentorship, inspiration, and countless
         opportunities to learn and grow. Our brothers have built lifelong
         friendships—not only within our chapter, but with brothers in many of
@@ -201,11 +201,11 @@ export default () => (
         As the oldest business fraternity at UC Irvine, the Pi Sigma Chapter of
         Delta Sigma Pi has championed professionalism and a lifetime of
         opportunity for our members since 2008. We are the only fraternity on
-        campus to restrict membership to business school majors,
-        which is instrumental to our unrivaled career success and lifelong
-        brotherhood. Over a decade later, our chapter has become the premier
-        business fraternity on campus, unparalleled in our professional success
-        and brotherhood.
+        campus to restrict membership to business school majors, which is
+        instrumental to our unrivaled career success and lifelong brotherhood.
+        Over a decade later, our chapter has become the premier business
+        fraternity on campus, unparalleled in our professional success and
+        brotherhood.
       </div>
     </Fade>
   </CoverLayout>
