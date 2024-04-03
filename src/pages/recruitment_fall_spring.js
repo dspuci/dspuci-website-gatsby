@@ -95,7 +95,19 @@ export default () => (
         </p>
       } */}
       {/*<p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 2</a> is due Thursday (4/13) by 11:59 PM. Interview information will be sent out on Friday (4/14), and interviews will be held on Saturday (4/15).</center></p>*/}
-      {/* <p><center><a href="https://calendly.com/dspuci/coffeechats" style={{color: '#5FA0EC'}}>EC Coffee Chats</a> are now available on a first come first serve basis.</center></p> */}
+      <p>
+        <center>
+          Sign up for coffee chats{" "}
+          <a
+            href="https://calendly.com/d/cn7b-js8-wn9/delta-sigma-pi-ec-coffee-chats"
+            style={{ color: "#5FA0EC" }}
+          >
+            here
+          </a>{" "}
+          for a more extensive one-on-one conversation with one of our executive
+          committee members. Space is limited.{" "}
+        </center>
+      </p>
       {/* <center> Please attach a clear headshot of yourself along with Application Part 1.</center></p>
       <p><center>Application Part 2(Cover Letter + Resume) is due Thursday (4/13) by 11:59 PM to svp@dspuci.com.</center></p> */}
 
