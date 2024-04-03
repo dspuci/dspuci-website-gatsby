@@ -102,7 +102,7 @@ export default () => (
         <center>
           Sign up for coffee chats{" "}
           <a
-            href="https://calendly.com/d/cn7b-js8-wn9/delta-sigma-pi-ec-coffee-chats"
+            href="https://calendly.com/ronicacheng/30min?month=2024-04&date=2024-04-05"
             style={{ color: "#5FA0EC" }}
           >
             here
