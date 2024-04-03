@@ -73,26 +73,17 @@ export default () => (
         </p>
       </Section>
 
-      {<CenterHeader>Spring 2024 Recruitment - Bloom</CenterHeader>}
-      <center>
-        Application Part 1 is due Monday (4/8/2024) by 11:59 PM and will be
-        released after the Meet The Chapter Event.
-        <br />
-        <br />
-      </center>
       {
-        <p>
-          <center>
-            {" "}
-            <a
-              href="https://docs.google.com/forms/d/1UQZUdn0tryqzosoLtcCgStJttT-Otsr9ci6WuqKZKDQ/viewform?edit_requested=true"
-              style={{ color: "#5FA0EC" }}
-            >
-              Application Part 1
-            </a>{" "}
-            is due Monday (4/8) by 11:59 PM.
-          </center>
-        </p>
+        <center>
+          {" "}
+          <a
+            href="https://docs.google.com/forms/d/1UQZUdn0tryqzosoLtcCgStJttT-Otsr9ci6WuqKZKDQ/viewform?edit_requested=true"
+            style={{ color: "#5FA0EC" }}
+          >
+            Application Part 1
+          </a>{" "}
+          is due Monday (4/8) by 11:59 PM.
+        </center>
       }
       {/* <p>
         <center>
