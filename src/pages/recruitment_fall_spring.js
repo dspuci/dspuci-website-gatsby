@@ -108,7 +108,8 @@ export default () => (
             here
           </a>{" "}
           for a more extensive one-on-one conversation with one of our executive
-          committee members. Space is limited.{" "}
+          committee members. Space is limited. Coffee chats will be held in the
+          Merage Courtyard.{" "}
         </center>
       </p>
       {/* <center> Please attach a clear headshot of yourself along with Application Part 1.</center></p>
