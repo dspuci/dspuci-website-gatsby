@@ -80,12 +80,12 @@ export default () => (
         <br />
         <br />
       </center>
-      {/* {
+      {
         <p>
           <center>
             {" "}
             <a
-              href="https://tinyurl.com/dspfall23app1"
+              href="https://docs.google.com/forms/d/1UQZUdn0tryqzosoLtcCgStJttT-Otsr9ci6WuqKZKDQ/viewform?edit_requested=true"
               style={{ color: "#5FA0EC" }}
             >
               Application Part 1
@@ -93,8 +93,20 @@ export default () => (
             is due Monday (4/8) by 11:59 PM.
           </center>
         </p>
-      } */}
-      {/*<p><center> <a href="https://tinyurl.com/dspspring23app2" style={{color: '#5FA0EC'}}>Application Part 2</a> is due Thursday (4/13) by 11:59 PM. Interview information will be sent out on Friday (4/14), and interviews will be held on Saturday (4/15).</center></p>*/}
+      }
+      {/* <p>
+        <center>
+          {" "}
+          <a
+            href="https://tinyurl.com/dspspring23app2"
+            style={{ color: "#5FA0EC" }}
+          >
+            Application Part 2
+          </a>{" "}
+          is due Thursday (4/13) by 11:59 PM. Interview information will be sent
+          out on Friday (4/14), and interviews will be held on Saturday (4/15).
+        </center>
+      </p> */}
       <p>
         <center>
           Sign up for coffee chats{" "}
