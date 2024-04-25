@@ -42,7 +42,7 @@ export default ({ data }) => {
       </Fade>
       <Flex flexWrap="wrap">
         {data.brothers.nodes
-          .filter(brotherInfo => brotherInfo.First_Name !== "InsertFirstName")
+          .filter((brotherInfo) => brotherInfo.First_Name !== "InsertFirstName")
           .sort((a, b) =>
             a.lastname > b.lastname
               ? 1
@@ -57,9 +57,9 @@ export default ({ data }) => {
           .map((brotherInfo) => {
             // add the if statement here for the identifier to show a brother that isn't active for the quarter
             if (brotherInfo.First_Name !== "InsertFirstName") {
-              return <Brother brotherInfo={brotherInfo} />;
+              return <Brother brotherInfo={brotherInfo} />
             }
-            return null; // return null to exclude the brother from the list
+            return null // return null to exclude the brother from the list
           })}
       </Flex>
       <Fade>
@@ -77,9 +77,9 @@ export default ({ data }) => {
 // TO CHANGE BIO CHANGE THIS
 // TO CHANGE EC CHANGE THIS
 // TO CHANGE DIRECTORS CHANGE THIS
-    // executiveCommittee: allLeadershipWinter24XlsxSheet1 {
-    // directors: allDirectorsWinter24XlsxSheet1 {
-    // brothers: allBiosWinter24XlsxFormResponses1 {
+// executiveCommittee: allLeadershipWinter24XlsxSheet1 {
+// directors: allDirectorsWinter24XlsxSheet1 {
+// brothers: allBiosWinter24XlsxFormResponses1 {
 export const query = graphql`
   {
     executiveCommittee: allLeadershipCurrentdataXlsxSheet1 {
