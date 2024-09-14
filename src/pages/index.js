@@ -72,47 +72,25 @@ export default () => (
         Dear Prospective Member,
         <br />
         <br />
-        Life is full of surprises, especially in college. It can be a bit scary, but you
-        don't have to go through it alone. During my time at UCI, Delta Sigma Pi has been
-        like a family to me.
+        Stepping into college feels like opening the door to endless possibilities — a chance to define who you are and who you want to become. While I was excited to find opportunities for growth, I wasn’t sure if a group that balanced both professional and personal development truly existed. That is, until I discovered Delta Sigma Pi.
         <br />
         <br />
-        Joining Delta Sigma Pi in my first year changed my life. The support and
-        encouragement from everyone in the chapter has immensely fostered my growth both
-        personally and professionally. We learn a lot from each other, and we want to share
-        that knowledge with you too. Looking back on my three years here, it's been a mix of
-        ups and downs, but I've had some of the best moments because of this chapter and met
-        some of my best friends. The brothers in this chapter are some of my closest friends,
-        mentors, and supporters. I wouldn’t be where I am today without this chapter and I am
-        incredibly lucky to have found such a supportive and inspiring community to be a part
-        of throughout college.
-
-
-
+        It would be an understatement to say that joining DSP in my second year completely changed the trajectory of my college experience, and I’m grateful it was for the better. I discovered exactly what I had been seeking: a brotherhood of driven individuals who not only value diverse perspectives but also encourage one another to pursue their ambitions with genuine enthusiasm and confidence. 
         <br />
         <br />
-        Back when I was a freshman, I had no idea what I could achieve. Now, I'm truly excited
-        and honored to serve as Delta Sigma Pi’s President and meet all of you at the upcoming
-        Spring recruitment.
+        The brothers in this chapter are among the most inspiring and motivated individuals I have ever had the privilege to know. Their unwavering support has made my college journey incredibly rewarding, and  the relationships I have fostered are ones I intend to cherish for the rest of my life.
         <br />
         <br />
 
-        I hope as you go through recruitment and meet all of us, you'll see what Delta Sigma Pi
-        is all about. Being a part of this brotherhood is about so much more than just professional
-        development. It’s about inspiring leadership on and off campus, being the first to have the
-        courage and grit to break into the most challenging industries and companies, giving back
-        to our communities, supporting one another to reach our ambitions in both professional and
-        personal aspects, mentoring the next generation of leaders, and so much more. I’m so
-        incredibly grateful to be able to host this Spring’s recruitment — excited to meet all of
-        you and see where this journey takes you!
+        As you navigate through recruitment, I hope you'll discover what makes DSP truly special. Being a part of this chapter extends far beyond professional development; it is dedicated to nurturing leadership, embracing innovation, making a meaningful impact in our communities, and wholeheartedly supporting each member of our brotherhood. In a world that often promotes conformity, DSP has demonstrated the value of embracing one’s uniqueness and pursuing what truly excites us. It is within this spirit of individuality and passion that I’m truly honored to host this Fall’s recruitment and am eagerly looking forward to meeting each of you! I look forward to witnessing your journey and the potential you may uncover, including possibilities you may not have even known existed.
 
         <br />
         <br />
-        Fraternally,
+        Best regards,
 
         <br />
         <br />
-        Julia Lin | President - Pi Sigma Chapter
+        Mirsab Mirza | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
