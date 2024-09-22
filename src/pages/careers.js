@@ -41,12 +41,20 @@ export default ({ data }) => (
       <CenterHeader marginTop="0px">Our Experience</CenterHeader>
       <CompanyPics></CompanyPics>
     </Section>
-    <CareersTables defaultYear={"2023"} data={data} />
+    <CareersTables defaultYear={"2024"} data={data} />
   </CoverLayout>
 )
 
 export const query = graphql`
   { 
+    fullTimeOffers2024: allCareersXlsxFullTimeOffers2024 {
+      nodes {
+        Name
+        Position
+        Company
+        Location
+      }
+    }
     fullTimeOffers2023: allCareersXlsxFullTimeOffers2023 {
       nodes {
         Name
@@ -120,6 +128,14 @@ export const query = graphql`
       }
     }
     fullTimeOffers2014: allCareersXlsxFullTimeOffers2014 {
+      nodes {
+        Name
+        Position
+        Company
+        Location
+      }
+    }
+    internships2024: allCareersXlsxInternships2024 {
       nodes {
         Name
         Position

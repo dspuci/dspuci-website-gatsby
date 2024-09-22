@@ -214,6 +214,16 @@ class CareersTables extends React.Component {
           data: this.props.data.internships2023,
         },
       ],
+      "2024": [
+        {
+          name: "Full Time",
+          data: this.props.data.fullTimeOffers2024,
+        },
+        {
+          name: "Internships",
+          data: this.props.data.internships2024,
+        },
+      ],
     }
     return (
       <div>
