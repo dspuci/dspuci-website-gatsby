@@ -3,9 +3,9 @@ import Carousel from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import imageOne from "../../images/haylie_recruitment.jpeg"
 import imageFive from "../../images/coca_recruitment.jpeg"
-import imageTwo from "../../images/julia_recruitment.png"
-import imageThree from "../../images/forest_recruitment.png"
-import imageFour from "../../images/mirsab_recruitment.jpeg"
+import imageTwo from "../../images/andrew_recruitment.jpg"
+import imageThree from "../../images/justin_recruitment.jpg"
+import imageFour from "../../images/sanika_recruitment.jpg"
 import {
   faChevronLeft,
   faChevronRight,
@@ -42,6 +42,29 @@ const RecCarousel = () => {
       centered
     >
       <SpotlightCard
+        src={imageFour}
+        name="Sanika Saitawdekar"
+        description="Initiated in my First Year Spring | Business Administration | Interested in Operations and Project Management"
+        bio="As an out-of-state student, finding my own community was of huge importance to me. I was very lucky and grateful to 
+        see that involving myself in the business community surrounded me with driven and likeminded people that would soon become 
+        some of my closest friends. Compared to other clubs on campus with members who come and go, DSP allowed me to build strong 
+        relationships with people who I know I can rely on for the rest of my college career. I have loved getting to know the people 
+        who surround me, and they have pushed me to grow both personally and professionally. Throughout my time so far, I’ve become 
+        more outgoing and social, more professionally accomplished, and so much more. This past year has been the best of my life, 
+        and it truly wouldn’t have been the same without the impact of DSP. "
+      />
+      <SpotlightCard
+        src={imageThree}
+        name="Justin Pham"
+        description="Initiated in my Second Year Spring | Computer Science & Informatics | Interested in Software Engineering and Product Management"
+        bio="Joining DSP in my second year has been transformative for both my personal and professional growth. Surrounded by driven peers, I've had 
+        the chance to collaborate on meaningful projects, expand my network, and develop essential skills in software development and project management. 
+        The mentorship and support from fellow members have guided me through internships and career planning, while reinforcing my passion for technology 
+        and AI. DSP has not only enhanced my confidence but also deepened my commitment to using improving myself. I joined for the professional development, 
+        but found myself gaining some of my closest friends ever. This has been one of the best decisions I have made so far in my college journey, and I 
+        strongly recommend anyone who is slightly interested to come out and see what Pi Sigma has to offer!"
+      />
+      <SpotlightCard
         src={imageOne}
         name="Haylie Lee"
         description="Initiated in my Second Year Spring | Business Administration | Interested in Marketing and Accounting"
@@ -61,6 +84,19 @@ const RecCarousel = () => {
         has blessed me with."
       />
       <SpotlightCard
+        src={imageTwo}
+        name="Andrew Ly"
+        description="Initiated in my Second Year Spring | Business Information Management | Interested in Product Management and Software Engineering"
+        bio="As a second-year student seeking professional growth, I joined DSP recruitment in search of a community that could both inspire me and guide 
+        me toward who I want to become. Since joining, DSP has not only provided this professional support but has also introduced me to some of my closest 
+        friends at UCI. Being surrounded by such motivated and inspiring individuals every day has significantly impacted me, helping me realize my potential 
+        in the professional world. Everyone, including alumni, is always willing to lend a helping hand, and I’m confident that the professional community 
+        our chapter has built will continue to inspire and support others, including myself.
+        In addition to professional growth, DSP has also given me some of the closest friendships I've formed at UCI. Together, we’ve created unforgettable 
+        memories that I’ll cherish for years to come. Ultimately, joining DSP has been one of the best decisions I’ve made at UCI, and I encourage anyone 
+        interested to check it out!"
+      />
+      <SpotlightCard
         src={imageFive}
         name="Coca Ho"
         description="Initiated in my First Year Spring | Business Administration | Interested in Consulting and Accounting"
@@ -74,44 +110,6 @@ const RecCarousel = () => {
         and ambitious group of people has truly motivated me to elevate my efforts, and for that, I am immensely thankful. 
         Through DSP, I've not only honed crucial leadership and teamwork skills but also expanded my professional connections, 
         proving invaluable as I chart my career path."
-      />
-      <SpotlightCard
-        src={imageTwo}
-        name="Julia Lin"
-        description="Initiated in my First Year Fall | Business Administration | Interested in Marketing, Strategy and Consulting"
-        bio="Before coming to UCI, I felt a little bit lost because I came in not knowing anybody and also wasn't quite sure what 
-        I was looking for out of college or a career post-graduation. DSP has absolutely been my family away from home and has been 
-        the best well-rounded community I could've ever asked for in college. The people I've met in DSP are not only some of my closest 
-        friends but people that I've been able to rely on all throughout college. I've also grown in huge ways not only professionally 
-        but also personally that I could have never even imagined before joining DSP. DSP has been a perfect environment for me to find 
-        mentorship, support, and community but also an environment that pushes me to achieve new heights and challenge myself to do things 
-        I never thought I could do. This community has immensely helped guide my direction in terms of professionalism and career but 
-        also has helped me navigate college as a whole!"
-      />
-      <SpotlightCard
-        src={imageThree}
-        name="Forest Huang"
-        description="Initiated in my First Year Fall | Business Administration | Interested in Consulting, Esports/Gaming and Product Management"
-        bio="As an out-of-state student, my decision to join the DSP (Delta Sigma Pi) fraternity was driven by my desire to be a part of a 
-        community of motivated and outstanding individuals. From the moment I joined, DSP has significantly enriched my college experience. 
-        It's more than just a fraternity; it's a family. Some of my fondest memories have been created during our adventures, like our unforgettable 
-        trip to Big Bear and the memorable Duffy Boating excursion. These experiences have forged lifelong friendships and provided me with a 
-        strong support system throughout my academic journey. Moreover, DSP has played a pivotal role in my career development. The fraternity's 
-        ethos of mutual encouragement and support has pushed me to constantly strive for excellence. The members are always willing to lend a helping 
-        hand or offer valuable advice when needed. Through DSP, I've not only developed essential leadership and teamwork skills, but also expanded my 
-        professional network, which has proved invaluable as I navigate my career path."
-      />
-      <SpotlightCard
-        src={imageFour}
-        name="Mirsab Mirza"
-        description="Initiated in my Second Year Fall | Economics, Social Policy & Public Service | Interested in Marketing and Public Health"
-        bio="Coming out of high school where I was involved in many business related organizations, I completed my first year at UCI knowing 
-        I was missing something. I wanted to be a part of a professional organization that promoted diverse thought and the importance of 
-        being yourself, but whether or not that organization existed was something I wasn’t sure about. It wasn’t until my second year that 
-        I properly sought into DSP and after meeting so many unique individuals with various aspirations, I knew it would fill the void I was
-         seeking for. Looking back, I can whole-heartedly say that DSP has become an integral part of my college experience and one that has 
-         shaped me both professionally and personally. Most of all, I have established bonds with people within the chapter that I hope to 
-         carry on much beyond my time here at UCI."
       />
     </Carousel>
   )
