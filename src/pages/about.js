@@ -10,9 +10,9 @@ import CenterHeader from "../components/CenterHeader"
 import ResponsiveDoughnut from "../components/ResponsiveDoughnut"
 import Section from "../components/Section"
 
-import professionalismImage from "../images/professionalism.jpg"
-import communityImage from "../images/communityService.jpg"
-import ALs from "../images/alpha_lambdas.jpeg"
+import professionalismImage from "../images/professionalism_2024.jpg"
+import communityImage from "../images/community_service_hype.jpg"
+import seniors from "../images/seniors.jpeg"
 
 import { Helmet } from "react-helmet"
 
@@ -101,7 +101,7 @@ export default () => (
         <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
       </Section>
 
-      <ImageTextRow title="Brotherhood" imagePosition="right" imageSrc={ALs}>
+      <ImageTextRow title="Brotherhood" imagePosition="right" imageSrc={seniors}>
         Our community has cultivated mentorship, inspiration, and countless
         opportunities to learn and grow. Our brothers have built lifelong
         friendships—not only within our chapter, but with brothers in many of
