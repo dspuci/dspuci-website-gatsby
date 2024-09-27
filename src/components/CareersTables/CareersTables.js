@@ -18,6 +18,7 @@ const CareersTable = (props) => {
                 "Consulting",
                 "Operations",
                 "Venture Capital",
+                "Law",
                 "Other",
                 "Others",
               ].includes(node.Name) ? (

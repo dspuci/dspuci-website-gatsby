@@ -21,6 +21,7 @@ const Links = () => (
     {/* <ListLink to="/recruitment_fall_spring">Spring '24 Recruitment</ListLink> */}
     <ListLink to="/brothers">Brothers</ListLink>
     <ListLink to="/careers">Careers</ListLink>
+    {/* <ListLink to="/brotherhood">Brotherhood</ListLink> */}
     {/* <ListLink to="/gallery">Gallery</ListLink> */}
   </ul>
 )
