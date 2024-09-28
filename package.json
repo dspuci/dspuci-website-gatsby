@@ -37,6 +37,7 @@
     "googleapis": "^66.0.0",
     "package.json": "^2.0.1",
     "react-chartjs-2": "^2.7.6",
+    "react-flippy": "^1.1.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-transition-group": "^2.9.0",
