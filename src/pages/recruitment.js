@@ -39,17 +39,18 @@ const events = [
       },
       {
         title: "OCTOBER 10 - MOCKTAIL NIGHT*",
+        location: "TBA",
         time: "7 PM - 10 PM",
         attire: "Cocktail Attire",
-        details: "Join us for an evening with non-alcoholic drinks and conversation. Mingle with members in a 1:1 setting while practicing your networking skills. Invite-only event."
+        details: "Join us for an evening with non-alcoholic drinks and conversation. Mingle with members in a 1:1 setting while practicing your networking skills. Rides will be provided. Invite-only event."
       },
       {
         title: "OCTOBER 12 - INTERVIEWS*",
+        location: "TBA",
+        time: "TBA",
         attire: "Business Formal",
         details: "Final step of the recruitment process. Invite-only event."
       }      
-
-    // ... other events
   ];
 
 export default () => (
@@ -73,8 +74,11 @@ export default () => (
     </Helmet>
 
     <Fade bottom distance="40px">
-      <Section sx={{ justifyContent: "left" }}>
-        <h1>Recruitment Events</h1>
+        <CenterHeader>Upcoming Events</CenterHeader>
+    </Fade>
+
+    <Fade bottom distance="40px">
+      <Section sx={{ justifyContent: "center" }}>
         <p>
           Join us at our recruitment events to learn more about Delta Sigma Pi
           and meet our brothers. Whether it's a game night, coffee chat, or
@@ -82,11 +86,24 @@ export default () => (
           various aspects of our brotherhood. Don't miss your chance to get
           involved!
         </p>
-      </Section>
-    </Fade>
+        <Button
+            variant="contained"
+            sx={{
+                marginTop: "2",
+                backgroundColor: "#B12423",
+                color: "#f8f9fa", // Text color
+                "&:hover": {
+                backgroundColor: "#8E1D1D", // Darker red on hover
+                transform: "scale(1.05)", // Slightly grow on hover
+                },
+            }}
+            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdlB3iIJswVmUaOOszN7QCo1zNKSXp-Rm4GzSK97zEbuFqwag/viewform", "_blank")}
+            >
+            Fill Out Rush Form
+            </Button>
 
-    <Fade bottom distance="40px">
-      <CenterHeader>Upcoming Events</CenterHeader>
+    </Section>
+
       <Flex flexWrap="wrap" justifyContent="center">
         {events.map((event, index) => (
           <Flippy
