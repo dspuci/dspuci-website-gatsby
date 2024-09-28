@@ -130,24 +130,31 @@ export default () => (
             </FrontSide>
 
             <BackSide
-                style={{
-                    backgroundColor: "#f8f9fa",
-                    padding: "20px",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    textAlign: "center"
-                }}
-                >
-                <h3>{event.title}</h3>
-                <p>
-                    {event.details && <span>{event.details}<br/><br/></span>}
-                    {event.location && <span>Location: {event.location}<br /></span>}
-                    {event.time && <span>Time: {event.time}<br /></span>}
-                    {event.attire && <span>Attire: {event.attire}</span>}
-                </p>
-                </BackSide>
+              sx={{
+                backgroundColor: "#f8f9fa",
+                padding: "20px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+                h3: {
+                  fontSize: ["18px", "20px", "24px"], // Responsive font size for h3
+                },
+                p: {
+                  fontSize: ["14px", "16px", "18px"], // Responsive font size for p
+                },
+              }}
+            >
+              <h3>{event.title}</h3>
+              <p>
+                {event.details && <span>{event.details}<br /><br /></span>}
+                {event.location && <span>Location: {event.location}<br /></span>}
+                {event.time && <span>Time: {event.time}<br /></span>}
+                {event.attire && <span>Attire: {event.attire}</span>}
+              </p>
+            </BackSide>
+
 
           </Flippy>
         ))}
