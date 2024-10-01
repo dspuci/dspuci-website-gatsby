@@ -89,7 +89,7 @@ export default () => (
         <Button
             variant="contained"
             sx={{
-                marginTop: "2",
+                margin: "2",
                 backgroundColor: "#B12423",
                 color: "#f8f9fa", // Text color
                 "&:hover": {
@@ -99,7 +99,22 @@ export default () => (
             }}
             onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdlB3iIJswVmUaOOszN7QCo1zNKSXp-Rm4GzSK97zEbuFqwag/viewform", "_blank")}
             >
-            Fill Out Rush Form
+            Rush Application Part 1
+            </Button>
+            <Button
+            variant="contained"
+            sx={{
+                margin: "2",
+                backgroundColor: "#B12423",
+                color: "#f8f9fa", // Text color
+                "&:hover": {
+                backgroundColor: "#8E1D1D", // Darker red on hover
+                transform: "scale(1.05)", // Slightly grow on hover
+                },
+            }}
+            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeScz_WQrc5OCz6bYKp42NvH0oFm3t11ZqqGAw6-aeqEmayvA/viewform", "_blank")}
+            >
+            Rush Application Part 2
             </Button>
 
     </Section>
