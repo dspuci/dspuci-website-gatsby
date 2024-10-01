@@ -23,11 +23,11 @@ export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ProAccCover
-        coverImage="Spring24_Recruitment_Graphic_Front.png"
+      <ImageCover
+        text="HOW TO JOIN"
+        coverImage="boats.jpg"
         textColor="white"
         darkGradient
-        /*sstyle={{ position: 'relative', top: '-20px' }}*/
       />
     }
   >

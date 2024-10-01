@@ -2,8 +2,8 @@ import React from "react"
 import { Flex } from "rebass"
 import CenterHeader from "../components/CenterHeader"
 import ImageTextRowTwo from "../components/ImageTextRowTwo"
-// import backup from "../images/backup.png"
-import backup2 from "../images/backup2.jpg"
+import backup from "../images/backup.png"
+// import backup2 from "../images/backup2.jpg"
 import presidentImage from "../images/president.jpg"
 import dsp_seal from "../images/dsp_seal.png"
 import { VideoCoverLayout } from "../components/Layout"
@@ -22,7 +22,7 @@ import unrivaledLeaders from "../images/2022_Dodge4Dollars.jpg"
 export default () => (
   <VideoCoverLayout
     video={video}
-    image={backup2}
+    image={backup}
     navbarTextColor="white"
     textOne="Delta Sigma Pi"
     textTwo="The Premier Business Fraternity | Pi Sigma Chapter"
