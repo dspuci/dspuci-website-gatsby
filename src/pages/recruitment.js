@@ -20,7 +20,7 @@ const events = [
       title: "OCTOBER 01 - MEET THE CHAPTER",
       location: "SB1 1200",
       time: "7 PM - 10 PM",
-      attire: "Business Casual",
+      attire: "Casual",
       details: "Join us to meet the brothers, learn about the chapter, and discover what it means to be part of Delta Sigma Pi"
     },
     {
@@ -112,9 +112,9 @@ export default () => (
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
-            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeScz_WQrc5OCz6bYKp42NvH0oFm3t11ZqqGAw6-aeqEmayvA/viewform", "_blank")}
+            onClick={() => window.open("https://calendly.com/ucidsp/ec-coffee-chat", "_blank")}
             >
-            Rush Application Part 2
+            Coffee Chat Sign Ups
             </Button>
 
     </Section>
