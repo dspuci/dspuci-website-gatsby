@@ -74,25 +74,19 @@ export default () => (
         Dear Prospective Member,
         <br />
         <br />
-        Stepping into college feels like opening the door to endless possibilities — a chance to define who you are and who you want to become. While I was excited to find opportunities for growth, I wasn’t sure if a group that balanced both professional and personal development truly existed. That is, until I discovered Delta Sigma Pi.
+        College is a time of transformation — one filled with both excitement and uncertainty. When I first joined Delta Sigma Pi, my initial focus was on professional development, but what I quickly discovered was the depth of growth that extends beyond professionalism. This chapter has become a constant throughout my college experience, providing not only the tools to navigate the professional world but also the foundation for personal growth.         <br />
+        <br />
+        In many ways, DSP has been a space that has allowed me to embrace discomfort. It taught me how to fail, how to learn from it, and how to grow as a result. A year after joining, I found myself in a position that once felt so out of reach—landing  my dream job. This achievement didn’t happen in isolation, and was instead a product of the support and guidance that I’ve received. 
         <br />
         <br />
-        It would be an understatement to say that joining DSP in my second year completely changed the trajectory of my college experience, and I’m grateful it was for the better. I discovered exactly what I had been seeking: a brotherhood of driven individuals who not only value diverse perspectives but also encourage one another to pursue their ambitions with genuine enthusiasm and confidence. 
-        <br />
-        <br />
-        The brothers in this chapter are among the most inspiring and motivated individuals I have ever had the privilege to know. Their unwavering support has made my college journey incredibly rewarding, and  the relationships I have fostered are ones I intend to cherish for the rest of my life.
-        <br />
-        <br />
-
-        As you navigate through recruitment, I hope you'll discover what makes DSP truly special. Being a part of this chapter extends far beyond professional development; it is dedicated to nurturing leadership, embracing innovation, making a meaningful impact in our communities, and wholeheartedly supporting each member of our brotherhood. In a world that often promotes conformity, DSP has demonstrated the value of embracing one’s uniqueness and pursuing what truly excites us. It is within this spirit of individuality and passion that I’m truly honored to host this Fall’s recruitment and am eagerly looking forward to meeting each of you! I look forward to witnessing your journey and the potential you may uncover, including possibilities you may not have even known existed.
-
+        I encourage you to go about not only this recruitment, but life, with an open mind. I have been exposed to a diverse set of perspectives and people over the past two years, and am excited that you are taking the time to learn about them as well. I hope that through this recruitment you are able to hear about the experiences of our brothers, and see that with hard work and diligence the world of possibilities is endless.
         <br />
         <br />
         Best regards,
 
         <br />
         <br />
-        Mirsab Mirza | President - Pi Sigma Chapter
+        Tommy Wunsch | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
