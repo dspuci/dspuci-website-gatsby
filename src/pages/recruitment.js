@@ -14,6 +14,7 @@ import fallEventImg from "../images/fall2024_recruitment_event.jpg"
 import springEventImg from "../images/spring2024_recruitment_event.jpg"
 import coffeeChatImg from "../images/coffee_chat_event.jpg"
 import ImageCover from "../components/ImageCover"
+import FallingCards from "../components/FallingCards"
 
 const events = [
     {
@@ -57,12 +58,15 @@ export default () => (
     <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ImageCover
-        text="SPRING 2025 RECRUITMENT"
-        coverImage="recruitment_graphic.jpg"
-        textColor="white"
-        darkGradient
-      />
+      <>
+        <FallingCards />
+        <ImageCover
+          text="SPRING 2025 RECRUITMENT"
+          coverImage="recruitment_graphic.jpg"
+          textColor="white"
+          darkGradient
+        />
+      </>
     }
   >
     <Helmet>
