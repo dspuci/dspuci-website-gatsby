@@ -14,11 +14,12 @@ import fallEventImg from "../images/fall2024_recruitment_event.jpg"
 import springEventImg from "../images/spring2024_recruitment_event.jpg"
 import coffeeChatImg from "../images/coffee_chat_event.jpg"
 import ImageCover from "../components/ImageCover"
+import FallingCards from "../components/FallingCards"
 
 const events = [
     {
       title: "APRIL 02 - MEET THE CHAPTER",
-      location: "SB1 1200",
+      location: "TBA",
       time: "7 PM - 10 PM",
       attire: "Casual",
       details: "Join us to meet the brothers, learn about the chapter, and discover what it means to be part of Delta Sigma Pi"
@@ -33,7 +34,7 @@ const events = [
       {
         title: "APRIL 07 - SOCIAL NIGHT",
         location: "Corona Del Mar Beach",
-        time: "7 PM - 10 PM",
+        time: "6 PM - 8 PM",
         attire: "Casual",
         details: "Relax and get to know the brothers in a fun and informal setting at the beach. Games, bonfire, and good vibes are guaranteed! Rides will be provided."
       },
@@ -57,12 +58,15 @@ export default () => (
     <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ImageCover
-        text="SPRING 2025 RECRUITMENT"
-        coverImage="recruitment_graphic.jpg"
-        textColor="white"
-        darkGradient
-      />
+      <>
+        <FallingCards />
+        <ImageCover
+          text="SPRING 2025 RECRUITMENT"
+          coverImage="recruitment_graphic.jpg"
+          textColor="white"
+          darkGradient
+        />
+      </>
     }
   >
     <Helmet>
