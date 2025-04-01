@@ -18,7 +18,7 @@ import ImageCover from "../components/ImageCover"
 const events = [
     {
       title: "APRIL 02 - MEET THE CHAPTER",
-      location: "TBA",
+      location: "SB1 1200",
       time: "7 PM - 10 PM",
       attire: "Casual",
       details: "Join us to meet the brothers, learn about the chapter, and discover what it means to be part of Delta Sigma Pi"
@@ -33,7 +33,7 @@ const events = [
       {
         title: "APRIL 07 - SOCIAL NIGHT",
         location: "Corona Del Mar Beach",
-        time: "6 PM - 8 PM",
+        time: "7 PM - 10 PM",
         attire: "Casual",
         details: "Relax and get to know the brothers in a fun and informal setting at the beach. Games, bonfire, and good vibes are guaranteed! Rides will be provided."
       },
