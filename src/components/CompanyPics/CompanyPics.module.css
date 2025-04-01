@@ -1,19 +1,21 @@
 .container {
   display: flex;
-  direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 20px 0;
 }
 
-.container img {
-  width: 9%;
-  margin: 0 0.5%;
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  object-fit: contain;
+  padding: 0 10px;
 }
 
 @media (max-width: 800px) {
-  .container img {
-    width: 25%;
-    margin: 0 2.5%;
+  .logo {
+    max-width: 100px;
   }
 }
