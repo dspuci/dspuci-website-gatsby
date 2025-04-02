@@ -93,7 +93,7 @@ export default () => (
                 backgroundColor: "#004222",
                 color: "#f8f9fa", // Text color
                 "&:hover": {
-                backgroundColor: "#00331a", // Darker red on hover
+                backgroundColor: "#00331a", // Darker green on hover
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
@@ -108,15 +108,15 @@ export default () => (
                 backgroundColor: "#004222",
                 color: "#f8f9fa", // Text color
                 "&:hover": {
-                backgroundColor: "#00331a", // Darker red on hover
+                backgroundColor: "#00331a", // Darker green on hover
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
-            onClick={() => window.open("https://calendly.com/ucidsp/ec-coffee-chat", "_blank")}
+            onClick={() => window.open("", "_blank")}
             >
             Coffee Chat Sign Ups
             </Button>
-
+            
     </Section>
 
       <Flex flexWrap="wrap" justifyContent="center">
