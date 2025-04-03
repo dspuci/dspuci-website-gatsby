@@ -24,7 +24,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="HOW TO JOIN"
+        text="WHY DSP"
         coverImage="boats.jpg"
         textColor="white"
         darkGradient
@@ -40,28 +40,28 @@ export default () => (
     </Helmet>
     <Fade bottom distance="40px">
       {
-        <Section sx={{ justifyContent: "left" }}>
-          <div style={{ width: "100%", borderBottom: "1px solid black" }}>
-            <p>
-              We hold recruitment in the beginning of Fall and Spring quarter
-              each year. Be sure to follow us on{" "}
-              <a
-                href="https://www.facebook.com/DSPUCI/"
-                style={{ color: "#5FA0EC" }}
-              >
-                Facebook
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://www.instagram.com/dspuci/"
-                style={{ color: "#5FA0EC" }}
-              >
-                Instagram
-              </a>{" "}
-              for more information.
-            </p>
-          </div>
-        </Section>
+        // <Section sx={{ justifyContent: "left" }}>
+        //   <div style={{ width: "100%", borderBottom: "1px solid black" }}>
+        //     <p>
+        //       We hold recruitment in the beginning of Fall and Spring quarter
+        //       each year. Be sure to follow us on{" "}
+        //       <a
+        //         href="https://www.facebook.com/DSPUCI/"
+        //         style={{ color: "#5FA0EC" }}
+        //       >
+        //         Facebook
+        //       </a>{" "}
+        //       and{" "}
+        //       <a
+        //         href="https://www.instagram.com/dspuci/"
+        //         style={{ color: "#5FA0EC" }}
+        //       >
+        //         Instagram
+        //       </a>{" "}
+        //       for more information.
+        //     </p>
+        //   </div>
+        // </Section>
       }
       <Section sx={{ justifyContent: "left" }}>
         <h1>Be a part of something greater.</h1>
