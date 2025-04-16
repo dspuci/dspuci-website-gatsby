@@ -112,7 +112,7 @@ export default () => (
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
-            onClick={() => window.open("", "_blank")}
+            onClick={() => window.open("https://calendly.com/melaniesagun-ucidsp/dsp-ec-coffee-chat?month=2025-04", "_blank")}
             >
             Coffee Chat Sign Ups
             </Button>
