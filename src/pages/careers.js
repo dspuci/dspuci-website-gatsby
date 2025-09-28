@@ -14,7 +14,7 @@ export default ({ data }) => (
     coverElement={
       <ImageCover
         text="Careers"
-        coverImage="careers_2024.png"
+        coverImage="careers_2025.jpg"
         textColor="white"
         darkGradient
       />

@@ -17,35 +17,35 @@ import ImageCover from "../components/ImageCover"
 
 const events = [
     {
-      title: "APRIL 02 - MEET THE CHAPTER",
+      title: "SEPTEMBER 29 - MEET THE CHAPTER",
       location: "SB1 1200",
       time: "7 PM - 10 PM",
       attire: "Casual",
       details: "Join us to meet the brothers, learn about the chapter, and discover what it means to be part of Delta Sigma Pi"
     },
     {
-        title: "APRIL 04 - PROFESSIONALISM NIGHT",
+        title: "OCTOBER 03 - PROFESSIONALISM NIGHT",
         location: "TBA",
         time: "6 PM - 8 PM",
         attire: "Business Formal",
         details: "Learn how to present yourself professionally with tips on business etiquette, interview skills, and networking. Get insights from experienced brothers in the professional world."
       },
       {
-        title: "APRIL 07 - SOCIAL NIGHT",
+        title: "OCTOBER 06 - SOCIAL NIGHT",
         location: "Corona Del Mar Beach",
         time: "7 PM - 10 PM",
         attire: "Casual",
         details: "Relax and get to know the brothers in a fun and informal setting at the beach. Games, bonfire, and good vibes are guaranteed! Rides will be provided."
       },
       {
-        title: "APRIL 10 - MOCKTAIL NIGHT*",
+        title: "OCTOBER 09  - MOCKTAIL NIGHT*",
         location: "TBA",
         time: "7 PM - 10 PM",
         attire: "Cocktail Attire",
         details: "Join us for an evening with non-alcoholic drinks and conversation. Mingle with members in a 1:1 setting while practicing your networking skills. Rides will be provided. Invite-only event."
       },
       {
-        title: "APRIL 12 - INTERVIEWS*",
+        title: "OCTOBER 11 - INTERVIEWS*",
         location: "TBA",
         time: "TBA",
         attire: "Business Formal",
@@ -58,7 +58,7 @@ export default () => (
     navbarTextColor="white"
     coverElement={
       <ImageCover
-        text="SPRING 2025 RECRUITMENT"
+        text="FALL 2025 RECRUITMENT"
         coverImage="recruitment_graphic.jpg"
         textColor="white"
         darkGradient
@@ -90,14 +90,14 @@ export default () => (
             variant="contained"
             sx={{
                 margin: "2",
-                backgroundColor: "#004222",
+                backgroundColor: "#900404ff",
                 color: "#f8f9fa", // Text color
                 "&:hover": {
-                backgroundColor: "#00331a", // Darker green on hover
+                backgroundColor: "#6c0303ff", // Darker red on hover
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
-            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScQkhCAzo5PYFkR5Vh-9bFZVKoP_C8KMvZxOQNr6vCNLL2O7w/viewform?usp=header", "_blank")}
+            onClick={() => window.open("", "_blank")}
             >
             Rush Application Part 1
             </Button>
@@ -105,14 +105,14 @@ export default () => (
             variant="contained"
             sx={{
                 margin: "2",
-                backgroundColor: "#004222",
+                backgroundColor: "#900404ff",
                 color: "#f8f9fa", // Text color
                 "&:hover": {
-                backgroundColor: "#00331a", // Darker green on hover
+                backgroundColor: "#6c0303ff", // Darker green on hover
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
-            onClick={() => window.open("https://calendly.com/melaniesagun-ucidsp/dsp-ec-coffee-chat?month=2025-04", "_blank")}
+            onClick={() => window.open("", "_blank")}
             >
             Coffee Chat Sign Ups
             </Button>
@@ -130,7 +130,7 @@ export default () => (
             <FrontSide
                 style={{
                     padding: "0",
-                    backgroundColor: "#004222",
+                    backgroundColor: "#900404ff",
                     display: "flex", // Add flex display
                     flexDirection: "column", // Ensure vertical alignment
                     justifyContent: "center", // Center vertically

@@ -37,7 +37,7 @@ export default () => (
     coverElement={
       <ImageCover
         text="About Us"
-        coverImage="AR_initiation.jpg"
+        coverImage="AT_initiation.jpg"
         textColor="white"
         darkGradient
       />
@@ -66,11 +66,11 @@ export default () => (
       </Section>
       <Section>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>52</div>
+          <div style={{ font: "bold 80px Heebo" }}>46</div>
           <div style={{ font: "22px Heebo" }}>Collegiate Brothers</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-          <div style={{ font: "bold 80px Heebo" }}>330+</div>
+          <div style={{ font: "bold 80px Heebo" }}>400+</div>
           <div style={{ font: "22px Heebo" }}>Alumni Network</div>
         </Box>
         <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>

@@ -74,19 +74,22 @@ export default () => (
         Dear Prospective Member,
         <br />
         <br />
-        College is a time of transformation — one filled with both excitement and uncertainty. When I first joined Delta Sigma Pi, my initial focus was on professional development, but what I quickly discovered was the depth of growth that extends beyond professionalism. This chapter has become a constant throughout my college experience, providing not only the tools to navigate the professional world but also the foundation for personal growth.         <br />
+        The greatest asset any person, any business, any school, or any fraternity can have is a great network of truly amazing people. Every brother has a unique set of experiences and values that create a diverse and special group of people. If it were not for each brother in this fraternity, who inherits all of the values it has to offer, I would not have grown anywhere close to the person I am today.         <br />
         <br />
-        In many ways, DSP has been a space that has allowed me to embrace discomfort. It taught me how to fail, how to learn from it, and how to grow as a result. A year after joining, I found myself in a position that once felt so out of reach—landing  my dream job. This achievement didn’t happen in isolation, and was instead a product of the support and guidance that I’ve received. 
-        <br />
-        <br />
-        I encourage you to go about not only this recruitment, but life, with an open mind. I have been exposed to a diverse set of perspectives and people over the past two years, and am excited that you are taking the time to learn about them as well. I hope that through this recruitment you are able to hear about the experiences of our brothers, and see that with hard work and diligence the world of possibilities is endless.
+        Believe it or not, during my first year of college, I had no idea what an internship was. Now, after working a few different amazing jobs, I can confidently say that I would be nowhere without the brothers who took the time to teach me what they know about professionalism, as well as providing me with the resources and connections to succeed. Now that I am entering my fourth year of college, I hope to give back and pass down the knowledge and experiences I have to anyone who wants to hear it. This constant cycle of giving back to the next generation of younger students is what makes Delta Sigma Pi a unique fraternity, and is why I am proud to represent as president for this term. 
         <br />
         <br />
-        Best regards,
+        I am excited to meet the next group of eager and hardworking students who will be joining us this fall. I hope that you can take the time to explore this life-changing opportunity. Recruitment is the perfect time to learn about career opportunities, build authentic connections, and have a fun start to the school year.
+        <br />
+        <br />
+        I hope to see you soon!
+        <br />
+        <br />
+        Best of luck,
 
         <br />
         <br />
-        Tommy Wunsch | President - Pi Sigma Chapter
+        Isaac Martinez | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
