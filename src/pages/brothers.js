@@ -29,6 +29,13 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
+        <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
         <CenterHeader>Directors</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
@@ -38,6 +45,13 @@ export default ({ data }) => {
       </Flex>
       <br />
       <Fade>
+        <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
         <CenterHeader>All Brothers</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
@@ -63,6 +77,13 @@ export default ({ data }) => {
           })}
       </Flex>
       <Fade>
+        <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
         <CenterHeader>Family Trees</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">

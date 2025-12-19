@@ -11,13 +11,15 @@ class CareerBox extends React.Component {
           <FontAwesomeIcon
             icon={this.props.icon}
             style={{
-              fontSize: 32,
+              fontSize: 36,
+              color: "#9284cf",
             }}
           />
           <h2
             style={{
               marginTop: 20,
-              fontWeight: 500,
+              fontWeight: 600,
+              letterSpacing: "-0.01em",
             }}
           >
             {this.props.title}
@@ -25,9 +27,9 @@ class CareerBox extends React.Component {
           <div
             style={{
               color: "#999",
-              fontWeight: 100,
+              fontWeight: 400,
               fontSize: 16,
-              lineHeight: 1.9,
+              lineHeight: 1.8,
             }}
           >
             {this.props.children}

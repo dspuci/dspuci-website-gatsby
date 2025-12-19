@@ -29,6 +29,7 @@ class ImageCover extends React.Component {
           <Text
             className={styles.coverTitle}
             color={textColor}
+            style={{ borderRadius: "16px" }}
             fontSize={[6, 6, 7, 8]}
             fontFamily="Heebo"
           >

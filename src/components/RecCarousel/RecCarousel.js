@@ -16,7 +16,7 @@ import styles from "./RecCarousel.module.css"
 const SpotlightCard = (props) => {
   return (
     <div className={styles.cardContainer}>
-      <img src={props.src} className={styles.img} alt={props.src} />
+      <img src={props.src} className={styles.img} style={{ borderRadius: "16px" }} alt={props.src} />
       <div className={styles.textContainer}>
         <h2>{props.name}</h2>
         <h3>{props.description}</h3>
@@ -42,7 +42,7 @@ const RecCarousel = () => {
       centered
     >
       <SpotlightCard
-        src={imageFour}
+        src={imageFour} style={{ borderRadius: "16px" }}
         name="Sanika Saitawdekar"
         description="Initiated in my First Year Spring | Business Administration | Interested in Operations and Project Management"
         bio="As an out-of-state student, finding my own community was of huge importance to me. I was very lucky and grateful to 
@@ -54,7 +54,7 @@ const RecCarousel = () => {
         and it truly wouldn’t have been the same without the impact of DSP. "
       />
       <SpotlightCard
-        src={imageThree}
+        src={imageThree}  style={{ borderRadius: "16px" }}
         name="Justin Pham"
         description="Initiated in my Second Year Spring | Computer Science & Informatics | Interested in Software Engineering and Product Management"
         bio="Joining DSP in my second year has been transformative for both my personal and professional growth. Surrounded by driven peers, I've had 

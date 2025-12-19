@@ -24,6 +24,7 @@ class HomeVideoCover extends React.Component {
           background: this.props.darkGradient
             ? "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))"
             : "",
+          zIndex: 9999,
         }}
       >
         <video
@@ -34,12 +35,12 @@ class HomeVideoCover extends React.Component {
             top: "50%",
             left: "50%",
             transform: "translateX(-50%) translateY(-50%)",
-            zIndex: -1,
+            zIndex: 9999,
             objectFit: "cover",
           }}
-          autoplay="autoplay"
-          loop="loop"
-          muted="muted"
+          autoPlay
+          loop
+          muted
           poster={withPrefix(`/images/cover_images/home.jpg`)}
         >
           <source
@@ -54,6 +55,8 @@ class HomeVideoCover extends React.Component {
         <div
           style={{
             color: textColor,
+            position: "relative",
+            zIndex: 10000,
           }}
           className={styles.homeTitle}
         >

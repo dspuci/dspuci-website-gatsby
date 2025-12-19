@@ -14,9 +14,6 @@ import { Helmet } from "react-helmet"
 
 import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
-import ProAccCover from "../components/ProAccCover"
-import recruitmentSchedule from "../images/fall23_recruitment_flyer_back.png"
-import springSchedule from "../images/spring23_flyer.png"
 import stella_comp from "../images/stella_zhang_comp.jpg"
 
 export default () => (
@@ -39,37 +36,24 @@ export default () => (
       />
     </Helmet>
     <Fade bottom distance="40px">
-      {
-        <Section sx={{ justifyContent: "left" }}>
-          <div style={{ width: "100%", borderBottom: "1px solid black" }}>
-            <p>
-              We hold recruitment in the beginning of Fall and Spring quarter
-              each year. Be sure to follow us on{" "}
-              <a
-                href="https://www.facebook.com/DSPUCI/"
-                style={{ color: "#5FA0EC" }}
-              >
-                Facebook
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://www.instagram.com/dspuci/"
-                style={{ color: "#5FA0EC" }}
-              >
-                Instagram
-              </a>{" "}
-              for more information.
-            </p>
-          </div>
-        </Section>
-      }
-      <Section sx={{ justifyContent: "left" }}>
-        <h1>Be a part of something greater.</h1>
+      <Section sx={{ justifyContent: "center" }}>
+        <h1>Be a Part of Something Greater</h1>
         <p>
           Our chapter aims to create a high-impact, supportive culture where
           immensely passionate people are encouraged to pursue their
           professional and personal dreams. Attend our recruitment events to
           find out what sets Delta Sigma Pi above and apart.{" "}
+        </p>
+        <p style={{ textAlign: "left", width: "100%" }}>
+          We hold recruitment in the beginning of Fall and Spring quarter
+          each year. Be sure to follow us on{" "}
+          <a
+            href="https://www.instagram.com/dspuci/"
+            style={{ color: "#5FA0EC" }}
+          >
+            Instagram
+          </a>{" "}
+          for more information.
         </p>
       </Section>
 
@@ -77,6 +61,14 @@ export default () => (
         <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2023 Recruitment: Chase</a> for any and all updates.</center></p>
         <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p>
       </Section> */}
+
+      <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
 
       <CenterHeader>Why Join?</CenterHeader>
 
@@ -104,10 +96,26 @@ export default () => (
       </Flex>
     </Fade>
 
+    <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
+
     <Fade bottom distance="40px">
-      <CenterHeader>Hear from our brothers.</CenterHeader>
+      <CenterHeader>Hear From Our Brothers</CenterHeader>
       <RecCarousel />
     </Fade>
+
+    <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
 
     <Fade bottom distance="40px">
       <CenterHeader>FAQ's</CenterHeader>

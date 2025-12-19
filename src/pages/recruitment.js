@@ -18,24 +18,24 @@ import ImageCover from "../components/ImageCover"
 const events = [
     {
       title: "SEPTEMBER 29 - MEET THE CHAPTER",
-      location: "SB1 1200",
+      location: "SB1 1128",
       time: "7 PM - 10 PM",
       attire: "Casual",
       details: "Join us to meet the brothers, learn about the chapter, and discover what it means to be part of Delta Sigma Pi"
     },
     {
-        title: "OCTOBER 03 - PROFESSIONALISM NIGHT",
-        location: "TBA",
-        time: "6 PM - 8 PM",
-        attire: "Business Formal",
+        title: "OCTOBER 03 - PROFESSIONAL NIGHT",
+        location: "SB1 1200",
+        time: "7 PM - 9 PM",
+        attire: "Business Professional",
         details: "Learn how to present yourself professionally with tips on business etiquette, interview skills, and networking. Get insights from experienced brothers in the professional world."
       },
       {
         title: "OCTOBER 06 - SOCIAL NIGHT",
-        location: "Corona Del Mar Beach",
-        time: "7 PM - 10 PM",
+        location: "Bill Barber Park",
+        time: "6 PM - 9 PM",
         attire: "Casual",
-        details: "Relax and get to know the brothers in a fun and informal setting at the beach. Games, bonfire, and good vibes are guaranteed! Rides will be provided."
+        details: "Relax and get to know the brothers in a fun and informal setting at the beach. Games, snacks, and good vibes are guaranteed! Rides will be provided."
       },
       {
         title: "OCTOBER 09  - MOCKTAIL NIGHT*",
@@ -48,7 +48,7 @@ const events = [
         title: "OCTOBER 11 - INTERVIEWS*",
         location: "TBA",
         time: "TBA",
-        attire: "Business Formal",
+        attire: "Business Professional",
         details: "Final step of the recruitment process. Invite-only event."
       }      
   ];
@@ -97,7 +97,7 @@ export default () => (
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
-            onClick={() => window.open("", "_blank")}
+            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeIRpTOCBCIO7WgCaDoDrfCZ-nJJkHJV76Gz9yzHghF42zERg/viewform", "_blank")}
             >
             Rush Application Part 1
             </Button>
@@ -112,10 +112,19 @@ export default () => (
                 transform: "scale(1.05)", // Slightly grow on hover
                 },
             }}
-            onClick={() => window.open("", "_blank")}
+            onClick={() => window.open("https://calendly.com/jadonsong-ucidsp/30min?month=2025-09", "_blank")}
             >
             Coffee Chat Sign Ups
             </Button>
+
+            <hr style={{
+          border: 0,
+          height: '6px',
+          background: 'linear-gradient(90deg, #fff 0%, #900404ff 100%)',
+          margin: '48px auto',
+          width: '99%',
+          borderRadius: '3px'
+        }} />
             
     </Section>
 

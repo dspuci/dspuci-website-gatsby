@@ -4,7 +4,7 @@ import { Text } from "rebass"
 export default (props) => (
   <Text
     sx={{
-      color: "#999",
+      color: "#fff",
       fontWeight: 100,
       fontSize: 16,
       lineHeight: 1.9,

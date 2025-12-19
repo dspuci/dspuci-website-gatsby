@@ -17,7 +17,17 @@ class ImageTextRow extends React.Component {
         }}
       >
         <Box width={[1, 1, 1 / 2]}>
-          <Image src={this.props.imageSrc} />
+          <Image
+            src={this.props.imageSrc}
+            sx={{
+              borderRadius: "16px",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                transform: "scale(1.02)",
+                boxShadow: "0px 12px 40px rgba(53, 12, 94, 0.3)",
+              },
+            }}
+          />
         </Box>
         <Box
           width={[1, 1, 1 / 2]}
@@ -27,8 +37,8 @@ class ImageTextRow extends React.Component {
             paddingBottom: [40, 30, 20, 10],
           }}
         >
-          <h1 style={{ fontWeight: 500 }}>{this.props.title}</h1>
-          <div style={{ color: "#999" }}>{this.props.children}</div>
+          <h1 style={{ fontWeight: 700, letterSpacing: "-0.02em" }}>{this.props.title}</h1>
+          <div style={{ color: "#999", lineHeight: 1.8 }}>{this.props.children}</div>
         </Box>
       </Flex>
     )

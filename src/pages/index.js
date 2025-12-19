@@ -14,10 +14,10 @@ import ImageBox from "../components/ImageBox"
 import Button from "../components/TransparentButton"
 import { Fade } from "react-reveal"
 
-import careerAdvantage from "../images/2022_YakultTour.jpg"
+import careerAdvantage from "../images/dsp2025panel.jpeg"
 import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
 import brothers from "../images/brothers.jpg"
-import unrivaledLeaders from "../images/2022_Dodge4Dollars.jpg"
+import unrivaledLeaders from "../images/presidents.jpg"
 
 export default () => (
   <VideoCoverLayout
@@ -28,6 +28,7 @@ export default () => (
     textTwo="The Premier Business Fraternity | Pi Sigma Chapter"
     coverImage={dsp_seal}
   >
+    
     <Helmet>
       <title>Delta Sigma Pi - Pi Sigma Chapter</title>
       <meta
@@ -65,6 +66,13 @@ export default () => (
         </ImageBox>
       </Flex>
     </Fade>
+    <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
     <Fade>
       <CenterHeader>Letter from the President</CenterHeader>
       <ImageTextRowTwo imagePosition="left" imageSrc={presidentImage}>

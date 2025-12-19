@@ -10,7 +10,7 @@
   height: 80px;
   width: 100%;
   position: fixed;
-  background: white;
+  background: rgb(0, 0, 0);
   z-index: 1;
   transition: 100ms linear;
 }
@@ -107,7 +107,7 @@
 
 .navbarSolid a {
   text-transform: uppercase;
-  color: #303030;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .navbarSolid li:hover {
-  border-bottom: 2px solid #303030;
+  border-bottom: 2px solid #f7f5f5;
   transition: border-bottom 100ms linear;
 }
 
@@ -139,11 +139,11 @@
 
 .navbarTransparentBlack a,
 .navbarTransparentBlack button {
-  color: #303030;
+  color: #ffffff;
 }
 
 .navbarTransparentBlack li:hover {
-  border-bottom: 2px solid #303030;
+  border-bottom: 2px solid #ffffff;
 }
 
 .navbarTransparentWhite li,

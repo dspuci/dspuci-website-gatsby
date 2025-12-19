@@ -1,18 +1,22 @@
 .hover_shadow_box {
-  transition: 0.5s;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .hover_shadow_box:hover {
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 24px rgba(53, 12, 94, 0.15);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .hover_shadow_box_raise {
-  transition: 0.5s;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); */
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .hover_shadow_box_raise:hover {
-  margin-top: 5px;
-  margin-bottom: 15px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 40px rgba(53, 12, 94, 0.3);
+  background: rgba(255, 255, 255, 0.05);
 }

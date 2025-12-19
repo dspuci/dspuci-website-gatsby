@@ -15,7 +15,7 @@ class ImageTextRowTwo extends React.Component {
         }}
       >
         <Box width={[1, 1, 1 / 3, 3 / 7]}>
-          <Image src={this.props.imageSrc} />
+          <Image src={this.props.imageSrc} style={{ borderRadius: "16px" }}/>
         </Box>
         <Box
           width={[1, 1, 2 / 3, 4 / 7]}

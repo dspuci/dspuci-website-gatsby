@@ -12,7 +12,7 @@ const FAQHeader = (props) => (
     fontSize={[16, 20]}
     fontWeight="bold"
     fontFamily="Heebo"
-    sx={{ marginBottom: 10 }}
+    sx={{ marginBottom: 10, color: '#fff' }}
   >
     {props.children}
   </Text>

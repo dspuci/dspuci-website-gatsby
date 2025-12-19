@@ -1,15 +1,17 @@
 .button {
-  background-color: #9284cf;
+  background: linear-gradient(135deg, #9284cf 0%, #350c5e 100%);
   color: white;
-  padding: 15px 40px;
+  padding: 16px 44px;
   text-align: center;
   display: inline-block;
-  font-size: 20px;
-  border-radius: 10px;
-  margin-top: 0px;
-  -webkit-transition: margin-top 0.1s;
-  transition: margin-top 0.1s;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 12px;
+  border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(53, 12, 94, 0.3);
 }
 
 .button p {
@@ -17,5 +19,7 @@
 }
 
 .button:hover {
-  margin-top: -5px;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(53, 12, 94, 0.45);
+  background: linear-gradient(135deg, #a396d9 0%, #4a1a7a 100%);
 }

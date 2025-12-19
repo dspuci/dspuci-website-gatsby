@@ -1,32 +1,42 @@
 .brother {
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.brother:hover {
+  transform: translateY(-4px);
 }
 
 .image {
   object-fit: cover;
-  transition: 0.5s;
+  transition: all 0.3s ease;
+  border-radius: 16px;
 }
 
 .image:hover {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  margin-top: -3px;
-  margin-bottom: 3px;
+  box-shadow: 0px 8px 25px rgba(53, 12, 94, 0.35);
 }
 
 .name {
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-top: 12px;
 }
 
 .class {
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-style: italic;
-  color: #707070;
+  color: #9284cf;
+  font-weight: 400;
 }
 
 .linkedinIcon {
-  color: #c0c0c0;
+  color: #9284cf;
+  transition: all 0.3s ease;
 }
 
 .linkedinIcon:hover {
-  color: #a0a0a0;
+  color: #b4a8e0;
+  transform: scale(1.1);
 }

@@ -8,6 +8,7 @@ class ImageBox extends React.Component {
       <Box className={styles.container} width={[1, 1 / 2, 1 / 2, 1 / 3]}>
         <img
           src={this.props.image}
+          style={{ borderRadius: "16px" }}
           className={styles.image}
           alt={this.props.image.toString()}
         />

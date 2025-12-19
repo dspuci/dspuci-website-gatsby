@@ -256,6 +256,13 @@ class CareersTables extends React.Component {
               />
             ))}
         </div>
+        <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
         <div style={{ width: "100%", height: "2vh" }}></div>
         {careersData[this.state.currentYear].map((table) =>
           Object.keys(table.data.nodes).length !== 0 ? (

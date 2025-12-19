@@ -27,9 +27,9 @@ export default ({ data }) => (
         content="Delta Sigma Pi - Pi Sigma Chapter Careers Page"
       />
     </Helmet>
-    <Section sx={{ justifyContent: "left" }}>
-      <h1>A higher standard of career success.</h1>
-      <div>
+    <Section sx={{ justifyContent: "center" }}>
+      <h1 style={{ fontFamily: "Lato, sans-serif" }}>A Higher Standard of Career Success.</h1>
+      <div style={{ fontFamily: "Lato, sans-serif" }}>
         At UC Irvine, we are redefining and raising the bar of successful
         careers, and our experiences speak to our commitment to professional
         development. We have countless brothers with competitive internships and
@@ -37,6 +37,13 @@ export default ({ data }) => (
         unicorn startups.
       </div>
     </Section>
+    <hr style={{
+          border: 0,
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          margin: '48px auto',
+          width: '80%'
+        }} />
     <Section sx={{ justifyContent: "left" }}>
       <CenterHeader marginTop="0px">Our Experience</CenterHeader>
       <CompanyPics></CompanyPics>
