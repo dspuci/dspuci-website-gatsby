@@ -31,7 +31,7 @@ class ImageCover extends React.Component {
             color={textColor}
             style={{ borderRadius: "16px" }}
             fontSize={[6, 6, 7, 8]}
-            fontFamily="Heebo"
+            fontFamily="Georgia, serif"
           >
             {this.props.text}
             {this.props.text2 ? (

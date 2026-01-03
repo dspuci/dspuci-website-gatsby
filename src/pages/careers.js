@@ -28,7 +28,7 @@ export default ({ data }) => (
       />
     </Helmet>
     <Section sx={{ justifyContent: "center" }}>
-      <h1 style={{ fontFamily: "Lato, sans-serif" }}>A Higher Standard of Career Success.</h1>
+      <h1 style={{ fontFamily: "Georgia, serif", fontWeight: 400 }}>A Higher Standard of Career Success</h1>
       <div style={{ fontFamily: "Lato, sans-serif" }}>
         At UC Irvine, we are redefining and raising the bar of successful
         careers, and our experiences speak to our commitment to professional
@@ -40,7 +40,7 @@ export default ({ data }) => (
     <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />

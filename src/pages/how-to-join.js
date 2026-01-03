@@ -37,7 +37,7 @@ export default () => (
     </Helmet>
     <Fade bottom distance="40px">
       <Section sx={{ justifyContent: "center" }}>
-        <h1>Be a Part of Something Greater</h1>
+        <h1 style={{ fontFamily: "Georgia, serif", fontWeight: 400 }}>Be a Part of Something Greater</h1>
         <p>
           Our chapter aims to create a high-impact, supportive culture where
           immensely passionate people are encouraged to pursue their
@@ -65,7 +65,7 @@ export default () => (
       <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />
@@ -99,7 +99,7 @@ export default () => (
     <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />
@@ -112,7 +112,7 @@ export default () => (
     <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />

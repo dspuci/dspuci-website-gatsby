@@ -32,7 +32,7 @@ export default ({ data }) => {
         <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />
@@ -48,7 +48,7 @@ export default ({ data }) => {
         <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />
@@ -80,7 +80,7 @@ export default ({ data }) => {
         <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />

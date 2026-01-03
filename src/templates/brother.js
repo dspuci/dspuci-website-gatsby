@@ -154,14 +154,13 @@ export default ({ data }) => {
               {brotherInfo.minor ? " • " + brotherInfo.minor : null}
             </Text>
             
-            {/* Gradient Divider */}
+            {/* Divider */}
             <Box
               sx={{
-                height: "3px",
-                background: "linear-gradient(90deg, #9284cf 0%, transparent 100%)",
-                borderRadius: "2px",
+                height: "1px",
+                background: "#666",
                 marginTop: "14px",
-                width: "180px",
+                width: "100%",
               }}
             />
           </Box>

@@ -36,6 +36,13 @@ export default () => (
         content="Delta Sigma Pi - Pi Sigma Chapter Home Page"
       />
     </Helmet>
+    <hr style={{
+          border: 0,
+          height: '1px',
+          background: '#666',
+          margin: '0 auto 30px',
+          width: '100%'
+        }} />
     <Fade>
       <Flex flexWrap="wrap" justifyContent="center" marginTop="30px">
         <ImageBox image={unrivaledLeaders} title="ABOUT US">
@@ -69,7 +76,7 @@ export default () => (
     <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />

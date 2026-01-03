@@ -55,13 +55,13 @@ export default () => (
       </Helmet>
       <Fade bottom distance="40px">
         <Section sx={{ justifyContent: "center", textAlign: "center" }}>
-          <h1 style={{ marginBottom: 10, textAlign: "center" }}>
+          <h1 style={{ marginBottom: 10, textAlign: "center", fontFamily: "Georgia, serif", fontWeight: 400 }}>
             Empowering Personal and Professional Growth
           </h1>
           <hr style={{
             border: 0,
             height: '1px',
-            background: 'linear-gradient(90deg, transparent, #666, transparent)',
+            background: '#666',
             margin: '32px auto',
             width: '80%'
           }} />
@@ -75,18 +75,18 @@ export default () => (
           </div>
         </Section>
         <Section>
-          <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-            <div style={{ font: "bold 80px Lato" }}>46</div>
-            <div style={{ font: "22px Lato" }}>Collegiate Brothers</div>
-          </Box>
-          <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-            <div style={{ font: "bold 80px Lato" }}>400+</div>
-            <div style={{ font: "22px Lato" }}>Alumni Network</div>
-          </Box>
-          <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-            <div style={{ font: "bold 80px Lato" }}>100%</div>
-            <div style={{ font: "22px Lato" }}>Internship Placement</div>
-          </Box>
+            <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
+              <div style={{ fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }}>46</div>
+              <div style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}>Collegiate Brothers</div>
+            </Box>
+            <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
+              <div style={{ fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }}>400+</div>
+              <div style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}>Alumni Network</div>
+            </Box>
+            <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
+              <div style={{ fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }}>100%</div>
+              <div style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}>Internship Placement</div>
+            </Box>
         </Section>
 
         <Section
@@ -116,7 +116,7 @@ export default () => (
         <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />
@@ -150,7 +150,7 @@ export default () => (
         <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />
@@ -158,19 +158,19 @@ export default () => (
         <CenterHeader>Our Values</CenterHeader>
         <Flex flexWrap="wrap" sx={{ justifyContent: "center" }}>
           <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px" }}>Respect</div>
+            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Respect</div>
           </Box>
           <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px" }}>Integrity</div>
+            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Integrity</div>
           </Box>
           <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px" }}>Initiative</div>
+            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Initiative</div>
           </Box>
           <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px" }}>Innovation</div>
+            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Innovation</div>
           </Box>
           <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px" }}>Humility</div>
+            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Humility</div>
           </Box>
         </Flex>
 
@@ -213,7 +213,7 @@ export default () => (
         <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />

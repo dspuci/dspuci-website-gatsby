@@ -31,7 +31,7 @@ const CareersTable = (props) => {
                 <tr>
                   <td colSpan="2" style={{ borderBottom: "none" }}>
                     <h1
-                      style={{ fontSize: "1.5rem", margin: "0.5rem 0 0 0" }}
+                      style={{ fontSize: "1.5rem", margin: "0.5rem 0 0 0", fontFamily: "Georgia, serif", fontWeight: "bold" }}
                       colSpan="3"
                     >
                       {node.Name}
@@ -259,7 +259,7 @@ class CareersTables extends React.Component {
         <hr style={{
           border: 0,
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, #666, transparent)',
+          background: '#666',
           margin: '48px auto',
           width: '80%'
         }} />

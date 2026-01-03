@@ -84,6 +84,8 @@
   text-transform: uppercase;
   color: #303030;
   text-decoration: none;
+  font-family: Georgia, serif;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 800px) {
@@ -109,6 +111,8 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  font-family: Georgia, serif;
+  letter-spacing: 0.05em;
 }
 
 .navbarSolid li {
@@ -126,6 +130,8 @@
 .navbarTransparentBlack a {
   text-transform: uppercase;
   text-decoration: none;
+  font-family: Georgia, serif;
+  letter-spacing: 0.05em;
 }
 
 .navbarTransparentWhite a,

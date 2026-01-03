@@ -18,8 +18,9 @@ class CareerBox extends React.Component {
           <h2
             style={{
               marginTop: 20,
-              fontWeight: 600,
-              letterSpacing: "-0.01em",
+              fontWeight: 400,
+              letterSpacing: "0.02em",
+              fontFamily: "Georgia, serif",
             }}
           >
             {this.props.title}

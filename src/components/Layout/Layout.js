@@ -109,6 +109,13 @@ class StandardLayout extends React.Component {
 
 const Footer = (props) => (
   <footer style={{ backgroundColor: darkColor }}>
+    <hr style={{
+      border: 0,
+      height: '2px',
+      background: '#666',
+      margin: '0 auto 40px',
+      width: '90%'
+    }} />
     <Container>
       <Flex
         color={lightColor}

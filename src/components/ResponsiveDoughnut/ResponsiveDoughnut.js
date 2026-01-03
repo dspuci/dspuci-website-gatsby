@@ -29,7 +29,8 @@ export default (props) => (
           display: true,
           text: props.text,
           fontSize: 24,
-          fontColor: "#fff"
+          fontColor: "#fff",
+          fontFamily: "Georgia, serif"
         }
       }}
       data={props.data}
