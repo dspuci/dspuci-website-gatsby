@@ -90,10 +90,15 @@ class LeaderBrother extends React.Component {
     let fullName = this.props.name
     let codeName = fullName.split(" ").join("_").toLowerCase()
     let subtitle = this.props.title.trim()
+    
+    // Check if the name is N/A
+    const isNA = fullName.trim().toUpperCase() === "N/A"
+    
     return (
       <Box p={3} width={[1, 1 / 2, 1 / 3, 1 / 5]} className={styles.brother}>
         <Fade>
-          <Link to={`${codeName}`}>
+          {isNA ? (
+            // If N/A, just show image without link
             <Image
               onError={this.addDefaultSrc}
               className={styles.image}
@@ -102,7 +107,19 @@ class LeaderBrother extends React.Component {
               src={withPrefix(`/images/brothers/${term}/${codeName}.jpg`)}
               borderRadius={8}
             />
-          </Link>
+          ) : (
+            // If real name, show link to profile
+            <Link to={`${codeName}`}>
+              <Image
+                onError={this.addDefaultSrc}
+                className={styles.image}
+                width={175}
+                height={262.5}
+                src={withPrefix(`/images/brothers/${term}/${codeName}.jpg`)}
+                borderRadius={8}
+              />
+            </Link>
+          )}
           <Text className={styles.name} fontSize={[18, 16, 16, 14]}>
             {fullName}
           </Text>
