@@ -95,6 +95,9 @@ export default () => (
         However, DSP quickly became far more than a professional organization to me. It became a constant in my college experience, and the community I came back to, no matter how busy or overwhelming things felt. I found people who hold themselves to a high standard, but who also show up for each other in the moments that matter. These are friends I spend nearly every day with, people I live with, travel with, and grow alongside. They are the kind of friendships that make long weeks feel lighter and hard moments easier to handle.
         <br />
         <br />
+        I blinked, and now I am a third year, shaped by the mentors and lifelong friends I have made throughout my time at this chapter. They have inspired me to pursue my passions, and over the past 3 years, I have helped farmers track invasive insect populations at Bioverse Labs, built simulated worlds of interacting AI agents at UCLA, engineered agents to automate a 2-week engineering process at Firmly, and now consult for companies like Anthropic full-time. What matters more to me is knowing that none of those achievements happened in isolation. They were made possible by a community that challenges you, supports you, and expects the best from you.
+        <br />
+        <br />
         What truly differentiates DSP is not a checklist of accomplishments or titles, but the people you go through college with. Every business fraternity offers opportunities, but the culture and relationships you build ultimately define your experience. Our chapter is tight-knit, hardworking, and full of personalities that make even the busiest weeks enjoyable. The conversations, the laughs, the late nights, and the shared ambition are what give our community its value and make it feel like home.
         <br />
         <br />
@@ -107,8 +110,9 @@ export default () => (
         Warm regards,
         <br />
 
-        Lohit Potnuru | President - Pi Sigma Chapter
+        Lothit Potnuru | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
-)
+
+
