@@ -1,0 +1,118 @@
+import React from "react"
+import { Flex } from "rebass"
+import CenterHeader from "../components/CenterHeader"
+import ImageTextRowTwo from "../components/ImageTextRowTwo"
+import backup from "../images/backup.png"
+// import backup2 from "../images/backup2.jpg"
+import presidentImage from "../images/president.jpg"
+import dsp_seal from "../images/dsp_seal.png"
+import { VideoCoverLayout } from "../components/Layout"
+import { Helmet } from "react-helmet"
+import video from "../images/index.mp4"
+// import video from "../images/fall2024_vid.mp4"
+import ImageBox from "../components/ImageBox"
+import Button from "../components/TransparentButton"
+import { Fade } from "react-reveal"
+
+import careerAdvantage from "../images/dsp2025panel.jpeg"
+import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
+import brothers from "../images/brothers.jpg"
+import unrivaledLeaders from "../images/presidents.jpg"
+
+export default () => (
+  <VideoCoverLayout
+    video={video}
+    image={backup}
+    navbarTextColor="white"
+    textOne="Delta Sigma Pi"
+    textTwo="The Premier Business Fraternity | Pi Sigma Chapter"
+    coverImage={dsp_seal}
+  >
+    
+    <Helmet>
+      <title>Delta Sigma Pi - Pi Sigma Chapter</title>
+      <meta
+        name="Delta Sigma Pi - Pi Sigma Chapter Home Page"
+        content="Delta Sigma Pi - Pi Sigma Chapter Home Page"
+      />
+    </Helmet>
+    <hr style={{
+          border: 0,
+          height: '1px',
+          background: '#666',
+          margin: '0 auto 30px',
+          width: '100%'
+        }} />
+    <Fade>
+      <Flex flexWrap="wrap" justifyContent="center" marginTop="30px">
+        <ImageBox image={unrivaledLeaders} title="ABOUT US">
+          Established in 2008, the Pi Sigma Chapter of Delta Sigma Pi at UC
+          Irvine is the oldest business fraternity on campus. Our chapter has
+          cultivated a growing legacy of achievement, mentorship, and leadership
+          within business and beyond.
+          <div style={{ textAlign: "center" }}>
+            <Button to="/about" text="WHO WE ARE"></Button>
+          </div>
+        </ImageBox>
+        <ImageBox image={brothers} title="BROTHERS">
+          From various professional aspirations to pastime hobbies, our brothers
+          are incredibly unique and diverse. Our drive to succeed and support
+          for one another makes us a tight-knit community like no other.
+          <div style={{ textAlign: "center" }}>
+            <Button to="/brothers" text="MEET OUR BROTHERS"></Button>
+          </div>
+        </ImageBox>
+        <ImageBox image={careerAdvantage} title="CAREERS">
+          We have countless brothers with competitive internships and full-time
+          experience in finance, marketing, technology, accounting, consulting,
+          entrepreneurship, and more – the opportunities for growth are endless
+          with Delta Sigma Pi.
+          <div style={{ textAlign: "center" }}>
+            <Button to="/careers" text="OUR EXPERIENCE"></Button>
+          </div>
+        </ImageBox>
+      </Flex>
+    </Fade>
+    <hr style={{
+          border: 0,
+          height: '1px',
+          background: '#666',
+          margin: '48px auto',
+          width: '80%'
+        }} />
+    <Fade>
+      <CenterHeader>Letter from the President</CenterHeader>
+      <ImageTextRowTwo imagePosition="left" imageSrc={presidentImage}>
+        {/* Dear Prospective Member,
+        <br /> */}
+        {/* <br /> */}
+        Dear Prospective Member,
+        <br />
+        <br />
+        I rushed DSP right when I joined college. 100% internship rate and insanely cracked brothers? It was a no-brainer for me.  I was a Computer Science and Quantitative Economics double major, eager to learn, build my resume, and surround myself with ambitious people. 
+        <br />
+        <br />
+        However, DSP quickly became far more than a professional organization to me. It became a constant in my college experience, and the community I came back to, no matter how busy or overwhelming things felt. I found people who hold themselves to a high standard, but who also show up for each other in the moments that matter. These are friends I spend nearly every day with, people I live with, travel with, and grow alongside. They are the kind of friendships that make long weeks feel lighter and hard moments easier to handle.
+        <br />
+        <br />
+        I blinked, and now I am a third year, shaped by the mentors and lifelong friends I have made throughout my time at this chapter. They have inspired me to pursue my passions, and over the past 3 years, I have helped farmers track invasive insect populations at Bioverse Labs, built simulated worlds of interacting AI agents at UCLA, engineered agents to automate a 2-week engineering process at Firmly, and now consult for companies like Anthropic full-time. What matters more to me is knowing that none of those achievements happened in isolation. They were made possible by a community that challenges you, supports you, and expects the best from you.
+        <br />
+        <br />
+        What truly differentiates DSP is not a checklist of accomplishments or titles, but the people you go through college with. Every business fraternity offers opportunities, but the culture and relationships you build ultimately define your experience. Our chapter is tight-knit, hardworking, and full of personalities that make even the busiest weeks enjoyable. The conversations, the laughs, the late nights, and the shared ambition are what give our community its value and make it feel like home.
+        <br />
+        <br />
+        Recruitment is as much an opportunity for you to evaluate us as it is for us to meet you. We encourage you to come out, talk to our brothers, and decide for yourself if this is the type of community you want to be a part of. The people you surround yourself with in college will shape not only your career but who you become.
+        <br />
+        <br />
+        As President of the Pi Sigma Chapter, I’m proud of the culture we’ve built and excited to see the next group of students who will help carry it forward. I hope you take the time to explore this opportunity and see what makes Delta Sigma Pi special.
+        <br />
+        <br />
+        Warm regards,
+        <br />
+
+        Lothit Potnuru | President - Pi Sigma Chapter
+      </ImageTextRowTwo>
+    </Fade>
+  </VideoCoverLayout>
+
+

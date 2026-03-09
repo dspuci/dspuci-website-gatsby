@@ -89,22 +89,25 @@ export default () => (
         Dear Prospective Member,
         <br />
         <br />
-        The greatest asset any person, any business, any school, or any fraternity can have is a great network of truly amazing people. Every brother has a unique set of experiences and values that create a diverse and special group of people. If it were not for each brother in this fraternity, who inherits all of the values it has to offer, I would not have grown anywhere close to the person I am today.         <br />
-        <br />
-        Believe it or not, during my first year of college, I had no idea what an internship was. Now, after working a few different amazing jobs, I can confidently say that I would be nowhere without the brothers who took the time to teach me what they know about professionalism, as well as providing me with the resources and connections to succeed. Now that I am entering my fourth year of college, I hope to give back and pass down the knowledge and experiences I have to anyone who wants to hear it. This constant cycle of giving back to the next generation of younger students is what makes Delta Sigma Pi a unique fraternity, and is why I am proud to represent as president for this term. 
+        I rushed DSP right when I joined college. 100% internship rate and insanely cracked brothers? It was a no-brainer for me.  I was a Computer Science and Quantitative Economics double major, eager to learn, build my resume, and surround myself with ambitious people. 
         <br />
         <br />
-        I am excited to meet the next group of eager and hardworking students who will be joining us this fall. I hope that you can take the time to explore this life-changing opportunity. Recruitment is the perfect time to learn about career opportunities, build authentic connections, and have a fun start to the school year.
+        However, DSP quickly became far more than a professional organization to me. It became a constant in my college experience, and the community I came back to, no matter how busy or overwhelming things felt. I found people who hold themselves to a high standard, but who also show up for each other in the moments that matter. These are friends I spend nearly every day with, people I live with, travel with, and grow alongside. They are the kind of friendships that make long weeks feel lighter and hard moments easier to handle.
         <br />
         <br />
-        I hope to see you soon!
+        What truly differentiates DSP is not a checklist of accomplishments or titles, but the people you go through college with. Every business fraternity offers opportunities, but the culture and relationships you build ultimately define your experience. Our chapter is tight-knit, hardworking, and full of personalities that make even the busiest weeks enjoyable. The conversations, the laughs, the late nights, and the shared ambition are what give our community its value and make it feel like home.
         <br />
         <br />
-        Best of luck,
+        Recruitment is as much an opportunity for you to evaluate us as it is for us to meet you. We encourage you to come out, talk to our brothers, and decide for yourself if this is the type of community you want to be a part of. The people you surround yourself with in college will shape not only your career but who you become.
+        <br />
+        <br />
+        As President of the Pi Sigma Chapter, I’m proud of the culture we’ve built and excited to see the next group of students who will help carry it forward. I hope you take the time to explore this opportunity and see what makes Delta Sigma Pi special.
+        <br />
+        <br />
+        Warm regards,
+        <br />
 
-        <br />
-        <br />
-        Isaac Martinez | President - Pi Sigma Chapter
+        Lohit Potnuru | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
   </VideoCoverLayout>
