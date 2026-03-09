@@ -11,87 +11,115 @@ import ResponsiveDoughnut from "../components/ResponsiveDoughnut"
 import Section from "../components/Section"
 
 import professionalismImage from "../images/professionalism_2024.jpg"
-import communityImage from "../images/community_service_hype.jpg"
+import communityImage from "../images/mrceo_2025.png"
 import seniors from "../images/seniors.jpeg"
 
 import { Helmet } from "react-helmet"
 
 import {
-  faBullhorn,
-  faCalculator,
-  faMicrochip,
-  faLightbulb,
-  faPiggyBank,
-  faUserTie,
+    faBullhorn,
+    faCalculator,
+    faMicrochip,
+    faLightbulb,
+    faPiggyBank,
+    faUserTie,
 } from "@fortawesome/free-solid-svg-icons"
 
 import {
-  genderData,
-  yearData,
-  majorData,
+    genderData,
+    yearData,
+    majorData,
 } from "../data/current_data/chapter_stats"
 
-export default () => (
-  <CoverLayout
-    navbarTextColor="white"
-    backgroundColor="#000000"
-    textColor="#ffffff"
-    coverElement={
-      <ImageCover
-        text="About Us"
-        coverImage="AU_initiation.jpg"
-        textColor="white"
-        darkGradient
-        bgSize="contain"
-      />
+export default () => ( <
+    CoverLayout navbarTextColor = "white"
+    backgroundColor = "#000000"
+    textColor = "#ffffff"
+    coverElement = { <
+        ImageCover
+        text = "About Us"
+        coverImage = "chapter_headshot_fall25.JPEG"
+        textColor = "white"
+        darkGradient /
+        >
+    } >
+    <
+    div style = {
+        { background: "#000", color: "#fff", minHeight: "100vh" }
+    } >
+    <
+    Helmet >
+    <
+    title > About | Delta Sigma Pi - Pi Sigma Chapter < /title> <
+    meta name = "Delta Sigma Pi - Pi Sigma Chapter About Page"
+    content = "Delta Sigma Pi - Pi Sigma Chapter About Page" /
+    >
+    <
+    /Helmet> <
+    Fade bottom distance = "40px" >
+    <
+    Section sx = {
+        { justifyContent: "center", textAlign: "center" }
+    } >
+    <
+    div style = {
+        { textAlign: "center" }
+    } >
+    As the largest and oldest business fraternity at UC Irvine, Delta Sigma Pi - Pi Sigma Chapter has inspired impactful careers
+    for over a decade, establishing a higher standard of personal and career success. { " " }
+    As a professional fraternity, we hold community and brotherhood at our core. { " " }
+    Our growth is guided by the lifelong connections formed between brothers. <
+    /div> < /
+    Section > <
+    Section >
+    <
+    Box width = {
+        [1, 1 / 3]
     }
-  >
-    <div style={{ background: "#000", color: "#fff", minHeight: "100vh" }}>
-      <Helmet>
-        <title>About | Delta Sigma Pi - Pi Sigma Chapter</title>
-        <meta
-          name="Delta Sigma Pi - Pi Sigma Chapter About Page"
-          content="Delta Sigma Pi - Pi Sigma Chapter About Page"
-        />
-      </Helmet>
-      <Fade bottom distance="40px">
-        <Section sx={{ justifyContent: "center", textAlign: "center" }}>
-          <h1 style={{ marginBottom: 10, textAlign: "center", fontFamily: "Georgia, serif", fontWeight: 400 }}>
-            Empowering Personal and Professional Growth
-          </h1>
-          <hr style={{
-            border: 0,
-            height: '1px',
-            background: '#666',
-            margin: '32px auto',
-            width: '80%'
-          }} />
-          <div style={{ textAlign: "center" }}>
-            As the largest and oldest business fraternity at UC Irvine, Delta
-            Sigma Pi - Pi Sigma Chapter has inspired impactful careers for over a
-            decade, establishing a higher standard of personal and career success.
-            As a professional fraternity, we hold community and brotherhood at our
-            core—our growth is guided by the lifelong connections formed between
-            brothers.
-          </div>
-        </Section>
-        <Section>
-            <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-              <div style={{ fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }}>46</div>
-              <div style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}>Collegiate Brothers</div>
-            </Box>
-            <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-              <div style={{ fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }}>400+</div>
-              <div style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}>Alumni Network</div>
-            </Box>
-            <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-              <div style={{ fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }}>100%</div>
-              <div style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}>Internship Placement</div>
-            </Box>
-        </Section>
+    style = {
+        { textAlign: "center" }
+    } >
+    <
+    div style = {
+        { fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }
+    } > 46 < /div> <
+    div style = {
+        { fontSize: "22px", fontFamily: "Georgia, serif" }
+    } > Collegiate Brothers < /div> < /
+    Box > <
+    Box width = {
+        [1, 1 / 3]
+    }
+    style = {
+        { textAlign: "center" }
+    } >
+    <
+    div style = {
+        { fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }
+    } > 400 + < /div> <
+    div style = {
+        { fontSize: "22px", fontFamily: "Georgia, serif" }
+    } > Alumni Network < /div> < /
+    Box > <
+    Box width = {
+        [1, 1 / 3]
+    }
+    style = {
+        { textAlign: "center" }
+    } >
+    <
+    div style = {
+        { fontWeight: "bold", fontSize: "80px", fontFamily: "Georgia, serif" }
+    } > 100 % < /div> <
+    div style = {
+        { fontSize: "22px", fontFamily: "Georgia, serif" }
+    } > Internship Placement < /div> < /
+    Box > <
+    /Section>
 
-        <Section
-          sx={{
+    <
+    Section sx = {
+        {
             textAlign: "center",
             backgroundColor: "#350c5eff",
             color: "white",
@@ -99,152 +127,150 @@ export default () => (
             padding: 30,
             borderRadius: 24,
             fontWeight: "bold",
-          }}
-        >
-          <Box width={1}>UC IRVINE'S</Box>
-          <Box width={1} style={{ fontFamily: "Lato", fontWeight: "bold" }}>
-            Largest & Oldest
-          </Box>
-          <Box width={1}>Business Fraternity</Box>
-        </Section>
+        }
+    } >
+    <
+    Box width = { 1 } > UC IRVINE 'S</Box> <
+    Box width = { 1 }
+    style = {
+        { fontFamily: "Lato", fontWeight: "bold" }
+    } >
+    Largest & Oldest <
+    /Box> <
+    Box width = { 1 } > Business Fraternity < /Box> < /
+    Section >
 
-        <Section>
-          <ResponsiveDoughnut data={genderData} legendLines={1} text="Gender" />
-          <ResponsiveDoughnut data={yearData} legendLines={2} text="Year" />
-          <ResponsiveDoughnut data={majorData} legendLines={2} text="Major" />
-        </Section>
+    <
+    Section >
+    <
+    ResponsiveDoughnut data = { genderData }
+    legendLines = { 1 }
+    text = "Gender" / >
+    <
+    ResponsiveDoughnut data = { yearData }
+    legendLines = { 2 }
+    text = "Year" / >
+    <
+    ResponsiveDoughnut data = { majorData }
+    legendLines = { 2 }
+    text = "Major" / >
+    <
+    /Section>
 
-        <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
-        <ImageTextRow title="Brotherhood" imagePosition="right" imageSrc={seniors}>
-          Our community has cultivated mentorship, inspiration, and countless
-          opportunities to learn and grow. Our brothers have built lifelong
-          friendships—not only within our chapter, but with brothers in many of
-          the 300+ national collegiate chapters.
-        </ImageTextRow>
-        <ImageTextRow
-          title="Professionalism"
-          imagePosition="left"
-          imageSrc={professionalismImage}
-        >
-          Delta Sigma Pi offers a career advantage like no other. For over a
-          decade, our chapter has cultivated professionalism and kickstarted
-          impactful careers through a focus on industry education and workshops,
-          industry conferences, recruiting and networking events, and much more.
-        </ImageTextRow>
-        <ImageTextRow
-          title="Community Service"
-          imagePosition="right"
-          imageSrc={communityImage}
-        >
-          Our brotherhood actively strengthens our communities through service. By
-          organizing more than eight high-impact service initiatives a year, we
-          act on our commitment to service.
-        </ImageTextRow>
+    <
+    hr style = {
+        {
+            border: 0,
+            height: '1px',
+            background: '#666',
+            margin: '48px auto',
+            width: '80%'
+        }
+    }
+    /> <
+    ImageTextRow title = "Brotherhood"
+    imagePosition = "right"
+    imageSrc = { seniors } >
+    Our community has cultivated mentorship, inspiration, and countless opportunities to learn and grow.Our brothers have built lifelong friendships— not only within our chapter, but with brothers in many of the 300 + national collegiate chapters. <
+    /ImageTextRow> <
+    ImageTextRow title = "Professionalism"
+    imagePosition = "left"
+    imageSrc = { professionalismImage } >
+    Delta Sigma Pi offers a career advantage like no other.For over a decade, our chapter has cultivated professionalism and kickstarted impactful careers through a focus on industry education and workshops,
+    industry conferences, recruiting and networking events, and much more. <
+    /ImageTextRow> <
+    ImageTextRow title = "Community Service"
+    imagePosition = "right"
+    imageSrc = { communityImage } >
+    Our brotherhood actively strengthens our communities through service.By organizing more than eight high - impact service initiatives a year, we act on our commitment to service. <
+    /ImageTextRow>
 
 
-        <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
+    <
+    hr style = {
+        {
+            border: 0,
+            height: '1px',
+            background: '#666',
+            margin: '48px auto',
+            width: '80%'
+        }
+    }
+    />
 
-        <CenterHeader>Our Values</CenterHeader>
-        <Flex flexWrap="wrap" sx={{ justifyContent: "center" }}>
-          <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Respect</div>
-          </Box>
-          <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Integrity</div>
-          </Box>
-          <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Initiative</div>
-          </Box>
-          <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Innovation</div>
-          </Box>
-          <Box width={[1, 1 / 3, 1 / 5]} style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "26px", fontFamily: "Georgia, serif" }}>Humility</div>
-          </Box>
-        </Flex>
 
-        <CenterHeader marginTop={80} marginBottom={20}>
-          Industries
-        </CenterHeader>
-  <Flex flexWrap="wrap" sx={{ justifyContent: "center", textAlign: "center" }}>
-          <CareerBox title="Finance" icon={faPiggyBank}>
-            Investment banking, wealth management, financial analysts, and
-            beyond—our brothers set the standard for impactful careers in finance
-            at the world’s biggest firms and corporations.
-          </CareerBox>
-          <CareerBox title="Marketing" icon={faBullhorn}>
-            Our brothers are influencing how companies communicate products and
-            services through product marketing, brand strategy, communications,
-            and more.
-          </CareerBox>
-          <CareerBox title="Tech" icon={faMicrochip}>
-            Whether it’s software engineering, product management, or data
-            analytics, our brothers are experienced and prepared to shape the
-            future of technology.
-          </CareerBox>
-          <CareerBox title="Accounting" icon={faCalculator}>
-            We’ve placed countless brothers in every Big Four accounting firm,
-            where they build successful careers in audit, tax, assurance, and
-            other professional services.
-          </CareerBox>
-          <CareerBox title="Consulting" icon={faLightbulb}>
-            Our brothers are among the few from UC Irvine to start careers in
-            management consulting, tasked with providing strategic guidance to the
-            world’s biggest companies.
-          </CareerBox>
-          <CareerBox title="Other" icon={faUserTie}>
-            There are limitless applications of business—we have brothers pursuing
-            entrepreneurship, experience and interface design, human resources,
-            and much more.
-          </CareerBox>
-        </Flex>
 
-        <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
-        <CenterHeader marginBottom={20}>History</CenterHeader>
-        <div
-          style={{
+    <
+    CenterHeader marginTop = { 80 }
+    marginBottom = { 20 } >
+    Industries <
+    /CenterHeader> <
+    Flex flexWrap = "wrap"
+    sx = {
+        { justifyContent: "center", textAlign: "center" }
+    } >
+    <
+    CareerBox title = "Finance"
+    icon = { faPiggyBank } >
+    Investment banking, wealth management, financial analysts, and beyond— our brothers set the standard
+    for impactful careers in finance at the world’ s biggest firms and corporations. <
+    /CareerBox> <
+    CareerBox title = "Marketing"
+    icon = { faBullhorn } >
+    Our brothers are influencing how companies communicate products and services through product marketing, brand strategy, communications,
+    and more. <
+    /CareerBox> <
+    CareerBox title = "Tech"
+    icon = { faMicrochip } >
+    Whether it’ s software engineering, product management, or data analytics, our brothers are experienced and prepared to shape the future of technology. <
+    /CareerBox> <
+    CareerBox title = "Accounting"
+    icon = { faCalculator } >
+    We’ ve placed countless brothers in every Big Four accounting firm,
+    where they build successful careers in audit, tax, assurance, and other professional services. <
+    /CareerBox> <
+    CareerBox title = "Consulting"
+    icon = { faLightbulb } >
+    Our brothers are among the few from UC Irvine to start careers in
+    management consulting, tasked with providing strategic guidance to the world’ s biggest companies. <
+    /CareerBox> <
+    CareerBox title = "Other"
+    icon = { faUserTie } >
+    There are limitless applications of business— we have brothers pursuing entrepreneurship, experience and interface design, human resources,
+    and much more. <
+    /CareerBox> < /
+    Flex >
+
+    <
+    hr style = {
+        {
+            border: 0,
+            height: '1px',
+            background: '#666',
+            margin: '48px auto',
+            width: '80%'
+        }
+    }
+    /> <
+    CenterHeader marginBottom = { 20 } > History < /CenterHeader> <
+    div style = {
+        {
             maxWidth: 700,
             margin: "0 auto",
             marginBottom: 80,
             color: "#999",
             textAlign: "center"
-          }}
-        >
-          Delta Sigma Pi was founded on November 7, 1907 by four business students
-          at New York University who saw an opportunity to impact the lives of
-          their fellow business students. In 1975, Delta Sigma Pi officially
-          became the nation's first co-ed business fraternity. Today, we have over
-          300 collegiate chapters and over 290,000 initiated members worldwide.
-          <br />
-          <br />
-          As the oldest business fraternity at UC Irvine, the Pi Sigma Chapter of
-          Delta Sigma Pi has championed professionalism and a lifetime of
-          opportunity for our members since 2008. We are the only fraternity on
-          campus to restrict membership to business school majors, which is
-          instrumental to our unrivaled career success and lifelong brotherhood.
-          Over a decade later, our chapter has become the premier business
-          fraternity on campus, unparalleled in our professional success and
-          brotherhood.
-        </div>
-      </Fade>
-    </div>
-  </CoverLayout>
+        }
+    } >
+    Delta Sigma Pi was founded on November 7, 1907 by four business students at New York University who saw an opportunity to impact the lives of their fellow business students.In 1975, Delta Sigma Pi officially became the nation 's first co-ed business fraternity. Today, we have over
+    300 collegiate chapters and over 290, 000 initiated members worldwide. <
+    br / >
+    <
+    br / >
+    As the oldest business fraternity at UC Irvine, the Pi Sigma Chapter of Delta Sigma Pi has championed professionalism and a lifetime of opportunity
+    for our members since 2008. We are the only fraternity on campus to restrict membership to business school majors, which is instrumental to our unrivaled career success and lifelong brotherhood.Over a decade later, our chapter has become the premier business fraternity on campus, unparalleled in our professional success and brotherhood. <
+    /div> < /
+    Fade > <
+    /div> < /
+    CoverLayout >
 )

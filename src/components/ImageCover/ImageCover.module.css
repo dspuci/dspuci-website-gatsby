@@ -1,37 +1,37 @@
 .imageCover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 70vh;
-  color: black;
-  display: table;
-  width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+    color: black;
+    display: table;
+    width: 100%;
 }
 
 @media (max-width: 800px) {
-  .imageCover {
-    background-attachment: scroll;
-  }
+    .imageCover {
+        background-attachment: scroll;
+    }
 }
 
 .coverTitleContainer {
-  display: table-cell;
-  vertical-align: middle;
-  margin: 0 auto;
-  text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .coverTitle {
-  display: inline-block;
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
-  margin: 0 auto;
-  text-transform: uppercase;
-  line-height: 1.4;
-  font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-weight: bold;
 }
