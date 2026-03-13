@@ -1,0 +1,55 @@
+.homePage {
+  background: #f5f0e6;
+  color: #1a1a1a;
+  font-family: Heebo, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  padding-bottom: 80px;
+}
+
+/* Page load fade-in: runs once when Home page first loads */
+.homePageFade {
+  opacity: 0;
+  animation: fadeInPage 0.8s ease forwards;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Equal-height cards row: grid forces all three cards to share one row height */
+.cardsRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 512px) {
+  .cardsRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardsRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Each grid item stretches to equal height and fills its cell */
+.cardsRow > * {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  min-width: 0;
+}
+

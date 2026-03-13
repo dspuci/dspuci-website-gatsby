@@ -37,8 +37,19 @@ class ImageTextRow extends React.Component {
             paddingBottom: [40, 30, 20, 10],
           }}
         >
-          <h1 style={{ fontWeight: 400, letterSpacing: "0.02em", fontFamily: "Georgia, serif" }}>{this.props.title}</h1>
-          <div style={{ color: "#999", lineHeight: 1.8 }}>{this.props.children}</div>
+          <h1
+            style={{
+              fontWeight: 400,
+              letterSpacing: "0.02em",
+              fontFamily: "Georgia, serif",
+              color: "#000000",
+            }}
+          >
+            {this.props.title}
+          </h1>
+          <div style={{ color: "#000000", lineHeight: 1.8 }}>
+            {this.props.children}
+          </div>
         </Box>
       </Flex>
     )

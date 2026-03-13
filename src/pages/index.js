@@ -1,5 +1,4 @@
 import React from "react"
-import { Flex } from "rebass"
 import CenterHeader from "../components/CenterHeader"
 import ImageTextRowTwo from "../components/ImageTextRowTwo"
 import backup from "../images/backup.png"
@@ -13,6 +12,7 @@ import video from "../images/index.mp4"
 import ImageBox from "../components/ImageBox"
 import Button from "../components/TransparentButton"
 import { Fade } from "react-reveal"
+import styles from "./home.module.css"
 
 import careerAdvantage from "../images/dsp2025panel.jpeg"
 import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
@@ -28,7 +28,8 @@ export default () => (
     textTwo="The Premier Business Fraternity | Pi Sigma Chapter"
     coverImage={dsp_seal}
   >
-    
+    <div className={styles.homePage}>
+      <div className={styles.homePageFade}>
     <Helmet>
       <title>Delta Sigma Pi - Pi Sigma Chapter</title>
       <meta
@@ -40,38 +41,44 @@ export default () => (
           border: 0,
           height: '1px',
           background: '#666',
-          margin: '0 auto 30px',
+          margin: '40px auto 30px',
           width: '100%'
         }} />
-    <Fade>
-      <Flex flexWrap="wrap" justifyContent="center" marginTop="30px">
-        <ImageBox image={unrivaledLeaders} title="ABOUT US">
+    <Fade bottom distance="0px" duration={700}>
+      <div className={styles.cardsRow}>
+        <ImageBox
+          image={unrivaledLeaders}
+          title="ABOUT US"
+          actions={<Button to="/about" text="WHO WE ARE" />}
+          equalHeight
+        >
           Established in 2008, the Pi Sigma Chapter of Delta Sigma Pi at UC
           Irvine is the oldest business fraternity on campus. Our chapter has
           cultivated a growing legacy of achievement, mentorship, and leadership
           within business and beyond.
-          <div style={{ textAlign: "center" }}>
-            <Button to="/about" text="WHO WE ARE"></Button>
-          </div>
         </ImageBox>
-        <ImageBox image={brothers} title="BROTHERS">
+        <ImageBox
+          image={brothers}
+          title="BROTHERS"
+          actions={<Button to="/brothers" text="MEET OUR BROTHERS" />}
+          equalHeight
+        >
           From various professional aspirations to pastime hobbies, our brothers
           are incredibly unique and diverse. Our drive to succeed and support
           for one another makes us a tight-knit community like no other.
-          <div style={{ textAlign: "center" }}>
-            <Button to="/brothers" text="MEET OUR BROTHERS"></Button>
-          </div>
         </ImageBox>
-        <ImageBox image={careerAdvantage} title="CAREERS">
+        <ImageBox
+          image={careerAdvantage}
+          title="CAREERS"
+          actions={<Button to="/careers" text="OUR EXPERIENCE" />}
+          equalHeight
+        >
           We have countless brothers with competitive internships and full-time
           experience in finance, marketing, technology, accounting, consulting,
           entrepreneurship, and more – the opportunities for growth are endless
           with Delta Sigma Pi.
-          <div style={{ textAlign: "center" }}>
-            <Button to="/careers" text="OUR EXPERIENCE"></Button>
-          </div>
         </ImageBox>
-      </Flex>
+      </div>
     </Fade>
     <hr style={{
           border: 0,
@@ -80,7 +87,7 @@ export default () => (
           margin: '48px auto',
           width: '80%'
         }} />
-    <Fade>
+    <Fade bottom distance="0px" duration={700}>
       <CenterHeader>Letter from the President</CenterHeader>
       <ImageTextRowTwo imagePosition="left" imageSrc={presidentImage}>
         {/* Dear Prospective Member,
@@ -110,5 +117,7 @@ export default () => (
         Lohit Potnuru | President - Pi Sigma Chapter
       </ImageTextRowTwo>
     </Fade>
+      </div>
+    </div>
   </VideoCoverLayout>
 )

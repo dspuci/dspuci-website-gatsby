@@ -1,16 +1,16 @@
 import React from "react"
-import { Flex, Image } from "rebass"
+import { Flex } from "rebass"
 import { Fade } from "react-reveal"
 import { withPrefix } from "gatsby"
 
 import { CoverLayout } from "../components/Layout"
-import ImageCover from "../components/ImageCover"
 import CenterHeader from "../components/CenterHeader"
-import Section from "../components/Section"
 import ImageBox from "../components/ImageBox"
 import Accordion from "../components/Faq"
 import RecCarousel from "../components/RecCarousel/RecCarousel"
+import Button from "../components/TransparentButton"
 import { Helmet } from "react-helmet"
+import styles from "./how-to-join.module.css"
 
 import lifelongBrotherhood from "../images/lifelongBrotherhood.jpg"
 import unrivaledLeaders from "../images/unrivaled_leaders.jpg"
@@ -20,55 +20,105 @@ export default () => (
   <CoverLayout
     navbarTextColor="white"
     coverElement={
-      <ImageCover
-        text="HOW TO JOIN"
-        coverImage="boats.jpg"
-        textColor="white"
-        darkGradient
-      />
+      <div className={styles.whyDspHeroWrap}>
+        <div
+          className={styles.whyDspHeroImage}
+          style={{
+            backgroundImage: `url(${withPrefix("/images/cover_images/boats.jpg")})`,
+          }}
+          aria-hidden="true"
+        />
+        <div className={styles.whyDspHeroOverlay} aria-hidden="true" />
+        <div className={styles.whyDspHeroBottomFade} aria-hidden="true" />
+        <div
+          className={styles.whyDspHeroContent}
+          style={{
+            position: "relative",
+            width: "100%",
+            maxWidth: 1120,
+            display: "flex",
+            flexDirection: "column",
+            gap: 20,
+            padding: "120px 24px 80px",
+          }}
+        >
+          <h1
+            className={styles.whyDspHeroTitle}
+            style={{
+              fontSize: "clamp(36px, 5vw, 56px)",
+              textTransform: "uppercase",
+              margin: 0,
+            }}
+          >
+            Why DSP
+          </h1>
+          <h2
+            style={{
+              fontFamily: "Georgia, serif",
+              fontWeight: 500,
+              fontSize: "clamp(22px, 3vw, 30px)",
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              margin: 0,
+              color: "#ffffff",
+            }}
+          >
+            Be a Part of Something Greater
+          </h2>
+          <p
+            style={{
+              maxWidth: 640,
+              lineHeight: 1.7,
+              fontSize: 16,
+              marginTop: 10,
+              marginBottom: 24,
+              color: "#ffffff",
+            }}
+          >
+            Our chapter aims to create a high-impact, supportive culture where
+            immensely passionate people are encouraged to pursue their
+            professional and personal dreams. Attend our recruitment events to
+            find out what sets Delta Sigma Pi above and apart.
+          </p>
+          <p
+            style={{
+              maxWidth: 640,
+              lineHeight: 1.7,
+              fontSize: 16,
+              marginTop: 0,
+              marginBottom: 24,
+              color: "#ffffff",
+            }}
+          >
+            We hold recruitment in the beginning of Fall and Spring quarter
+            each year. Be sure to follow us on{" "}
+            <a
+              href="https://www.instagram.com/dspuci/"
+              style={{ color: "#ffffff", textDecoration: "underline" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>{" "}
+            for more information.
+          </p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center" }}>
+            <Button to="/recruitment" text="VIEW RECRUITMENT" hero />
+          </div>
+        </div>
+      </div>
     }
   >
+    <div className={styles.whyDspPage}>
     <Helmet>
-      <title>Recruitment | Delta Sigma Pi - Pi Sigma Chapter</title>
+      <title>Why DSP | Delta Sigma Pi - Pi Sigma Chapter</title>
       <meta
-        name="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page"
-        content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page"
+        name="Delta Sigma Pi - Pi Sigma Chapter Why DSP Page"
+        content="Delta Sigma Pi - Pi Sigma Chapter Why DSP Page"
       />
     </Helmet>
     <Fade bottom distance="40px">
-      <Section sx={{ justifyContent: "center" }}>
-        <h1 style={{ fontFamily: "Georgia, serif", fontWeight: 400 }}>Be a Part of Something Greater</h1>
-        <p>
-          Our chapter aims to create a high-impact, supportive culture where
-          immensely passionate people are encouraged to pursue their
-          professional and personal dreams. Attend our recruitment events to
-          find out what sets Delta Sigma Pi above and apart.{" "}
-        </p>
-        <p style={{ textAlign: "left", width: "100%" }}>
-          We hold recruitment in the beginning of Fall and Spring quarter
-          each year. Be sure to follow us on{" "}
-          <a
-            href="https://www.instagram.com/dspuci/"
-            style={{ color: "#5FA0EC" }}
-          >
-            Instagram
-          </a>{" "}
-          for more information.
-        </p>
-      </Section>
-
-      {/* <Section sx={{ justifyContent: "center" }}>
-        <p><center>RSVP to our Facebook event page at <a href="https://www.facebook.com/events/506869997688672" style={{color: '#5FA0EC'}}>UCI Delta Sigma Pi - Spring 2023 Recruitment: Chase</a> for any and all updates.</center></p>
-        <center>Add our recruitment events to your calendar <a href={withPrefix("/files/recruitment_calendar_fall21.ics")} download style={{color: '#5FA0EC'}}>here</a>.</center></p>
-      </Section> */}
-
-      <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
+      <hr className={styles.whyDspHr} />
 
       <CenterHeader>Why Join?</CenterHeader>
 
@@ -96,26 +146,14 @@ export default () => (
       </Flex>
     </Fade>
 
-    <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
+    <hr className={styles.whyDspHr} />
 
     <Fade bottom distance="40px">
       <CenterHeader>Hear From Our Brothers</CenterHeader>
       <RecCarousel />
     </Fade>
 
-    <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
+    <hr className={styles.whyDspHr} />
 
     <Fade bottom distance="40px">
       <CenterHeader>FAQ's</CenterHeader>
@@ -217,5 +255,6 @@ export default () => (
         "
       />
     </Fade>
+    </div>
   </CoverLayout>
 )

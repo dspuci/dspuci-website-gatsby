@@ -12,7 +12,7 @@ const FAQHeader = (props) => (
     fontSize={[16, 20]}
     fontWeight="bold"
     fontFamily="Heebo"
-    sx={{ marginBottom: 10, color: '#fff' }}
+    sx={{ marginBottom: 10, color: "inherit" }}
   >
     {props.children}
   </Text>
@@ -46,10 +46,13 @@ function Accordion(props) {
         </button>
         <div
           ref={content}
-          style={{ maxHeight: `${setHeight}` }}
+          style={{ maxHeight: setHeight }}
           className={styles.accordion__content}
+          aria-hidden={setActive !== "active"}
         >
-          <DescriptionText>{props.content}</DescriptionText>
+          <div className={styles.accordion__contentInner}>
+            <DescriptionText>{props.content}</DescriptionText>
+          </div>
         </div>
       </div>
     </HoverShadowBox>

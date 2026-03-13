@@ -1,0 +1,28 @@
+/* Brother profile page: black text on light background (site theme) */
+.brotherProfile {
+  color: #000000;
+}
+
+.brotherProfile h1,
+.brotherProfile .name {
+  color: #000000 !important;
+}
+
+.brotherProfile .subtitle {
+  color: #000000 !important;
+}
+
+.brotherProfile .infoCard,
+.brotherProfile .infoCard p,
+.brotherProfile .infoCard span {
+  color: #000000 !important;
+}
+
+.brotherProfile .sectionTitle,
+.brotherProfile .divider {
+  color: #000000 !important;
+}
+
+.brotherProfile .bio {
+  color: #000000 !important;
+}

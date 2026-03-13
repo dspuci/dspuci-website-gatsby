@@ -1,3 +1,22 @@
+.carouselWrap {
+  width: 100%;
+  position: relative;
+}
+
+/* Smoother, more seamless slide transition */
+.carouselWrap :global(.BrainhubCarousel__trackContainer .BrainhubCarousel__track) {
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+}
+
+.carouselWrap :global(.BrainhubCarousel__trackContainer .BrainhubCarousel__track.BrainhubCarousel__track--transition) {
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+}
+
+/* Hide default dots; we use custom progress indicator */
+.carouselWrap :global(.BrainhubCarousel__dots) {
+  display: none !important;
+}
+
 .cardContainer {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -7,9 +26,20 @@
   width: 100%;
 }
 
-.img {
+.imageWrap {
   grid-column: 1 / 2;
   padding: 0 2vw 0 2vw;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
 }
 
 .textContainer {
@@ -22,14 +52,93 @@
   font-size: 36px;
   font-family: Georgia, serif;
   font-weight: 400;
+  color: #1a1a1a;
 }
 
 .textContainer h3 {
   font-size: 16px;
+  color: #333;
 }
 
 .textContainer p {
   font-size: 14px;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+/* Horizontal progress indicator: line + connected nodes */
+.progressWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  padding: 0 16px;
+}
+
+.progressTrack {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.progressLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-width: 120px;
+  max-width: 280px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+.progressNodes {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.progressNode {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+  opacity: 0.75;
+}
+
+.progressNode:hover {
+  opacity: 1;
+}
+
+.progressNodeActive {
+  transform: scale(1.35);
+  opacity: 1;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 600px) {
+  .progressNodes {
+    gap: 32px;
+  }
+  .progressNode {
+    width: 14px;
+    height: 14px;
+  }
+  .progressNodeActive {
+    transform: scale(1.3);
+  }
 }
 
 @media (max-width: 800px) {
@@ -37,7 +146,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
-  .img {
+  .imageWrap {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
@@ -49,11 +158,9 @@
   .textContainer h2 {
     font-size: 32px;
   }
-
   .textContainer h3 {
     font-size: 14px;
   }
-
   .textContainer p {
     font-size: 12px;
   }

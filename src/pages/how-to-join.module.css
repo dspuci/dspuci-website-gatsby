@@ -1,0 +1,97 @@
+/* Why DSP page: match Recruitment design system */
+
+/* Page content: same theme as Recruitment */
+.whyDspPage {
+  background: #f5f0e6;
+  color: #1a1a1a;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  padding-bottom: 80px;
+}
+
+.whyDspPage a {
+  color: #2d5a87;
+}
+
+/* Hero: same structure as Recruitment/About */
+.whyDspHeroWrap {
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  max-height: 840px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f0e6;
+  opacity: 0;
+  animation: whyDspHeroFadeIn 700ms ease-out forwards;
+}
+
+@keyframes whyDspHeroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.whyDspHeroImage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.whyDspHeroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.whyDspHeroBottomFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(245, 240, 230, 0) 0%, #f5f0e6 100%);
+  pointer-events: none;
+}
+
+.whyDspHeroContent {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: whyDspHeroContentFadeIn 700ms ease-out 150ms forwards;
+}
+
+@keyframes whyDspHeroContentFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.whyDspHeroTitle {
+  font-family: "Arial Black", "Arial", "Helvetica Neue", sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.06em;
+  color: #ffffff !important;
+}
+
+/* Section dividers: match Recruitment */
+.whyDspHr {
+  border: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 48px auto;
+  width: 80%;
+}

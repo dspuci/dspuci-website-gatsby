@@ -1,0 +1,545 @@
+/* Recruitment page: clean flat background */
+.recruitmentPageBg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #f5f0e6;
+}
+
+/* Override layout text color for light theme */
+.recruitmentPageContent {
+  color: #1a1a1a;
+}
+
+.recruitmentPageContent a {
+  color: #2d5a87;
+}
+
+/* Band: clean white container */
+.band {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 0 auto;
+  max-width: 960px;
+  background: #f5f0e6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  color: #1a1a1a;
+}
+
+.bandContent {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+}
+
+/* Hero: background video, overlay, content */
+.recruitmentHeroWrap {
+  position: relative;
+  min-height: 100vh;
+  max-height: 840px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f5f0e6;
+  opacity: 0;
+  animation: heroFadeIn 700ms ease-out forwards;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Bottom gradient only: video blends into page (no dark overlay) */
+.recruitmentHeroWrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 60%,
+    rgba(245, 240, 230, 0.4) 80%,
+    rgba(245, 240, 230, 0.85) 93%,
+    #f5f0e6 100%
+  );
+  pointer-events: none;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.recruitmentHeroContent {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: heroContentFadeIn 700ms ease-out 150ms forwards;
+}
+
+@keyframes heroContentFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero title: bold sans (Arial Black / Impact style) */
+.recruitmentHeroTitle {
+  font-family: "Arial Black", "Arial", "Helvetica Neue", sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.06em;
+  color: #ffffff !important;
+}
+
+/* View Schedule button: gray, theme-fitting */
+.viewScheduleBtn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #5c5c5c;
+  color: #fff !important;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.viewScheduleBtn:hover {
+  background: #4a4a4a;
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+
+/* Hero-specific variant: white button on dark video */
+.heroViewScheduleBtn {
+  background: #ffffff;
+  color: #000000 !important;
+}
+
+.heroViewScheduleBtn:hover {
+  background: #e2e2e2;
+  color: #000000 !important;
+  transform: translateY(-2px);
+}
+
+.recruitmentDivider {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* Light-theme overrides for shared components (FAQ, etc.) */
+.recruitmentPageContent :global([class*="accordion__section"]),
+.recruitmentPageContent :global([class*="accordion__section"]) * {
+  color: #1a1a1a !important;
+  font-family: Heebo, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif !important;
+}
+
+.recruitmentPageContent :global([class*="accordion__content"]) {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+/* FAQ cards on recruitment page: align with schedule card visual system */
+.faqList :global(.hover_shadow_box),
+.faqList :global(.hover_shadow_box_raise) {
+  background: #dcdcdc !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(0, 0, 0, 0.14) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.04) !important;
+  padding: 12px 18px !important;
+}
+
+/* Schedule: timeline + event cards */
+
+.scheduleTimelineWrap {
+  position: relative;
+  margin-top: 8px;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scheduleTimelineTrack {
+  position: absolute;
+  left: 22px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.scheduleItemRow {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 0;
+}
+
+.scheduleNodeCol {
+  width: 48px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 22px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.scheduleNode {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid;
+  background: transparent;
+  flex-shrink: 0;
+  opacity: 0.35;
+  transform: scale(0.72);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out, box-shadow 0.35s ease-out, background 0.35s ease-out;
+  z-index: 2;
+}
+
+.scheduleNodeRevealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scheduleCardCol {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flip card: fixed height so flip stays in place, no reflow */
+.scheduleCardWrap {
+  perspective: 1200px;
+  width: 100%;
+  height: 96px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.scheduleCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.scheduleCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.45s ease;
+  transform-style: preserve-3d;
+}
+
+.scheduleCard.flipped .scheduleCardInner {
+  transform: rotateY(180deg);
+}
+
+.scheduleCardFront,
+.scheduleCardBack {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Structure only: panel seams, door division, transit geometry, restrained framing */
+.scheduleCardFront {
+  background: #f5f0e6;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+  color: #1a1a1a;
+}
+
+/* Top framing: structural rail (transit geometry) */
+.scheduleCardFront::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+  height: 4px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08) 0,
+    rgba(0, 0, 0, 0.08) 1px,
+    transparent 1px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.06) 2px,
+    rgba(0, 0, 0, 0.06) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Bottom rail: panel edge (transit geometry) */
+.scheduleCardFront::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.05) 0,
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 1px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.scheduleCardFront > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cardLeft {
+  flex: 1;
+  min-width: 0;
+  padding-right: 12px;
+}
+
+@media (max-width: 540px) {
+  .scheduleCardFront {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cardLeft {
+    padding-right: 0;
+  }
+
+  .cardRight {
+    text-align: left;
+    border-left: none;
+    box-shadow: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 0;
+    padding-top: 12px;
+    margin-left: 0;
+    margin-top: 4px;
+    width: 100%;
+  }
+}
+
+.scheduleCardBack {
+  background: #f5f0e6;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+  transform: rotateY(180deg);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 24px;
+  color: #1a1a1a;
+  overflow-y: auto;
+}
+
+/* Top framing on back (same structural rail) */
+.scheduleCardBack::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+  height: 4px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08) 0,
+    rgba(0, 0, 0, 0.08) 1px,
+    transparent 1px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.06) 2px,
+    rgba(0, 0, 0, 0.06) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Bottom rail on back (panel edge) */
+.scheduleCardBack::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.05) 0,
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 1px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.scheduleCardBack > * {
+  position: relative;
+  z-index: 1;
+}
+
+.dateCircles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  margin-top: 8px;
+}
+
+.dateCircle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 11px;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0 -3px;
+}
+
+@media (min-width: 600px) {
+  .dateCircle {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    margin: 0 -3px;
+  }
+}
+
+/* Panel seam: door division between left/right (structure, not decoration) */
+.cardRight {
+  text-align: right;
+  flex-shrink: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  margin-left: 6px;
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.cardRightLine {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+  color: #1a1a1a;
+}
+
+.cardRightLine:last-child {
+  margin-bottom: 0;
+}
+
+.backContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.backLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.backText {
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.cardTitleNote {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  opacity: 0.8;
+  margin-top: 4px;
+  color: #1a1a1a;
+}
+
+@media (min-width: 600px) {
+  .cardTitle {
+    font-size: 20px;
+  }
+}
