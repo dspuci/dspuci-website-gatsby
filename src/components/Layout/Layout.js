@@ -78,9 +78,14 @@ class Layout extends React.Component {
 
 class CoverLayout extends React.Component {
   render() {
+    const navbarTransparent =
+      this.props.navbarTransparent !== undefined
+        ? this.props.navbarTransparent
+        : true
+
     return (
       <Layout
-        navbarTransparent
+        navbarTransparent={navbarTransparent}
         navbarTextColor={this.props.navbarTextColor}
         navbarClassName={this.props.navbarClassName}
         layoutClassName={this.props.layoutClassName}

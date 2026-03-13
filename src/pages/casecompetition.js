@@ -38,7 +38,7 @@ export default () => {
     return (
       <CoverLayout
         navbarTextColor="white"
-        layoutClassName="caseCompetitionLayout"
+        navbarTransparent={false}
         coverElement={
           <div className={styles.caseHeroWrap}>
             <video

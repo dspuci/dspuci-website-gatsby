@@ -250,13 +250,3 @@
   padding: 12px 18px !important;
 }
 
-/* Case Competition page: force navbar links and brand to black on this page only */
-.casePage :global(.navbar a),
-.casePage :global(.navbar button) {
-  color: #000000 !important;
-}
-
-.casePage :global(.navbar li:hover) {
-  border-bottom: 2px solid #000000;
-}
-
