@@ -58,9 +58,17 @@ class Layout extends React.Component {
   }
 
   render() {
+    const layoutClassName = [
+      styles.layout,
+      this.props.layoutClassName,
+    ].filter(Boolean).join(" ")
+
     return (
-      <div className={styles.layout}>
-        <Navbar type={this.state.navbarType} />
+      <div className={layoutClassName}>
+        <Navbar
+          type={this.state.navbarType}
+          className={this.props.navbarClassName}
+        />
         {this.props.children}
         <Footer />
       </div>
@@ -71,7 +79,12 @@ class Layout extends React.Component {
 class CoverLayout extends React.Component {
   render() {
     return (
-      <Layout navbarTransparent navbarTextColor={this.props.navbarTextColor}>
+      <Layout
+        navbarTransparent
+        navbarTextColor={this.props.navbarTextColor}
+        navbarClassName={this.props.navbarClassName}
+        layoutClassName={this.props.layoutClassName}
+      >
         {this.props.coverElement}
         <Container>{this.props.children}</Container>
       </Layout>

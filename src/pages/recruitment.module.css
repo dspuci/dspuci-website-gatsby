@@ -543,3 +543,51 @@
     font-size: 20px;
   }
 }
+
+/* Mobile-only tweaks for schedule header and flip cards */
+@media (max-width: 600px) {
+  .scheduleHeader :global(h1),
+  .scheduleHeader :global(h2) {
+    font-size: clamp(22px, 6vw, 28px);
+    word-break: normal;
+    hyphens: none;
+    max-width: 90%;
+    margin: 0 auto 12px;
+    text-align: center;
+  }
+
+  .scheduleCardWrap {
+    height: auto;
+    margin-bottom: 4px;
+  }
+
+  .scheduleCardInner {
+    height: auto;
+    transform: none !important;
+  }
+
+  .scheduleCard.flipped .scheduleCardInner {
+    transform: none;
+  }
+
+  .scheduleCardFront,
+  .scheduleCardBack {
+    position: relative;
+    inset: auto;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    height: auto;
+  }
+
+  .scheduleCardBack {
+    display: none;
+  }
+
+  .scheduleCard.flipped .scheduleCardFront {
+    display: none;
+  }
+
+  .scheduleCard.flipped .scheduleCardBack {
+    display: flex;
+  }
+}

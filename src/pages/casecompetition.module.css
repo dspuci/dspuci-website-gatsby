@@ -1,0 +1,262 @@
+.casePage {
+  background: #f5f0e6;
+  color: #1a1a1a;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  padding-bottom: 80px;
+}
+
+/* Hero: match Recruitment/About structure */
+.caseHeroWrap {
+  position: relative;
+  min-height: 100vh;
+  max-height: 840px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f0e6;
+  opacity: 0;
+  animation: caseHeroFadeIn 700ms ease-out forwards;
+}
+
+.caseHeroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+@keyframes caseHeroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.caseHeroImage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.caseHeroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.caseHeroBottomFade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 18vh;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 240, 230, 0) 0%,
+    rgba(245, 240, 230, 0.7) 75%,
+    #f5f0e6 100%
+  );
+}
+
+.caseHeroContent {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: caseHeroContentFadeIn 700ms ease-out 150ms forwards;
+}
+
+@keyframes caseHeroContentFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.caseHeroTitle {
+  font-family: "Arial Black", "Arial", "Helvetica Neue", sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.06em;
+  color: #000000 !important;
+}
+
+/* Make DSP seal logo black on this page only */
+.caseHeroLogosItem:last-child .caseHeroLogo {
+  filter: brightness(0) saturate(100%);
+}
+
+/* Hero collaboration logos row */
+.caseHeroLogos {
+  margin: 28px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.caseHeroLogosItem {
+  opacity: 0;
+  transform: translate(-20px, 10px);
+  animation: caseHeroLogosFadeIn 0.4s ease forwards;
+}
+
+.caseHeroLogosItem:nth-child(1) {
+  animation-delay: 0.15s;
+  margin-right: 24px;
+}
+
+.caseHeroLogosItem:nth-child(2) {
+  animation-delay: 0.3s;
+  margin-right: 24px;
+}
+
+.caseHeroLogosItem:nth-child(3) {
+  animation-delay: 0.45s;
+  margin-left: 0;
+}
+
+/* Emphasize 180 Degrees Consulting logo size */
+.caseHeroLogosItem:nth-child(2) .caseHeroLogo {
+  height: 300px;       /* 150% of base 200px */
+}
+
+.caseHeroLogo {
+  height: 200px;
+  max-width: 360px;
+  width: auto;
+  object-fit: contain;
+}
+
+.caseHeroX {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222222;
+}
+
+@keyframes caseHeroLogosFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-20px, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .caseHeroLogo {
+    height: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .caseHeroLogo {
+    height: 100px;
+  }
+
+  .caseHeroLogos {
+    gap: 24px;
+  }
+}
+
+/* Why Participate grid + cards */
+.sectionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.sectionBlock {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 28px 40px;
+  background: #f5f0e6; /* match main page background */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #d8cbb8; /* warm neutral border */
+}
+
+.sectionCard {
+  border: 1px solid #d8cbb8; /* warm taupe border */
+  border-radius: 12px;
+  padding: 24px;
+  background: #f5f0e6; /* same as section/page background */
+  color: #111111;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sectionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sectionCard h3 {
+  color: #111111;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.sectionCard p {
+  color: #111111;
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .sectionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FAQ block to mirror recruitment FAQ band */
+.faqBlock {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 28px 40px;
+  background: #f7f2e8; /* same warm section background */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #d8cbb8;
+}
+
+/* FAQ cards inside case competition block – warm variant of recruitment FAQ cards */
+.faqBlock :global(.hover_shadow_box),
+.faqBlock :global(.hover_shadow_box_raise) {
+  background: #efe6d6 !important; /* warm card background */
+  border-radius: 12px !important;
+  border: 1px solid #d8cbb8 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.03) !important;
+  padding: 12px 18px !important;
+}
+
+/* Case Competition page: force navbar links and brand to black on this page only */
+.casePage :global(.navbar a),
+.casePage :global(.navbar button) {
+  color: #000000 !important;
+}
+
+.casePage :global(.navbar li:hover) {
+  border-bottom: 2px solid #000000;
+}
+

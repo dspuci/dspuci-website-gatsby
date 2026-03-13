@@ -224,9 +224,11 @@ const RecruitmentScheduleBlock = () => {
   return (
     <Band compact>
       <Fade bottom distance="16px" duration={500}>
-        <CenterHeader marginTop={4} marginBottom={8}>
-          Recruitment Schedule
-        </CenterHeader>
+        <div className={styles.scheduleHeader}>
+          <CenterHeader marginTop={4} marginBottom={8}>
+            Recruitment Schedule
+          </CenterHeader>
+        </div>
       </Fade>
       <Fade bottom distance="20px" duration={500} delay={80}>
         <Text

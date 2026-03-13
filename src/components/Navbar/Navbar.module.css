@@ -177,6 +177,16 @@
   transition: border-bottom 100ms linear;
 }
 
+/* Case Competition page: force navbar text and logo to black (scoped via layout wrapper) */
+:global(.caseCompetitionLayout) .navbar a,
+:global(.caseCompetitionLayout) .navbar button {
+  color: #000000 !important;
+}
+
+:global(.caseCompetitionLayout) .navbar li:hover {
+  border-bottom: 2px solid #000000;
+}
+
 .brandButton {
   float: left;
 }
