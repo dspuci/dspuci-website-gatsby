@@ -1,5 +1,4 @@
 import React from "react"
-import { Flex } from "rebass"
 import { Fade } from "react-reveal"
 import { withPrefix } from "gatsby"
 
@@ -122,28 +121,28 @@ export default () => (
 
       <CenterHeader>Why Join?</CenterHeader>
 
-      <Flex flexWrap="wrap" justifyContent="center" marginBottom="-20px">
-        <ImageBox image={stella_comp} title="CAREER ADVANTAGE">
+      <div className={styles.whyJoinRow}>
+        <ImageBox image={stella_comp} title="CAREER ADVANTAGE" equalHeight>
           Delta Sigma Pi offers a career advantage like no other. For over a
           decade, our chapter has kickstarted and cultivated impactful careers
           in finance, consulting, marketing, accounting, technology,
           entrepreneurship, and more. Unsure of what path to choose? We’ll help
           you out.
         </ImageBox>
-        <ImageBox image={unrivaledLeaders} title="UNRIVALED LEADERS">
+        <ImageBox image={unrivaledLeaders} title="UNRIVALED LEADERS" equalHeight>
           With countless opportunities for growth, our brothers become
           recognized leaders, within the fraternity and beyond. We hold
           leadership positions in over 25 campus organizations – some have even
           started their own.{" "}
         </ImageBox>
-        <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD">
+        <ImageBox image={lifelongBrotherhood} title="LIFELONG BROTHERHOOD" equalHeight>
           Joining the DSP family means mentorship, inspiration, and countless
           opportunities to learn and grow. Build lifelong friendships alongside
           an extensive network of business professionals – with over 300
           national chapters and 275 UCI alumni, you can count on your brothers
           for support no matter where you go.
         </ImageBox>
-      </Flex>
+      </div>
     </Fade>
 
     <hr className={styles.whyDspHr} />
