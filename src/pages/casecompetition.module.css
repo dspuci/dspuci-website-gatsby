@@ -175,6 +175,40 @@
   }
 }
 
+/* Mobile-only tweaks for Case Competition hero and logos */
+@media (max-width: 768px) {
+  .caseHeroWrap {
+    align-items: flex-start;
+  }
+
+  .caseHeroContent {
+    padding-top: 160px !important;
+    padding-bottom: 72px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .caseHeroLogos {
+    margin-top: 24px;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+
+  .caseHeroLogo {
+    height: 72px !important;
+    max-width: 30vw;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .caseHeroLogosItem:nth-child(2) .caseHeroLogo {
+    height: 72px !important;
+  }
+}
+
 /* Why Participate grid + cards */
 .sectionGrid {
   display: grid;

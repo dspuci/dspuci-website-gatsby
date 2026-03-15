@@ -549,8 +549,8 @@
   /* Section title: keep readable and fully visible */
   .scheduleHeader :global(h1),
   .scheduleHeader :global(h2) {
-    font-size: clamp(20px, 5.5vw, 26px);
-    line-height: 1.2;
+    font-size: clamp(20px, 5vw, 24px);
+    line-height: 1.15;
     word-break: normal;
     hyphens: none;
     max-width: 100%;
@@ -628,6 +628,12 @@
     text-align: center;
     padding: 16px;
     border-radius: 12px;
+  }
+
+  /* Ensure back face text is not mirrored (override desktop rotateY) */
+  .scheduleCardBack {
+    transform: none !important;
+    -webkit-transform: none !important;
   }
 
   /* Front shown by default */
