@@ -27,6 +27,9 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  filter: blur(0.8px) brightness(0.7) contrast(1.05) saturate(0.85);
+  transform: scale(1.03);
+  opacity: 0.6;
 }
 
 @keyframes caseHeroFadeIn {
@@ -51,7 +54,8 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.45);
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.2) 100%);
   pointer-events: none;
 }
 
@@ -94,19 +98,19 @@
   color: #000000 !important;
 }
 
-/* Make DSP seal logo black on this page only */
-.caseHeroLogosItem:last-child .caseHeroLogo {
-  filter: brightness(0) saturate(100%);
-}
-
 /* Hero collaboration logos row */
 .caseHeroLogos {
-  margin: 28px auto 0;
-  display: flex;
+  margin: 28px 0 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0 56px;
+ 
 }
 
 .caseHeroLogosItem {
@@ -115,28 +119,34 @@
   animation: caseHeroLogosFadeIn 0.4s ease forwards;
 }
 
-.caseHeroLogosItem:nth-child(1) {
+/* Keep logo row perfectly centered (avoid nth-child margins) */
+.caseHeroLogosItemDsp {
   animation-delay: 0.15s;
-  margin-right: 24px;
+  justify-self: end;
 }
 
-.caseHeroLogosItem:nth-child(2) {
+.caseHeroLogosItemBain {
   animation-delay: 0.3s;
-  margin-right: 24px;
+  justify-self: center;
 }
 
-.caseHeroLogosItem:nth-child(3) {
+.caseHeroLogosItem180 {
   animation-delay: 0.45s;
-  margin-left: 0;
+  justify-self: start;
+}
+
+/* Make DSP seal logo black on this page only */
+.caseHeroLogosItemDsp .caseHeroLogo {
+  filter: brightness(0) saturate(100%);
 }
 
 /* Emphasize 180 Degrees Consulting logo size */
-.caseHeroLogosItem:nth-child(2) .caseHeroLogo {
-  height: 300px;       /* 150% of base 200px */
+.caseHeroLogosItem180 .caseHeroLogo {
+  height: 330px; /* emphasize 180 */
 }
 
 .caseHeroLogo {
-  height: 200px;
+  height: 220px;
   max-width: 360px;
   width: auto;
   object-fit: contain;
@@ -161,7 +171,11 @@
 
 @media (max-width: 1024px) {
   .caseHeroLogo {
-    height: 140px;
+    height: 160px;
+  }
+
+  .caseHeroLogosItem180 .caseHeroLogo {
+    height: 240px;
   }
 }
 
@@ -171,7 +185,23 @@
   }
 
   .caseHeroLogos {
-    gap: 24px;
+    width: 100%;
+    left: auto;
+    transform: none;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0 16px;
+    gap: 18px;
+  }
+
+  .caseHeroLogosItemDsp,
+  .caseHeroLogosItemBain,
+  .caseHeroLogosItem180 {
+    justify-self: center;
+  }
+
+  .caseHeroLogosItem180 .caseHeroLogo {
+    height: 140px;
   }
 }
 
@@ -190,11 +220,8 @@
 
   .caseHeroLogos {
     margin-top: 24px;
-    padding: 0 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: nowrap;
+    padding: 0 24px;
+    gap: 18px;
   }
 
   .caseHeroLogo {
@@ -204,7 +231,7 @@
     object-fit: contain;
   }
 
-  .caseHeroLogosItem:nth-child(2) .caseHeroLogo {
+  .caseHeroLogosItem180 .caseHeroLogo {
     height: 72px !important;
   }
 }

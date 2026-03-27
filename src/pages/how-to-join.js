@@ -192,23 +192,7 @@ export default () => (
           Quantitative Economics, and Economics. 
         "
       />
-      <Accordion
-        title="What is pledging?"
-        content="
-          After recruitment events and interviews, we extend invitations to select 
-          prospective members for our pledging program. Pledging is an intensive 
-          five week process designed to help our pledges grow professionally and 
-          personally. The time commitment for pledging can be compared to a part-time 
-          internship. Pledges learn and exercise team-building, public speaking, and 
-          leadership skills – all in the context of business projects and practices. 
-          In addition, pledges will learn about the Fraternity’s history and operational 
-          requirements through the planning and participation in projects and events. 
-          Pledges are paired with big brothers in the chapter for additional mentorship 
-          and professional growth. At the end of pledging, pledges are considered for 
-          initiation into the Fraternity. Although difficult, pledging is designed to 
-          build the highest caliber of brotherhood and professionalism.
-        "
-      />
+      
       <Accordion
         title="If I do not get an invitation to pledge the first time, can I apply again?"
         content="

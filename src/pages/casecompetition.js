@@ -5,6 +5,7 @@ import { withPrefix } from "gatsby"
 import bainLogo from "../images/bain_logo.png"
 import dspLogo from "../images/dsp_seal.png"
 import dcLogo from "../images/180dc_logo.png"
+import caseHeroVideo from "../images/squares_background_video.mp4"
 import Accordion from "../components/Faq"
 import styles from "./casecompetition.module.css"
 import recruitmentStyles from "./recruitment.module.css"
@@ -50,7 +51,7 @@ export default () => {
               aria-hidden="true"
             >
               <source
-                src={withPrefix("/images/videos/case_competition.mp4")}
+                src={caseHeroVideo}
                 type="video/mp4"
               />
             </video>
@@ -104,24 +105,24 @@ export default () => {
                 more below.
               </p>
               <div className={styles.caseHeroLogos}>
-                <span className={styles.caseHeroLogosItem}>
+                <span className={`${styles.caseHeroLogosItem} ${styles.caseHeroLogosItemDsp}`}>
+                  <img
+                    src={dspLogo}
+                    alt="Delta Sigma Pi"
+                    className={styles.caseHeroLogo}
+                  />
+                </span>
+                <span className={`${styles.caseHeroLogosItem} ${styles.caseHeroLogosItemBain}`}>
                   <img
                     src={bainLogo}
                     alt="Bain & Company"
                     className={styles.caseHeroLogo}
                   />
                 </span>
-                <span className={styles.caseHeroLogosItem}>
+                <span className={`${styles.caseHeroLogosItem} ${styles.caseHeroLogosItem180}`}>
                   <img
                     src={dcLogo}
                     alt="180 Degrees Consulting"
-                    className={styles.caseHeroLogo}
-                  />
-                </span>
-                <span className={styles.caseHeroLogosItem}>
-                  <img
-                    src={dspLogo}
-                    alt="Delta Sigma Pi"
                     className={styles.caseHeroLogo}
                   />
                 </span>

@@ -13,6 +13,8 @@ import Accordion from "../components/Faq"
 
 import styles from "./recruitment.module.css"
 
+import nycVideo from "../images/Website_05.mp4"
+
 // ICS file with all 5 recruitment events – import into Google Calendar to add all at once
 const RECRUITMENT_ICS_URL = withPrefix("/files/recruitment_calendar_2026.ics")
 
@@ -27,7 +29,15 @@ const SUBWAY_COLORS = {
 
 // Multicolor palette for date circles (month/day characters)
 const DATE_CIRCLE_COLORS = [
-  "#EE352E", "#2850AD", "#FF6319", "#00933C", "#B933AD", "#FCCC0A", "#996633", "#808183",
+  // Slightly deeper tones for better readability against the light card background
+  "#C81E1E", // red
+  "#1E3A8A", // blue
+  "#C2410C", // orange
+  "#166534", // green
+  "#7E22CE", // purple
+  "#B45309", // yellow/gold (darker)
+  "#7C2D12", // brown
+  "#4B5563", // gray
 ]
 
 const Band = ({ compact, ...props }) => (
@@ -305,8 +315,9 @@ export default () => (
           loop
           playsInline
           aria-hidden="true"
+          poster={withPrefix("/images/nyc_landscape_hero.png")}
         >
-          <source src={withPrefix("/images/videos/nyc_landscape.mp4")} type="video/mp4" />
+          <source src={nycVideo} type="video/mp4" />
         </video>
         <div
           className={styles.recruitmentHeroContent}

@@ -58,12 +58,22 @@
   z-index: 0;
 }
 
-/* Bottom gradient only: video blends into page (no dark overlay) */
-.recruitmentHeroWrap::before {
+/* Dark overlay for readability */
+.recruitmentHeroWrap::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
+  background: rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+
+/* Bottom gradient: blend hero into page background */
+.recruitmentHeroWrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   background: linear-gradient(
     180deg,
     transparent 0%,
@@ -86,7 +96,7 @@
 
 .recruitmentHeroContent {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   opacity: 0;
   animation: heroContentFadeIn 700ms ease-out 150ms forwards;
 }
@@ -446,26 +456,29 @@
 }
 
 .dateCircle {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 13px;
   font-family: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0;
   margin: 0 -3px;
+  /* Improve legibility on saturated colors */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18);
 }
 
 @media (min-width: 600px) {
   .dateCircle {
-    width: 28px;
-    height: 28px;
-    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
     margin: 0 -3px;
   }
 }
