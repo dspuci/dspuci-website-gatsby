@@ -115,7 +115,7 @@ export default () => (
 
         <Section sx={{ marginTop: 24, marginBottom: 72 }}>
           <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
-            <div className={styles.aboutStatNumber}>46</div>
+            <div className={styles.aboutStatNumber}>51</div>
             <div className={styles.aboutStatLabel}>Collegiate Brothers</div>
           </Box>
           <Box width={[1, 1 / 3]} style={{ textAlign: "center" }}>
