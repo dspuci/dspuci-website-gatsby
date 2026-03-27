@@ -2,7 +2,7 @@ const genderData = {
   labels: ["Male", "Female"],
   datasets: [
     {
-      data: [22, 24],
+      data: [25, 26],
       backgroundColor: ["rgb(158, 207, 230)", "rgb(151, 129, 213)"],
     },
   ],
@@ -12,7 +12,7 @@ const yearData = {
   labels: ["Freshman", "Sophomore", "Junior", "Senior"],
   datasets: [
     {
-      data: [0, 15, 14, 17],
+      data: [14, 17, 17, 13],
       backgroundColor: [
         "rgb(241,169,78)",
         "rgb(112, 226, 113)",
@@ -35,12 +35,11 @@ const majorData = {
     "Informatics",
     "Business Information Management",
     "Quantative Economics",
-    "Computer Engineering",
     "Software Engineering"
   ],
   datasets: [
     {
-      data: [18, 8, 3, 4, 1, 8, 2, 1, 1],
+      data: [18, 8, 3, 4, 1, 8, 2, 2],
       backgroundColor: [
         "rgb(199, 206, 234)",
         "rgb(181, 234, 215)",

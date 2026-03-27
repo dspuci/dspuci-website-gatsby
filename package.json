@@ -17,6 +17,9 @@
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
+  "overrides": {
+    "sharp": "^0.33.5"
+  },
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "@emotion/react": "^11.13.3",

@@ -25,7 +25,26 @@ export default (props) => (
           fontSize: 24,
           fontColor: "#000000",
           fontFamily: "Georgia, serif"
-        }
+        },
+        // Chart.js v2 global tooltip callback uses yLabel/value from Cartesian scales; doughnut arcs
+        // do not populate those the same way, so tooltips can show wrong or empty numbers unless we
+        // read values from the chart data (same as Chart.js doughnut defaults).
+        tooltips: {
+          callbacks: {
+            title: () => "",
+            label: (tooltipItem, data) => {
+              const dataLabel = data.labels[tooltipItem.index]
+              const raw =
+                data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]
+              if (Array.isArray(dataLabel)) {
+                const copy = dataLabel.slice()
+                copy[0] = `${copy[0]}: ${raw}`
+                return copy
+              }
+              return `${dataLabel != null ? dataLabel : ""}: ${raw}`
+            },
+          },
+        },
       }}
       data={props.data}
     />

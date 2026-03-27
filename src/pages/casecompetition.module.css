@@ -54,8 +54,12 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.2) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.58) 45%,
+    rgba(0, 0, 0, 0.68) 100%
+  );
   pointer-events: none;
 }
 
@@ -95,7 +99,7 @@
   font-family: "Arial Black", "Arial", "Helvetica Neue", sans-serif !important;
   font-weight: 900 !important;
   letter-spacing: 0.06em;
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 
 /* Hero collaboration logos row */
@@ -130,14 +134,20 @@
   justify-self: center;
 }
 
+@media (min-width: 601px) {
+  .caseHeroLogosItemBain {
+    margin-left: clamp(12px, 2.5vw, 28px);
+  }
+}
+
 .caseHeroLogosItem180 {
   animation-delay: 0.45s;
   justify-self: start;
 }
 
-/* Make DSP seal logo black on this page only */
+/* Light DSP seal for contrast on dark hero */
 .caseHeroLogosItemDsp .caseHeroLogo {
-  filter: brightness(0) saturate(100%);
+  filter: brightness(0) invert(1);
 }
 
 /* Emphasize 180 Degrees Consulting logo size */

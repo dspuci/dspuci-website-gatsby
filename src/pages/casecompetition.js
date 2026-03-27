@@ -39,7 +39,6 @@ export default () => {
     return (
       <CoverLayout
         navbarTextColor="white"
-        navbarTransparent={false}
         coverElement={
           <div className={styles.caseHeroWrap}>
             <video
@@ -55,6 +54,7 @@ export default () => {
                 type="video/mp4"
               />
             </video>
+            <div className={styles.caseHeroOverlay} aria-hidden="true" />
             <div className={styles.caseHeroBottomFade} aria-hidden="true" />
             <div
               className={styles.caseHeroContent}
@@ -74,7 +74,7 @@ export default () => {
                 sx={{
                   textTransform: "uppercase",
                   letterSpacing: "0.3em",
-                  color: "#000000",
+                  color: "#ffffff",
                 }}
               >
                 Delta Sigma Pi · 180 Degrees Consulting · Bain & Company
@@ -96,7 +96,7 @@ export default () => {
                   fontSize: 16,
                   marginTop: 10,
                   marginBottom: 12,
-                  color: "#000000",
+                  color: "#ffffff",
                 }}
               >
                 This spring, UCI’s Delta Sigma Pi and 180 Degrees Consulting are
