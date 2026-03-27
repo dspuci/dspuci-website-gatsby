@@ -28,7 +28,6 @@ export default () => (
           aria-hidden="true"
         />
         <div className={styles.whyDspHeroOverlay} aria-hidden="true" />
-        <div className={styles.whyDspHeroBottomFade} aria-hidden="true" />
         <div
           className={styles.whyDspHeroContent}
           style={{

@@ -58,8 +58,8 @@
   z-index: 0;
 }
 
-/* Dark overlay for readability */
-.recruitmentHeroWrap::after {
+/* Dark overlay */
+.recruitmentHeroWrap::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -68,21 +68,27 @@
   pointer-events: none;
 }
 
-/* Bottom gradient: blend hero into page background */
-.recruitmentHeroWrap::before {
-  content: "";
+/* Bouncing arrow */
+.recruitmentHeroWrap::after {
+  content: "↓";
   position: absolute;
-  inset: 0;
-  z-index: 2;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    transparent 60%,
-    rgba(245, 240, 230, 0.4) 80%,
-    rgba(245, 240, 230, 0.85) 93%,
-    #f5f0e6 100%
-  );
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 32px;
   pointer-events: none;
+  z-index: 10;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 @keyframes heroFadeIn {
@@ -168,7 +174,6 @@
 
 .recruitmentPageContent :global([class*="accordion__content"]) {
   background-color: transparent !important;
-  padding: 0 !important;
 }
 
 /* FAQ cards on recruitment page: align with schedule card visual system */

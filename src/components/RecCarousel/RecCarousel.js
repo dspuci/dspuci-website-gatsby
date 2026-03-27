@@ -4,7 +4,6 @@ import "@brainhubeu/react-carousel/lib/style.css"
 import imageOne from "../../images/haylie_recruitment.jpeg"
 import imageFive from "../../images/coca_recruitment.jpeg"
 import imageTwo from "../../images/andrew_recruitment.jpg"
-import imageThree from "../../images/justin_recruitment.jpg"
 import imageFour from "../../images/sanika_recruitment.jpg"
 import {
   faChevronLeft,
@@ -32,12 +31,6 @@ const SPOTLIGHT_SLIDES = [
     name: "Sanika Saitawdekar",
     description: "Initiated in my First Year Spring | Business Administration | Interested in Operations and Project Management",
     bio: "As an out-of-state student, finding my own community was of huge importance to me. I was very lucky and grateful to see that involving myself in the business community surrounded me with driven and likeminded people that would soon become some of my closest friends. Compared to other clubs on campus with members who come and go, DSP allowed me to build strong relationships with people who I know I can rely on for the rest of my college career. I have loved getting to know the people who surround me, and they have pushed me to grow both personally and professionally. Throughout my time so far, I've become more outgoing and social, more professionally accomplished, and so much more. This past year has been the best of my life, and it truly wouldn't have been the same without the impact of DSP.",
-  },
-  {
-    src: imageThree,
-    name: "Justin Pham",
-    description: "Initiated in my Second Year Spring | Computer Science & Informatics | Interested in Software Engineering and Product Management",
-    bio: "Joining DSP in my second year has been transformative for both my personal and professional growth. Surrounded by driven peers, I've had the chance to collaborate on meaningful projects, expand my network, and develop essential skills in software development and project management. The mentorship and support from fellow members have guided me through internships and career planning, while reinforcing my passion for technology and AI. DSP has not only enhanced my confidence but also deepened my commitment to using improving myself. I joined for the professional development, but found myself gaining some of my closest friends ever. This has been one of the best decisions I have made so far in my college journey, and I strongly recommend anyone who is slightly interested to come out and see what Pi Sigma has to offer!",
   },
   {
     src: imageOne,

@@ -53,15 +53,26 @@
   pointer-events: none;
 }
 
-.whyDspHeroBottomFade {
+.whyDspHeroWrap::after {
+  content: "↓";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 160px;
-  z-index: 1;
-  background: linear-gradient(to bottom, rgba(245, 240, 230, 0) 0%, #f5f0e6 100%);
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 32px;
   pointer-events: none;
+  z-index: 10;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 .whyDspHeroContent {

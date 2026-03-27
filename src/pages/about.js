@@ -41,7 +41,6 @@ export default () => (
           aria-hidden="true"
         />
         <div className={styles.aboutHeroOverlay} aria-hidden="true" />
-        <div className={styles.aboutHeroBottomFade} aria-hidden="true" />
         <div
           className={styles.aboutHeroContent}
           style={{
@@ -109,7 +108,7 @@ export default () => (
         <Section sx={{ marginTop: 72, marginBottom: 24 }}>
           <Box width={1} style={{ textAlign: "center" }}>
             <h2 className={styles.aboutStatsHeading}>
-              UC IRVINE 'S • LARGEST & OLDEST • BUSINESS FRATERNITY
+              UC IRVINE'S • LARGEST & OLDEST • BUSINESS FRATERNITY
             </h2>
           </Box>
         </Section>

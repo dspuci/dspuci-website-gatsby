@@ -23,7 +23,6 @@ export default ({ data }) => (
           aria-hidden="true"
         />
         <div className={styles.careersHeroOverlay} aria-hidden="true" />
-        <div className={styles.careersHeroBottomFade} aria-hidden="true" />
         <div
           className={styles.careersHeroContent}
           style={{
