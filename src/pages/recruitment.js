@@ -391,14 +391,36 @@ export default () => (
         content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page"
       />
     </Helmet>
-
+    
     <Fade bottom distance="40px">
-      <div
-        id="schedule"
-        style={{ scrollMarginTop: 100, marginTop: 72 }}
-      />
-      <RecruitmentScheduleBlock />
-    </Fade>
+      <div className={styles.coffeeChatSection}>
+        <div className={styles.coffeeChatBox}>
+          <a
+            href="https://calendly.com/d/ctxk-7qv-4wx/delta-sigma-pi-executive-committee-coffee-chats"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.viewScheduleBtn}
+            style={{ textDecoration: "none" }}
+          >
+            COFFEE CHAT SIGN-UP
+          </a>
+          <p className={styles.coffeeChatDescription}>
+          Learn more about Delta Sigma Pi through a coffee chat with brothers on the Executive Committee!
+          </p>
+          </div>
+        </div>
+      </Fade>
+
+      <Divider />
+      <Fade bottom distance="40px">
+        <div
+          id ="schedule"
+          style={{ scrollMarginTop: 100, marginTop: 72 }}
+        />
+        <RecruitmentScheduleBlock />
+      </Fade>
+
+  
 
     <Divider />
 
