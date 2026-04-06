@@ -235,6 +235,16 @@ class CareersTables extends React.Component {
           data: this.props.data.internships2025,
         },
       ],
+      "2026": [
+        {
+          name: "Incoming Full Time",
+          data: this.props.biosCareers2026FullTime || { nodes: [] },
+        },
+        {
+          name: "Current & Incoming Internships",
+          data: this.props.biosCareers2026Internships || { nodes: [] },
+        },
+      ],
     }
     return (
       <div>
@@ -250,6 +260,7 @@ class CareersTables extends React.Component {
             .reverse()
             .map((key) => (
               <YearButton
+                key={key}
                 value={key}
                 currentYear={this.state.currentYear}
                 onClick={this.handleYearButtonClick}

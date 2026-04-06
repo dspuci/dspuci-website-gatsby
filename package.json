@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Website for the Pi Sigma Chapter of the International Fraternity of Delta Sigma Pi located at UC Irvine",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "author": "Farbod Rafezy <rafezyfarbod@gmail.com>, Kota Cody Enokida <codyenokida@gmail.com>",
   "license": "MIT",
   "repository": "",
