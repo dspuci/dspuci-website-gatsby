@@ -396,16 +396,16 @@ export default () => (
       <div className={styles.coffeeChatSection}>
         <div className={styles.coffeeChatBox}>
           <a
-            href="https://calendly.com/d/ctxk-7qv-4wx/delta-sigma-pi-executive-committee-coffee-chats"
+            href="https://forms.gle/1fFYVU1b1PApW4gg7"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.viewScheduleBtn}
             style={{ textDecoration: "none" }}
           >
-            COFFEE CHAT SIGN-UP
+            Application Part 1
           </a>
           <p className={styles.coffeeChatDescription}>
-          Learn more about Delta Sigma Pi through a coffee chat with brothers on the Executive Committee!
+            Complete Application Part 1 by Monday, April 6th at 11:59 PM!
           </p>
           </div>
         </div>
