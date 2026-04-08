@@ -2,5 +2,4 @@
 .DS_STORE
 yarn-error.log
 node_modules
-# Gatsby build output (regenerated each `gatsby build`). Commit assets under /static instead.
 public
