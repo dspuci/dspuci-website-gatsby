@@ -3,15 +3,25 @@
   height: 80px;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
+  top: 0;
+  left: 0;
 }
 
 .navbarBackgroundSolid {
   height: 80px;
   width: 100%;
   position: fixed;
-  background: rgb(0, 0, 0);
-  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.65) 30%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 10;
   transition: 100ms linear;
 }
 
@@ -19,6 +29,9 @@
   height: 80px;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   opacity: 0;
   transition: 100ms linear;
 }
@@ -55,7 +68,7 @@
   height: 100%;
   display: table;
   background-color: #fcfcfc;
-  z-index: 1;
+  z-index: 10;
   opacity: 1;
   transition: opacity 100ms linear;
 }

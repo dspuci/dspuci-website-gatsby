@@ -1,0 +1,203 @@
+/* About page: match site design system (recruitment/home) */
+
+/* Page background */
+.aboutPage {
+  background: #f5f0e6;
+  color: #1a1a1a;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  padding-bottom: 80px;
+}
+
+/* Hero wrap: same height and fade-in as Recruitment hero.
+   z-index: 0 so the fixed navbar stays on top. */
+.aboutHeroWrap {
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  max-height: 840px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f0e6;
+  opacity: 0;
+  animation: aboutHeroFadeIn 700ms ease-out forwards;
+}
+
+@keyframes aboutHeroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Background image layer */
+.aboutHeroImage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Text content: same pattern as Recruitment hero (alignment + staggered fade-in) */
+.aboutHeroContent {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: aboutHeroContentFadeIn 700ms ease-out 150ms forwards;
+}
+
+@keyframes aboutHeroContentFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aboutHeroWrap::after {
+  content: "↓";
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 32px;
+  pointer-events: none;
+  z-index: 10;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+.aboutHeroTitle {
+  font-family: "Arial Black", "Arial", "Helvetica Neue", sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.06em;
+  color: #ffffff !important;
+}
+
+/* Dark overlay for title readability */
+.aboutHeroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+
+
+/* Empowering section: card style matching recruitment */
+.aboutSection {
+  padding: 80px 0;
+  background: #f5f0e6;
+}
+
+.aboutEmpoweringCard {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #dcdcdc;
+  border-radius: 16px;
+  padding: 60px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.aboutEmpoweringHeading {
+  margin: 0 0 24px;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+}
+
+.aboutDivider {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto 24px;
+  width: 80%;
+}
+
+.aboutEmpoweringCopy {
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section spacing to match recruitment rhythm */
+.aboutSectionSpacing {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+/* Subtle divider line used between sections */
+.aboutHr {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 48px auto;
+  width: 80%;
+}
+
+/* Stats section heading: same font as ABOUT US hero title, one line with dots */
+.aboutStatsHeading {
+  margin: 0;
+  font-family: "Arial Black", "Arial", "Helvetica Neue", sans-serif !important;
+  font-weight: 900 !important;
+  font-size: clamp(0.95rem, 2vw, 1.25rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+/* Stats and values: dark text on light background */
+.aboutStatNumber {
+  font-weight: 700;
+  font-size: 80px;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+}
+
+.aboutStatLabel {
+  font-size: 22px;
+  font-family: Georgia, serif;
+  color: #333;
+}
+
+.aboutValueItem {
+  font-size: 26px;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+}
+
+/* History block */
+.aboutHistory {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+}

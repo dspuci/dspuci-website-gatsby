@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Delta Sigma Pi Pi Sigma//Recruitment 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+BEGIN:VEVENT
+UID:20260330T190000-recruitment-meet-chapter@dspuci.com
+DTSTAMP:20260301T000000
+SUMMARY:Recruitment - Meet the Chapter
+DTSTART:20260330T190000
+DTEND:20260330T220000
+LOCATION:Paul Merage School of Business
+DESCRIPTION:Delta Sigma Pi Pi Sigma - Spring 2026 Recruitment Event: Meet the Chapter. Attire: Casual.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260401T190000-recruitment-professional-night@dspuci.com
+DTSTAMP:20260301T000000
+SUMMARY:Recruitment - Professional Night
+DTSTART:20260401T190000
+DTEND:20260401T220000
+LOCATION:Paul Merage School of Business
+DESCRIPTION:Delta Sigma Pi Pi Sigma - Spring 2026 Recruitment Event: Professional Night. Attire: Business Professional.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260406T190000-recruitment-social-night@dspuci.com
+DTSTAMP:20260301T000000
+SUMMARY:Recruitment - Social Night
+DTSTART:20260406T190000
+DTEND:20260406T220000
+LOCATION:Corona Del Mar
+DESCRIPTION:Delta Sigma Pi Pi Sigma - Spring 2026 Recruitment Event: Social Night. Attire: Casual.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260411T190000-recruitment-mocktail-night@dspuci.com
+DTSTAMP:20260301T000000
+SUMMARY:Recruitment - Mocktail Night (Invite Only)
+DTSTART:20260411T190000
+DTEND:20260411T220000
+LOCATION:TBA
+DESCRIPTION:Delta Sigma Pi Pi Sigma - Spring 2026 Recruitment Event: Mocktail Night (Invite Only). Attire: Cocktail.
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260411T000000-recruitment-interviews@dspuci.com
+DTSTAMP:20260301T000000
+SUMMARY:Recruitment - Interviews (Invite Only)
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20260412
+LOCATION:TBA
+DESCRIPTION:Delta Sigma Pi Pi Sigma - Spring 2026 Recruitment Event: Interviews (Invite Only). Attire: Business Professional.
+END:VEVENT
+
+END:VCALENDAR
+

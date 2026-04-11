@@ -6,6 +6,7 @@ import { withPrefix } from "gatsby"
 import coatofarms from "../images/coatofarms.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMapMarkerAlt, faGraduationCap, faBriefcase, faUsers, faUserTie, faStar } from "@fortawesome/free-solid-svg-icons"
+import styles from "./brother.module.css"
 
 const yearMap = {
   "1st": "Freshman",
@@ -16,6 +17,7 @@ const yearMap = {
 
 const InfoCard = ({ icon, label, value }) => (
   <Box
+    className={styles.infoCard}
     sx={{
       background: "rgba(255, 255, 255, 0.03)",
       borderRadius: "14px",
@@ -27,7 +29,7 @@ const InfoCard = ({ icon, label, value }) => (
     <Flex alignItems="center">
       <Box
         sx={{
-          color: "#9284cf",
+          color: "#000000",
           marginRight: "18px",
           fontSize: "20px",
           width: "28px",
@@ -42,14 +44,14 @@ const InfoCard = ({ icon, label, value }) => (
             fontSize: "12px",
             textTransform: "uppercase",
             letterSpacing: "0.1em",
-            color: "#9284cf",
+            color: "#000000",
             fontWeight: "600",
             marginBottom: "4px",
           }}
         >
           {label}
         </Text>
-        <Text sx={{ fontSize: "16px", color: "#fff", lineHeight: 1.5 }}>
+        <Text sx={{ fontSize: "16px", color: "#000000", lineHeight: 1.5 }}>
           {value}
         </Text>
       </Box>
@@ -91,6 +93,7 @@ export default ({ data }) => {
 
   return (
     <StandardLayout>
+      <div className={styles.brotherProfile}>
       <Flex
         flexWrap="wrap"
         sx={{
@@ -132,20 +135,22 @@ export default ({ data }) => {
           {/* Name Header */}
           <Box sx={{ marginBottom: "22px" }}>
             <Text
+              className={styles.name}
               sx={{
                 fontSize: ["32px", "42px"],
                 fontWeight: "700",
                 letterSpacing: "-0.02em",
                 lineHeight: 1.2,
-                color: "#fff",
+                color: "#000000",
               }}
             >
               {brotherInfo.firstName} {brotherInfo.lastName}
             </Text>
             <Text
+              className={styles.subtitle}
               sx={{
                 fontSize: ["16px", "20px"],
-                color: "#9284cf",
+                color: "#000000",
                 fontWeight: "500",
                 marginTop: "8px",
               }}
@@ -213,7 +218,7 @@ export default ({ data }) => {
             sx={{ margin: '24px 0 36px' }}
           >
             <Box sx={{ flex: 1, height: '1px', background: '#444' }} />
-            <Text sx={{ padding: '0 20px', color: '#9284cf', fontWeight: '600', letterSpacing: '0.1em' }}>ΔΣΠ</Text>
+            <Text className={styles.divider} sx={{ padding: '0 20px', color: '#000000', fontWeight: '600', letterSpacing: '0.1em' }}>ΔΣΠ</Text>
             <Box sx={{ flex: 1, height: '1px', background: '#444' }} />
           </Flex>
           
@@ -225,11 +230,12 @@ export default ({ data }) => {
             }}
           >
             <Text
+              className={styles.sectionTitle}
               sx={{
                 fontSize: "13px",
                 textTransform: "uppercase",
                 letterSpacing: "0.12em",
-                color: "#9284cf",
+                color: "#000000",
                 fontWeight: "600",
                 marginBottom: "14px",
               }}
@@ -237,25 +243,27 @@ export default ({ data }) => {
               About {brotherInfo.firstName}
             </Text>
             <Text
+              className={styles.bio}
               sx={{
                 fontSize: "17px",
                 lineHeight: 1.8,
-                color: "#bbb",
+                color: "#000000",
                 fontStyle: "italic",
               }}
             >
-              "{brotherInfo.bios}"
+              {'"' + (brotherInfo.bios || '') + '"'}
             </Text>
           </Box>
         </Box>
       </Flex>
+      </div>
     </StandardLayout>
   )
 }
 
 // TO CHANGE BIO CHANGE THIS
 export const query = graphql`
-  query($slug: String!) {
+  query BrotherProfileBySlug($slug: String!) {
     bio: biosCurrentdataXlsxFormResponses1(fields: { slug: { eq: $slug } }) {
       First_Name
       Last_Name

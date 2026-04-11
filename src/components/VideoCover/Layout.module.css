@@ -1,49 +1,78 @@
-.container {
+.container {}
+
+.heroWrap {
+    position: relative;
+}
+
+
+/* Bouncing down arrow */
+
+.heroWrap::after {
+    content: "↓";
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 32px;
+    pointer-events: none;
+    z-index: 10;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
 }
 
 .button {
-  color: #303030;
-  text-align: center;
-  margin: 15px auto;
-  display: inline-block;
-  background: transparent;
-  text-decoration: none;
-  color: white;
-  border: 1px white solid;
-  border-radius: 5px;
-  padding: 5px 10px;
-  transition: all 0.25s;
-  cursor: pointer;
+    color: #303030;
+    text-align: center;
+    margin: 15px auto;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.25s;
+    cursor: pointer;
 }
 
 .button:focus {
-  outline: none;
+    outline: none;
 }
 
 .button:hover {
-  background: white;
-  color: #1a182a;
+    background: white;
+    color: #1a182a;
 }
 
-.button:hover > a {
-  color: #1a182a;
+.button:hover>a {
+    color: #1a182a;
 }
 
 a {
-  text-decoration: none;
-  color: white;
-  transition: all 0.25s;
+    text-decoration: none;
+    color: white;
+    transition: all 0.25s;
 }
 
 .img {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 800px) {
-  .video {
-    display: none;
-  }
-  .img {
-    display: block;
-  }
+    .video {
+        display: none;
+    }
+    .img {
+        display: block;
+    }
 }

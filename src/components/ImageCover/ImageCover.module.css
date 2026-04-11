@@ -12,6 +12,11 @@
     width: 100%;
 }
 
+.imageCoverFullHeight {
+  height: 100% !important;
+  min-height: 100% !important;
+}
+
 @media (max-width: 800px) {
     .imageCover {
         background-attachment: scroll;

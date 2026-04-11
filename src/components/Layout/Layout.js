@@ -58,9 +58,17 @@ class Layout extends React.Component {
   }
 
   render() {
+    const layoutClassName = [
+      styles.layout,
+      this.props.layoutClassName,
+    ].filter(Boolean).join(" ")
+
     return (
-      <div className={styles.layout}>
-        <Navbar type={this.state.navbarType} />
+      <div className={layoutClassName}>
+        <Navbar
+          type={this.state.navbarType}
+          className={this.props.navbarClassName}
+        />
         {this.props.children}
         <Footer />
       </div>
@@ -70,8 +78,18 @@ class Layout extends React.Component {
 
 class CoverLayout extends React.Component {
   render() {
+    const navbarTransparent =
+      this.props.navbarTransparent !== undefined
+        ? this.props.navbarTransparent
+        : true
+
     return (
-      <Layout navbarTransparent navbarTextColor={this.props.navbarTextColor}>
+      <Layout
+        navbarTransparent={navbarTransparent}
+        navbarTextColor={this.props.navbarTextColor}
+        navbarClassName={this.props.navbarClassName}
+        layoutClassName={this.props.layoutClassName}
+      >
         {this.props.coverElement}
         <Container>{this.props.children}</Container>
       </Layout>
@@ -108,7 +126,7 @@ class StandardLayout extends React.Component {
 }
 
 const Footer = (props) => (
-  <footer style={{ backgroundColor: darkColor }}>
+  <footer style={{ backgroundColor: "#f5f0e6" }}>
     <hr style={{
       border: 0,
       height: '2px',
@@ -118,27 +136,39 @@ const Footer = (props) => (
     }} />
     <Container>
       <Flex
-        color={lightColor}
+        color="#1a1a1a"
         fontSize={16}
         flexWrap="wrap"
         justifyContent="center"
         style={{ textAlign: "center", paddingTop: 40 }}
       >
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
-          <Image src={phoneIcon} width={20} />
+          <Image
+            src={phoneIcon}
+            width={20}
+            sx={{ filter: "brightness(0) saturate(100%)" }}
+          />
           <div>SVP: (925) 478-9787</div>
         </Box>
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
-          <Image src={emailIcon} width={30} />
+          <Image
+            src={emailIcon}
+            width={30}
+            sx={{ filter: "brightness(0) saturate(100%)" }}
+          />
           <div>svp@dspuci.com</div>
         </Box>
         <Box mb={30} width={[1 / 2, 1 / 4, 1 / 5, 1 / 6]}>
-          <Image src={uciLogo} width={30} />
+          <Image
+            src={uciLogo}
+            width={30}
+            sx={{ filter: "brightness(0) saturate(100%)" }}
+          />
           <div>Irvine, CA</div>
         </Box>
       </Flex>
       <Flex
-        color={lightColor}
+        color="#1a1a1a"
         fontSize={16}
         flexWrap="wrap"
         justifyContent="center"
@@ -146,17 +176,25 @@ const Footer = (props) => (
       >
         <Box mb={30} width={[1 / 6, 1 / 12]}>
           <a href="https://www.facebook.com/DSPUCI/">
-            <Image src={facebookIcon} width={24} />
+            <Image
+              src={facebookIcon}
+              width={24}
+              sx={{ filter: "brightness(0) saturate(100%)" }}
+            />
           </a>
         </Box>
         <Box mb={30} width={[1 / 6, 1 / 12]}>
           <a href="https://www.instagram.com/dspuci/">
-            <Image src={instagramIcon} width={24} />
+            <Image
+              src={instagramIcon}
+              width={24}
+              sx={{ filter: "brightness(0) saturate(100%)" }}
+            />
           </a>
         </Box>
       </Flex>
       <Flex
-        color={lightColor}
+        color="#1a1a1a"
         fontSize={16}
         flexWrap="wrap"
         justifyContent="center"
@@ -167,7 +205,7 @@ const Footer = (props) => (
         </Box>
         <Box width={1}>
           Developed by{" "}
-          <a style={{ color: "white" }} href="https://linkedin.com/in/frafezy">
+          <a style={{ color: "#1a1a1a" }} href="https://linkedin.com/in/frafezy">
             Farbod Rafezy
           </a>
         </Box>

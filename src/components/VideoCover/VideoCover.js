@@ -1,7 +1,7 @@
 import React from "react"
 import { Text, Image } from "rebass"
-import { Link } from "gatsby"
 import { darkColor, lightColor } from "../../styles/defaultColors"
+import Button from "../TransparentButton"
 import styles from "./Layout.module.css"
 
 class VideoCover extends React.Component {
@@ -14,6 +14,7 @@ class VideoCover extends React.Component {
     }
     return (
       <div
+        className={styles.heroWrap}
         style={{
           width: "100vw",
           height: "100vh",
@@ -32,7 +33,7 @@ class VideoCover extends React.Component {
             top: "50%",
             left: "50%",
             transform: "translateX(-50%) translateY(-50%)",
-            zIndex: -1,
+            zIndex: -2,
           }}
           autoPlay="autoplay"
           loop="loop"
@@ -52,7 +53,7 @@ class VideoCover extends React.Component {
             top: "50%",
             left: "50%",
             transform: "translateX(-50%) translateY(-50%)",
-            zIndex: -1,
+            zIndex: -2,
             objectFit: "cover",
           }}
           src={this.props.backupImage}
@@ -110,9 +111,7 @@ class VideoCover extends React.Component {
         >
           {this.props.textTwo}
         </Text>
-        <Link to="/recruitment">
-          <button className={styles.button}>HOW TO JOIN</button>
-        </Link>
+        <Button to="/recruitment" text="HOW TO JOIN" hero />
       </div>
     )
   }

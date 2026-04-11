@@ -1,0 +1,85 @@
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #dcdcdc;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+  color: #1a1a1a;
+  overflow: hidden;
+}
+
+.cardImageWrap {
+  height: 260px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.02);
+}
+
+.cardBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 0;
+  padding: 20px 18px 24px;
+  box-sizing: border-box;
+}
+
+.cardTitle {
+  flex-shrink: 0;
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.cardCopy {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardParagraph {
+  margin: 0;
+  padding: 0 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: #1a1a1a;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cardButtonWrap {
+  margin-top: auto;
+  padding-top: 24px;
+  flex-shrink: 0;
+  text-align: center;
+}

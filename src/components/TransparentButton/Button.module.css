@@ -1,17 +1,20 @@
 .button {
-  color: white;
-  text-align: center;
-  margin: 15px auto;
   display: inline-block;
-  background: transparent;
+  margin: 15px auto;
+  padding: 14px 32px;
+  background: #5c5c5c;
+  color: #ffffff;
+  text-align: center;
   text-decoration: none;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  padding: 10px 24px;
-  font-weight: 500;
-  font-family: Georgia, serif;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  border: none;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -20,8 +23,18 @@
 }
 
 .button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: #9284cf;
-  color: #9284cf;
+  background: #4a4a4a;
+  transform: translateY(-2px);
+}
+
+/* Hero variant: white background, black text (e.g. Home/Recruitment hero) */
+.buttonHero {
+  background: #ffffff;
+  color: #000000 !important;
+}
+
+.buttonHero:hover {
+  background: #e2e2e2;
+  color: #000000 !important;
   transform: translateY(-2px);
 }

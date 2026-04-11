@@ -25,7 +25,7 @@ class ImageTextRowTwo extends React.Component {
             paddingBottom: [40, 30, 20, 10],
           }}
         >
-          <div style={{ color: "#999", fontSize: "15px" }}>
+          <div style={{ color: "#1a1a1a", fontSize: "15px" }}>
             {this.props.children}
           </div>
         </Box>
