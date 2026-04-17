@@ -391,25 +391,6 @@ export default () => (
         content="Delta Sigma Pi - Pi Sigma Chapter Recruitment Page"
       />
     </Helmet>
-    
-    <Fade bottom distance="40px">
-      <div className={styles.coffeeChatSection}>
-        <div className={styles.coffeeChatBox}>
-          <a
-            href="https://forms.gle/ruo3y6TtQ8nHh79w7"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.viewScheduleBtn}
-            style={{ textDecoration: "none" }}
-          >
-            Application Part 2
-          </a>
-          <p className={styles.coffeeChatDescription}>
-            Complete Application Part 2 by Thursday, April 9th at 11:59 PM!
-          </p>
-          </div>
-        </div>
-      </Fade>
 
       <Divider />
       <Fade bottom distance="40px">
