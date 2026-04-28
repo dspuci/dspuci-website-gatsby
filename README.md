@@ -86,6 +86,7 @@ For every year, add a new tab for `Full Time Offers 202x` and `Internships 202x`
 A future todo: create an algorithm that simple sorts all career information without having to separate by category. Sort based on career name, then first name. (basically have the code do the sorting, not us).
 ***
 
+
 ### Brother Photos
 
 Brother photos are available under `/static/images/brothers/{termYear}`. Change the brother image names to their respective slugs.
