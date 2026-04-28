@@ -4,6 +4,7 @@ This version of the website for the Pi Sigma Chapter of Delta Sigma Pi was writt
 
 Google Sheets API is being used to pull data for brother bios and careers. More information about the plugin source [here](https://www.gatsbyjs.com/plugins/gatsby-source-google-sheets/).
 
+
 ## How to Run Locally
 
 Make sure you have Gatsby.
