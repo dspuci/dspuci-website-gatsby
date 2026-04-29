@@ -115,8 +115,7 @@ export const query = graphql`
         Title
       }
     }
-    brothers: allBiosCurrentdataXlcxxXlcxFormResponses1 {
-      nodes {
+    brothers: allBiosCurrentdataXlcxXlsxFormResponses1      nodes {
         Last_Name
         First_Name
         LinkedIn_URL
