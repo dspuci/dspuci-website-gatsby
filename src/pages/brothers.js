@@ -19,88 +19,102 @@ export default ({ data }) => {
           content="Delta Sigma Pi - Pi Sigma Chapter Brothers Page"
         />
       </Helmet>
+
       <Fade>
         <CenterHeader>Executive Committee</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.executiveCommittee.nodes.map((brotherInfo) => (
-          <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
+          <LeaderBrother
+            key={brotherInfo.Name}
+            name={brotherInfo.Name}
+            title={brotherInfo.Title}
+          />
         ))}
       </Flex>
+
       <br />
+
       <Fade>
-        <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
+        <hr
+          style={{
+            border: 0,
+            height: "1px",
+            background: "#666",
+            margin: "48px auto",
+            width: "80%",
+          }}
+        />
         <CenterHeader>Directors</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.directors.nodes.map((brotherInfo) => (
-          <LeaderBrother name={brotherInfo.Name} title={brotherInfo.Title} />
+          <LeaderBrother
+            key={brotherInfo.Name}
+            name={brotherInfo.Name}
+            title={brotherInfo.Title}
+          />
         ))}
       </Flex>
+
       <br />
+
       <Fade>
-        <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
+        <hr
+          style={{
+            border: 0,
+            height: "1px",
+            background: "#666",
+            margin: "48px auto",
+            width: "80%",
+          }}
+        />
         <CenterHeader>All Brothers</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.brothers.nodes
-          .filter((brotherInfo) => brotherInfo.First_Name !== "InsertFirstName")
+          .filter((b) => b.First_Name !== "InsertFirstName")
           .sort((a, b) =>
-            a.lastname > b.lastname
+            a.Last_Name > b.Last_Name
               ? 1
-              : b.lastname > a.lastname
+              : b.Last_Name > a.Last_Name
               ? -1
-              : a.firstname > b.firstname
+              : a.First_Name > b.First_Name
               ? 1
-              : b.firstname > a.firstname
+              : b.First_Name > a.First_Name
               ? -1
               : 0
           )
-          .map((brotherInfo) => {
-            // add the if statement here for the identifier to show a brother that isn't active for the quarter
-            if (brotherInfo.First_Name !== "InsertFirstName") {
-              return <Brother brotherInfo={brotherInfo} />
-            }
-            return null // return null to exclude the brother from the list
-          })}
+          .map((brotherInfo) => (
+            <Brother
+              key={`${brotherInfo.First_Name}-${brotherInfo.Last_Name}`}
+              brotherInfo={brotherInfo}
+            />
+          ))}
       </Flex>
+
       <Fade>
-        <hr style={{
-          border: 0,
-          height: '1px',
-          background: '#666',
-          margin: '48px auto',
-          width: '80%'
-        }} />
+        <hr
+          style={{
+            border: 0,
+            height: "1px",
+            background: "#666",
+            margin: "48px auto",
+            width: "80%",
+          }}
+        />
         <CenterHeader>Family Trees</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
         {data.families.nodes.map((family) => (
-          <FamilyTree familyName={family.name} />
+          <FamilyTree key={family.name} familyName={family.name} />
         ))}
       </Flex>
     </StandardLayout>
   )
 }
 
-// TO CHANGE BIO CHANGE THIS
-// TO CHANGE EC CHANGE THIS
-// TO CHANGE DIRECTORS CHANGE THIS
-// executiveCommittee: allLeadershipWinter24XlsxSheet1 {
-// directors: allDirectorsWinter24XlsxSheet1 {
-// brothers: allBiosWinter24XlsxFormResponses1 {
+// 🔥 THIS IS THE IMPORTANT FIX
 export const query = graphql`
   {
     executiveCommittee: allLeadershipCurrentdataXlsxSheet1 {
@@ -109,13 +123,16 @@ export const query = graphql`
         Title
       }
     }
+
     directors: allDirectorsCurrentdataXlsxSheet1 {
       nodes {
         Name
         Title
       }
     }
-    brothers: allBiosCurrentdataXlcxXlsxFormResponses1      nodes {
+
+    brothers: allBiosCurrentdataB4March2026XlsxFormResponses1 {
+      nodes {
         Last_Name
         First_Name
         LinkedIn_URL
