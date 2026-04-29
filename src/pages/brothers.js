@@ -131,7 +131,7 @@ export const query = graphql`
       }
     }
 
-    brothers: allBiosCurrentdataB4March2026XlsxFormResponses1 {
+    brothers: allBiosCurrentdataXlxcXlsxFormResponses1 {
       nodes {
         Last_Name
         First_Name
