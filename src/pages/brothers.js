@@ -115,7 +115,7 @@ export const query = graphql`
         Title
       }
     }
-    brothers: allBiosCurrentdataXlsxFormResponses1 {
+    brothers: allBiosCurrentdataXlcxxXlcxFormResponses1 {
       nodes {
         Last_Name
         First_Name
