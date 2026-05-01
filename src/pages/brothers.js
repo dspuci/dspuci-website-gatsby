@@ -24,9 +24,9 @@ export default ({ data }) => {
         <CenterHeader>Executive Committee</CenterHeader>
       </Fade>
       <Flex flexWrap="wrap">
-        {data.executiveCommittee.nodes.map((brotherInfo) => (
+        {data.executiveCommittee.nodes.map((brotherInfo, i) => (
           <LeaderBrother
-            key={brotherInfo.Name}
+            key={i}
             name={brotherInfo.Name}
             title={brotherInfo.Title}
           />
@@ -47,10 +47,11 @@ export default ({ data }) => {
         />
         <CenterHeader>Directors</CenterHeader>
       </Fade>
+
       <Flex flexWrap="wrap">
-        {data.directors.nodes.map((brotherInfo) => (
+        {data.directors.nodes.map((brotherInfo, i) => (
           <LeaderBrother
-            key={brotherInfo.Name}
+            key={i}
             name={brotherInfo.Name}
             title={brotherInfo.Title}
           />
@@ -71,6 +72,7 @@ export default ({ data }) => {
         />
         <CenterHeader>All Brothers</CenterHeader>
       </Fade>
+
       <Flex flexWrap="wrap">
         {data.brothers.nodes
           .filter((b) => b.First_Name !== "InsertFirstName")
@@ -85,11 +87,8 @@ export default ({ data }) => {
               ? -1
               : 0
           )
-          .map((brotherInfo) => (
-            <Brother
-              key={`${brotherInfo.First_Name}-${brotherInfo.Last_Name}`}
-              brotherInfo={brotherInfo}
-            />
+          .map((brotherInfo, i) => (
+            <Brother key={i} brotherInfo={brotherInfo} />
           ))}
       </Flex>
 
@@ -105,16 +104,17 @@ export default ({ data }) => {
         />
         <CenterHeader>Family Trees</CenterHeader>
       </Fade>
+
       <Flex flexWrap="wrap">
-        {data.families.nodes.map((family) => (
-          <FamilyTree key={family.name} familyName={family.name} />
+        {data.families.nodes.map((family, i) => (
+          <FamilyTree key={i} familyName={family.name} />
         ))}
       </Flex>
     </StandardLayout>
   )
 }
 
-// 🔥 THIS IS THE IMPORTANT FIX
+// 🔥 THIS IS THE IMPORTANT PART (GraphQL)
 export const query = graphql`
   {
     executiveCommittee: allLeadershipCurrentdataXlsxSheet1 {
