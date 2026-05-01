@@ -3,44 +3,27 @@ const path = require(`path`)
 // TO CHANGE BIO CHANGE THIS
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === "BiosCurrentdataXlsx__FormResponses1") {
+
+  if (node.internal.type === "BiosCurrentdataXlxcXlsx__FormResponses1") {
     const slug = `${node["First Name"].trim()} ${node["Last Name"].trim()}`
       .split(" ")
       .join("_")
       .toLowerCase()
+
     createNodeField({
       node,
       name: `slug`,
       value: slug,
     })
-    // } else if (
-    //   node.sourceInstanceName === "gallery" &&
-    //   node.internal.type === "Directory"
-    // ) {
-    //   const slug = node.name
-    //   createNodeField({
-    //     node,
-    //     name: `slug`,
-    //     value: slug,
-    //   })
-    // } else if (
-    //   node.sourceInstanceName === "gallery" &&
-    //   node.internal.type === "File"
-    // ) {
-    //   const slug = node.relativePath
-    //   createNodeField({
-    //     node,
-    //     name: `slug`,
-    //     value: slug,
-    //   })
   }
 }
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+
   return graphql(`
     {
-      allBiosCurrentdataXlsxFormResponses1 {
+      allBiosCurrentdataXlxcXlsxFormResponses1 {
         nodes {
           fields {
             slug
@@ -49,31 +32,18 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then((result) => {
-    console.log(result)
-    result.data.allBiosCurrentdataXlsxFormResponses1.nodes.forEach((node) => {
+    if (result.errors) {
+      throw result.errors
+    }
+
+    result.data.allBiosCurrentdataXlxcXlsxFormResponses1.nodes.forEach((node) => {
       createPage({
         path: `brothers/${node.fields.slug}`,
         component: path.resolve(`./src/templates/brother.js`),
         context: {
-          // Data passed to context is available in page queries as GraphQL variables.
           slug: node.fields.slug,
         },
       })
     })
   })
 }
-
-// result.data.albums.nodes.forEach(node => {
-//   createPage({
-//     path: "gallery/albums/" + node.slug,
-//     component: path.resolve(`./src/templates/album.js`),
-//     context: {
-//       // Data passed to context is available
-//       // in page queries as GraphQL variables.
-//       // albumName: node.name,
-//       slug: node.slug,
-//     },
-//   })
-// })
-//   })
-// }
