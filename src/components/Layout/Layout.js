@@ -126,7 +126,7 @@ class StandardLayout extends React.Component {
 }
 
 const Footer = (props) => (
-  <footer style={{ backgroundColor: "#f5f0e6" }}>
+  <footer className={styles.footer}>
     <hr style={{
       border: 0,
       height: '2px',

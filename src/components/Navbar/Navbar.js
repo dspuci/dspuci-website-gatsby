@@ -20,7 +20,6 @@ const Links = () => (
     <ListLink to="/how-to-join">Why DSP</ListLink>
     <ListLink to="/recruitment">Recruitment</ListLink>
     {/* <ListLink to="/recruitment_fall_spring">Spring '24 Recruitment</ListLink> */}
-    <ListLink to="/casecompetition">Case Competition</ListLink>
     <ListLink to="/brothers">Brothers</ListLink>
     <ListLink to="/careers">Careers</ListLink>
 

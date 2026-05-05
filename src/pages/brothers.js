@@ -1,15 +1,121 @@
-import React from "react"
-import { Flex } from "rebass"
-import { graphql } from "gatsby"
+import React, { useEffect, useState } from "react"
+import { Flex, Box } from "rebass"
+import { graphql, navigate } from "gatsby"
 import { Fade } from "react-reveal"
+import { TransitionGroup, CSSTransition } from "react-transition-group"
 
 import { StandardLayout } from "../components/Layout"
 import { Brother, LeaderBrother } from "../components/Brother"
 import FamilyTree from "../components/FamilyTree/FamilyTree"
-import CenterHeader from "../components/CenterHeader"
 import { Helmet } from "react-helmet"
+import brothersStyles from "./brothers.module.css"
 
-export default ({ data }) => {
+const TAB_IDS = ["brothers", "executive", "directors", "family"]
+
+const TAB_LABELS = {
+  brothers: "Brothers",
+  executive: "Executive Committee",
+  directors: "Directors",
+  family: "Family Trees",
+}
+
+function tabFromSearch(search) {
+  if (!search) return null
+  const t = new URLSearchParams(search).get("tab")
+  return TAB_IDS.includes(t) ? t : null
+}
+
+const sortedBrothers = (nodes) =>
+  nodes
+    .filter((b) => b.First_Name !== "InsertFirstName")
+    .sort((a, b) =>
+      a.Last_Name > b.Last_Name
+        ? 1
+        : b.Last_Name > a.Last_Name
+        ? -1
+        : a.First_Name > b.First_Name
+        ? 1
+        : b.First_Name > a.First_Name
+        ? -1
+        : 0
+    )
+
+export default ({ data, location }) => {
+  const initialTab = tabFromSearch(location?.search) || "brothers"
+  const [activeTab, setActiveTab] = useState(initialTab)
+
+  useEffect(() => {
+    const t = tabFromSearch(location?.search)
+    setActiveTab(t || "brothers")
+  }, [location?.search])
+
+  const goToTab = (tabId) => {
+    setActiveTab(tabId)
+    const path = `${location?.pathname || "/brothers"}?tab=${tabId}`
+    navigate(path, { replace: true })
+  }
+
+  const onTabKeyDown = (e, index) => {
+    if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+      e.preventDefault()
+      const next =
+        e.key === "ArrowRight"
+          ? (index + 1) % TAB_IDS.length
+          : (index - 1 + TAB_IDS.length) % TAB_IDS.length
+      goToTab(TAB_IDS[next])
+      document.getElementById(`brothers-tab-${TAB_IDS[next]}`)?.focus()
+    }
+  }
+
+  const brothersList = sortedBrothers(data.brothers.nodes)
+
+  const tabPanelContent = (() => {
+    switch (activeTab) {
+      case "brothers":
+        return (
+          <Flex flexWrap="wrap">
+            {brothersList.map((brotherInfo, i) => (
+              <Brother key={i} brotherInfo={brotherInfo} />
+            ))}
+          </Flex>
+        )
+      case "executive":
+        return (
+          <Flex flexWrap="wrap">
+            {data.executiveCommittee.nodes.map((brotherInfo, i) => (
+              <LeaderBrother
+                key={i}
+                name={brotherInfo.Name}
+                title={brotherInfo.Title}
+              />
+            ))}
+          </Flex>
+        )
+      case "directors":
+        return (
+          <Flex flexWrap="wrap">
+            {data.directors.nodes.map((brotherInfo, i) => (
+              <LeaderBrother
+                key={i}
+                name={brotherInfo.Name}
+                title={brotherInfo.Title}
+              />
+            ))}
+          </Flex>
+        )
+      case "family":
+        return (
+          <Flex flexWrap="wrap">
+            {data.families.nodes.map((family, i) => (
+              <FamilyTree key={i} familyName={family.name} />
+            ))}
+          </Flex>
+        )
+      default:
+        return null
+    }
+  })()
+
   return (
     <StandardLayout>
       <Helmet>
@@ -21,95 +127,70 @@ export default ({ data }) => {
       </Helmet>
 
       <Fade>
-        <CenterHeader>Executive Committee</CenterHeader>
-      </Fade>
-      <Flex flexWrap="wrap">
-        {data.executiveCommittee.nodes.map((brotherInfo, i) => (
-          <LeaderBrother
-            key={i}
-            name={brotherInfo.Name}
-            title={brotherInfo.Title}
-          />
-        ))}
-      </Flex>
-
-      <br />
-
-      <Fade>
-        <hr
-          style={{
-            border: 0,
-            height: "1px",
-            background: "#666",
-            margin: "48px auto",
-            width: "80%",
-          }}
-        />
-        <CenterHeader>Directors</CenterHeader>
+        <h1 className={brothersStyles.pageTitle}>{TAB_LABELS[activeTab]}</h1>
       </Fade>
 
-      <Flex flexWrap="wrap">
-        {data.directors.nodes.map((brotherInfo, i) => (
-          <LeaderBrother
-            key={i}
-            name={brotherInfo.Name}
-            title={brotherInfo.Title}
-          />
-        ))}
-      </Flex>
+      <hr className={brothersStyles.headerDivider} aria-hidden="true" />
 
-      <br />
-
-      <Fade>
-        <hr
-          style={{
-            border: 0,
-            height: "1px",
-            background: "#666",
-            margin: "48px auto",
-            width: "80%",
-          }}
-        />
-        <CenterHeader>All Brothers</CenterHeader>
-      </Fade>
-
-      <Flex flexWrap="wrap">
-        {data.brothers.nodes
-          .filter((b) => b.First_Name !== "InsertFirstName")
-          .sort((a, b) =>
-            a.Last_Name > b.Last_Name
-              ? 1
-              : b.Last_Name > a.Last_Name
-              ? -1
-              : a.First_Name > b.First_Name
-              ? 1
-              : b.First_Name > a.First_Name
-              ? -1
-              : 0
+      <Box
+        as="div"
+        role="tablist"
+        aria-label="Brothers page sections"
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "10px",
+          width: "100%",
+          maxWidth: "100%",
+          marginBottom: "36px",
+          paddingBottom: "8px",
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+        }}
+      >
+        {TAB_IDS.map((id, index) => {
+          const selected = activeTab === id
+          return (
+            <button
+              key={id}
+              type="button"
+              role="tab"
+              id={`brothers-tab-${id}`}
+              aria-selected={selected}
+              aria-controls="brothers-tab-panel"
+              tabIndex={selected ? 0 : -1}
+              onClick={() => goToTab(id)}
+              onKeyDown={(e) => onTabKeyDown(e, index)}
+              className={`${brothersStyles.tabBtn} ${
+                selected
+                  ? brothersStyles.tabBtnActive
+                  : brothersStyles.tabBtnInactive
+              }`}
+            >
+              {TAB_LABELS[id]}
+            </button>
           )
-          .map((brotherInfo, i) => (
-            <Brother key={i} brotherInfo={brotherInfo} />
-          ))}
-      </Flex>
+        })}
+      </Box>
 
-      <Fade>
-        <hr
-          style={{
-            border: 0,
-            height: "1px",
-            background: "#666",
-            margin: "48px auto",
-            width: "80%",
-          }}
-        />
-        <CenterHeader>Family Trees</CenterHeader>
-      </Fade>
-
-      <Flex flexWrap="wrap">
-        {data.families.nodes.map((family, i) => (
-          <FamilyTree key={i} familyName={family.name} />
-        ))}
-      </Flex>
+      <div
+        role="tabpanel"
+        id="brothers-tab-panel"
+        aria-labelledby={`brothers-tab-${activeTab}`}
+      >
+        <TransitionGroup component={null}>
+          <CSSTransition
+            key={activeTab}
+            timeout={200}
+            classNames="page-transition"
+          >
+            <div>{tabPanelContent}</div>
+          </CSSTransition>
+        </TransitionGroup>
+      </div>
     </StandardLayout>
   )
 }

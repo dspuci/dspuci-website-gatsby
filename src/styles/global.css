@@ -1,19 +1,75 @@
 /* Global styles for visual enhancements */
 
-
-/* Smooth scrolling */
-
-html {
-    scroll-behavior: smooth;
+:root {
+  /* Section / about page vertical rhythm (see Section.js, about.module.css) */
+  --site-space-section: 72px;
+  --transition-content-duration: 200ms;
+  --transition-content-easing: ease-in-out;
+  /* Site canvas: cream + grid (Layout, home, about, footer, etc.) */
+  --site-bg-cream: #f5f0e6;
+  --site-grid-line: rgba(0, 0, 0, 0.045);
+  --site-grid-size: 56px;
 }
 
+/* Route + tab content: fade with subtle vertical motion (react-transition-group) */
+.page-transition-root {
+  width: 100%;
+}
 
-/* Better text rendering */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--transition-content-duration)
+      var(--transition-content-easing),
+    transform var(--transition-content-duration) var(--transition-content-easing);
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity var(--transition-content-duration)
+      var(--transition-content-easing),
+    transform var(--transition-content-duration) var(--transition-content-easing);
+}
+
+/* Root canvas: cream fills overscroll (html/body); grid on body only */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--site-bg-cream);
+  min-height: 100%;
+  scrollbar-color: #cfcfcf #f2f2f2;
+  scrollbar-width: thin;
+}
 
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+  margin: 0;
+  background-color: var(--site-bg-cream);
+  min-height: 100vh;
+  background-image: linear-gradient(
+      var(--site-grid-line) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, var(--site-grid-line) 1px, transparent 1px);
+  background-size: var(--site-grid-size) var(--site-grid-size);
+  background-position: center top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  min-height: 100vh;
 }
 
 
@@ -109,14 +165,6 @@ img[loading] {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #b5b5b5;
-}
-
-
-/* Firefox scrollbar */
-
-html {
-    scrollbar-color: #cfcfcf #f2f2f2;
-    scrollbar-width: thin;
 }
 
 

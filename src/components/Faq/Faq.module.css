@@ -39,7 +39,7 @@
 
 /* Answer wrapper: no padding so collapsed state is truly 0 height; overflow clips content */
 .accordion__content {
-  background-color: #f5f0e6;
+  background-color: var(--site-bg-cream);
   overflow: hidden;
   transition: max-height 0.6s ease;
   padding: 0;

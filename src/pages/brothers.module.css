@@ -1,0 +1,76 @@
+/* Page title: same typography as About hero "About Us" (about.module.css .aboutHeroTitle + about.js h1), on light background */
+.pageTitle {
+  font-family: "Arial Black", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: clamp(36px, 5vw, 56px);
+  /* Match site section rhythm (Section / about — 72px) */
+  margin: var(--site-space-section, 72px) 0 0;
+  width: 100%;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+/* Narrower than full container; ~width of tab cluster on typical viewports */
+.headerDivider {
+  border: 0;
+  border-bottom: 1px solid #000000;
+  margin: 28px auto 36px;
+  width: 100%;
+  max-width: 680px;
+}
+
+/* Tab buttons: match TransparentButton (Button.module.css .button / :hover) */
+.tabBtn {
+  display: inline-block;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 0 0 auto;
+  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tabBtn:focus {
+  outline: 2px solid #1a1a1a;
+  outline-offset: 2px;
+}
+
+.tabBtn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.tabBtnActive {
+  background: #5c5c5c;
+  color: #ffffff;
+  border: 2px solid #5c5c5c;
+}
+
+.tabBtnInactive {
+  background: transparent;
+  color: #5c5c5c;
+  border: 2px solid #5c5c5c;
+  box-shadow: none;
+}
+
+.tabBtnInactive:hover {
+  background: #4a4a4a;
+  color: #ffffff;
+  border-color: #4a4a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tabBtnActive:hover {
+  background: #4a4a4a;
+  transform: translateY(-2px);
+}

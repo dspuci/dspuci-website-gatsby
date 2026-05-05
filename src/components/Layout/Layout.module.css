@@ -1,7 +1,12 @@
 .layout {
-  background: #f5f0e6;
+  /* Canvas + grid live on body (global.css); shell stays transparent */
+  background: transparent;
   color: #1a1a1a;
   min-height: 100vh;
   position: relative;
   z-index: 1;
+}
+
+.footer {
+  background: transparent;
 }
