@@ -130,8 +130,7 @@ export const query = graphql`
         Title
       }
     }
-
-    brothers: allBiosCurrentdataXlxcXlsxFormResponses1 {
+    brothers: allBiosCurrentdataXlsxFormResponses1 {
       nodes {
         Last_Name
         First_Name

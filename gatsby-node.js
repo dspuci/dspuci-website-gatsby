@@ -4,7 +4,7 @@ const path = require(`path`)
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === "BiosCurrentdataXlxcXlsx__FormResponses1") {
+  if (node.internal.type === "BiosCurrentdataXlsx__FormResponses1") {
     // Use safe access (prevents crashes if fields are missing)
     const first = node["First Name"] || ""
     const last = node["Last Name"] || ""
@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     {
-      allBiosCurrentdataXlxcXlsxFormResponses1 {
+      allBiosCurrentdataXlsxFormResponses1 {
         nodes {
           fields {
             slug
@@ -44,7 +44,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
-  result.data.allBiosCurrentdataXlxcXlsxFormResponses1.nodes.forEach((node) => {
+  result.data.allBiosCurrentdataXlsxFormResponses1.nodes.forEach((node) => {
     if (!node.fields || !node.fields.slug) return
 
     createPage({

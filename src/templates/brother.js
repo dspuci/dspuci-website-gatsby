@@ -264,7 +264,9 @@ export default ({ data }) => {
 // TO CHANGE BIO CHANGE THIS
 export const query = graphql`
   query BrotherProfileBySlug($slug: String!) {
-    bio: biosCurrentdataXlsxFormResponses1(fields: { slug: { eq: $slug } }) {
+    bio: biosCurrentdataXlsxFormResponses1(
+      fields: { slug: { eq: $slug } }
+    ) {
       First_Name
       Last_Name
       Class
